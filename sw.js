@@ -1,9 +1,11 @@
-const CACHE_NAME = "glaucoq-v1";
+const CACHE_NAME = "glaucoq-v2";
 const PRECACHE_ASSETS = [
   "./",
   "./index.html",
   "./manifest.json",
   "./glaucoma_cognitive_skills.json",
+  "./data/manifest.json",
+  "./data/batch_01.json",
   "./icons/icon.svg",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
@@ -33,7 +35,6 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
 
-  // Cache-first for same-origin static assets & Google Fonts
   if (
     url.origin === self.location.origin ||
     url.hostname === "fonts.googleapis.com" ||

@@ -29,6 +29,8 @@
       --accent-light: #f0fdfa;
       --clinical-bg: #fffbeb;
       --clinical-border: #d97706;
+      --success-bg: #dcfce7;
+      --success-text: #166534;
       --radius: 10px;
       --shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
       --shadow-lg: 0 10px 25px -5px rgba(15, 23, 42, 0.14), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
@@ -54,10 +56,10 @@
       position: sticky;
       top: 0;
       z-index: 30;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
-      padding: calc(0.75rem + env(safe-area-inset-top)) 1.25rem 0.75rem;
+      padding: calc(0.7rem + env(safe-area-inset-top)) 1.25rem 0.7rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -105,7 +107,7 @@
       color: #ffffff;
       border: none;
       border-radius: 999px;
-      padding: 0.38rem 0.8rem;
+      padding: 0.36rem 0.78rem;
       font-family: inherit;
       font-size: 0.78rem;
       font-weight: 600;
@@ -129,7 +131,7 @@
       color: #fff;
       font-weight: 700;
       font-size: 0.85rem;
-      padding: 0.3rem 0.65rem;
+      padding: 0.28rem 0.62rem;
       border-radius: 6px;
       letter-spacing: 0.02em;
       flex-shrink: 0;
@@ -149,7 +151,7 @@
     }
 
     .brand-sub {
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       color: var(--text-muted);
       white-space: nowrap;
       overflow: hidden;
@@ -165,23 +167,23 @@
       border: 1px solid #99f6e4;
       font-size: 0.78rem;
       font-weight: 600;
-      padding: 0.32rem 0.72rem;
+      padding: 0.3rem 0.72rem;
       border-radius: 999px;
       white-space: nowrap;
     }
 
     /* Layout */
     .layout {
-      max-width: 1180px;
+      max-width: 1240px;
       margin: 0 auto;
-      padding: 1.5rem 1.5rem calc(2rem + env(safe-area-inset-bottom));
+      padding: 1.25rem 1.5rem calc(5.5rem + env(safe-area-inset-bottom));
       display: grid;
-      grid-template-columns: 270px minmax(0, 1fr);
-      gap: 1.75rem;
+      grid-template-columns: 310px minmax(0, 1fr);
+      gap: 1.5rem;
       align-items: start;
     }
 
-    /* Sidebar */
+    /* Sidebar Navigation */
     .sidebar-backdrop {
       display: none;
     }
@@ -190,17 +192,36 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1rem;
       box-shadow: var(--shadow);
       position: sticky;
-      top: 4.75rem;
+      top: 4.5rem;
+      max-height: calc(100vh - 5.5rem);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .sidebar-top {
+      padding: 0.9rem 0.9rem 0.65rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      background: #ffffff;
     }
 
     .sidebar-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 0.75rem;
+    }
+
+    .sidebar-heading {
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
     }
 
     .sidebar-close {
@@ -217,160 +238,170 @@
       justify-content: center;
     }
 
-    .sidebar-heading {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
+    .search-input {
+      width: 100%;
+      padding: 0.48rem 0.72rem;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      color: var(--text);
+      background: var(--bg);
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+      background: #ffffff;
+    }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .filter-pill {
+      padding: 0.22rem 0.52rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.73rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .filter-pill.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .scope-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.76rem;
       color: var(--text-muted);
     }
 
-    /* Tablet & Mobile Responsive Navigation (< 1024px) */
-    @media (max-width: 1023px) {
-      .menu-btn {
-        display: inline-flex;
-      }
-
-      .layout {
-        grid-template-columns: minmax(0, 1fr);
-        max-width: 820px;
-        padding: 1.25rem 1rem calc(2.5rem + env(safe-area-inset-bottom));
-      }
-
-      .sidebar-backdrop {
-        position: fixed;
-        inset: 0;
-        background: rgba(15, 23, 42, 0.38);
-        z-index: 40;
-      }
-
-      .sidebar-backdrop.open {
-        display: block;
-      }
-
-      .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: min(310px, 85vw);
-        z-index: 45;
-        border-radius: 0;
-        border: none;
-        border-right: 1px solid var(--border);
-        padding: calc(1.1rem + env(safe-area-inset-top)) 1rem calc(1.25rem + env(safe-area-inset-bottom));
-        overflow-y: auto;
-        transform: translateX(-100%);
-        transition: transform 0.2s ease;
-      }
-
-      .sidebar.open {
-        transform: translateX(0);
-      }
-
-      .sidebar-close {
-        display: flex;
-      }
+    .toggle-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text);
     }
 
-    @media (max-width: 640px) {
-      body {
-        font-size: 15px;
-      }
+    .sidebar-scroll {
+      overflow-y: auto;
+      padding: 0.65rem 0.75rem 1rem;
+      flex: 1;
+    }
 
-      .topbar {
-        padding: calc(0.65rem + env(safe-area-inset-top)) 0.85rem 0.65rem;
-      }
+    .nav-group {
+      margin-bottom: 0.85rem;
+    }
 
-      .brand-sub {
-        display: none;
-      }
-
-      .brand-title {
-        font-size: 0.92rem;
-      }
-
-      .progress-pill {
-        font-size: 0.72rem;
-        padding: 0.28rem 0.55rem;
-      }
-
-      .layout {
-        padding: 0.85rem 0.7rem calc(2.5rem + env(safe-area-inset-bottom));
-      }
-
-      .q-header {
-        padding: 1.1rem 1rem;
-      }
-
-      .q-title {
-        font-size: 1.12rem;
-      }
-
-      .refs-section {
-        padding: 1rem;
-      }
+    .nav-group-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      padding: 0.25rem 0.35rem;
+      margin-bottom: 0.3rem;
     }
 
     .nav-list {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.32rem;
     }
 
     .nav-item {
-      display: block;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
       width: 100%;
       text-align: left;
-      background: var(--surface-muted);
+      background: transparent;
       border: 1px solid transparent;
-      border-radius: 8px;
-      padding: 0.7rem 0.8rem;
+      border-radius: 7px;
+      padding: 0.52rem 0.6rem;
       cursor: pointer;
-      transition: all 0.15s ease;
+      transition: all 0.14s ease;
       font-family: inherit;
       color: var(--text);
     }
 
     .nav-item:hover {
-      border-color: var(--primary);
-      background: var(--primary-light);
+      background: var(--surface-muted);
     }
 
     .nav-item.active {
       background: var(--primary-light);
       border-color: var(--primary);
-      box-shadow: 0 0 0 1px var(--primary);
+    }
+
+    .nav-item.pending {
+      opacity: 0.65;
+    }
+
+    .nav-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-top: 0.42rem;
+      flex-shrink: 0;
+      background: #cbd5e1;
+    }
+
+    .nav-item.answered .nav-dot {
+      background: var(--primary);
+    }
+
+    .nav-item.studied .nav-dot {
+      background: #16a34a;
+    }
+
+    .nav-item-body {
+      min-width: 0;
+      flex: 1;
     }
 
     .nav-item-meta {
-      font-size: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4rem;
+      font-size: 0.69rem;
       font-weight: 700;
-      text-transform: uppercase;
       color: var(--primary);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.12rem;
+    }
+
+    .nav-item.pending .nav-item-meta {
+      color: var(--text-muted);
     }
 
     .nav-item-title {
-      font-size: 0.86rem;
-      font-weight: 600;
+      font-size: 0.82rem;
+      font-weight: 500;
       line-height: 1.35;
+      color: var(--text);
     }
 
-    .sidebar-note {
-      margin-top: 1rem;
-      padding-top: 0.85rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      line-height: 1.5;
+    .nav-item.active .nav-item-title {
+      font-weight: 700;
     }
 
-    /* Main Content — Exam Answer Sheet Style */
+    /* Main Question Sheet */
     .main {
-      display: flex;
-      flex-direction: column;
-      gap: 2.25rem;
+      min-width: 0;
     }
 
     .question-card {
@@ -382,22 +413,30 @@
     }
 
     .q-header {
-      padding: 1.4rem 1.75rem;
+      padding: 1.35rem 1.75rem;
       background: linear-gradient(to right, #f0f9ff, #ffffff);
       border-bottom: 1px solid var(--border);
+    }
+
+    .q-header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 0.55rem;
     }
 
     .q-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.45rem;
-      margin-bottom: 0.55rem;
+      gap: 0.4rem;
     }
 
     .tag {
       font-size: 0.72rem;
       font-weight: 700;
-      padding: 0.2rem 0.6rem;
+      padding: 0.2rem 0.58rem;
       border-radius: 5px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
@@ -414,52 +453,72 @@
     }
 
     .tag-marks {
-      background: #dcfce7;
+      background: var(--success-bg);
+      color: var(--success-text);
+    }
+
+    .study-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.32rem 0.72rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .study-btn:hover {
+      border-color: #16a34a;
       color: #166534;
     }
 
+    .study-btn.studied {
+      background: var(--success-bg);
+      border-color: #86efac;
+      color: var(--success-text);
+    }
+
     .q-title {
-      font-size: 1.3rem;
+      font-size: 1.28rem;
       font-weight: 700;
       color: var(--text);
       line-height: 1.38;
     }
 
     .q-body {
-      padding: 1.75rem 2rem;
+      padding: 1.65rem 2rem;
       display: flex;
       flex-direction: column;
-      gap: 1.6rem;
-    }
-
-    @media (max-width: 640px) {
-      .q-body {
-        padding: 1.25rem;
-      }
+      gap: 1.55rem;
     }
 
     /* Exam Section Typography */
     .exam-section h2 {
-      font-size: 1.12rem;
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--primary);
       border-bottom: 2px solid var(--primary-light);
       padding-bottom: 0.35rem;
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.8rem;
     }
 
     .exam-section h3 {
       font-size: 0.98rem;
       font-weight: 700;
       color: var(--text);
-      margin-top: 1.1rem;
-      margin-bottom: 0.45rem;
+      margin-top: 1.05rem;
+      margin-bottom: 0.42rem;
     }
 
     .exam-section p {
       margin-bottom: 0.75rem;
       color: #1e293b;
-      text-align: left;
     }
 
     .exam-section ul,
@@ -469,8 +528,21 @@
     }
 
     .exam-section li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.48rem;
       color: #1e293b;
+    }
+
+    .formula-box {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+      text-align: center;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: #0c4a6e;
+      letter-spacing: 0.01em;
     }
 
     .clinical-note {
@@ -482,11 +554,17 @@
       font-size: 0.93rem;
     }
 
-    .clinical-note strong {
+    .clinical-note-title {
+      font-weight: 700;
       color: #92400e;
+      margin-bottom: 0.25rem;
     }
 
-    /* Inline Exam Figures (placed directly inside their sections) */
+    .clinical-note ul {
+      margin-bottom: 0;
+    }
+
+    /* Inline Exam Figures */
     .inline-figure {
       position: relative;
       margin: 1rem auto;
@@ -534,10 +612,6 @@
       text-align: center;
     }
 
-    .figure-caption strong {
-      color: var(--text);
-    }
-
     /* Tables */
     .table-wrap {
       overflow-x: auto;
@@ -572,8 +646,477 @@
       border-bottom: none;
     }
 
-    /* Responsive stacked table on narrow phones */
+    /* Citation Badges */
+    .cite-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: super;
+      font-size: 0.7rem;
+      font-weight: 700;
+      line-height: 1;
+      min-width: 1.35rem;
+      height: 1.2rem;
+      padding: 0 0.28rem;
+      margin: 0 0.08rem;
+      border-radius: 4px;
+      border: 1px solid #bae6fd;
+      background: var(--primary-light);
+      color: var(--primary);
+      cursor: pointer;
+      transition: all 0.14s ease;
+      font-family: inherit;
+    }
+
+    @media (pointer: coarse) {
+      .cite-btn {
+        min-width: 1.6rem;
+        height: 1.4rem;
+        font-size: 0.74rem;
+        vertical-align: baseline;
+      }
+    }
+
+    .cite-btn:hover,
+    .cite-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    /* Pending state card */
+    .pending-box {
+      padding: 2.25rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+    }
+
+    .pending-box h3 {
+      color: var(--text);
+      margin-bottom: 0.45rem;
+      font-size: 1.05rem;
+    }
+
+    .pending-subitems {
+      text-align: left;
+      max-width: 540px;
+      margin: 1rem auto 0;
+      background: var(--surface-muted);
+      padding: 0.9rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.88rem;
+    }
+
+    /* References footer */
+    .refs-section {
+      background: var(--surface-muted);
+      border-top: 1px solid var(--border);
+      padding: 1.1rem 1.75rem;
+    }
+
+    .refs-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 0.55rem;
+    }
+
+    .refs-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.32rem;
+      font-size: 0.84rem;
+    }
+
+    .ref-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      padding: 0.3rem 0.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.14s ease;
+    }
+
+    .ref-row:hover {
+      background: #e2e8f0;
+    }
+
+    .ref-num {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 1.6rem;
+    }
+
+    /* Sticky Bottom Question Pager */
+    .bottom-pager {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 25;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid var(--border);
+      padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom));
+    }
+
+    .bottom-pager-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .pager-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.48rem 0.9rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .pager-btn:hover:not(:disabled) {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .pager-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .pager-status {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* Source Drawer / Mobile Bottom Sheet */
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.38);
+      z-index: 50;
+      display: none;
+      justify-content: flex-end;
+    }
+
+    .drawer-backdrop.open {
+      display: flex;
+    }
+
+    .drawer {
+      width: 100%;
+      max-width: 450px;
+      background: var(--surface);
+      height: 100%;
+      box-shadow: var(--shadow-lg);
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      overflow-y: auto;
+      animation: slideIn 0.18s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(100%); }
+      to { transform: translateX(0); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    .drawer-handle {
+      display: none;
+      width: 40px;
+      height: 4px;
+      border-radius: 999px;
+      background: #cbd5e1;
+      margin: -0.35rem auto 0.25rem;
+    }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.7rem;
+    }
+
+    .drawer-badge {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 0.22rem 0.6rem;
+      border-radius: 5px;
+    }
+
+    .drawer-close {
+      background: var(--surface-muted);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      width: 32px;
+      height: 32px;
+      font-size: 1.15rem;
+      cursor: pointer;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .drawer-field-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .drawer-book {
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .drawer-chapter {
+      font-size: 0.9rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .drawer-quote {
+      background: var(--surface-muted);
+      border-left: 3.5px solid var(--primary);
+      padding: 0.9rem 1rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.92rem;
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .drawer-nav {
+      margin-top: auto;
+      padding-top: 0.9rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .btn-secondary {
+      flex: 1;
+      padding: 0.55rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.86rem;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .btn-secondary:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    /* Fullscreen Figure Zoom Lightbox */
+    .lightbox-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.74);
+      z-index: 60;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .lightbox-backdrop.open {
+      display: flex;
+    }
+
+    .lightbox-card {
+      background: #ffffff;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 920px;
+      max-height: 92vh;
+      overflow: auto;
+      padding: 1rem;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .lightbox-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+    }
+
+    .lightbox-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .lightbox-stage {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .lightbox-stage svg {
+      width: 100%;
+      min-width: 520px;
+      height: auto;
+      display: block;
+      background: #fcfdff;
+      border-radius: 6px;
+    }
+
+    .lightbox-caption {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1023px) {
+      .menu-btn {
+        display: inline-flex;
+      }
+
+      .layout {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 840px;
+        padding: 1.1rem 1rem calc(5.5rem + env(safe-area-inset-bottom));
+      }
+
+      .sidebar-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.4);
+        z-index: 40;
+      }
+
+      .sidebar-backdrop.open {
+        display: block;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: min(330px, 88vw);
+        max-height: 100vh;
+        z-index: 45;
+        border-radius: 0;
+        border: none;
+        border-right: 1px solid var(--border);
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        transform: translateX(-100%);
+        transition: transform 0.2s ease;
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      .sidebar-close {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .drawer-backdrop {
+        align-items: flex-end;
+        justify-content: center;
+      }
+
+      .drawer {
+        max-width: 100%;
+        height: auto;
+        max-height: 82vh;
+        border-radius: 16px 16px 0 0;
+        padding: 1.15rem 1.2rem calc(1.25rem + env(safe-area-inset-bottom));
+        animation: slideUp 0.2s ease-out;
+      }
+
+      .drawer-handle {
+        display: block;
+      }
+    }
+
     @media (max-width: 640px) {
+      body {
+        font-size: 15px;
+      }
+
+      .topbar {
+        padding: calc(0.6rem + env(safe-area-inset-top)) 0.85rem 0.6rem;
+      }
+
+      .brand-sub {
+        display: none;
+      }
+
+      .brand-title {
+        display: none;
+      }
+
+      .progress-pill {
+        font-size: 0.74rem;
+        padding: 0.26rem 0.6rem;
+      }
+
+      .layout {
+        padding: 0.8rem 0.65rem calc(5.2rem + env(safe-area-inset-bottom));
+      }
+
+      .q-header {
+        padding: 1.05rem 1rem;
+      }
+
+      .q-body {
+        padding: 1.15rem 1rem;
+      }
+
+      .q-title {
+        font-size: 1.12rem;
+      }
+
+      .refs-section {
+        padding: 1rem;
+      }
+
       .table-wrap table,
       .table-wrap tbody,
       .table-wrap tr,
@@ -606,319 +1149,6 @@
         margin-bottom: 0.2rem;
       }
     }
-
-    /* Citation Badges */
-    .cite-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      vertical-align: super;
-      font-size: 0.7rem;
-      font-weight: 700;
-      line-height: 1;
-      min-width: 1.35rem;
-      height: 1.2rem;
-      padding: 0 0.3rem;
-      margin: 0 0.1rem;
-      border-radius: 4px;
-      border: 1px solid #bae6fd;
-      background: var(--primary-light);
-      color: var(--primary);
-      cursor: pointer;
-      transition: all 0.15s ease;
-      font-family: inherit;
-    }
-
-    @media (pointer: coarse) {
-      .cite-btn {
-        min-width: 1.6rem;
-        height: 1.4rem;
-        font-size: 0.74rem;
-        vertical-align: baseline;
-      }
-    }
-
-    .cite-btn:hover,
-    .cite-btn.active {
-      background: var(--primary);
-      color: #ffffff;
-      border-color: var(--primary);
-    }
-
-    /* References footer */
-    .refs-section {
-      background: var(--surface-muted);
-      border-top: 1px solid var(--border);
-      padding: 1.15rem 1.75rem;
-    }
-
-    .refs-title {
-      font-size: 0.76rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-muted);
-      margin-bottom: 0.55rem;
-    }
-
-    .refs-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.35rem;
-      font-size: 0.84rem;
-    }
-
-    .ref-row {
-      display: flex;
-      align-items: baseline;
-      gap: 0.5rem;
-      padding: 0.3rem 0.5rem;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.15s ease;
-    }
-
-    .ref-row:hover {
-      background: #e2e8f0;
-    }
-
-    .ref-num {
-      font-weight: 700;
-      color: var(--primary);
-      min-width: 1.6rem;
-    }
-
-    /* Source Drawer */
-    .drawer-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.38);
-      z-index: 50;
-      display: none;
-      justify-content: flex-end;
-    }
-
-    .drawer-backdrop.open {
-      display: flex;
-    }
-
-    .drawer {
-      width: 100%;
-      max-width: 450px;
-      background: var(--surface);
-      height: 100%;
-      box-shadow: var(--shadow-lg);
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      overflow-y: auto;
-      animation: slideIn 0.18s ease-out;
-    }
-
-    @keyframes slideIn {
-      from { transform: translateX(100%); }
-      to { transform: translateX(0); }
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(100%); }
-      to { transform: translateY(0); }
-    }
-
-    .drawer-handle {
-      display: none;
-      width: 40px;
-      height: 4px;
-      border-radius: 999px;
-      background: #cbd5e1;
-      margin: -0.35rem auto 0.25rem;
-    }
-
-    /* Bottom-sheet Source Inspector on Mobile (< 768px) */
-    @media (max-width: 767px) {
-      .drawer-backdrop {
-        align-items: flex-end;
-        justify-content: center;
-      }
-
-      .drawer {
-        max-width: 100%;
-        height: auto;
-        max-height: 82vh;
-        border-radius: 16px 16px 0 0;
-        padding: 1.15rem 1.2rem calc(1.25rem + env(safe-area-inset-bottom));
-        animation: slideUp 0.2s ease-out;
-      }
-
-      .drawer-handle {
-        display: block;
-      }
-    }
-
-    /* Fullscreen Figure Zoom Lightbox */
-    .lightbox-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.72);
-      z-index: 60;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-
-    .lightbox-backdrop.open {
-      display: flex;
-    }
-
-    .lightbox-card {
-      background: #ffffff;
-      border-radius: 12px;
-      width: 100%;
-      max-width: 920px;
-      max-height: 92vh;
-      overflow: auto;
-      padding: 1rem;
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .lightbox-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.6rem;
-    }
-
-    .lightbox-title {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--primary);
-    }
-
-    .lightbox-stage {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .lightbox-stage svg {
-      width: 100%;
-      min-width: 520px;
-      height: auto;
-      display: block;
-      background: #fcfdff;
-      border-radius: 6px;
-    }
-
-    .lightbox-caption {
-      font-size: 0.86rem;
-      color: var(--text-muted);
-      text-align: center;
-    }
-
-    .drawer-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.75rem;
-    }
-
-    .drawer-badge {
-      background: var(--primary);
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.82rem;
-      padding: 0.22rem 0.6rem;
-      border-radius: 5px;
-    }
-
-    .drawer-close {
-      background: var(--surface-muted);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      width: 32px;
-      height: 32px;
-      font-size: 1.15rem;
-      cursor: pointer;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .drawer-close:hover {
-      background: #e2e8f0;
-    }
-
-    .drawer-field-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-muted);
-      margin-bottom: 0.2rem;
-    }
-
-    .drawer-book {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1.35;
-    }
-
-    .drawer-chapter {
-      font-size: 0.92rem;
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    .drawer-quote {
-      background: var(--surface-muted);
-      border-left: 3.5px solid var(--primary);
-      padding: 0.9rem 1rem;
-      border-radius: 0 6px 6px 0;
-      font-size: 0.92rem;
-      color: var(--text);
-      line-height: 1.65;
-    }
-
-    .drawer-nav {
-      margin-top: auto;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      gap: 0.75rem;
-    }
-
-    .btn-secondary {
-      flex: 1;
-      padding: 0.55rem 0.75rem;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text);
-      font-weight: 600;
-      font-size: 0.86rem;
-      font-family: inherit;
-      cursor: pointer;
-    }
-
-    .btn-secondary:hover:not(:disabled) {
-      background: var(--surface-muted);
-    }
-
-    .btn-secondary:disabled {
-      opacity: 0.45;
-      cursor: not-allowed;
-    }
   </style>
 </head>
 <body>
@@ -932,15 +1162,13 @@
         <span class="brand-badge">GlaucoQ</span>
         <div class="brand-text">
           <div class="brand-title">AIOS-FAICO Glaucoma Prep</div>
-          <div class="brand-sub">10-Mark Exam-Ready Answers with Inline Figures &amp; Textbook Sources</div>
+          <div class="brand-sub">10-Mark Exam Answers · Inline Figures · Textbook Sources</div>
         </div>
       </div>
     </div>
     <div class="topbar-right">
       <button class="install-btn" id="installBtn" type="button">Install App</button>
-      <div class="progress-pill">
-        <span>2 / 87</span>
-      </div>
+      <div class="progress-pill" id="progressPill">Loading…</div>
     </div>
   </header>
 
@@ -948,600 +1176,42 @@
 
   <div class="layout">
     <aside class="sidebar" id="sidebar" aria-label="Question navigation">
-      <div class="sidebar-header">
-        <div class="sidebar-heading">Basic Level · Basic Science</div>
-        <button class="sidebar-close" id="sidebarClose" type="button" aria-label="Close questions menu">&times;</button>
+      <div class="sidebar-top">
+        <div class="sidebar-header">
+          <div class="sidebar-heading">Syllabus Navigator</div>
+          <button class="sidebar-close" id="sidebarClose" type="button" aria-label="Close questions menu">&times;</button>
+        </div>
+        <input class="search-input" id="searchInput" type="search" placeholder="Search questions or topics…" aria-label="Search questions" />
+        <div class="filter-row" id="levelFilters" role="tablist" aria-label="Filter by curriculum level"></div>
+        <div class="scope-row">
+          <label class="toggle-label">
+            <input type="checkbox" id="answeredOnlyToggle" checked />
+            <span>Answered only</span>
+          </label>
+          <span id="studiedCount">0 studied</span>
+        </div>
       </div>
-      <div class="nav-list">
-        <button class="nav-item active" data-target="q1" type="button">
-          <div class="nav-item-meta">Question 1 · 10 Marks</div>
-          <div class="nav-item-title">Anatomy of Anterior Chamber, Angle &amp; Ciliary Body</div>
-        </button>
-        <button class="nav-item" data-target="q2" type="button">
-          <div class="nav-item-meta">Question 2 · 10 Marks</div>
-          <div class="nav-item-title">Anatomy of RNFL, Optic Nerve Head &amp; Visual Pathway</div>
-        </button>
-      </div>
-      <div class="sidebar-note">
-        Click any numbered annotation like
-        <button class="cite-btn" data-cite="1" type="button">1</button>
-        to view the exact textbook chapter and grounded reference excerpt.
-      </div>
+      <div class="sidebar-scroll" id="sidebarList"></div>
     </aside>
 
-    <main class="main">
-      <!-- ==================== QUESTION 1 ==================== -->
-      <article class="question-card" id="q1">
-        <div class="q-header">
-          <div class="q-tags">
-            <span class="tag tag-level">Basic Level</span>
-            <span class="tag tag-cat">Basic Science · Q1</span>
-            <span class="tag tag-marks">10 Marks</span>
-          </div>
-          <h1 class="q-title">Describe with figures the anatomy of the anterior chamber, angle, and ciliary body.</h1>
-        </div>
-
-        <div class="q-body">
-          <!-- Section 1: Anterior Chamber -->
-          <section class="exam-section">
-            <h2>1. Anatomy of the Anterior Chamber (AC)</h2>
-            <p>
-              The anterior chamber is an aqueous humor-filled space located between the cornea anteriorly and the iris and pupillary portion of the crystalline lens posteriorly, while its periphery is bounded by the iridocorneal (anterior chamber) angle <button class="cite-btn" data-cite="1" type="button">1</button>.
-            </p>
-            <p>
-              In a normal adult eye, the central anterior chamber depth measures approximately <strong>3.0 mm</strong> (average range 3.0–3.15 mm; overall 2.5–4.4 mm), the horizontal diameter is <strong>11.3–12.4 mm</strong>, and the volume is approximately <strong>200–250 µL</strong> (commonly cited as ~220 µL), decreasing slightly with age by about 0.11 µL per year <button class="cite-btn" data-cite="1" type="button">1</button>.
-            </p>
-            <div class="clinical-note">
-              <strong>Clinical Correlation:</strong> The anterior chamber is physiologically deeper in <strong>myopia, aphakia, and pseudophakia (PCIOL)</strong>, whereas it is shallower in <strong>hypermetropia, intumescent cataract, and primary angle closure (PAC)</strong> <button class="cite-btn" data-cite="1" type="button">1</button>.
-            </div>
-          </section>
-
-          <!-- Section 2: Anterior Chamber Angle -->
-          <section class="exam-section">
-            <h2>2. Anatomy of the Anterior Chamber Angle</h2>
-            <p>
-              The anterior chamber angle lies at the junction of the peripheral cornea, sclera, ciliary body, and iris root, and plays a crucial role in conventional aqueous humor drainage <button class="cite-btn" data-cite="2" type="button">2</button>. Because of total internal reflection at the tear–air interface, the angle cannot be viewed directly and must be visualized clinically by <strong>gonioscopy</strong> <button class="cite-btn" data-cite="2" type="button">2</button>.
-            </p>
-            <p>
-              From anterior to posterior, the four major gonioscopic landmarks are remembered by the mnemonic <strong>S–T–S–C</strong>: <strong>Schwalbe's line</strong>, <strong>Trabecular meshwork</strong>, <strong>Scleral spur</strong>, and <strong>Ciliary body band</strong> (followed by the iris root) <button class="cite-btn" data-cite="2" type="button">2</button>.
-            </p>
-
-            <!-- Inline Figure 1: AC Angle & Aqueous Drainage -->
-            <figure class="inline-figure">
-              <svg viewBox="0 0 540 275" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-section of the anterior chamber angle and aqueous drainage pathway">
-                <rect width="540" height="275" fill="#fcfdff"/>
-                <!-- Cornea -->
-                <path d="M 35 55 Q 155 30 250 75 L 238 106 Q 150 64 35 88 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
-                <!-- Sclera -->
-                <path d="M 250 75 L 430 112 L 430 165 L 330 148 Q 275 135 238 106 Z" fill="#f1f5f9" stroke="#334155" stroke-width="1.8"/>
-                <!-- Schlemm's Canal -->
-                <ellipse cx="294" cy="111" rx="16" ry="7" fill="#bae6fd" stroke="#0284c7" stroke-width="1.8"/>
-                <!-- Collector Channel & Aqueous Vein to Episcleral Plexus -->
-                <path d="M 306 106 Q 340 85 375 78" fill="none" stroke="#0284c7" stroke-width="2"/>
-                <path d="M 375 78 Q 415 72 448 80" fill="none" stroke="#1d4ed8" stroke-width="2.2"/>
-                <circle cx="452" cy="81" r="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
-                <!-- Trabecular Meshwork Triangle -->
-                <polygon points="238,106 286,120 314,142 266,133" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
-                <!-- Scleral Spur -->
-                <polygon points="314,142 332,142 323,154" fill="#64748b" stroke="#334155" stroke-width="1.3"/>
-                <!-- Ciliary Body -->
-                <path d="M 323 154 L 425 168 L 425 220 L 302 184 Z" fill="#ffe4e6" stroke="#be123c" stroke-width="1.8"/>
-                <!-- Iris -->
-                <path d="M 304 172 L 115 162 L 115 176 L 302 184 Z" fill="#fed7aa" stroke="#c2410c" stroke-width="1.8"/>
-                <!-- Lens -->
-                <path d="M 35 224 Q 130 185 220 224 Q 130 262 35 224 Z" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.6"/>
-                <!-- Aqueous Flow -->
-                <path d="M 294 202 Q 215 196 100 182 Q 86 168 108 148 Q 175 128 262 122" fill="none" stroke="#0f766e" stroke-width="2" stroke-dasharray="4,2"/>
-                <polygon points="262,122 254,118 255,127" fill="#0f766e"/>
-
-                <!-- Labels -->
-                <text x="58" y="62" font-size="11" font-weight="700" fill="#0369a1">Cornea</text>
-                <text x="368" y="138" font-size="11" font-weight="700" fill="#334155">Sclera</text>
-                <text x="65" y="124" font-size="11" font-weight="700" fill="#0f766e">Anterior Chamber (~3 mm)</text>
-                <text x="155" y="173" font-size="10.5" font-weight="700" fill="#9a3412">Iris</text>
-                <text x="115" y="228" font-size="10.5" font-weight="700" fill="#854d0e">Lens</text>
-                <text x="335" y="198" font-size="10.5" font-weight="700" fill="#be123c">Ciliary Body</text>
-
-                <!-- Leader Lines -->
-                <line x1="238" y1="106" x2="205" y2="34" stroke="#334155" stroke-width="1"/>
-                <text x="135" y="28" font-size="10.5" font-weight="700" fill="#0f172a">1. Schwalbe's Line</text>
-
-                <line x1="272" y1="122" x2="215" y2="100" stroke="#b45309" stroke-width="1"/>
-                <text x="92" y="102" font-size="10.5" font-weight="700" fill="#b45309">2. Trabecular Meshwork</text>
-
-                <line x1="294" y1="104" x2="294" y2="48" stroke="#0284c7" stroke-width="1"/>
-                <text x="255" y="42" font-size="10.5" font-weight="700" fill="#0284c7">Schlemm's Canal</text>
-
-                <text x="338" y="65" font-size="9.5" font-weight="700" fill="#0284c7">Collector Channel</text>
-                <text x="380" y="52" font-size="9.5" font-weight="700" fill="#1d4ed8">Aqueous Vein → Episcleral Plexus</text>
-                <text x="415" y="102" font-size="9" font-weight="600" fill="#475569">→ Cavernous Sinus</text>
-
-                <line x1="323" y1="146" x2="365" y2="236" stroke="#334155" stroke-width="1"/>
-                <text x="342" y="250" font-size="10.5" font-weight="700" fill="#334155">3. Scleral Spur</text>
-
-                <line x1="308" y1="168" x2="255" y2="236" stroke="#be123c" stroke-width="1"/>
-                <text x="195" y="250" font-size="10.5" font-weight="700" fill="#be123c">4. Ciliary Body Band</text>
-              </svg>
-              <figcaption class="figure-caption">
-                <strong>Figure 1:</strong> Cross-sectional anatomy of the anterior chamber angle showing the four gonioscopic landmarks (S–T–S–C) and conventional aqueous outflow into the episcleral venous plexus.
-              </figcaption>
-            </figure>
-
-            <h3>A. Schwalbe's Line</h3>
-            <p>
-              Schwalbe's line is a fine, glistening white ridge representing the peripheral termination of Descemet's membrane and the transition zone between the corneal endothelium and the trabecular meshwork endothelium <button class="cite-btn" data-cite="2" type="button">2</button>. Anatomically, it forms the anterior border of both the trabecular meshwork and the internal scleral sulcus, and may be non-pigmented or lightly pigmented <button class="cite-btn" data-cite="2" type="button">2</button>.
-            </p>
-            <div class="clinical-note">
-              <strong>Gonioscopic &amp; Clinical Correlations:</strong>
-              <ul>
-                <li><strong>Corneal Wedge:</strong> On slit-lamp gonioscopy, Schwalbe's line is precisely localized at the apex where the anterior and posterior corneal light beams converge <button class="cite-btn" data-cite="2" type="button">2</button>.</li>
-                <li><strong>Sampaolesi Line:</strong> A wavy line of pigment deposited on or anterior to Schwalbe's line, classically seen in <strong>pseudoexfoliation syndrome (PXF)</strong> and <strong>pigment dispersion syndrome (PDS)</strong> <button class="cite-btn" data-cite="2" type="button">2</button>.</li>
-                <li><strong>Posterior Embryotoxon:</strong> A prominent, anteriorly displaced Schwalbe's line visible on slit-lamp examination; it occurs in up to 15% of normal eyes and is strongly associated with <strong>Axenfeld–Rieger syndrome</strong> and <strong>Alagille syndrome</strong> <button class="cite-btn" data-cite="2" type="button">2</button>.</li>
-              </ul>
-            </div>
-
-            <h3>B. Trabecular Meshwork (TM) &amp; Schlemm's Canal</h3>
-            <p>
-              The trabecular meshwork is a porous, sieve-like, contractile connective tissue structure lined by trabeculocytes that bridges the internal scleral sulcus and converts it into a circular channel, <strong>Schlemm's canal</strong> <button class="cite-btn" data-cite="3" type="button">3</button>. On cross-section, the TM is triangular in shape with its <strong>apex at Schwalbe's line</strong> and its <strong>base at the scleral spur</strong> and anterior ciliary body <button class="cite-btn" data-cite="3" type="button">3</button>.
-            </p>
-            <p>
-              Gonioscopically, the TM is divided into two zones: the <strong>anterior non-pigmented trabecular meshwork (ATM)</strong>, which is largely non-functional, and the <strong>posterior pigmented trabecular meshwork (PTM)</strong>, which overlies Schlemm's canal and represents the primary site of aqueous humor filtration <button class="cite-btn" data-cite="3" type="button">3</button>. Histologically, from inside (anterior chamber) to outside (Schlemm's canal), it consists of three distinct layers <button class="cite-btn" data-cite="3" type="button">3</button>:
-            </p>
-
-            <!-- Inline Figure 2: 3 Layers of Trabecular Meshwork -->
-            <figure class="inline-figure">
-              <svg viewBox="0 0 540 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three histological layers of the trabecular meshwork and Schlemm's canal">
-                <rect width="540" height="245" fill="#fcfdff"/>
-                <!-- Sclera outer wall -->
-                <path d="M 190 25 L 430 25 L 430 215 L 265 215 Q 290 130 190 25 Z" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
-                <text x="365" y="130" font-size="11" font-weight="700" fill="#475569">Sclera</text>
-
-                <!-- Schlemm's Canal (Blue) -->
-                <path d="M 275 55 Q 308 115 292 175 L 270 175 Q 282 115 256 62 Z" fill="#bae6fd" stroke="#0284c7" stroke-width="1.8"/>
-                <!-- Collector Channel -->
-                <path d="M 298 110 L 360 95" fill="none" stroke="#0284c7" stroke-width="2.4"/>
-                <text x="318" y="84" font-size="10" font-weight="700" fill="#0284c7">Collector Channel</text>
-
-                <!-- 3. Juxtacanalicular TM (Green) -->
-                <path d="M 256 62 Q 282 115 270 175 L 252 178 Q 262 118 240 68 Z" fill="#bbf7d0" stroke="#15803d" stroke-width="1.6"/>
-                <!-- 2. Corneoscleral TM (Orange) -->
-                <path d="M 240 68 Q 262 118 252 178 L 214 184 Q 230 122 214 76 Z" fill="#fed7aa" stroke="#c2410c" stroke-width="1.6"/>
-                <!-- 1. Uveal TM (Red) -->
-                <path d="M 214 76 Q 230 122 214 184 L 185 190 Q 204 126 190 82 Z" fill="#fecdd3" stroke="#be123c" stroke-width="1.6"/>
-
-                <!-- Pore dots for visual intuition -->
-                <circle cx="202" cy="108" r="5" fill="#fff" stroke="#be123c" stroke-width="1"/>
-                <circle cx="205" cy="142" r="5" fill="#fff" stroke="#be123c" stroke-width="1"/>
-                <circle cx="200" cy="170" r="4.5" fill="#fff" stroke="#be123c" stroke-width="1"/>
-
-                <ellipse cx="235" cy="105" rx="4" ry="2.2" fill="#fff" stroke="#c2410c" stroke-width="1"/>
-                <ellipse cx="238" cy="135" rx="4" ry="2.2" fill="#fff" stroke="#c2410c" stroke-width="1"/>
-                <ellipse cx="234" cy="162" rx="3.8" ry="2" fill="#fff" stroke="#c2410c" stroke-width="1"/>
-
-                <!-- Scleral Spur at bottom -->
-                <polygon points="248,184 295,184 268,205" fill="#94a3b8" stroke="#334155" stroke-width="1.3"/>
-                <text x="298" y="200" font-size="10.5" font-weight="700" fill="#334155">Scleral Spur</text>
-
-                <!-- Anterior Chamber Label & Flow Arrow -->
-                <text x="25" y="130" font-size="11" font-weight="700" fill="#0369a1">Anterior Chamber</text>
-                <line x1="128" y1="126" x2="180" y2="126" stroke="#0f766e" stroke-width="2.2"/>
-                <polygon points="180,126 171,121 171,131" fill="#0f766e"/>
-                <text x="128" y="116" font-size="9.5" font-weight="700" fill="#0f766e">Aqueous</text>
-
-                <!-- Left & Top Labels -->
-                <line x1="198" y1="88" x2="145" y2="52" stroke="#be123c" stroke-width="1.1"/>
-                <text x="20" y="48" font-size="10.5" font-weight="700" fill="#be123c">1. Uveal TM (25–75 µm)</text>
-
-                <line x1="226" y1="74" x2="195" y2="30" stroke="#c2410c" stroke-width="1.1"/>
-                <text x="20" y="25" font-size="10.5" font-weight="700" fill="#c2410c">2. Corneoscleral TM (5–50 µm)</text>
-
-                <line x1="250" y1="65" x2="295" y2="38" stroke="#15803d" stroke-width="1.1"/>
-                <text x="300" y="42" font-size="10.5" font-weight="700" fill="#15803d">3. Juxtacanalicular TM (2–20 µm)</text>
-
-                <line x1="280" y1="70" x2="325" y2="60" stroke="#0284c7" stroke-width="1.1"/>
-                <text x="330" y="63" font-size="10.5" font-weight="700" fill="#0284c7">Schlemm's Canal</text>
-
-                <text x="25" y="228" font-size="10" font-weight="700" fill="#15803d">Note: Outflow resistance increases from inside → outside (Maximal at JCT)</text>
-              </svg>
-              <figcaption class="figure-caption">
-                <strong>Figure 2:</strong> Magnified architecture of the three trabecular meshwork layers (Uveal, Corneoscleral, and Juxtacanalicular) draining into Schlemm's canal and collector channels.
-              </figcaption>
-            </figure>
-
-            <ol>
-              <li>
-                <strong>Uveal Trabecular Meshwork:</strong> This is the innermost layer facing the anterior chamber, extending from the iris root and ciliary body to Schwalbe's line <button class="cite-btn" data-cite="3" type="button">3</button>. It is 2–3 layers thick and composed of cord-like trabecular beams with large, irregular openings measuring <strong>25–75 µm</strong>, therefore offering minimal resistance to aqueous outflow <button class="cite-btn" data-cite="3" type="button">3</button>.
-              </li>
-              <li>
-                <strong>Corneoscleral Trabecular Meshwork:</strong> This forms the largest middle portion, extending from the scleral spur to the anterior wall of the scleral sulcus <button class="cite-btn" data-cite="3" type="button">3</button>. It consists of multiple flattened, perforated sheets of trabeculae whose elliptical openings become progressively smaller toward Schlemm's canal, measuring <strong>5–50 µm</strong> <button class="cite-btn" data-cite="3" type="button">3</button>.
-              </li>
-              <li>
-                <strong>Juxtacanalicular (Cribriform) Tissue (JCT):</strong> This outermost layer is 2–5 cell layers thick and lies directly adjacent to the inner wall endothelium of Schlemm's canal, with the narrowest openings measuring <strong>2–20 µm</strong> <button class="cite-btn" data-cite="3" type="button">3</button>. Together with the inner wall of Schlemm's canal, it forms the <strong>primary site of aqueous outflow resistance</strong> owing to its narrow, tortuous pathway and dense extracellular matrix <button class="cite-btn" data-cite="3" type="button">3</button>.
-              </li>
-            </ol>
-
-            <p>
-              <strong>Schlemm's Canal &amp; Collector Channels:</strong> Schlemm's canal is a 360° endothelial-lined channel within the scleral sulcus whose inner wall contains giant vacuoles and pores that transmit aqueous into the lumen <button class="cite-btn" data-cite="3" type="button">3</button>. From Schlemm's canal, aqueous drains through 25–35 collector channels into the intrascleral venous plexus, aqueous veins, episcleral veins, and eventually into the cavernous sinus <button class="cite-btn" data-cite="3" type="button">3</button>.
-            </p>
-            <div class="clinical-note">
-              <strong>Age-Related Changes in the TM:</strong> Aging leads to (i) increased pigment accumulation, (ii) loss of trabecular endothelial cells, (iii) thickening of basement membranes, and (iv) accumulation of cellular debris and glycosaminoglycans (GAGs) in the extracellular space—all of which increase outflow resistance and predispose to primary open-angle glaucoma <button class="cite-btn" data-cite="3" type="button">3</button>.
-            </div>
-
-            <h3>C. Scleral Spur</h3>
-            <p>
-              The scleral spur is the most anterior inward projection of the sclera, composed of a circumferential ridge of collagen fibers (the <em>scleral roll</em>) that forms the posterior border of the internal scleral sulcus <button class="cite-btn" data-cite="2" type="button">2</button>. On gonioscopy, it appears as a sharp, prominent white line immediately posterior to the trabecular meshwork <button class="cite-btn" data-cite="2" type="button">2</button>. Functionally, it serves as the anterior site of attachment for the <strong>longitudinal fibers of the ciliary muscle (Brücke's muscle)</strong>; contraction of this muscle pulls the scleral spur posteriorly, opening the intertrabecular spaces and increasing aqueous outflow <button class="cite-btn" data-cite="2" type="button">2</button>.
-            </p>
-
-            <h3>D. Ciliary Body Band (CBB)</h3>
-            <p>
-              The ciliary body band is the most posterior landmark visible in the angle recess on gonioscopy, appearing as a dull grey to dark brown band representing the anterior face of the longitudinal ciliary muscle lying between the scleral spur and the iris root <button class="cite-btn" data-cite="2" type="button">2</button>. Its visible width depends on the level of iris insertion—it is typically <strong>wider in myopes and aphakic eyes</strong> and <strong>narrower in hypermetropic eyes</strong> <button class="cite-btn" data-cite="2" type="button">2</button>. It also serves as the entry site for the <strong>uveoscleral (unconventional) outflow pathway</strong> <button class="cite-btn" data-cite="2" type="button">2</button>.
-            </p>
-            <div class="clinical-note">
-              <strong>Blunt Trauma Correlations:</strong>
-              <ul>
-                <li><strong>Angle Recession:</strong> A tear into the anterior face of the ciliary body between the longitudinal and circular muscle fibers widens the CBB and causes <strong>increased IOP</strong> (angle recession glaucoma) <button class="cite-btn" data-cite="2" type="button">2</button>.</li>
-                <li><strong>Cyclodialysis Cleft:</strong> Complete separation of the ciliary body from the scleral spur creates a direct communication with the suprachoroidal space, causing profound <strong>decreased IOP (hypotony)</strong> <button class="cite-btn" data-cite="2" type="button">2</button>.</li>
-              </ul>
-            </div>
-          </section>
-
-          <!-- Section 3: Ciliary Body -->
-          <section class="exam-section">
-            <h2>3. Anatomy of the Ciliary Body</h2>
-            <p>
-              The ciliary body is the middle portion of the uveal tract that forms a complete 6 mm ring extending anteriorly from the scleral spur and iris root to the ora serrata posteriorly <button class="cite-btn" data-cite="4" type="button">4</button>. In meridional cross-section, it is shaped like a right-angled triangle whose base faces anteriorly toward the iris and whose apex tapers posteriorly to join the choroid <button class="cite-btn" data-cite="4" type="button">4</button>. Its total anteroposterior length measures <strong>4.6–5.2 mm nasally</strong> and <strong>5.6–6.3 mm temporally</strong> <button class="cite-btn" data-cite="4" type="button">4</button>.
-            </p>
-
-            <!-- Inline Figure 3: Ciliary Body Anatomy -->
-            <figure class="inline-figure">
-              <svg viewBox="0 0 540 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-section of the ciliary body showing pars plicata, pars plana, muscle layers, and double epithelium">
-                <rect width="540" height="260" fill="#fcfdff"/>
-                <!-- Sclera -->
-                <rect x="30" y="25" width="480" height="28" fill="#f1f5f9" stroke="#334155" stroke-width="1.6"/>
-                <text x="248" y="43" font-size="11" font-weight="700" fill="#334155">Sclera</text>
-
-                <!-- Ciliary Body Triangle -->
-                <polygon points="60,53 475,53 475,82 170,136 60,112" fill="#ffe4e6" stroke="#be123c" stroke-width="1.8"/>
-                <!-- Ciliary Processes -->
-                <path d="M 70 115 Q 85 130 100 119 Q 115 134 132 124 Q 148 140 168 134" fill="none" stroke="#be123c" stroke-width="2"/>
-
-                <!-- Muscle Layers -->
-                <line x1="75" y1="66" x2="415" y2="66" stroke="#e11d48" stroke-width="1.5" stroke-dasharray="6,3"/>
-                <text x="195" y="79" font-size="10.5" font-weight="600" fill="#9f1239">Longitudinal Muscle (Brücke's)</text>
-                <circle cx="96" cy="96" r="10" fill="#fda4af" stroke="#be123c" stroke-width="1.2"/>
-                <text x="114" y="100" font-size="10" font-weight="600" fill="#9f1239">Circular (Müller's) &amp; Radial Fibers</text>
-
-                <!-- Ora Serrata -->
-                <line x1="475" y1="53" x2="475" y2="140" stroke="#334155" stroke-width="1.5" stroke-dasharray="3,2"/>
-                <text x="435" y="128" font-size="10.5" font-weight="700" fill="#334155">Ora Serrata</text>
-
-                <!-- Brackets -->
-                <line x1="60" y1="158" x2="210" y2="158" stroke="#0369a1" stroke-width="2"/>
-                <line x1="60" y1="151" x2="60" y2="165" stroke="#0369a1" stroke-width="2"/>
-                <line x1="210" y1="151" x2="210" y2="165" stroke="#0369a1" stroke-width="2"/>
-                <text x="64" y="175" font-size="10.5" font-weight="700" fill="#0369a1">Pars Plicata (1.5–2.0 mm)</text>
-                <text x="68" y="189" font-size="9.5" fill="#475569">70–80 ciliary processes</text>
-
-                <line x1="216" y1="158" x2="475" y2="158" stroke="#0f766e" stroke-width="2"/>
-                <line x1="216" y1="151" x2="216" y2="165" stroke="#0f766e" stroke-width="2"/>
-                <line x1="475" y1="151" x2="475" y2="165" stroke="#0f766e" stroke-width="2"/>
-                <text x="275" y="175" font-size="10.5" font-weight="700" fill="#0f766e">Pars Plana (3.5–4.5 mm)</text>
-                <text x="275" y="189" font-size="9.5" fill="#475569">Safe surgical entry (3–4 mm from limbus)</text>
-
-                <!-- Epithelium Inset -->
-                <rect x="24" y="204" width="492" height="46" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
-                <rect x="34" y="213" width="84" height="13" fill="#94a3b8" stroke="#475569" stroke-width="1"/>
-                <rect x="34" y="226" width="84" height="15" fill="#bae6fd" stroke="#0284c7" stroke-width="1"/>
-                <text x="128" y="223" font-size="9.5" font-weight="700" fill="#334155">Outer Pigmented Epithelium (faces vascular stroma)</text>
-                <text x="128" y="238" font-size="9.5" font-weight="700" fill="#0369a1">Inner Non-Pigmented Epithelium (tight junctions = Blood-Aqueous Barrier)</text>
-              </svg>
-              <figcaption class="figure-caption">
-                <strong>Figure 3:</strong> Gross subdivisions of the ciliary body (Pars Plicata vs. Pars Plana), ciliary muscle arrangement, and the double-layered ciliary epithelium.
-              </figcaption>
-            </figure>
-
-            <h3>A. Gross Subdivisions</h3>
-            <ul>
-              <li>
-                <strong>Pars Plicata (Corona Ciliaris):</strong> The anterior, ridged portion measuring <strong>1.5–2.0 mm</strong> in length (~25% of the ciliary body). It contains <strong>70–80 radial major ciliary processes</strong> interspersed with minor processes, which provide a large surface area for aqueous humor secretion and attachment of the lens zonules <button class="cite-btn" data-cite="4" type="button">4</button>.
-              </li>
-              <li>
-                <strong>Pars Plana (Orbicularis Ciliaris):</strong> The posterior, smooth, heavily pigmented zone measuring <strong>3.5–4.5 mm</strong> in length (~75% of the ciliary body), extending to the ora serrata <button class="cite-btn" data-cite="4" type="button">4</button>. Because it is relatively avascular, it serves as the standard safe entry site for intravitreal injections and pars plana vitrectomy (3.0–4.0 mm posterior to the surgical limbus) <button class="cite-btn" data-cite="4" type="button">4</button>.
-              </li>
-            </ul>
-
-            <h3>B. Histological Layers</h3>
-            <p>
-              From inside (vitreous/posterior chamber) to outside (sclera), the ciliary body is organized into three layers <button class="cite-btn" data-cite="4" type="button">4</button>:
-            </p>
-            <ol>
-              <li>
-                <strong>Ciliary Epithelium:</strong> A double layer of neuroectodermal cells aligned apex-to-apex. The outer <em>pigmented ciliary epithelium (PCE)</em> is continuous with the retinal pigment epithelium, while the inner <em>non-pigmented ciliary epithelium (NPE)</em> faces the posterior chamber and is continuous with the neurosensory retina <button class="cite-btn" data-cite="4" type="button">4</button>. Tight junctions (<em>zonulae occludentes</em>) between adjacent NPE cells constitute the <strong>blood–aqueous barrier</strong> and actively secrete aqueous humor via Na⁺/K⁺-ATPase and carbonic anhydrase <button class="cite-btn" data-cite="4" type="button">4</button>.
-              </li>
-              <li>
-                <strong>Ciliary Stroma:</strong> Loose connective tissue containing a rich network of <strong>fenestrated capillaries</strong> supplied by the major arterial circle of the iris (formed by the anterior ciliary arteries and long posterior ciliary arteries) <button class="cite-btn" data-cite="4" type="button">4</button>.
-              </li>
-              <li>
-                <strong>Ciliary Muscle:</strong> A smooth muscle innervated by parasympathetic fibers of CN III (Edinger–Westphal nucleus) comprising three orientations: outer <strong>longitudinal fibers (Brücke's muscle)</strong> inserting into the scleral spur, intermediate <strong>radial (oblique) fibers</strong>, and inner <strong>circular fibers (Müller's muscle)</strong> responsible for accommodation <button class="cite-btn" data-cite="4" type="button">4</button>.
-              </li>
-            </ol>
-          </section>
-        </div>
-
-        <div class="refs-section">
-          <div class="refs-title">Grounded Textbook References (Click to inspect)</div>
-          <ul class="refs-list">
-            <li class="ref-row" data-cite="1"><span class="ref-num">[1]</span><span>AAO BCSC Section 2 &amp; Section 10 — Anterior Chamber Dimensions, Volume &amp; Depth Variations</span></li>
-            <li class="ref-row" data-cite="2"><span class="ref-num">[2]</span><span>Shields' Textbook of Glaucoma (7th Ed.) — Gonioscopic Landmarks, Clinical Signs &amp; Trauma</span></li>
-            <li class="ref-row" data-cite="3"><span class="ref-num">[3]</span><span>Shields' Textbook of Glaucoma (7th Ed.) — Trabecular Meshwork Layers, Schlemm's Canal &amp; Aging</span></li>
-            <li class="ref-row" data-cite="4"><span class="ref-num">[4]</span><span>AAO BCSC Section 2 — Ciliary Body Subdivisions, Muscle Layers &amp; Blood-Aqueous Barrier</span></li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- ==================== QUESTION 2 ==================== -->
-      <article class="question-card" id="q2">
-        <div class="q-header">
-          <div class="q-tags">
-            <span class="tag tag-level">Basic Level</span>
-            <span class="tag tag-cat">Basic Science · Q2</span>
-            <span class="tag tag-marks">10 Marks</span>
-          </div>
-          <h1 class="q-title">Describe the anatomy of the retinal nerve fiber layer, optic nerve head, with figures and visual pathway from the retina to the visual cortex.</h1>
-        </div>
-
-        <div class="q-body">
-          <!-- Section 1: RNFL -->
-          <section class="exam-section">
-            <h2>1. Anatomy of the Retinal Nerve Fiber Layer (RNFL)</h2>
-            <p>
-              The retinal nerve fiber layer is the innermost neural layer of the retina, lying directly beneath the internal limiting membrane and composed of approximately <strong>1.2 million</strong> (range 1.2–1.5 million) unmyelinated axons of retinal ganglion cells (RGCs) converging toward the optic nerve head <button class="cite-btn" data-cite="5" type="button">5</button>. These axons are organized into bundles separated by Müller cell processes and are thickest at the superior and inferior poles of the optic disc <button class="cite-btn" data-cite="5" type="button">5</button>.
-            </p>
-            <p>
-              Topographically, the RNFL axons follow three distinct patterns across the fundus <button class="cite-btn" data-cite="5" type="button">5</button>:
-            </p>
-            <ul>
-              <li>
-                <strong>Papillomacular Bundle:</strong> Fibers originating from the fovea and macula travel directly horizontally into the temporal aspect of the optic disc.
-              </li>
-              <li>
-                <strong>Superior and Inferior Arcuate Bundles:</strong> Fibers arising temporal to the macula arch around the papillomacular bundle to enter the superior and inferior poles of the disc without crossing the temporal <strong>horizontal raphe</strong> <button class="cite-btn" data-cite="5" type="button">5</button>.
-              </li>
-              <li>
-                <strong>Nasal Radiating Fibers:</strong> Fibers arising from the nasal retina take a direct, radial course into the nasal margin of the optic disc.
-              </li>
-            </ul>
-
-            <!-- Inline Figure 1: RNFL -->
-            <figure class="inline-figure">
-              <svg viewBox="0 0 540 255" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Retinal Nerve Fiber Layer topography showing arcuate bundles, papillomacular bundle, and horizontal raphe">
-                <rect width="540" height="255" fill="#fcfdff"/>
-                <!-- Fundus Circle -->
-                <circle cx="275" cy="128" r="108" fill="#fffbeb" stroke="#d97706" stroke-width="1.6"/>
-                <!-- Optic Disc -->
-                <ellipse cx="344" cy="128" rx="14" ry="18" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
-                <text x="331" y="160" font-size="10" font-weight="700" fill="#92400e">ONH</text>
-
-                <!-- Macula -->
-                <circle cx="238" cy="128" r="17" fill="#fed7aa" fill-opacity="0.45" stroke="#c2410c" stroke-width="1.2" stroke-dasharray="3,2"/>
-                <circle cx="238" cy="128" r="3.5" fill="#9a3412"/>
-                <text x="220" y="158" font-size="10" font-weight="700" fill="#9a3412">Macula</text>
-
-                <!-- Horizontal Raphe -->
-                <line x1="168" y1="128" x2="221" y2="128" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,3"/>
-                <text x="16" y="132" font-size="10.5" font-weight="700" fill="#dc2626">Horizontal Raphe</text>
-                <line x1="112" y1="128" x2="164" y2="128" stroke="#dc2626" stroke-width="1"/>
-
-                <!-- Papillomacular Bundle -->
-                <path d="M 255 123 Q 292 120 330 124" fill="none" stroke="#0369a1" stroke-width="1.8"/>
-                <path d="M 255 133 Q 292 136 330 132" fill="none" stroke="#0369a1" stroke-width="1.8"/>
-                <line x1="292" y1="135" x2="292" y2="162" stroke="#0369a1" stroke-width="1"/>
-                <rect x="234" y="162" width="118" height="16" rx="3" fill="#fffbeb" fill-opacity="0.95"/>
-                <text x="238" y="174" font-size="10" font-weight="700" fill="#0369a1">Papillomacular Bundle</text>
-
-                <!-- Arcuate Fibers -->
-                <path d="M 180 124 Q 204 42 337 112" fill="none" stroke="#0f766e" stroke-width="1.8"/>
-                <path d="M 196 124 Q 220 62 333 116" fill="none" stroke="#0f766e" stroke-width="1.5"/>
-                <path d="M 180 132 Q 204 214 337 144" fill="none" stroke="#0f766e" stroke-width="1.8"/>
-                <path d="M 196 132 Q 220 194 333 140" fill="none" stroke="#0f766e" stroke-width="1.5"/>
-                <text x="210" y="34" font-size="10.5" font-weight="700" fill="#0f766e">Superior Arcuate Bundle</text>
-                <text x="210" y="249" font-size="10.5" font-weight="700" fill="#0f766e">Inferior Arcuate Bundle</text>
-
-                <!-- Nasal Radiating Fibers -->
-                <line x1="358" y1="128" x2="382" y2="128" stroke="#7c3aed" stroke-width="1.8"/>
-                <line x1="355" y1="116" x2="378" y2="94" stroke="#7c3aed" stroke-width="1.8"/>
-                <line x1="355" y1="140" x2="378" y2="162" stroke="#7c3aed" stroke-width="1.8"/>
-                <text x="394" y="132" font-size="10.5" font-weight="700" fill="#7c3aed">Nasal Radiating Fibers</text>
-              </svg>
-              <figcaption class="figure-caption">
-                <strong>Figure 1:</strong> Retinal nerve fiber layer architecture (Right Eye). Temporal fibers respect the horizontal raphe and arch around the macula to enter the superior and inferior poles.
-              </figcaption>
-            </figure>
-
-            <div class="clinical-note">
-              <strong>Glaucoma Correlation:</strong> Because arcuate fibers do not cross the horizontal raphe and enter the most vulnerable superotemporal and inferotemporal lamina cribrosa pores, early glaucomatous damage produces <strong>paracentral scotomas, arcuate (Bjerrum) scotomas, and nasal steps</strong> that strictly respect the horizontal meridian <button class="cite-btn" data-cite="5" type="button">5</button>.
-            </div>
-          </section>
-
-          <!-- Section 2: Optic Nerve Head -->
-          <section class="exam-section">
-            <h2>2. Anatomy of the Optic Nerve Head (ONH)</h2>
-            <p>
-              The optic nerve head (optic disc) is the intraocular site where RGC axons converge and turn 90° posteriorly to exit the globe through the scleral canal <button class="cite-btn" data-cite="5" type="button">5</button>. It measures approximately <strong>1.5 mm in diameter</strong> (slightly oval vertically) and displays a central pale depression—the physiologic optic cup—surrounded by a pink neuroretinal rim <button class="cite-btn" data-cite="5" type="button">5</button>. In healthy eyes, neuroretinal rim width typically follows the <strong>ISNT rule</strong> (Inferior ≥ Superior ≥ Nasal ≥ Temporal), although normal anatomic variants exist <button class="cite-btn" data-cite="8" type="button">8</button>. The collagenous <strong>Border Tissue of Elschnig</strong> separates the choroid and Bruch's membrane from the optic nerve neural tissue at the disc margin <button class="cite-btn" data-cite="8" type="button">8</button>.
-            </p>
-            <p>
-              Histologically, the optic nerve head is divided into <strong>four anatomical zones</strong> from anterior to posterior <button class="cite-btn" data-cite="5" type="button">5</button> <button class="cite-btn" data-cite="6" type="button">6</button>:
-            </p>
-
-            <!-- Inline Figure 2: ONH 4 Zones -->
-            <figure class="inline-figure">
-              <svg viewBox="0 0 540 255" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-section of the optic nerve head showing its four anatomical zones and blood supply">
-                <rect width="540" height="255" fill="#fcfdff"/>
-                <!-- Retina / Choroid / Sclera -->
-                <rect x="35" y="54" width="135" height="14" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
-                <rect x="310" y="54" width="135" height="14" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
-                <rect x="35" y="68" width="135" height="14" fill="#fecdd3" stroke="#be123c" stroke-width="1.2"/>
-                <rect x="310" y="68" width="135" height="14" fill="#fecdd3" stroke="#be123c" stroke-width="1.2"/>
-                <rect x="35" y="82" width="135" height="34" fill="#e2e8f0" stroke="#475569" stroke-width="1.4"/>
-                <rect x="310" y="82" width="135" height="34" fill="#e2e8f0" stroke="#475569" stroke-width="1.4"/>
-
-                <!-- Cup -->
-                <path d="M 170 54 Q 202 92 240 92 Q 278 92 310 54" fill="#ffffff" stroke="#0369a1" stroke-width="2"/>
-                <!-- Lamina Cribrosa -->
-                <rect x="170" y="96" width="140" height="20" fill="#cbd5e1" stroke="#334155" stroke-width="1.5"/>
-                <line x1="170" y1="103" x2="310" y2="103" stroke="#475569" stroke-width="1" stroke-dasharray="6,4"/>
-                <line x1="170" y1="110" x2="310" y2="110" stroke="#475569" stroke-width="1" stroke-dasharray="6,4"/>
-
-                <!-- Retrolaminar Myelinated Nerve -->
-                <rect x="170" y="116" width="140" height="106" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
-                <!-- Meninges -->
-                <line x1="164" y1="116" x2="164" y2="222" stroke="#64748b" stroke-width="2"/>
-                <line x1="316" y1="116" x2="316" y2="222" stroke="#64748b" stroke-width="2"/>
-
-                <!-- Central Retinal Vessels -->
-                <line x1="236" y1="68" x2="236" y2="222" stroke="#dc2626" stroke-width="2.2"/>
-                <line x1="244" y1="68" x2="244" y2="222" stroke="#2563eb" stroke-width="2.2"/>
-
-                <!-- Left labels -->
-                <text x="35" y="42" font-size="10.5" font-weight="700" fill="#0369a1">1. Surface RNFL (~1.5 mm)</text>
-                <text x="35" y="152" font-size="10" font-weight="700" fill="#dc2626">Central Retinal</text>
-                <text x="35" y="166" font-size="10" font-weight="700" fill="#2563eb">Artery &amp; Vein</text>
-                <text x="35" y="195" font-size="10" font-weight="600" fill="#475569">Pia / Arachnoid / Dura</text>
-
-                <!-- Right Zone Labels -->
-                <text x="320" y="42" font-size="10.5" font-weight="700" fill="#be123c">2. Prelaminar (Choroidal)</text>
-                <text x="320" y="136" font-size="10.5" font-weight="700" fill="#334155">3. Lamina Cribrosa (SPCA)</text>
-                <line x1="305" y1="108" x2="322" y2="126" stroke="#334155" stroke-width="1"/>
-                <text x="325" y="175" font-size="10.5" font-weight="700" fill="#854d0e">4. Retrolaminar</text>
-                <text x="325" y="189" font-size="9.5" fill="#854d0e">(Myelinated; ~3 mm diam.)</text>
-
-                <text x="148" y="242" font-size="10" font-weight="700" fill="#334155">Circle of Zinn–Haller (from Short Posterior Ciliary Arteries)</text>
-              </svg>
-              <figcaption class="figure-caption">
-                <strong>Figure 2:</strong> Longitudinal cross-section of the optic nerve head depicting its four anatomical zones, meningeal sheaths, and arterial supply.
-              </figcaption>
-            </figure>
-
-            <ol>
-              <li>
-                <strong>Surface Nerve Fiber Layer:</strong> Composed of unmyelinated RGC axons and astrocytes; its capillary bed is derived primarily from branches of the <strong>central retinal artery (CRA)</strong> <button class="cite-btn" data-cite="6" type="button">6</button>.
-              </li>
-              <li>
-                <strong>Prelaminar Region:</strong> Lies at the level of the choroid, where axon bundles are separated by astroglial columns; it receives its blood supply mainly from the <strong>peripapillary choroidal vessels</strong> (via short posterior ciliary arteries) <button class="cite-btn" data-cite="6" type="button">6</button>.
-              </li>
-              <li>
-                <strong>Laminar Region (Lamina Cribrosa):</strong> A sieve-like meshwork of stacked, fenestrated collagenous beams spanning the posterior scleral canal through which axon bundles pass <button class="cite-btn" data-cite="5" type="button">5</button>. It is supplied by the anastomotic <strong>Circle of Zinn–Haller</strong> (derived from the short posterior ciliary arteries) and represents the <strong>primary site of glaucomatous axonal injury</strong>, where elevated IOP and translaminar pressure gradients cause posterior bowing and blockade of axoplasmic transport <button class="cite-btn" data-cite="5" type="button">5</button> <button class="cite-btn" data-cite="6" type="button">6</button>.
-              </li>
-              <li>
-                <strong>Retrolaminar Region:</strong> Posterior to the lamina cribrosa, the RGC axons acquire <strong>myelin sheaths</strong> produced by oligodendrocytes, doubling the optic nerve diameter to ~3 mm, and become encased by the pia, arachnoid, and dura mater <button class="cite-btn" data-cite="5" type="button">5</button>.
-              </li>
-            </ol>
-          </section>
-
-          <!-- Section 3: Visual Pathway -->
-          <section class="exam-section">
-            <h2>3. Visual Pathway from Retina to Visual Cortex</h2>
-            <p>
-              The afferent visual pathway conducts visual impulses from the retinal photoreceptors to the primary visual cortex in the occipital lobe via a three-neuron chain: photoreceptors synapse on bipolar cells (1st-order), which synapse on retinal ganglion cells (2nd-order), whose axons project to the lateral geniculate nucleus to synapse on geniculocalcarine neurons (3rd-order) <button class="cite-btn" data-cite="7" type="button">7</button>.
-            </p>
-
-            <!-- Inline Figure 3: Visual Pathway -->
-            <figure class="inline-figure">
-              <svg viewBox="0 0 540 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Visual pathway from retina through optic chiasm, LGN, and optic radiations to primary visual cortex">
-                <rect width="540" height="270" fill="#fcfdff"/>
-                <!-- Eyes -->
-                <circle cx="190" cy="34" r="18" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.6"/>
-                <circle cx="350" cy="34" r="18" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.6"/>
-                <text x="182" y="38" font-size="10" font-weight="700">LE</text>
-                <text x="342" y="38" font-size="10" font-weight="700">RE</text>
-
-                <!-- Optic Nerves -->
-                <line x1="190" y1="52" x2="248" y2="96" stroke="#0369a1" stroke-width="2.2"/>
-                <line x1="350" y1="52" x2="292" y2="96" stroke="#0369a1" stroke-width="2.2"/>
-                <text x="95" y="77" font-size="10.5" font-weight="700" fill="#0369a1">Optic Nerve (~50 mm)</text>
-
-                <!-- Optic Chiasm -->
-                <rect x="240" y="92" width="60" height="22" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.6"/>
-                <text x="314" y="106" font-size="10.5" font-weight="700" fill="#0284c7">Optic Chiasm (Nasal fibers decussate)</text>
-
-                <!-- Optic Tracts -->
-                <line x1="246" y1="114" x2="195" y2="148" stroke="#0f766e" stroke-width="2.2"/>
-                <line x1="294" y1="114" x2="345" y2="148" stroke="#0f766e" stroke-width="2.2"/>
-                <text x="115" y="138" font-size="10.5" font-weight="700" fill="#0f766e">Optic Tract</text>
-
-                <!-- LGN -->
-                <ellipse cx="190" cy="156" rx="19" ry="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
-                <ellipse cx="350" cy="156" rx="19" ry="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
-                <text x="378" y="160" font-size="10.5" font-weight="700" fill="#0f766e">LGN (6 layers: 1–2 M, 3–6 P)</text>
-
-                <!-- Optic Radiations -->
-                <path d="M 180 166 Q 145 198 220 228" fill="none" stroke="#7c3aed" stroke-width="2.2"/>
-                <path d="M 198 166 Q 208 198 242 228" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-dasharray="4,2"/>
-                <path d="M 360 166 Q 395 198 320 228" fill="none" stroke="#7c3aed" stroke-width="2.2"/>
-                <path d="M 342 166 Q 332 198 298 228" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-dasharray="4,2"/>
-                <text x="14" y="200" font-size="10" font-weight="700" fill="#7c3aed">Meyer's Loop (Temporal)</text>
-                <text x="394" y="200" font-size="10" font-weight="700" fill="#7c3aed">Baum's Loop (Parietal)</text>
-
-                <!-- Primary Visual Cortex -->
-                <path d="M 205 230 Q 270 250 335 230" fill="#fae8ff" stroke="#a21caf" stroke-width="2.2"/>
-                <text x="165" y="260" font-size="10.5" font-weight="700" fill="#a21caf">Primary Visual Cortex (V1 / Brodmann Area 17)</text>
-              </svg>
-              <figcaption class="figure-caption">
-                <strong>Figure 3:</strong> Schematic diagram of the afferent visual pathway from the retina to the primary visual cortex along the calcarine sulcus.
-              </figcaption>
-            </figure>
-
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th style="width: 24%;">Anatomical Segment</th>
-                    <th>Detailed Anatomy &amp; Clinical Localizing Value</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>1. Optic Nerve</strong></td>
-                    <td>Measures ~50 mm in total and is divided into four segments: <strong>intraocular (1 mm)</strong>, <strong>intraorbital (25 mm)</strong>, <strong>intracanalicular (9 mm)</strong>, and <strong>intracranial (16 mm)</strong>. Unilateral lesions cause ipsilateral monocular visual loss and an afferent pupillary defect (RAPD) <button class="cite-btn" data-cite="7" type="button">7</button>.</td>
-                  </tr>
-                  <tr>
-                    <td><strong>2. Optic Chiasm</strong></td>
-                    <td>Located above the sella turcica; here, <strong>nasal retinal fibers (~53%) decussate</strong> to the contralateral optic tract while temporal retinal fibers remain uncrossed. Midline chiasmal compression classically produces <strong>bitemporal hemianopia</strong> <button class="cite-btn" data-cite="7" type="button">7</button>.</td>
-                  </tr>
-                  <tr>
-                    <td><strong>3. Optic Tract</strong></td>
-                    <td>Extends posteriorly from the chiasm carrying ipsilateral temporal and contralateral nasal retinal fibers (representing the contralateral hemifield). Pupillary afferent fibers exit before the LGN to reach the pretectal nucleus. Lesions cause <strong>incongruous contralateral homonymous hemianopia</strong> <button class="cite-btn" data-cite="7" type="button">7</button>.</td>
-                  </tr>
-                  <tr>
-                    <td><strong>4. Lateral Geniculate Nucleus (LGN)</strong></td>
-                    <td>A six-layered thalamic relay nucleus: ventral <strong>Layers 1–2 are Magnocellular (M)</strong> (motion, contrast, low spatial frequency) and dorsal <strong>Layers 3–6 are Parvocellular (P)</strong> (color, fine detail, high spatial frequency). Crossed nasal fibers synapse in layers 1, 4, and 6, whereas uncrossed temporal fibers synapse in layers 2, 3, and 5 <button class="cite-btn" data-cite="7" type="button">7</button>.</td>
-                  </tr>
-                  <tr>
-                    <td><strong>5. Optic Radiations (Geniculocalcarine Tract)</strong></td>
-                    <td>Third-order axons fan out into two divisions: inferior fibers sweep anteriorly into the temporal lobe as <strong>Meyer's loop</strong> (carrying superior visual field → temporal lesions cause contralateral superior quadrantanopia, <em>"pie in the sky"</em>), while superior fibers pass through the parietal lobe as <strong>Baum's loop</strong> (carrying inferior visual field → parietal lesions cause contralateral inferior quadrantanopia, <em>"pie on the floor"</em>) <button class="cite-btn" data-cite="7" type="button">7</button>.</td>
-                  </tr>
-                  <tr>
-                    <td><strong>6. Primary Visual Cortex (V1 / Area 17)</strong></td>
-                    <td>Situated on the medial surface of the occipital lobe along the upper and lower banks of the <strong>calcarine sulcus</strong>. The macula has a disproportionately large representation at the posterior occipital pole with dual blood supply (PCA and MCA), explaining <strong>macular sparing</strong> in congruous homonymous hemianopia from posterior cerebral artery occlusion <button class="cite-btn" data-cite="7" type="button">7</button>.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </div>
-
-        <div class="refs-section">
-          <div class="refs-title">Grounded Textbook References (Click to inspect)</div>
-          <ul class="refs-list">
-            <li class="ref-row" data-cite="5"><span class="ref-num">[5]</span><span>AAO BCSC Section 10 &amp; Shields' Textbook — RNFL Axon Count, Horizontal Raphe &amp; Lamina Cribrosa</span></li>
-            <li class="ref-row" data-cite="6"><span class="ref-num">[6]</span><span>Shields' Textbook of Glaucoma (7th Ed.) — Vascular Supply of the Optic Nerve Head</span></li>
-            <li class="ref-row" data-cite="7"><span class="ref-num">[7]</span><span>AAO BCSC Section 5 (Neuro-Ophthalmology) &amp; Kanski — Visual Pathway, LGN &amp; Field Defects</span></li>
-            <li class="ref-row" data-cite="8"><span class="ref-num">[8]</span><span>AAO BCSC Section 10 — ISNT Rule &amp; Border Tissue of Elschnig</span></li>
-          </ul>
+    <main class="main" id="mainContainer">
+      <article class="question-card" id="questionCard">
+        <div class="pending-box">
+          <h3>Loading Glaucoma Curriculum…</h3>
+          <p>Preparing 10-mark exam answers and textbook citations.</p>
         </div>
       </article>
     </main>
   </div>
+
+  <!-- Sticky Bottom Pager -->
+  <nav class="bottom-pager" aria-label="Question pagination">
+    <div class="bottom-pager-inner">
+      <button class="pager-btn" id="prevQBtn" type="button">&larr; Previous</button>
+      <div class="pager-status" id="pagerStatus">Question 1</div>
+      <button class="pager-btn" id="nextQBtn" type="button">Next &rarr;</button>
+    </div>
+  </nav>
 
   <!-- Source Inspector Drawer / Mobile Bottom Sheet -->
   <div class="drawer-backdrop" id="drawerBackdrop" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
@@ -1574,7 +1244,7 @@
   <div class="lightbox-backdrop" id="lightboxBackdrop" role="dialog" aria-modal="true" aria-label="Enlarged diagram view">
     <div class="lightbox-card">
       <div class="lightbox-header">
-        <span class="lightbox-title" id="lightboxTitle">Diagram View</span>
+        <span class="lightbox-title">Diagram View</span>
         <button class="drawer-close" id="lightboxClose" type="button" aria-label="Close diagram">&times;</button>
       </div>
       <div class="lightbox-stage" id="lightboxStage"></div>
@@ -1584,66 +1254,112 @@
 
   <script>
     (function () {
-      const SOURCES = {
-        "1": {
-          book: "AAO Basic and Clinical Science Course (BCSC), Section 2 & Section 10: Glaucoma",
-          chapter: "Anatomy of the Anterior Segment & Aqueous Humor Dynamics",
-          quote: "The adult anterior chamber depth averages 3.0 to 3.15 mm (range 2.5–4.4 mm), horizontal diameter is 11.3–12.4 mm, and average volume is 200–250 µL (~220 µL), decreasing by ~0.11 µL/year with age. It is deeper in myopia, aphakia, and pseudophakia, and shallower in hypermetropia, intumescent cataract, and primary angle closure."
-        },
-        "2": {
-          book: "Shields' Textbook of Glaucoma (7th Edition) — Allingham et al.",
-          chapter: "Chapter 2: Gonioscopic Anatomy of the Anterior Chamber Angle",
-          quote: "From anterior to posterior (S-T-S-C): Schwalbe's line (termination of Descemet's membrane; localized by corneal wedge; Sampaolesi line in PXF/PDS; posterior embryotoxon in Axenfeld–Rieger/Alagille), Trabecular meshwork, Scleral spur (scleral roll, attachment of Brücke's longitudinal ciliary muscle), and Ciliary body band (wider in myopia/aphakia; angle recession causes increased IOP while cyclodialysis cleft causes hypotony)."
-        },
-        "3": {
-          book: "Shields' Textbook of Glaucoma (7th Edition) — Allingham et al.",
-          chapter: "Chapter 2: Trabecular Meshwork, Schlemm's Canal & Age-Related Changes",
-          quote: "The triangular TM (apex at Schwalbe's line, base at scleral spur) divides gonioscopically into anterior non-pigmented (non-functional) and posterior pigmented (primary filtration) zones. Histologically (inside to out): Uveal TM (2–3 layers, cord-like, openings 25–75 µm), Corneoscleral TM (flat sheets, openings 5–50 µm), and Juxtacanalicular TM (2–5 layers, narrowest 2–20 µm; site of maximal outflow resistance). Aging causes increased pigment, loss of endothelial cells, thickened basement membranes, and extracellular GAG/debris accumulation."
-        },
-        "4": {
-          book: "AAO BCSC Section 2: Fundamentals and Principles of Ophthalmology",
-          chapter: "Ocular Anatomy — Ciliary Body & Blood-Aqueous Barrier",
-          quote: "The ciliary body measures 4.6–5.2 mm nasally and 5.6–6.3 mm temporally, comprising the Pars Plicata (1.5–2.0 mm, 70–80 radial ciliary processes) and Pars Plana (3.5–4.5 mm, avascular surgical entry 3–4 mm from the limbus). Tight junctions (zonulae occludentes) between apical surfaces of the inner non-pigmented epithelium (NPE) form the blood–aqueous barrier. The ciliary muscle consists of longitudinal (Brücke's), radial, and circular (Müller's) fibers."
-        },
-        "5": {
-          book: "AAO BCSC Section 10: Glaucoma & Shields' Textbook of Glaucoma",
-          chapter: "Optic Nerve Head & Retinal Nerve Fiber Layer Anatomy",
-          quote: "Approximately 1.2 million (1.2–1.5 million) unmyelinated RGC axons traverse the RNFL in papillomacular, arcuate (respecting the horizontal raphe), and nasal radiating bundles before exiting through the ~1.5 mm optic nerve head. The lamina cribrosa is a sieve-like collagenous scaffold and the primary site of glaucomatous axonal injury. Posterior to it (retrolaminar region), axons become myelinated by oligodendrocytes."
-        },
-        "6": {
-          book: "Shields' Textbook of Glaucoma (7th Edition) — Allingham et al.",
-          chapter: "Chapter 5: Vascular Supply of the Optic Nerve Head",
-          quote: "The surface nerve fiber layer is nourished by branches of the central retinal artery. The prelaminar region is supplied by peripapillary choroidal vessels, and the laminar region (lamina cribrosa) is supplied by the anastomotic Circle of Zinn–Haller arising from the short posterior ciliary arteries (SPCAs)."
-        },
-        "7": {
-          book: "AAO BCSC Section 5: Neuro-Ophthalmology & Kanski's Clinical Ophthalmology (9th Ed.)",
-          chapter: "Anatomy of the Visual Pathway",
-          quote: "Optic nerve segments: intraocular (1 mm), intraorbital (25 mm), intracanalicular (9 mm), intracranial (16 mm). Nasal fibers (~53%) decussate at the chiasm. LGN has 6 layers: 1–2 Magnocellular, 3–6 Parvocellular (crossed fibers in 1, 4, 6; uncrossed in 2, 3, 5). Optic radiations divide into temporal Meyer's loop (superior visual field) and parietal Baum's loop (inferior visual field), terminating in V1 (Brodmann area 17, calcarine sulcus)."
-        },
-        "8": {
-          book: "AAO BCSC Section 10: Glaucoma",
-          chapter: "Clinical Evaluation of the Optic Nerve Head",
-          quote: "Normal neuroretinal rim width traditionally follows the ISNT rule (Inferior ≥ Superior ≥ Nasal ≥ Temporal), though variations occur in healthy eyes. The Border Tissue of Elschnig is a collagenous ring separating the choroid and Bruch's membrane from the neural optic nerve head tissue."
-        }
-      };
-
-      const citeIds = Object.keys(SOURCES);
+      const STUDIED_KEY = "glaucoq_studied_v1";
+      let allQuestions = [];
+      let answersMap = {};
+      let activeLevel = "All";
+      let searchQuery = "";
+      let answeredOnly = true;
+      let activeQuestionId = null;
+      let currentSources = {};
       let currentCiteId = null;
+      let studiedSet = new Set();
 
-      const backdrop = document.getElementById("drawerBackdrop");
-      const closeBtn = document.getElementById("drawerClose");
-      const badgeEl = document.getElementById("drawerBadge");
-      const titleEl = document.getElementById("drawerTitle");
-      const chapterEl = document.getElementById("drawerChapter");
-      const quoteEl = document.getElementById("drawerQuote");
-      const prevBtn = document.getElementById("prevCiteBtn");
-      const nextBtn = document.getElementById("nextCiteBtn");
+      try {
+        const saved = JSON.parse(localStorage.getItem(STUDIED_KEY) || "[]");
+        if (Array.isArray(saved)) studiedSet = new Set(saved);
+      } catch (_) {}
 
-      // Mobile / Tablet Navigation Drawer
+      function saveStudied() {
+        try {
+          localStorage.setItem(STUDIED_KEY, JSON.stringify(Array.from(studiedSet)));
+        } catch (_) {}
+      }
+
+      // Safe rich-text renderer (zero innerHTML: supports **bold**, *italic*, [n] citations)
+      function appendRichText(parent, text) {
+        if (!text) return;
+        const tokenRegex = /(\*\*[^*]+\*\*|\*[^*]+\*|\[\d+\])/g;
+        let lastIndex = 0;
+        let match;
+        while ((match = tokenRegex.exec(text)) !== null) {
+          if (match.index > lastIndex) {
+            parent.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+          }
+          const token = match[0];
+          if (token.startsWith("**") && token.endsWith("**")) {
+            const strong = document.createElement("strong");
+            appendRichText(strong, token.slice(2, -2));
+            parent.appendChild(strong);
+          } else if (token.startsWith("*") && token.endsWith("*")) {
+            const em = document.createElement("em");
+            appendRichText(em, token.slice(1, -1));
+            parent.appendChild(em);
+          } else if (token.startsWith("[") && token.endsWith("]")) {
+            const citeNum = token.slice(1, -1);
+            const btn = document.createElement("button");
+            btn.className = "cite-btn";
+            btn.type = "button";
+            btn.setAttribute("data-cite", citeNum);
+            btn.textContent = citeNum;
+            parent.appendChild(btn);
+          }
+          lastIndex = tokenRegex.lastIndex;
+        }
+        if (lastIndex < text.length) {
+          parent.appendChild(document.createTextNode(text.slice(lastIndex)));
+        }
+      }
+
+      // Safe SVG parser using DOMParser (per secure coding guidelines)
+      function parseSafeSvg(svgString) {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(svgString, "image/svg+xml");
+        const svgEl = doc.documentElement;
+        if (!svgEl || svgEl.nodeName.toLowerCase() !== "svg") return null;
+        svgEl.querySelectorAll("script, foreignObject").forEach(function (bad) {
+          bad.remove();
+        });
+        svgEl.querySelectorAll("*").forEach(function (node) {
+          Array.from(node.attributes).forEach(function (attr) {
+            if (attr.name.toLowerCase().startsWith("on")) {
+              node.removeAttribute(attr.name);
+            }
+          });
+        });
+        return document.importNode(svgEl, true);
+      }
+
+      // Elements
+      const progressPill = document.getElementById("progressPill");
+      const studiedCount = document.getElementById("studiedCount");
+      const levelFiltersEl = document.getElementById("levelFilters");
+      const searchInput = document.getElementById("searchInput");
+      const answeredOnlyToggle = document.getElementById("answeredOnlyToggle");
+      const sidebarList = document.getElementById("sidebarList");
+      const questionCard = document.getElementById("questionCard");
+      const prevQBtn = document.getElementById("prevQBtn");
+      const nextQBtn = document.getElementById("nextQBtn");
+      const pagerStatus = document.getElementById("pagerStatus");
+
       const menuBtn = document.getElementById("menuBtn");
       const sidebar = document.getElementById("sidebar");
       const sidebarBackdrop = document.getElementById("sidebarBackdrop");
       const sidebarClose = document.getElementById("sidebarClose");
+
+      const drawerBackdrop = document.getElementById("drawerBackdrop");
+      const drawerClose = document.getElementById("drawerClose");
+      const drawerBadge = document.getElementById("drawerBadge");
+      const drawerTitle = document.getElementById("drawerTitle");
+      const drawerChapter = document.getElementById("drawerChapter");
+      const drawerQuote = document.getElementById("drawerQuote");
+      const prevCiteBtn = document.getElementById("prevCiteBtn");
+      const nextCiteBtn = document.getElementById("nextCiteBtn");
+
+      const lightboxBackdrop = document.getElementById("lightboxBackdrop");
+      const lightboxClose = document.getElementById("lightboxClose");
+      const lightboxStage = document.getElementById("lightboxStage");
+      const lightboxCaption = document.getElementById("lightboxCaption");
 
       function openSidebar() {
         sidebar.classList.add("open");
@@ -1661,27 +1377,11 @@
       sidebarClose.addEventListener("click", closeSidebar);
       sidebarBackdrop.addEventListener("click", closeSidebar);
 
-      // Figure Tap-to-Zoom Lightbox (XSS-safe DOM cloning, zero innerHTML)
-      const lightboxBackdrop = document.getElementById("lightboxBackdrop");
-      const lightboxClose = document.getElementById("lightboxClose");
-      const lightboxStage = document.getElementById("lightboxStage");
-      const lightboxCaption = document.getElementById("lightboxCaption");
-
-      document.querySelectorAll(".inline-figure").forEach(function (fig) {
-        const hint = document.createElement("span");
-        hint.className = "figure-zoom-hint";
-        hint.textContent = "Tap to zoom";
-        fig.appendChild(hint);
-
-        fig.addEventListener("click", function () {
-          const svg = fig.querySelector("svg");
-          const cap = fig.querySelector("figcaption");
-          if (!svg) return;
-          lightboxStage.replaceChildren(svg.cloneNode(true));
-          lightboxCaption.textContent = cap ? cap.textContent.trim() : "";
-          lightboxBackdrop.classList.add("open");
-        });
-      });
+      function openLightbox(svgEl, captionText) {
+        lightboxStage.replaceChildren(svgEl.cloneNode(true));
+        lightboxCaption.textContent = captionText;
+        lightboxBackdrop.classList.add("open");
+      }
 
       function closeLightbox() {
         lightboxBackdrop.classList.remove("open");
@@ -1693,6 +1393,540 @@
         if (e.target === lightboxBackdrop) closeLightbox();
       });
 
+      function openCitation(id) {
+        const src = currentSources[id];
+        if (!src) return;
+        currentCiteId = id;
+        drawerBadge.textContent = "Source [" + id + "]";
+        drawerTitle.textContent = src.book;
+        drawerChapter.textContent = src.chapter;
+        drawerQuote.textContent = src.quote;
+
+        const ids = Object.keys(currentSources);
+        const idx = ids.indexOf(id);
+        prevCiteBtn.disabled = idx <= 0;
+        nextCiteBtn.disabled = idx >= ids.length - 1;
+
+        document.querySelectorAll(".cite-btn.active").forEach(function (el) {
+          el.classList.remove("active");
+        });
+        document.querySelectorAll('.cite-btn[data-cite="' + id + '"]').forEach(function (el) {
+          el.classList.add("active");
+        });
+        drawerBackdrop.classList.add("open");
+      }
+
+      function closeDrawer() {
+        drawerBackdrop.classList.remove("open");
+        document.querySelectorAll(".cite-btn.active").forEach(function (el) {
+          el.classList.remove("active");
+        });
+        currentCiteId = null;
+      }
+
+      drawerClose.addEventListener("click", closeDrawer);
+      drawerBackdrop.addEventListener("click", function (e) {
+        if (e.target === drawerBackdrop) closeDrawer();
+      });
+
+      prevCiteBtn.addEventListener("click", function () {
+        const ids = Object.keys(currentSources);
+        const idx = ids.indexOf(currentCiteId);
+        if (idx > 0) openCitation(ids[idx - 1]);
+      });
+
+      nextCiteBtn.addEventListener("click", function () {
+        const ids = Object.keys(currentSources);
+        const idx = ids.indexOf(currentCiteId);
+        if (idx >= 0 && idx < ids.length - 1) openCitation(ids[idx + 1]);
+      });
+
+      function buildSearchHaystack(item) {
+        const ans = answersMap[item.id];
+        let parts = [item.question, item.level, item.category];
+        if (ans) {
+          if (ans.shortTitle) parts.push(ans.shortTitle);
+          (ans.sections || []).forEach(function (sec) {
+            parts.push(sec.heading || "");
+            (sec.blocks || []).forEach(function (blk) {
+              if (blk.text) parts.push(blk.text);
+              if (blk.title) parts.push(blk.title);
+              if (blk.items) parts.push(blk.items.join(" "));
+              if (blk.rows) {
+                blk.rows.forEach(function (r) {
+                  parts.push(r.join(" "));
+                });
+              }
+            });
+          });
+        }
+        return parts.join(" ").toLowerCase();
+      }
+
+      const searchCache = {};
+
+      function getFilteredQuestions() {
+        const qLower = searchQuery.trim().toLowerCase();
+        return allQuestions.filter(function (item) {
+          if (answeredOnly && !answersMap[item.id]) return false;
+          if (activeLevel !== "All" && item.level !== activeLevel) return false;
+          if (!qLower) return true;
+          if (!searchCache[item.id]) {
+            searchCache[item.id] = buildSearchHaystack(item);
+          }
+          return searchCache[item.id].indexOf(qLower) !== -1;
+        });
+      }
+
+      function updateCounters() {
+        const answeredCount = allQuestions.filter(function (q) {
+          return Boolean(answersMap[q.id]);
+        }).length;
+        progressPill.textContent = answeredCount + " / " + allQuestions.length + " Answered";
+        studiedCount.textContent = studiedSet.size + " studied";
+      }
+
+      function renderLevelFilters() {
+        const levels = [
+          { key: "All", label: "All" },
+          { key: "Basic Level", label: "Basic" },
+          { key: "Standard Level", label: "Standard" },
+          { key: "Advanced Level", label: "Advanced" },
+          { key: "Very Advanced Level", label: "Very Adv" }
+        ];
+        levelFiltersEl.replaceChildren();
+        levels.forEach(function (lv) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "filter-pill" + (activeLevel === lv.key ? " active" : "");
+          btn.textContent = lv.label;
+          btn.addEventListener("click", function () {
+            activeLevel = lv.key;
+            renderLevelFilters();
+            renderSidebar();
+            updatePager();
+          });
+          levelFiltersEl.appendChild(btn);
+        });
+      }
+
+      function renderSidebar() {
+        const filtered = getFilteredQuestions();
+        sidebarList.replaceChildren();
+
+        if (filtered.length === 0) {
+          const empty = document.createElement("div");
+          empty.className = "pending-box";
+          empty.textContent = "No matching questions. Try turning off 'Answered only' or clearing search.";
+          sidebarList.appendChild(empty);
+          return;
+        }
+
+        const groups = [];
+        const groupMap = {};
+        filtered.forEach(function (item) {
+          const gKey = item.level + " · " + item.category;
+          if (!groupMap[gKey]) {
+            groupMap[gKey] = { title: gKey, items: [] };
+            groups.push(groupMap[gKey]);
+          }
+          groupMap[gKey].items.push(item);
+        });
+
+        groups.forEach(function (group) {
+          const groupDiv = document.createElement("div");
+          groupDiv.className = "nav-group";
+
+          const titleDiv = document.createElement("div");
+          titleDiv.className = "nav-group-title";
+          titleDiv.textContent = group.title;
+          groupDiv.appendChild(titleDiv);
+
+          const listDiv = document.createElement("div");
+          listDiv.className = "nav-list";
+
+          group.items.forEach(function (item) {
+            const isAnswered = Boolean(answersMap[item.id]);
+            const isStudied = studiedSet.has(item.id);
+            const btn = document.createElement("button");
+            btn.type = "button";
+            btn.className =
+              "nav-item" +
+              (isAnswered ? " answered" : " pending") +
+              (isStudied ? " studied" : "") +
+              (item.id === activeQuestionId ? " active" : "");
+            btn.setAttribute("data-qid", item.id);
+
+            const dot = document.createElement("span");
+            dot.className = "nav-dot";
+            btn.appendChild(dot);
+
+            const body = document.createElement("div");
+            body.className = "nav-item-body";
+
+            const meta = document.createElement("div");
+            meta.className = "nav-item-meta";
+            const leftSpan = document.createElement("span");
+            leftSpan.textContent = "Q" + item.globalIndex;
+            meta.appendChild(leftSpan);
+
+            const rightSpan = document.createElement("span");
+            rightSpan.textContent = isStudied ? "Studied" : isAnswered ? "10 Marks" : "Upcoming";
+            meta.appendChild(rightSpan);
+            body.appendChild(meta);
+
+            const label = document.createElement("div");
+            label.className = "nav-item-title";
+            label.textContent =
+              isAnswered && answersMap[item.id].shortTitle
+                ? answersMap[item.id].shortTitle
+                : item.question;
+            body.appendChild(label);
+
+            btn.appendChild(body);
+            btn.addEventListener("click", function () {
+              selectQuestion(item.id, true);
+              closeSidebar();
+            });
+            listDiv.appendChild(btn);
+          });
+
+          groupDiv.appendChild(listDiv);
+          sidebarList.appendChild(groupDiv);
+        });
+      }
+
+      function updatePager() {
+        const list = getFilteredQuestions();
+        const idx = list.findIndex(function (q) {
+          return q.id === activeQuestionId;
+        });
+
+        if (idx === -1) {
+          prevQBtn.disabled = true;
+          nextQBtn.disabled = list.length === 0;
+          pagerStatus.textContent = list.length + " in view";
+          return;
+        }
+
+        prevQBtn.disabled = idx <= 0;
+        nextQBtn.disabled = idx >= list.length - 1;
+        pagerStatus.textContent =
+          "Q" + list[idx].globalIndex + "  (" + (idx + 1) + " of " + list.length + ")";
+      }
+
+      function renderQuestion(item) {
+        const ans = answersMap[item.id];
+        currentSources = ans && ans.sources ? ans.sources : {};
+        questionCard.replaceChildren();
+
+        // Header
+        const header = document.createElement("div");
+        header.className = "q-header";
+
+        const headerTop = document.createElement("div");
+        headerTop.className = "q-header-top";
+
+        const tags = document.createElement("div");
+        tags.className = "q-tags";
+
+        const tLevel = document.createElement("span");
+        tLevel.className = "tag tag-level";
+        tLevel.textContent = item.level;
+        tags.appendChild(tLevel);
+
+        const tCat = document.createElement("span");
+        tCat.className = "tag tag-cat";
+        tCat.textContent = item.category + " · #" + item.number + " (Q" + item.globalIndex + "/87)";
+        tags.appendChild(tCat);
+
+        if (ans) {
+          const tMarks = document.createElement("span");
+          tMarks.className = "tag tag-marks";
+          tMarks.textContent = (ans.marks || 10) + " Marks";
+          tags.appendChild(tMarks);
+        }
+
+        headerTop.appendChild(tags);
+
+        if (ans) {
+          const studyBtn = document.createElement("button");
+          studyBtn.type = "button";
+          const isStudied = studiedSet.has(item.id);
+          studyBtn.className = "study-btn" + (isStudied ? " studied" : "");
+          studyBtn.textContent = isStudied ? "✓ Studied" : "Mark as Studied";
+          studyBtn.addEventListener("click", function () {
+            if (studiedSet.has(item.id)) studiedSet.delete(item.id);
+            else studiedSet.add(item.id);
+            saveStudied();
+            updateCounters();
+            renderSidebar();
+            renderQuestion(item);
+          });
+          headerTop.appendChild(studyBtn);
+        }
+
+        header.appendChild(headerTop);
+
+        const h1 = document.createElement("h1");
+        h1.className = "q-title";
+        h1.textContent = item.question;
+        header.appendChild(h1);
+        questionCard.appendChild(header);
+
+        // If unanswered yet
+        if (!ans) {
+          const pending = document.createElement("div");
+          pending.className = "pending-box";
+          const ph = document.createElement("h3");
+          ph.textContent = "Answer Coming in an Upcoming Batch";
+          pending.appendChild(ph);
+          const pp = document.createElement("p");
+          pp.textContent =
+            "Questions are being authored and deployed in batches of 10 with exam diagrams and grounded textbook citations.";
+          pending.appendChild(pp);
+
+          if (item.sub_items && item.sub_items.length) {
+            const subBox = document.createElement("div");
+            subBox.className = "pending-subitems";
+            const ul = document.createElement("ul");
+            item.sub_items.forEach(function (sub) {
+              const li = document.createElement("li");
+              li.textContent = sub.label + ". " + sub.text;
+              ul.appendChild(li);
+            });
+            subBox.appendChild(ul);
+            pending.appendChild(subBox);
+          }
+
+          questionCard.appendChild(pending);
+          return;
+        }
+
+        // Body
+        const body = document.createElement("div");
+        body.className = "q-body";
+
+        (ans.sections || []).forEach(function (sec) {
+          const secEl = document.createElement("section");
+          secEl.className = "exam-section";
+
+          const h2 = document.createElement("h2");
+          h2.textContent = sec.heading;
+          secEl.appendChild(h2);
+
+          (sec.blocks || []).forEach(function (blk) {
+            if (blk.type === "p") {
+              const p = document.createElement("p");
+              appendRichText(p, blk.text);
+              secEl.appendChild(p);
+            } else if (blk.type === "subheading") {
+              const h3 = document.createElement("h3");
+              h3.textContent = blk.text;
+              secEl.appendChild(h3);
+            } else if (blk.type === "formula") {
+              const div = document.createElement("div");
+              div.className = "formula-box";
+              appendRichText(div, blk.text);
+              secEl.appendChild(div);
+            } else if (blk.type === "ul" || blk.type === "ol") {
+              const list = document.createElement(blk.type);
+              (blk.items || []).forEach(function (it) {
+                const li = document.createElement("li");
+                appendRichText(li, it);
+                list.appendChild(li);
+              });
+              secEl.appendChild(list);
+            } else if (blk.type === "clinical") {
+              const box = document.createElement("div");
+              box.className = "clinical-note";
+              if (blk.title) {
+                const ct = document.createElement("div");
+                ct.className = "clinical-note-title";
+                ct.textContent = blk.title;
+                box.appendChild(ct);
+              }
+              if (blk.text) {
+                const cp = document.createElement("p");
+                cp.style.marginBottom = blk.items ? "0.45rem" : "0";
+                appendRichText(cp, blk.text);
+                box.appendChild(cp);
+              }
+              if (blk.items && blk.items.length) {
+                const cul = document.createElement("ul");
+                blk.items.forEach(function (it) {
+                  const li = document.createElement("li");
+                  appendRichText(li, it);
+                  cul.appendChild(li);
+                });
+                box.appendChild(cul);
+              }
+              secEl.appendChild(box);
+            } else if (blk.type === "table") {
+              const wrap = document.createElement("div");
+              wrap.className = "table-wrap";
+              const tbl = document.createElement("table");
+              const thead = document.createElement("thead");
+              const htr = document.createElement("tr");
+              (blk.headers || []).forEach(function (h) {
+                const th = document.createElement("th");
+                th.textContent = h;
+                htr.appendChild(th);
+              });
+              thead.appendChild(htr);
+              tbl.appendChild(thead);
+
+              const tbody = document.createElement("tbody");
+              (blk.rows || []).forEach(function (row) {
+                const tr = document.createElement("tr");
+                row.forEach(function (cell) {
+                  const td = document.createElement("td");
+                  appendRichText(td, cell);
+                  tr.appendChild(td);
+                });
+                tbody.appendChild(tr);
+              });
+              tbl.appendChild(tbody);
+              wrap.appendChild(tbl);
+              secEl.appendChild(wrap);
+            } else if (blk.type === "figure") {
+              const fig = document.createElement("figure");
+              fig.className = "inline-figure";
+              const svgNode = parseSafeSvg(blk.svg);
+              if (svgNode) {
+                fig.appendChild(svgNode);
+                const hint = document.createElement("span");
+                hint.className = "figure-zoom-hint";
+                hint.textContent = "Tap to zoom";
+                fig.appendChild(hint);
+
+                const cap = document.createElement("figcaption");
+                cap.className = "figure-caption";
+                appendRichText(cap, blk.caption || "");
+                fig.appendChild(cap);
+
+                fig.addEventListener("click", function () {
+                  openLightbox(svgNode, cap.textContent.trim());
+                });
+                secEl.appendChild(fig);
+              }
+            }
+          });
+
+          body.appendChild(secEl);
+        });
+
+        questionCard.appendChild(body);
+
+        // References Footer
+        const srcKeys = Object.keys(currentSources);
+        if (srcKeys.length) {
+          const refs = document.createElement("div");
+          refs.className = "refs-section";
+
+          const rTitle = document.createElement("div");
+          rTitle.className = "refs-title";
+          rTitle.textContent = "Grounded Textbook References (Click to inspect)";
+          refs.appendChild(rTitle);
+
+          const ul = document.createElement("ul");
+          ul.className = "refs-list";
+          srcKeys.forEach(function (k) {
+            const li = document.createElement("li");
+            li.className = "ref-row";
+            li.setAttribute("data-cite", k);
+
+            const num = document.createElement("span");
+            num.className = "ref-num";
+            num.textContent = "[" + k + "]";
+            li.appendChild(num);
+
+            const txt = document.createElement("span");
+            txt.textContent = currentSources[k].book + " — " + currentSources[k].chapter;
+            li.appendChild(txt);
+            ul.appendChild(li);
+          });
+          refs.appendChild(ul);
+          questionCard.appendChild(refs);
+        }
+      }
+
+      function selectQuestion(qid, scrollToTop) {
+        const item = allQuestions.find(function (q) {
+          return q.id === qid;
+        });
+        if (!item) return;
+        activeQuestionId = item.id;
+        if (window.location.hash !== "#" + item.id) {
+          history.replaceState(null, "", "#" + item.id);
+        }
+        closeDrawer();
+        renderQuestion(item);
+        renderSidebar();
+        updatePager();
+        if (scrollToTop) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }
+
+      // Global click delegation for citations
+      document.addEventListener("click", function (e) {
+        const citeTarget = e.target.closest("[data-cite]");
+        if (citeTarget) {
+          openCitation(citeTarget.getAttribute("data-cite"));
+        }
+      });
+
+      // Bottom pager
+      prevQBtn.addEventListener("click", function () {
+        const list = getFilteredQuestions();
+        const idx = list.findIndex(function (q) {
+          return q.id === activeQuestionId;
+        });
+        if (idx > 0) selectQuestion(list[idx - 1].id, true);
+      });
+
+      nextQBtn.addEventListener("click", function () {
+        const list = getFilteredQuestions();
+        const idx = list.findIndex(function (q) {
+          return q.id === activeQuestionId;
+        });
+        if (idx >= 0 && idx < list.length - 1) selectQuestion(list[idx + 1].id, true);
+        else if (idx === -1 && list.length > 0) selectQuestion(list[0].id, true);
+      });
+
+      // Keyboard navigation
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          if (lightboxBackdrop.classList.contains("open")) closeLightbox();
+          else if (drawerBackdrop.classList.contains("open")) closeDrawer();
+          else if (sidebar.classList.contains("open")) closeSidebar();
+          return;
+        }
+        if (document.activeElement === searchInput) return;
+        if (
+          lightboxBackdrop.classList.contains("open") ||
+          drawerBackdrop.classList.contains("open")
+        ) {
+          return;
+        }
+        if (e.key === "ArrowLeft") prevQBtn.click();
+        else if (e.key === "ArrowRight") nextQBtn.click();
+      });
+
+      // Filters
+      searchInput.addEventListener("input", function () {
+        searchQuery = searchInput.value;
+        renderSidebar();
+        updatePager();
+      });
+
+      answeredOnlyToggle.addEventListener("change", function () {
+        answeredOnly = answeredOnlyToggle.checked;
+        renderSidebar();
+        updatePager();
+      });
+
       // PWA Service Worker & Install Prompt
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
@@ -1702,7 +1936,6 @@
 
       let deferredPrompt = null;
       const installBtn = document.getElementById("installBtn");
-
       window.addEventListener("beforeinstallprompt", function (e) {
         e.preventDefault();
         deferredPrompt = e;
@@ -1718,83 +1951,82 @@
         });
       });
 
-      function openCitation(id) {
-        const src = SOURCES[id];
-        if (!src) return;
-        currentCiteId = id;
+      // Load curriculum + answer batches
+      async function bootstrap() {
+        try {
+          const [currRes, manifestRes] = await Promise.all([
+            fetch("./glaucoma_cognitive_skills.json"),
+            fetch("./data/manifest.json")
+          ]);
+          const curriculum = await currRes.json();
+          const manifest = await manifestRes.json();
 
-        badgeEl.textContent = "Source [" + id + "]";
-        titleEl.textContent = src.book;
-        chapterEl.textContent = src.chapter;
-        quoteEl.textContent = src.quote;
-
-        const idx = citeIds.indexOf(id);
-        prevBtn.disabled = idx <= 0;
-        nextBtn.disabled = idx >= citeIds.length - 1;
-
-        document.querySelectorAll(".cite-btn.active").forEach(function (el) {
-          el.classList.remove("active");
-        });
-        document.querySelectorAll('.cite-btn[data-cite="' + id + '"]').forEach(function (el) {
-          el.classList.add("active");
-        });
-
-        backdrop.classList.add("open");
-      }
-
-      function closeDrawer() {
-        backdrop.classList.remove("open");
-        document.querySelectorAll(".cite-btn.active").forEach(function (el) {
-          el.classList.remove("active");
-        });
-        currentCiteId = null;
-      }
-
-      document.addEventListener("click", function (e) {
-        const citeTarget = e.target.closest("[data-cite]");
-        if (citeTarget) {
-          openCitation(citeTarget.getAttribute("data-cite"));
-          return;
-        }
-
-        const navTarget = e.target.closest(".nav-item[data-target]");
-        if (navTarget) {
-          document.querySelectorAll(".nav-item").forEach(function (el) {
-            el.classList.remove("active");
+          let gIdx = 1;
+          (curriculum.levels || []).forEach(function (lv) {
+            (lv.categories || []).forEach(function (cat) {
+              (cat.questions || []).forEach(function (q) {
+                allQuestions.push({
+                  id: q.id,
+                  number: q.number,
+                  globalIndex: gIdx++,
+                  level: lv.level,
+                  category: cat.category,
+                  question: q.question,
+                  sub_items: q.sub_items || null
+                });
+              });
+            });
           });
-          navTarget.classList.add("active");
-          closeSidebar();
-          const targetCard = document.getElementById(navTarget.getAttribute("data-target"));
-          if (targetCard) {
-            targetCard.scrollIntoView({ behavior: "smooth", block: "start" });
+
+          const batchResults = await Promise.all(
+            (manifest.batches || []).map(function (url) {
+              return fetch(url).then(function (r) {
+                return r.json();
+              });
+            })
+          );
+
+          batchResults.forEach(function (batchObj) {
+            Object.keys(batchObj).forEach(function (k) {
+              answersMap[k] = batchObj[k];
+            });
+          });
+
+          updateCounters();
+          renderLevelFilters();
+
+          const hashId = window.location.hash ? window.location.hash.slice(1) : "";
+          const target =
+            allQuestions.find(function (q) {
+              return q.id === hashId;
+            }) ||
+            allQuestions.find(function (q) {
+              return Boolean(answersMap[q.id]);
+            }) ||
+            allQuestions[0];
+
+          if (target) {
+            if (!answersMap[target.id]) {
+              answeredOnly = false;
+              answeredOnlyToggle.checked = false;
+            }
+            selectQuestion(target.id, false);
           }
+        } catch (err) {
+          questionCard.replaceChildren();
+          const errBox = document.createElement("div");
+          errBox.className = "pending-box";
+          const h3 = document.createElement("h3");
+          h3.textContent = "Unable to load study data";
+          errBox.appendChild(h3);
+          const p = document.createElement("p");
+          p.textContent = "Please check your connection or reload the page.";
+          errBox.appendChild(p);
+          questionCard.appendChild(errBox);
         }
-      });
+      }
 
-      closeBtn.addEventListener("click", closeDrawer);
-      backdrop.addEventListener("click", function (e) {
-        if (e.target === backdrop) {
-          closeDrawer();
-        }
-      });
-
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-          if (lightboxBackdrop.classList.contains("open")) closeLightbox();
-          else if (backdrop.classList.contains("open")) closeDrawer();
-          else if (sidebar.classList.contains("open")) closeSidebar();
-        }
-      });
-
-      prevBtn.addEventListener("click", function () {
-        const idx = citeIds.indexOf(currentCiteId);
-        if (idx > 0) openCitation(citeIds[idx - 1]);
-      });
-
-      nextBtn.addEventListener("click", function () {
-        const idx = citeIds.indexOf(currentCiteId);
-        if (idx >= 0 && idx < citeIds.length - 1) openCitation(citeIds[idx + 1]);
-      });
+      bootstrap();
     })();
   </script>
 </body>

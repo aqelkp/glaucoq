@@ -1,0 +1,6 @@
+{
+  "version": "batch-01",
+  "batches": [
+    "./data/batch_01.json"
+  ]
+}

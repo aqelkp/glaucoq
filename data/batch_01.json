@@ -1,0 +1,1068 @@
+{
+  "basic-basic_science-1": {
+    "shortTitle": "Anterior Chamber, Angle & Ciliary Body",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Anatomy of the Anterior Chamber (AC)",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The anterior chamber is an aqueous humor-filled space located between the corneal endothelium anteriorly and the anterior surface of the iris and pupillary portion of the crystalline lens posteriorly, while its periphery is bounded by the iridocorneal (anterior chamber) angle [1]."
+          },
+          {
+            "type": "p",
+            "text": "In a normal adult eye, the central anterior chamber depth measures approximately **3.0 mm** (average range 3.0–3.15 mm; overall 2.5–4.4 mm), the horizontal diameter is **11.3–12.4 mm**, and the volume is approximately **200–250 µL** (commonly cited as ~220 µL), decreasing slightly with age by about 0.11 µL per year [1]."
+          },
+          {
+            "type": "clinical",
+            "title": "Clinical Correlation",
+            "text": "The anterior chamber is physiologically deeper in **myopia, aphakia, and pseudophakia (PCIOL)**, whereas it is shallower in **hypermetropia, intumescent cataract, and primary angle closure (PAC)** [1]."
+          }
+        ]
+      },
+      {
+        "heading": "2. Anatomy of the Anterior Chamber Angle",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The anterior chamber angle lies at the junction of the peripheral cornea, sclera, ciliary body, and iris root, and plays a central role in conventional aqueous humor drainage [2]. Because of total internal reflection at the tear–air interface, the angle cannot be viewed directly and must be visualized clinically by **gonioscopy** [2]."
+          },
+          {
+            "type": "p",
+            "text": "From anterior to posterior, the four major gonioscopic landmarks are remembered by the mnemonic **S–T–S–C**: **Schwalbe's line**, **Trabecular meshwork**, **Scleral spur**, and **Ciliary body band** (followed by the iris root) [2]."
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Cross-sectional anatomy of the anterior chamber angle showing the four gonioscopic landmarks (S–T–S–C) and conventional aqueous outflow into the episcleral venous plexus.",
+            "svg": "<svg viewBox=\"0 0 540 275\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Cross-section of the anterior chamber angle and aqueous drainage pathway\">\n  <rect width=\"540\" height=\"275\" fill=\"#fcfdff\"/>\n  <path d=\"M 35 55 Q 155 30 250 75 L 238 106 Q 150 64 35 88 Z\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"1.8\"/>\n  <path d=\"M 250 75 L 430 112 L 430 165 L 330 148 Q 275 135 238 106 Z\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n  <ellipse cx=\"294\" cy=\"111\" rx=\"16\" ry=\"7\" fill=\"#bae6fd\" stroke=\"#0284c7\" stroke-width=\"1.8\"/>\n  <path d=\"M 306 106 Q 340 85 375 78\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <path d=\"M 375 78 Q 415 72 448 80\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/>\n  <circle cx=\"452\" cy=\"81\" r=\"6\" fill=\"#dbeafe\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <polygon points=\"238,106 286,120 314,142 266,133\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n  <polygon points=\"314,142 332,142 323,154\" fill=\"#64748b\" stroke=\"#334155\" stroke-width=\"1.3\"/>\n  <path d=\"M 323 154 L 425 168 L 425 220 L 302 184 Z\" fill=\"#ffe4e6\" stroke=\"#be123c\" stroke-width=\"1.8\"/>\n  <path d=\"M 304 172 L 115 162 L 115 176 L 302 184 Z\" fill=\"#fed7aa\" stroke=\"#c2410c\" stroke-width=\"1.8\"/>\n  <path d=\"M 35 224 Q 130 185 220 224 Q 130 262 35 224 Z\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"1.6\"/>\n  <path d=\"M 294 202 Q 215 196 100 182 Q 86 168 108 148 Q 175 128 262 122\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n  <polygon points=\"262,122 254,118 255,127\" fill=\"#0f766e\"/>\n  <text x=\"58\" y=\"62\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Cornea</text>\n  <text x=\"368\" y=\"138\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">Sclera</text>\n  <text x=\"56\" y=\"124\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0f766e\">Anterior Chamber (~3 mm)</text>\n  <text x=\"155\" y=\"173\" font-size=\"10.5\" font-weight=\"700\" fill=\"#9a3412\">Iris</text>\n  <text x=\"115\" y=\"228\" font-size=\"10.5\" font-weight=\"700\" fill=\"#854d0e\">Lens</text>\n  <text x=\"335\" y=\"198\" font-size=\"10.5\" font-weight=\"700\" fill=\"#be123c\">Ciliary Body</text>\n  <line x1=\"238\" y1=\"106\" x2=\"205\" y2=\"34\" stroke=\"#334155\" stroke-width=\"1\"/>\n  <text x=\"125\" y=\"28\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0f172a\">1. Schwalbe's Line</text>\n  <line x1=\"272\" y1=\"122\" x2=\"215\" y2=\"100\" stroke=\"#b45309\" stroke-width=\"1\"/>\n  <text x=\"86\" y=\"102\" font-size=\"10.5\" font-weight=\"700\" fill=\"#b45309\">2. Trabecular Meshwork</text>\n  <line x1=\"294\" y1=\"104\" x2=\"294\" y2=\"48\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n  <text x=\"252\" y=\"42\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0284c7\">Schlemm's Canal</text>\n  <text x=\"335\" y=\"65\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0284c7\">Collector Channel</text>\n  <text x=\"372\" y=\"50\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1d4ed8\">Aqueous Vein &#8594; Episcleral Plexus</text>\n  <text x=\"415\" y=\"102\" font-size=\"9\" font-weight=\"600\" fill=\"#475569\">&#8594; Cavernous Sinus</text>\n  <line x1=\"323\" y1=\"146\" x2=\"365\" y2=\"236\" stroke=\"#334155\" stroke-width=\"1\"/>\n  <text x=\"342\" y=\"250\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">3. Scleral Spur</text>\n  <line x1=\"308\" y1=\"168\" x2=\"255\" y2=\"236\" stroke=\"#be123c\" stroke-width=\"1\"/>\n  <text x=\"195\" y=\"250\" font-size=\"10.5\" font-weight=\"700\" fill=\"#be123c\">4. Ciliary Body Band</text>\n</svg>"
+          },
+          {
+            "type": "subheading",
+            "text": "A. Schwalbe's Line"
+          },
+          {
+            "type": "p",
+            "text": "Schwalbe's line is a fine, glistening white ridge representing the peripheral termination of Descemet's membrane and the transition zone between the corneal endothelium and the trabecular meshwork endothelium [2]. Anatomically, it forms the anterior border of both the trabecular meshwork and the internal scleral sulcus, and may be non-pigmented or lightly pigmented [2]."
+          },
+          {
+            "type": "clinical",
+            "title": "Gonioscopic & Clinical Correlations",
+            "items": [
+              "**Corneal Wedge:** On slit-lamp gonioscopy, Schwalbe's line is localized precisely at the apex where the anterior and posterior corneal light beams converge [2].",
+              "**Sampaolesi Line:** A wavy band of pigment deposited on or anterior to Schwalbe's line, classically seen in **pseudoexfoliation syndrome (PXF)** and **pigment dispersion syndrome (PDS)** [2].",
+              "**Posterior Embryotoxon:** A prominent, anteriorly displaced Schwalbe's line seen in ~15% of normal eyes and strongly associated with **Axenfeld–Rieger syndrome** and **Alagille syndrome** [2]."
+            ]
+          },
+          {
+            "type": "subheading",
+            "text": "B. Trabecular Meshwork (TM) & Schlemm's Canal"
+          },
+          {
+            "type": "p",
+            "text": "The trabecular meshwork is a porous, sieve-like, contractile connective tissue structure lined by trabeculocytes that bridges the internal scleral sulcus and converts it into a circular channel, **Schlemm's canal** [3]. On cross-section, the TM is triangular with its **apex at Schwalbe's line** and its **base at the scleral spur** and anterior ciliary body [3]."
+          },
+          {
+            "type": "p",
+            "text": "Gonioscopically, the TM has two zones: the **anterior non-pigmented trabecular meshwork (ATM)** (largely non-functional) and the **posterior pigmented trabecular meshwork (PTM)**, which overlies Schlemm's canal and serves as the primary site of aqueous filtration [3]. Histologically, from inside (anterior chamber) to outside (Schlemm's canal), it consists of three distinct layers [3]:"
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 2:** Magnified architecture of the three trabecular meshwork layers (Uveal, Corneoscleral, and Juxtacanalicular) draining into Schlemm's canal and collector channels.",
+            "svg": "<svg viewBox=\"0 0 540 245\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Three histological layers of the trabecular meshwork and Schlemm's canal\">\n  <rect width=\"540\" height=\"245\" fill=\"#fcfdff\"/>\n  <path d=\"M 190 25 L 430 25 L 430 215 L 265 215 Q 290 130 190 25 Z\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"365\" y=\"130\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">Sclera</text>\n  <path d=\"M 275 55 Q 308 115 292 175 L 270 175 Q 282 115 256 62 Z\" fill=\"#bae6fd\" stroke=\"#0284c7\" stroke-width=\"1.8\"/>\n  <path d=\"M 298 110 L 360 95\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.4\"/>\n  <text x=\"318\" y=\"84\" font-size=\"10\" font-weight=\"700\" fill=\"#0284c7\">Collector Channel</text>\n  <path d=\"M 256 62 Q 282 115 270 175 L 252 178 Q 262 118 240 68 Z\" fill=\"#bbf7d0\" stroke=\"#15803d\" stroke-width=\"1.6\"/>\n  <path d=\"M 240 68 Q 262 118 252 178 L 214 184 Q 230 122 214 76 Z\" fill=\"#fed7aa\" stroke=\"#c2410c\" stroke-width=\"1.6\"/>\n  <path d=\"M 214 76 Q 230 122 214 184 L 185 190 Q 204 126 190 82 Z\" fill=\"#fecdd3\" stroke=\"#be123c\" stroke-width=\"1.6\"/>\n  <circle cx=\"202\" cy=\"108\" r=\"5\" fill=\"#fff\" stroke=\"#be123c\" stroke-width=\"1\"/>\n  <circle cx=\"205\" cy=\"142\" r=\"5\" fill=\"#fff\" stroke=\"#be123c\" stroke-width=\"1\"/>\n  <circle cx=\"200\" cy=\"170\" r=\"4.5\" fill=\"#fff\" stroke=\"#be123c\" stroke-width=\"1\"/>\n  <ellipse cx=\"235\" cy=\"105\" rx=\"4\" ry=\"2.2\" fill=\"#fff\" stroke=\"#c2410c\" stroke-width=\"1\"/>\n  <ellipse cx=\"238\" cy=\"135\" rx=\"4\" ry=\"2.2\" fill=\"#fff\" stroke=\"#c2410c\" stroke-width=\"1\"/>\n  <ellipse cx=\"234\" cy=\"162\" rx=\"3.8\" ry=\"2\" fill=\"#fff\" stroke=\"#c2410c\" stroke-width=\"1\"/>\n  <polygon points=\"248,184 295,184 268,205\" fill=\"#94a3b8\" stroke=\"#334155\" stroke-width=\"1.3\"/>\n  <text x=\"298\" y=\"200\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">Scleral Spur</text>\n  <text x=\"25\" y=\"130\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Anterior Chamber</text>\n  <line x1=\"128\" y1=\"126\" x2=\"180\" y2=\"126\" stroke=\"#0f766e\" stroke-width=\"2.2\"/>\n  <polygon points=\"180,126 171,121 171,131\" fill=\"#0f766e\"/>\n  <text x=\"128\" y=\"116\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0f766e\">Aqueous</text>\n  <line x1=\"198\" y1=\"88\" x2=\"145\" y2=\"52\" stroke=\"#be123c\" stroke-width=\"1.1\"/>\n  <text x=\"20\" y=\"48\" font-size=\"10.5\" font-weight=\"700\" fill=\"#be123c\">1. Uveal TM (25&#8211;75 &#181;m)</text>\n  <line x1=\"226\" y1=\"74\" x2=\"195\" y2=\"30\" stroke=\"#c2410c\" stroke-width=\"1.1\"/>\n  <text x=\"20\" y=\"25\" font-size=\"10.5\" font-weight=\"700\" fill=\"#c2410c\">2. Corneoscleral TM (5&#8211;50 &#181;m)</text>\n  <line x1=\"250\" y1=\"65\" x2=\"295\" y2=\"38\" stroke=\"#15803d\" stroke-width=\"1.1\"/>\n  <text x=\"300\" y=\"42\" font-size=\"10.5\" font-weight=\"700\" fill=\"#15803d\">3. Juxtacanalicular TM (2&#8211;20 &#181;m)</text>\n  <line x1=\"280\" y1=\"70\" x2=\"325\" y2=\"60\" stroke=\"#0284c7\" stroke-width=\"1.1\"/>\n  <text x=\"330\" y=\"63\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0284c7\">Schlemm's Canal</text>\n  <text x=\"25\" y=\"228\" font-size=\"10\" font-weight=\"700\" fill=\"#15803d\">Note: Outflow resistance increases inside &#8594; outside (Maximal at JCT)</text>\n</svg>"
+          },
+          {
+            "type": "ol",
+            "items": [
+              "**Uveal Trabecular Meshwork:** This innermost layer faces the anterior chamber and extends from the iris root and ciliary body to Schwalbe's line [3]. It is 2–3 layers thick and composed of cord-like beams with large, irregular openings (**25–75 µm**), offering minimal outflow resistance [3].",
+              "**Corneoscleral Trabecular Meshwork:** This forms the larger middle zone, extending from the scleral spur to the anterior wall of the scleral sulcus [3]. It consists of flattened, perforated sheets of trabeculae with progressively smaller elliptical openings (**5–50 µm**) [3].",
+              "**Juxtacanalicular (Cribriform) Tissue (JCT):** This outermost layer (2–5 cell layers thick) directly abuts the inner wall endothelium of Schlemm's canal and has the narrowest openings (**2–20 µm**) [3]. Together with the inner wall of Schlemm's canal, it represents the **primary site of aqueous outflow resistance** due to its narrow, tortuous pathway and dense extracellular matrix [3]."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**Schlemm's Canal & Collector Channels:** Schlemm's canal is a 360° endothelial-lined channel within the scleral sulcus whose inner wall contains giant vacuoles and pores transmitting aqueous into the lumen [3]. From Schlemm's canal, aqueous exits via 25–35 collector channels into the intrascleral venous plexus, aqueous veins, episcleral veins, and ultimately the cavernous sinus [3]."
+          },
+          {
+            "type": "clinical",
+            "title": "Age-Related Changes in the Trabecular Meshwork",
+            "text": "Aging produces (i) increased pigment deposition, (ii) trabecular endothelial cell loss, (iii) thickened basement membranes, and (iv) extracellular debris and glycosaminoglycan (GAG) accumulation—increasing outflow resistance and predisposing to primary open-angle glaucoma [3]."
+          },
+          {
+            "type": "subheading",
+            "text": "C. Scleral Spur"
+          },
+          {
+            "type": "p",
+            "text": "The scleral spur is the most anterior inward projection of the sclera—a circumferential ridge of collagen (*scleral roll*) forming the posterior lip of the scleral sulcus [2]. On gonioscopy, it appears as a sharp, prominent white line immediately posterior to the trabecular meshwork [2]. Functionally, it serves as the anterior attachment site of the **longitudinal ciliary muscle (Brücke's muscle)**; contraction pulls the scleral spur posteriorly, opening the intertrabecular spaces and enhancing outflow [2]."
+          },
+          {
+            "type": "subheading",
+            "text": "D. Ciliary Body Band (CBB)"
+          },
+          {
+            "type": "p",
+            "text": "The ciliary body band is the most posterior landmark visible in the angle recess on gonioscopy, appearing as a dull grey to dark brown band representing the visible anterior face of the longitudinal ciliary muscle between the scleral spur and iris root [2]. Its width depends on iris insertion: it is **wider in myopes and aphakia** and **narrower in hypermetropes**, and serves as the entry site for **uveoscleral outflow** [2]."
+          },
+          {
+            "type": "clinical",
+            "title": "Blunt Trauma Correlations",
+            "items": [
+              "**Angle Recession:** A tear into the ciliary body face between longitudinal and circular muscle fibers widens the CBB and causes **increased IOP** (angle recession glaucoma) [2].",
+              "**Cyclodialysis Cleft:** Separation of the ciliary body band from the scleral spur creates a direct communication with the suprachoroidal space, causing **decreased IOP (hypotony)** [2]."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "3. Anatomy of the Ciliary Body",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The ciliary body is the middle part of the uveal tract forming a complete ~6 mm ring extending from the scleral spur and iris root anteriorly to the ora serrata posteriorly [4]. In cross-section it forms a right-angled triangle whose base faces anteriorly and apex joins the choroid posteriorly; total anteroposterior length measures **4.6–5.2 mm nasally** and **5.6–6.3 mm temporally** [4]."
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 3:** Gross subdivisions of the ciliary body (Pars Plicata vs. Pars Plana), ciliary muscle layers, and double-layered ciliary epithelium forming the blood–aqueous barrier.",
+            "svg": "<svg viewBox=\"0 0 540 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Cross-section of the ciliary body showing pars plicata, pars plana, muscle layers, and double epithelium\">\n  <rect width=\"540\" height=\"260\" fill=\"#fcfdff\"/>\n  <rect x=\"30\" y=\"25\" width=\"480\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n  <text x=\"248\" y=\"43\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">Sclera</text>\n  <polygon points=\"60,53 475,53 475,82 170,136 60,112\" fill=\"#ffe4e6\" stroke=\"#be123c\" stroke-width=\"1.8\"/>\n  <path d=\"M 70 115 Q 85 130 100 119 Q 115 134 132 124 Q 148 140 168 134\" fill=\"none\" stroke=\"#be123c\" stroke-width=\"2\"/>\n  <line x1=\"75\" y1=\"66\" x2=\"415\" y2=\"66\" stroke=\"#e11d48\" stroke-width=\"1.5\" stroke-dasharray=\"6,3\"/>\n  <text x=\"195\" y=\"79\" font-size=\"10.5\" font-weight=\"600\" fill=\"#9f1239\">Longitudinal Muscle (Br&#252;cke's)</text>\n  <circle cx=\"96\" cy=\"96\" r=\"10\" fill=\"#fda4af\" stroke=\"#be123c\" stroke-width=\"1.2\"/>\n  <text x=\"114\" y=\"100\" font-size=\"10\" font-weight=\"600\" fill=\"#9f1239\">Circular (M&#252;ller's) &amp; Radial Fibers</text>\n  <line x1=\"475\" y1=\"53\" x2=\"475\" y2=\"140\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n  <text x=\"435\" y=\"128\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">Ora Serrata</text>\n  <line x1=\"60\" y1=\"158\" x2=\"210\" y2=\"158\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"151\" x2=\"60\" y2=\"165\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n  <line x1=\"210\" y1=\"151\" x2=\"210\" y2=\"165\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n  <text x=\"64\" y=\"175\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">Pars Plicata (1.5&#8211;2.0 mm)</text>\n  <text x=\"68\" y=\"189\" font-size=\"9.5\" fill=\"#475569\">70&#8211;80 ciliary processes</text>\n  <line x1=\"216\" y1=\"158\" x2=\"475\" y2=\"158\" stroke=\"#0f766e\" stroke-width=\"2\"/>\n  <line x1=\"216\" y1=\"151\" x2=\"216\" y2=\"165\" stroke=\"#0f766e\" stroke-width=\"2\"/>\n  <line x1=\"475\" y1=\"151\" x2=\"475\" y2=\"165\" stroke=\"#0f766e\" stroke-width=\"2\"/>\n  <text x=\"275\" y=\"175\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0f766e\">Pars Plana (3.5&#8211;4.5 mm)</text>\n  <text x=\"275\" y=\"189\" font-size=\"9.5\" fill=\"#475569\">Safe surgical entry (3&#8211;4 mm from limbus)</text>\n  <rect x=\"24\" y=\"204\" width=\"492\" height=\"46\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n  <rect x=\"34\" y=\"213\" width=\"84\" height=\"13\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1\"/>\n  <rect x=\"34\" y=\"226\" width=\"84\" height=\"15\" fill=\"#bae6fd\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n  <text x=\"128\" y=\"223\" font-size=\"9.5\" font-weight=\"700\" fill=\"#334155\">Outer Pigmented Epithelium (faces vascular stroma)</text>\n  <text x=\"128\" y=\"238\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0369a1\">Inner Non-Pigmented Epithelium (tight junctions = Blood-Aqueous Barrier)</text>\n</svg>"
+          },
+          {
+            "type": "subheading",
+            "text": "A. Gross Subdivisions"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Pars Plicata (Corona Ciliaris):** The anterior ridged zone measuring **1.5–2.0 mm** (~25% of ciliary body length), containing **70–80 radial major ciliary processes** that secrete aqueous humor and anchor the lens zonules [4].",
+              "**Pars Plana (Orbicularis Ciliaris):** The posterior flat, pigmented, relatively avascular zone measuring **3.5–4.5 mm** (~75% of length) up to the ora serrata, serving as the standard safe entry site for intravitreal injections and pars plana vitrectomy (3.0–4.0 mm behind the limbus) [4]."
+            ]
+          },
+          {
+            "type": "subheading",
+            "text": "B. Histological Layers (Inside to Outside)"
+          },
+          {
+            "type": "ol",
+            "items": [
+              "**Ciliary Epithelium:** A double neuroectodermal layer aligned apex-to-apex—outer *pigmented epithelium (PCE)* continuous with the RPE, and inner *non-pigmented epithelium (NPE)* continuous with the neurosensory retina [4]. Apical tight junctions (*zonulae occludentes*) between NPE cells form the **blood–aqueous barrier** and actively secrete aqueous humor [4].",
+              "**Ciliary Stroma:** Loose connective tissue housing fenestrated capillaries supplied by the major arterial circle of the iris [4].",
+              "**Ciliary Muscle:** Parasympathetically innervated (CN III) smooth muscle organized into outer **longitudinal (Brücke's)**, intermediate **radial**, and inner **circular (Müller's)** fibers mediating accommodation and outflow modulation [4]."
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 2 & Section 10: Glaucoma",
+        "chapter": "Anatomy of the Anterior Segment & Aqueous Humor Dynamics",
+        "quote": "Adult anterior chamber depth averages 3.0–3.15 mm (range 2.5–4.4 mm), horizontal diameter is 11.3–12.4 mm, and volume is 200–250 µL (~220 µL), decreasing ~0.11 µL/year with age. Deeper in myopia/aphakia/pseudophakia; shallower in hyperopia/intumescent cataract/PAC."
+      },
+      "2": {
+        "book": "Shields' Textbook of Glaucoma (7th Edition) — Allingham et al.",
+        "chapter": "Chapter 2: Gonioscopic Anatomy of the Anterior Chamber Angle",
+        "quote": "Gonioscopic landmarks anterior-to-posterior (S-T-S-C): Schwalbe's line (Descemet's termination; corneal wedge; Sampaolesi line in PXF/PDS; posterior embryotoxon in Axenfeld-Rieger/Alagille), Trabecular meshwork, Scleral spur (Brücke's muscle attachment), and Ciliary body band (angle recession increases IOP; cyclodialysis cleft causes hypotony)."
+      },
+      "3": {
+        "book": "Shields' Textbook of Glaucoma (7th Edition) — Allingham et al.",
+        "chapter": "Chapter 2: Trabecular Meshwork, Schlemm's Canal & Age-Related Changes",
+        "quote": "Triangular TM divides gonioscopically into ATM (non-functional) and PTM (primary filtration). Three histological layers: Uveal (2–3 layers, 25–75 µm), Corneoscleral (5–50 µm), and Juxtacanalicular (2–5 layers, 2–20 µm; maximal outflow resistance). Aging causes increased pigment, endothelial loss, thickened basement membranes, and GAG/debris accumulation."
+      },
+      "4": {
+        "book": "AAO BCSC Section 2: Fundamentals and Principles of Ophthalmology",
+        "chapter": "Ocular Anatomy — Ciliary Body & Blood-Aqueous Barrier",
+        "quote": "Ciliary body length is 4.6–5.2 mm nasally and 5.6–6.3 mm temporally, divided into Pars Plicata (1.5–2.0 mm, 70–80 processes) and Pars Plana (3.5–4.5 mm). Apical tight junctions between inner non-pigmented epithelial cells form the blood-aqueous barrier."
+      }
+    }
+  },
+  "basic-basic_science-2": {
+    "shortTitle": "RNFL, Optic Nerve Head & Visual Pathway",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Anatomy of the Retinal Nerve Fiber Layer (RNFL)",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The retinal nerve fiber layer is the innermost neural layer of the retina, situated directly beneath the internal limiting membrane and composed of approximately **1.2 million** (range 1.2–1.5 million) unmyelinated axons of retinal ganglion cells (RGCs) converging toward the optic nerve head [1]. These axon bundles are separated by Müller cell processes and achieve their greatest thickness at the superior and inferior poles of the optic disc [1]."
+          },
+          {
+            "type": "p",
+            "text": "Topographically, RNFL axons follow three organized trajectories across the fundus [1]:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Papillomacular Bundle:** Fibers from the fovea and macula travel straight horizontally into the temporal disc margin.",
+              "**Superior and Inferior Arcuate Bundles:** Fibers temporal to the macula arch above and below the papillomacular bundle to enter the superior and inferior disc poles without crossing the temporal **horizontal raphe** [1].",
+              "**Nasal Radiating Fibers:** Fibers from the nasal retina take a direct radial path into the nasal disc margin."
+            ]
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Retinal nerve fiber layer architecture (Right Eye). Temporal fibers respect the horizontal raphe and arch around the macula to enter the superior and inferior disc poles.",
+            "svg": "<svg viewBox=\"0 0 540 275\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Retinal Nerve Fiber Layer topography\">\n  <rect width=\"540\" height=\"275\" fill=\"#fcfdff\"/>\n  <circle cx=\"275\" cy=\"138\" r=\"100\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n  <ellipse cx=\"342\" cy=\"138\" rx=\"13\" ry=\"17\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <text x=\"330\" y=\"169\" font-size=\"9.5\" font-weight=\"700\" fill=\"#92400e\">ONH</text>\n  <circle cx=\"236\" cy=\"138\" r=\"16\" fill=\"#fed7aa\" fill-opacity=\"0.45\" stroke=\"#c2410c\" stroke-width=\"1.2\" stroke-dasharray=\"3,2\"/>\n  <circle cx=\"236\" cy=\"138\" r=\"3.5\" fill=\"#9a3412\"/>\n  <text x=\"219\" y=\"167\" font-size=\"9.5\" font-weight=\"700\" fill=\"#9a3412\">Macula</text>\n  <line x1=\"176\" y1=\"138\" x2=\"220\" y2=\"138\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/>\n  <text x=\"16\" y=\"142\" font-size=\"10.5\" font-weight=\"700\" fill=\"#dc2626\">Horizontal Raphe</text>\n  <line x1=\"114\" y1=\"138\" x2=\"172\" y2=\"138\" stroke=\"#dc2626\" stroke-width=\"1\"/>\n  <path d=\"M 252 133 Q 290 130 329 134\" fill=\"none\" stroke=\"#0369a1\" stroke-width=\"1.8\"/>\n  <path d=\"M 252 143 Q 290 146 329 142\" fill=\"none\" stroke=\"#0369a1\" stroke-width=\"1.8\"/>\n  <line x1=\"290\" y1=\"130\" x2=\"290\" y2=\"104\" stroke=\"#0369a1\" stroke-width=\"1\"/>\n  <text x=\"234\" y=\"100\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0369a1\">Papillomacular Bundle</text>\n  <path d=\"M 186 134 Q 210 56 335 123\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.8\"/>\n  <path d=\"M 200 134 Q 222 76 331 127\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n  <path d=\"M 186 142 Q 210 220 335 153\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.8\"/>\n  <path d=\"M 200 142 Q 222 200 331 149\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n  <text x=\"212\" y=\"26\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0f766e\">Superior Arcuate Bundle</text>\n  <text x=\"212\" y=\"258\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0f766e\">Inferior Arcuate Bundle</text>\n  <line x1=\"355\" y1=\"138\" x2=\"375\" y2=\"138\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <line x1=\"352\" y1=\"126\" x2=\"372\" y2=\"106\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <line x1=\"352\" y1=\"150\" x2=\"372\" y2=\"170\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <text x=\"388\" y=\"142\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\">Nasal Radiating Fibers</text>\n</svg>"
+          },
+          {
+            "type": "clinical",
+            "title": "Glaucoma Correlation",
+            "text": "Because arcuate fibers do not cross the horizontal raphe and enter the most structurally vulnerable superior and inferior lamina cribrosa pores, early glaucomatous damage produces **paracentral scotomas, Bjerrum (arcuate) scotomas, and nasal steps** that strictly respect the horizontal meridian [1]."
+          }
+        ]
+      },
+      {
+        "heading": "2. Anatomy of the Optic Nerve Head (ONH)",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The optic nerve head (optic disc) is the intraocular site where RGC axons converge and turn 90° posteriorly to exit the globe through the posterior scleral canal [1]. It measures approximately **1.5 mm in diameter** (slightly oval vertically) and features a central physiologic cup surrounded by a healthy pink neuroretinal rim [1]. In normal eyes, rim thickness classically follows the **ISNT rule** (Inferior ≥ Superior ≥ Nasal ≥ Temporal), though anatomic exceptions occur [4]. The collagenous **Border Tissue of Elschnig** separates the choroid and Bruch's membrane from the optic nerve tissue at the disc margin [4]."
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 2:** Longitudinal cross-section of the optic nerve head illustrating its four anatomical zones, meningeal sheaths, and arterial supply.",
+            "svg": "<svg viewBox=\"0 0 540 255\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Cross-section of the optic nerve head showing four anatomical zones\">\n  <rect width=\"540\" height=\"255\" fill=\"#fcfdff\"/>\n  <rect x=\"35\" y=\"54\" width=\"135\" height=\"14\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.2\"/>\n  <rect x=\"310\" y=\"54\" width=\"135\" height=\"14\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.2\"/>\n  <rect x=\"35\" y=\"68\" width=\"135\" height=\"14\" fill=\"#fecdd3\" stroke=\"#be123c\" stroke-width=\"1.2\"/>\n  <rect x=\"310\" y=\"68\" width=\"135\" height=\"14\" fill=\"#fecdd3\" stroke=\"#be123c\" stroke-width=\"1.2\"/>\n  <rect x=\"35\" y=\"82\" width=\"135\" height=\"34\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n  <rect x=\"310\" y=\"82\" width=\"135\" height=\"34\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n  <path d=\"M 170 54 Q 202 92 240 92 Q 278 92 310 54\" fill=\"#ffffff\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n  <rect x=\"170\" y=\"96\" width=\"140\" height=\"20\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"170\" y1=\"103\" x2=\"310\" y2=\"103\" stroke=\"#475569\" stroke-width=\"1\" stroke-dasharray=\"6,4\"/>\n  <line x1=\"170\" y1=\"110\" x2=\"310\" y2=\"110\" stroke=\"#475569\" stroke-width=\"1\" stroke-dasharray=\"6,4\"/>\n  <rect x=\"170\" y=\"116\" width=\"140\" height=\"106\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n  <line x1=\"164\" y1=\"116\" x2=\"164\" y2=\"222\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"316\" y1=\"116\" x2=\"316\" y2=\"222\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"236\" y1=\"68\" x2=\"236\" y2=\"222\" stroke=\"#dc2626\" stroke-width=\"2.2\"/>\n  <line x1=\"244\" y1=\"68\" x2=\"244\" y2=\"222\" stroke=\"#2563eb\" stroke-width=\"2.2\"/>\n  <text x=\"35\" y=\"42\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">1. Surface RNFL (~1.5 mm)</text>\n  <text x=\"35\" y=\"152\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">Central Retinal</text>\n  <text x=\"35\" y=\"166\" font-size=\"10\" font-weight=\"700\" fill=\"#2563eb\">Artery &amp; Vein</text>\n  <text x=\"35\" y=\"195\" font-size=\"10\" font-weight=\"600\" fill=\"#475569\">Pia / Arachnoid / Dura</text>\n  <text x=\"320\" y=\"42\" font-size=\"10.5\" font-weight=\"700\" fill=\"#be123c\">2. Prelaminar (Choroidal)</text>\n  <text x=\"320\" y=\"136\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">3. Lamina Cribrosa (SPCA)</text>\n  <line x1=\"305\" y1=\"108\" x2=\"322\" y2=\"126\" stroke=\"#334155\" stroke-width=\"1\"/>\n  <text x=\"325\" y=\"175\" font-size=\"10.5\" font-weight=\"700\" fill=\"#854d0e\">4. Retrolaminar</text>\n  <text x=\"325\" y=\"189\" font-size=\"9.5\" fill=\"#854d0e\">(Myelinated; ~3 mm diam.)</text>\n  <text x=\"148\" y=\"242\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\">Circle of Zinn&#8211;Haller (from Short Posterior Ciliary Arteries)</text>\n</svg>"
+          },
+          {
+            "type": "ol",
+            "items": [
+              "**Surface Nerve Fiber Layer:** Unmyelinated RGC axons and astrocytes nourished by capillary branches of the **central retinal artery (CRA)** [2].",
+              "**Prelaminar Region:** Located at the level of the choroid, where axon bundles are encased by astroglial columns and supplied by **peripapillary choroidal vessels** [2].",
+              "**Laminar Region (Lamina Cribrosa):** A sieve-like meshwork of stacked, porous collagenous sheets across the posterior scleral canal [1]. Supplied by the **Circle of Zinn–Haller** (short posterior ciliary arteries), it is the **primary site of glaucomatous axonal injury** where elevated IOP causes posterior bowing and blockade of axoplasmic transport [1] [2].",
+              "**Retrolaminar Region:** Posterior to the lamina cribrosa, RGC axons acquire **myelin sheaths** from oligodendrocytes (doubling optic nerve diameter to ~3 mm) and become encased by pia, arachnoid, and dura mater [1]."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "3. Visual Pathway from Retina to Visual Cortex",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The afferent visual pathway conducts visual signals from retinal photoreceptors to the primary visual cortex via a three-neuron chain: bipolar cells (1st-order), retinal ganglion cells (2nd-order), and lateral geniculate neurons forming the optic radiations (3rd-order) [3]."
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 3:** Schematic diagram of the afferent visual pathway from the retina to the primary visual cortex along the calcarine sulcus.",
+            "svg": "<svg viewBox=\"0 0 540 270\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Visual pathway from retina to primary visual cortex\">\n  <rect width=\"540\" height=\"270\" fill=\"#fcfdff\"/>\n  <circle cx=\"190\" cy=\"34\" r=\"18\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"1.6\"/>\n  <circle cx=\"350\" cy=\"34\" r=\"18\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"1.6\"/>\n  <text x=\"182\" y=\"38\" font-size=\"10\" font-weight=\"700\">LE</text>\n  <text x=\"342\" y=\"38\" font-size=\"10\" font-weight=\"700\">RE</text>\n  <line x1=\"190\" y1=\"52\" x2=\"248\" y2=\"96\" stroke=\"#0369a1\" stroke-width=\"2.2\"/>\n  <line x1=\"350\" y1=\"52\" x2=\"292\" y2=\"96\" stroke=\"#0369a1\" stroke-width=\"2.2\"/>\n  <text x=\"82\" y=\"77\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">Optic Nerve (~50 mm)</text>\n  <rect x=\"240\" y=\"92\" width=\"60\" height=\"22\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.6\"/>\n  <text x=\"314\" y=\"106\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0284c7\">Optic Chiasm (Nasal fibers cross)</text>\n  <line x1=\"246\" y1=\"114\" x2=\"195\" y2=\"148\" stroke=\"#0f766e\" stroke-width=\"2.2\"/>\n  <line x1=\"294\" y1=\"114\" x2=\"345\" y2=\"148\" stroke=\"#0f766e\" stroke-width=\"2.2\"/>\n  <text x=\"115\" y=\"138\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0f766e\">Optic Tract</text>\n  <ellipse cx=\"190\" cy=\"156\" rx=\"19\" ry=\"10\" fill=\"#ccfbf1\" stroke=\"#0f766e\" stroke-width=\"1.6\"/>\n  <ellipse cx=\"350\" cy=\"156\" rx=\"19\" ry=\"10\" fill=\"#ccfbf1\" stroke=\"#0f766e\" stroke-width=\"1.6\"/>\n  <text x=\"378\" y=\"160\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0f766e\">LGN (6 layers: 1&#8211;2 M, 3&#8211;6 P)</text>\n  <path d=\"M 180 166 Q 145 198 220 228\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.2\"/>\n  <path d=\"M 198 166 Q 208 198 242 228\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"1.8\" stroke-dasharray=\"4,2\"/>\n  <path d=\"M 360 166 Q 395 198 320 228\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.2\"/>\n  <path d=\"M 342 166 Q 332 198 298 228\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"1.8\" stroke-dasharray=\"4,2\"/>\n  <text x=\"14\" y=\"200\" font-size=\"10\" font-weight=\"700\" fill=\"#7c3aed\">Meyer's Loop (Temporal)</text>\n  <text x=\"394\" y=\"200\" font-size=\"10\" font-weight=\"700\" fill=\"#7c3aed\">Baum's Loop (Parietal)</text>\n  <path d=\"M 205 230 Q 270 250 335 230\" fill=\"#fae8ff\" stroke=\"#a21caf\" stroke-width=\"2.2\"/>\n  <text x=\"158\" y=\"260\" font-size=\"10.5\" font-weight=\"700\" fill=\"#a21caf\">Primary Visual Cortex (V1 / Brodmann Area 17)</text>\n</svg>"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Anatomical Segment",
+              "Detailed Anatomy & Clinical Localizing Value"
+            ],
+            "rows": [
+              [
+                "**1. Optic Nerve**",
+                "Measures ~50 mm in four segments: **intraocular (1 mm)**, **intraorbital (25 mm)**, **intracanalicular (9 mm)**, and **intracranial (16 mm)**. Unilateral lesions cause monocular vision loss and RAPD [3]."
+              ],
+              [
+                "**2. Optic Chiasm**",
+                "Located above the sella turcica; **nasal retinal fibers (~53%) decussate** while temporal fibers stay ipsilateral. Midline lesions classically produce **bitemporal hemianopia** [3]."
+              ],
+              [
+                "**3. Optic Tract**",
+                "Carries ipsilateral temporal and contralateral nasal fibers; pupillary afferents exit prior to the LGN to reach the pretectal nucleus. Lesions cause **incongruous contralateral homonymous hemianopia** [3]."
+              ],
+              [
+                "**4. Lateral Geniculate Nucleus (LGN)**",
+                "Six-layered thalamic relay: **Layers 1–2 Magnocellular (M)** (motion, contrast) and **Layers 3–6 Parvocellular (P)** (color, acuity). Crossed fibers synapse in layers 1, 4, 6; uncrossed in layers 2, 3, 5 [3]."
+              ],
+              [
+                "**5. Optic Radiations**",
+                "Inferior fibers loop anteriorly into the temporal lobe (**Meyer's loop** → contralateral superior quadrantanopia, *'pie in the sky'*); superior fibers pass through the parietal lobe (**Baum's loop** → contralateral inferior quadrantanopia, *'pie on the floor'*) [3]."
+              ],
+              [
+                "**6. Primary Visual Cortex (V1)**",
+                "Brodmann area 17 along the **calcarine sulcus** (occipital lobe). The macula has large posterior pole representation with dual PCA/MCA supply, explaining **macular sparing** in PCA strokes [3]."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 10: Glaucoma & Shields' Textbook of Glaucoma",
+        "chapter": "Optic Nerve Head & Retinal Nerve Fiber Layer Anatomy",
+        "quote": "Approximately 1.2 million (1.2–1.5 million) unmyelinated RGC axons form the RNFL (papillomacular, arcuate respecting horizontal raphe, nasal radiating) and exit via the ~1.5 mm ONH. The lamina cribrosa is the primary site of glaucomatous axonal injury."
+      },
+      "2": {
+        "book": "Shields' Textbook of Glaucoma (7th Edition) — Allingham et al.",
+        "chapter": "Chapter 5: Vascular Supply of the Optic Nerve Head",
+        "quote": "Surface RNFL is supplied by CRA branches; prelaminar zone by peripapillary choroid; lamina cribrosa by the anastomotic Circle of Zinn–Haller (short posterior ciliary arteries)."
+      },
+      "3": {
+        "book": "AAO BCSC Section 5: Neuro-Ophthalmology & Kanski (9th Ed.)",
+        "chapter": "Anatomy of the Visual Pathway",
+        "quote": "Optic nerve segments: 1 mm intraocular, 25 mm intraorbital, 9 mm intracanalicular, 16 mm intracranial. Nasal fibers (~53%) decussate at chiasm. LGN has 6 layers (1–2 M, 3–6 P). Optic radiations divide into Meyer's loop (temporal) and Baum's loop (parietal) to V1 (area 17)."
+      },
+      "4": {
+        "book": "AAO BCSC Section 10: Glaucoma",
+        "chapter": "Clinical Evaluation of the Optic Nerve Head",
+        "quote": "Normal neuroretinal rim width traditionally follows the ISNT rule (Inferior >= Superior >= Nasal >= Temporal). The Border Tissue of Elschnig separates the choroid/Bruch's membrane from neural ONH tissue."
+      }
+    }
+  },
+  "basic-basic_science-3": {
+    "shortTitle": "Aqueous Humor Inflow & Outflow Dynamics",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Composition & Rate of Aqueous Humor Formation",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Aqueous humor is a clear, optically transparent fluid secreted by the **non-pigmented ciliary epithelium (NPE)** of the ciliary processes (pars plicata) into the posterior chamber [1]. It maintains intraocular pressure (IOP), provides metabolic nutrition to avascular structures (cornea and lens), and removes metabolic wastes [1]."
+          },
+          {
+            "type": "p",
+            "text": "The normal rate of aqueous humor formation is approximately **2.0–2.5 µL/min** (turnover ~1% of anterior chamber volume per minute), with a marked **circadian rhythm**—production drops by up to **45–50% during sleep** due to reduced sympathetic stimulation [1]. Compared to plasma, aqueous humor has markedly lower protein concentration (<1% of plasma), higher ascorbate (15–20×) and lactate levels, and slightly lower glucose [1]."
+          }
+        ]
+      },
+      {
+        "heading": "2. Mechanisms of Aqueous Humor Inflow (Formation)",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Aqueous humor is produced from plasma filtrates within the fenestrated capillaries of the ciliary stroma via three complementary mechanisms [1]:"
+          },
+          {
+            "type": "ol",
+            "items": [
+              "**Active Secretion (~80–90%):** The predominant, energy-dependent mechanism occurring across the **non-pigmented ciliary epithelium (NPE)** against a concentration gradient [1]. Membrane-bound **Na⁺/K⁺-ATPase** pumps Na⁺ into the posterior chamber, while **carbonic anhydrase (CA-II and CA-IV)** catalyzes HCO₃⁻ formation; water follows passively across aquaporin channels (AQP1, AQP4) along the resulting osmotic gradient [1].",
+              "**Ultrafiltration (~10–20%):** Pressure-dependent bulk flow of water and water-soluble solutes across the fenestrated ciliary capillaries into the ciliary stroma, driven by the balance of hydrostatic and oncotic pressures (Starling forces) [1].",
+              "**Passive Diffusion:** Lipid-soluble solutes move down their concentration gradients across the lipid bilayers of the ciliary epithelium [1]."
+            ]
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Schematic summary of aqueous humor formation (active secretion at NPE) and dual drainage via the conventional trabecular (85–90%) and unconventional uveoscleral (10–15%) pathways.",
+            "svg": "<svg viewBox=\"0 0 540 255\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Aqueous humor inflow and dual outflow pathways\">\n  <rect width=\"540\" height=\"255\" fill=\"#fcfdff\"/>\n  <rect x=\"20\" y=\"70\" width=\"135\" height=\"90\" rx=\"8\" fill=\"#ffe4e6\" stroke=\"#be123c\" stroke-width=\"1.6\"/>\n  <text x=\"87\" y=\"96\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#9f1239\">Ciliary Processes (NPE)</text>\n  <text x=\"87\" y=\"114\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#881337\">Active Secretion (80&#8211;90%)</text>\n  <text x=\"87\" y=\"129\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#881337\">Na+/K+-ATPase &amp; CA-II</text>\n  <text x=\"87\" y=\"146\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#be123c\">Rate: 2.0&#8211;2.5 &#181;L/min</text>\n\n  <line x1=\"155\" y1=\"115\" x2=\"195\" y2=\"115\" stroke=\"#0369a1\" stroke-width=\"2.2\"/>\n  <polygon points=\"195,115 186,110 186,120\" fill=\"#0369a1\"/>\n\n  <rect x=\"198\" y=\"84\" width=\"118\" height=\"62\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"1.6\"/>\n  <text x=\"257\" y=\"106\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0369a1\">Posterior Chamber</text>\n  <text x=\"257\" y=\"121\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#0c4a6e\">&#8595; via Pupil</text>\n  <text x=\"257\" y=\"136\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0369a1\">Anterior Chamber</text>\n\n  <!-- Conventional Pathway -->\n  <path d=\"M 316 102 L 352 62\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"2.2\"/>\n  <polygon points=\"352,62 343,64 349,71\" fill=\"#0f766e\"/>\n  <rect x=\"355\" y=\"22\" width=\"168\" height=\"90\" rx=\"8\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"1.6\"/>\n  <text x=\"439\" y=\"42\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0f766e\">Conventional (85&#8211;90%)</text>\n  <text x=\"439\" y=\"58\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#134e4a\">Pressure-dependent</text>\n  <text x=\"439\" y=\"74\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#134e4a\">TM &#8594; JCT &#8594; Schlemm's Canal</text>\n  <text x=\"439\" y=\"89\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#134e4a\">&#8594; Collector Channels</text>\n  <text x=\"439\" y=\"103\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0f766e\">&#8594; Episcleral Veins (Pv)</text>\n\n  <!-- Uveoscleral Pathway -->\n  <path d=\"M 316 128 L 352 172\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.2\"/>\n  <polygon points=\"352,172 349,163 343,170\" fill=\"#7c3aed\"/>\n  <rect x=\"355\" y=\"132\" width=\"168\" height=\"82\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/>\n  <text x=\"439\" y=\"152\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#6d28d9\">Uveoscleral (10&#8211;15%)</text>\n  <text x=\"439\" y=\"168\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#4c1d95\">Pressure-independent</text>\n  <text x=\"439\" y=\"184\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#4c1d95\">Ciliary Body Face &#8594; Muscle</text>\n  <text x=\"439\" y=\"200\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#4c1d95\">&#8594; Suprachoroidal Space</text>\n\n  <!-- Bottom summary bar -->\n  <rect x=\"20\" y=\"222\" width=\"503\" height=\"24\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n  <text x=\"271\" y=\"238\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0c4a6e\">Goldmann Equation:  Po = (F &#8722; U) / C  +  Pv   |   Normal C = 0.22&#8211;0.28 &#181;L/min/mmHg,  Pv = 8&#8211;12 mmHg</text>\n</svg>"
+          }
+        ]
+      },
+      {
+        "heading": "3. Pathways of Aqueous Humor Outflow",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "From the posterior chamber, aqueous passes between the lens and iris through the pupil into the anterior chamber, where thermal convection currents circulate it before exit via two pathways [2]:"
+          },
+          {
+            "type": "ol",
+            "items": [
+              "**Conventional (Trabecular) Outflow (~85–90%):** This is a **pressure-dependent** pathway. Aqueous traverses the uveal and corneoscleral trabecular meshwork, passes through the **juxtacanalicular tissue (JCT)** and inner wall endothelium of Schlemm's canal (via giant vacuoles and transcellular pores), and exits through collector channels into the intrascleral venous plexus and episcleral veins [2]. Outflow facility (**C**) normally averages **0.22–0.28 µL/min/mmHg** [2].",
+              "**Unconventional (Uveoscleral) Outflow (~10–15%):** This is a largely **pressure-independent** pathway that accounts for a higher proportion in young eyes and declines with age [2]. Aqueous enters the anterior face of the ciliary body, percolates between the ciliary muscle bundles into the **suprachoroidal space**, and drains through the sclera or vortex veins [2]."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "4. The Goldmann Equation & Clinical Pharmacologic Targets",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Steady-state intraocular pressure reflects the equilibrium between aqueous production and outflow, expressed mathematically by the **modified Goldmann equation** [3]:"
+          },
+          {
+            "type": "formula",
+            "text": "Po = (F − U) / C + Pv"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Po** = Steady-state intraocular pressure (mmHg).",
+              "**F** = Total rate of aqueous humor production / inflow (~2.0–2.5 µL/min) [1].",
+              "**U** = Uveoscleral (unconventional) outflow rate (µL/min) [3].",
+              "**C** = Conventional trabecular outflow facility (~0.22–0.28 µL/min/mmHg) [3].",
+              "**Pv** = Episcleral venous pressure (~8–12 mmHg) [3]."
+            ]
+          },
+          {
+            "type": "clinical",
+            "title": "Clinical & Pharmacologic Correlations",
+            "items": [
+              "**Aqueous Suppressants (↓ F):** Beta-blockers (timolol), carbonic anhydrase inhibitors (dorzolamide, acetazolamide), and alpha-2 agonists (brimonidine) reduce active secretion [3].",
+              "**Conventional Outflow Enhancers (↑ C):** Pilocarpine contracts longitudinal ciliary muscle to pull the scleral spur; Rho-kinase (ROCK) inhibitors (netarsudil, ripasudil) relax trabecular cytoskeleton and lower episcleral venous pressure (↓ Pv) [3].",
+              "**Uveoscleral Outflow Enhancers (↑ U):** Prostaglandin analogs (latanoprost, bimatoprost, travoprost) remodel ciliary muscle extracellular matrix via matrix metalloproteinases (MMPs) [3].",
+              "**Elevated Pv:** Conditions like Sturge–Weber syndrome, carotid–cavernous fistula, and thyroid eye disease raise IOP mmHg-for-mmHg via elevated episcleral venous pressure [3]."
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 10: Glaucoma",
+        "chapter": "Chapter 2: Intraocular Pressure and Aqueous Humor Dynamics",
+        "quote": "Aqueous humor is produced by the non-pigmented ciliary epithelium at ~2.0–2.5 µL/min predominantly by active secretion (80–90% via Na+/K+-ATPase and carbonic anhydrase), plus ultrafiltration and diffusion. Production decreases by ~45–50% during sleep."
+      },
+      "2": {
+        "book": "Shields' Textbook of Glaucoma (7th Edition) — Allingham et al.",
+        "chapter": "Chapter 2: Aqueous Humor Outflow Pathways",
+        "quote": "Conventional trabecular outflow (85–90%) is pressure-dependent via TM, JCT, Schlemm's canal, collector channels, and episcleral veins (facility C = 0.22–0.28 µL/min/mmHg). Uveoscleral outflow (10–15%) is pressure-independent through ciliary muscle bundles into the suprachoroidal space."
+      },
+      "3": {
+        "book": "AAO BCSC Section 10: Glaucoma & Shields' Textbook of Glaucoma",
+        "chapter": "Goldmann Equation & Clinical Regulation of IOP",
+        "quote": "Steady-state IOP follows the Goldmann equation Po = (F − U)/C + Pv, where Pv (episcleral venous pressure) averages 8–12 mmHg. Glaucoma medications target inflow (F), trabecular facility (C), uveoscleral outflow (U), or episcleral venous pressure (Pv)."
+      }
+    }
+  },
+  "basic-basic_science-4": {
+    "shortTitle": "Microscopic Anatomy of Retina (RGC & RNFL)",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Overview & The Ten Microscopic Layers of the Retina",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The human retina is a transparent neurosensory tissue (~0.1 mm thick at the ora serrata, ~0.23 mm at the foveola, and up to ~0.56 mm at the peripapillary rim) composed of **ten classical histological layers** arranged from innermost (vitreal surface) to outermost (choroidal surface) [1]. Light traverses the full thickness of the inner transparent layers to reach the outer photoreceptors, after which electrical impulses travel back inward to the retinal ganglion cells (RGCs) [1]."
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Schematic cross-section of the ten microscopic retinal layers (innermost ILM to outermost RPE), highlighting the glaucoma-affected inner retina (RNFL, GCL, IPL).",
+            "svg": "<svg viewBox=\"0 0 540 285\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Ten microscopic layers of the retina from inner to outer\">\n  <rect width=\"540\" height=\"285\" fill=\"#fcfdff\"/>\n  <!-- Left Vitreous/Choroid direction arrow -->\n  <text x=\"20\" y=\"28\" font-size=\"10\" font-weight=\"700\" fill=\"#0369a1\">INNER (Vitreous)</text>\n  <line x1=\"58\" y1=\"36\" x2=\"58\" y2=\"246\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <polygon points=\"58,252 53,242 63,242\" fill=\"#94a3b8\"/>\n  <text x=\"20\" y=\"272\" font-size=\"10\" font-weight=\"700\" fill=\"#be123c\">OUTER (Choroid)</text>\n\n  <!-- Glaucoma GCC bracket on right -->\n  <path d=\"M 385 38 L 395 38 L 395 106 L 385 106\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"2\"/>\n  <text x=\"402\" y=\"64\" font-size=\"10\" font-weight=\"700\" fill=\"#0f766e\">Glaucoma Target:</text>\n  <text x=\"402\" y=\"79\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f766e\">Ganglion Cell Complex</text>\n  <text x=\"402\" y=\"93\" font-size=\"9\" fill=\"#475569\">(RNFL + GCL + IPL)</text>\n\n  <!-- 10 Horizontal Layer Bands -->\n  <rect x=\"115\" y=\"18\" width=\"262\" height=\"16\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n  <text x=\"122\" y=\"30\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0369a1\">1. Internal Limiting Membrane (ILM)</text>\n\n  <rect x=\"115\" y=\"36\" width=\"262\" height=\"22\" fill=\"#ccfbf1\" stroke=\"#0f766e\" stroke-width=\"1.3\"/>\n  <text x=\"122\" y=\"51\" font-size=\"10\" font-weight=\"700\" fill=\"#0f766e\">2. Retinal Nerve Fiber Layer (RNFL) — RGC Axons</text>\n\n  <rect x=\"115\" y=\"60\" width=\"262\" height=\"24\" fill=\"#bbf7d0\" stroke=\"#15803d\" stroke-width=\"1.3\"/>\n  <text x=\"122\" y=\"76\" font-size=\"10\" font-weight=\"700\" fill=\"#166534\">3. Ganglion Cell Layer (GCL) — RGC Somata</text>\n\n  <rect x=\"115\" y=\"86\" width=\"262\" height=\"20\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1\"/>\n  <text x=\"122\" y=\"100\" font-size=\"9.5\" font-weight=\"600\" fill=\"#065f46\">4. Inner Plexiform Layer (IPL) — Bipolar&#8211;RGC Synapses</text>\n\n  <rect x=\"115\" y=\"108\" width=\"262\" height=\"22\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"1\"/>\n  <text x=\"122\" y=\"123\" font-size=\"9.5\" font-weight=\"600\" fill=\"#854d0e\">5. Inner Nuclear Layer (INL) — Bipolar, Amacrine, M&#252;ller</text>\n\n  <rect x=\"115\" y=\"132\" width=\"262\" height=\"20\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1\"/>\n  <text x=\"122\" y=\"146\" font-size=\"9.5\" font-weight=\"600\" fill=\"#92400e\">6. Outer Plexiform Layer (OPL) — Photoreceptor Synapses</text>\n\n  <rect x=\"115\" y=\"154\" width=\"262\" height=\"22\" fill=\"#fed7aa\" stroke=\"#ea580c\" stroke-width=\"1\"/>\n  <text x=\"122\" y=\"169\" font-size=\"9.5\" font-weight=\"600\" fill=\"#9a3412\">7. Outer Nuclear Layer (ONL) — Rod &amp; Cone Nuclei</text>\n\n  <rect x=\"115\" y=\"178\" width=\"262\" height=\"16\" fill=\"#ffedd5\" stroke=\"#f97316\" stroke-width=\"1\"/>\n  <text x=\"122\" y=\"190\" font-size=\"9.5\" font-weight=\"600\" fill=\"#9a3412\">8. External Limiting Membrane (ELM)</text>\n\n  <rect x=\"115\" y=\"196\" width=\"262\" height=\"26\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"1\"/>\n  <text x=\"122\" y=\"213\" font-size=\"9.5\" font-weight=\"700\" fill=\"#9f1239\">9. Photoreceptor Layer (Rods &amp; Cones IS/OS)</text>\n\n  <rect x=\"115\" y=\"224\" width=\"262\" height=\"26\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.3\"/>\n  <text x=\"122\" y=\"241\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e293b\">10. Retinal Pigment Epithelium (RPE) &#8212; Outer BRB</text>\n\n  <text x=\"402\" y=\"145\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0369a1\">Inner Retina Supply:</text>\n  <text x=\"402\" y=\"159\" font-size=\"9\" fill=\"#475569\">Central Retinal Artery</text>\n  <text x=\"402\" y=\"210\" font-size=\"9.5\" font-weight=\"700\" fill=\"#be123c\">Outer Retina Supply:</text>\n  <text x=\"402\" y=\"224\" font-size=\"9\" fill=\"#475569\">Choriocapillaris</text>\n</svg>"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Layer (Inner → Outer)",
+              "Histological Components & Functional Role"
+            ],
+            "rows": [
+              [
+                "**1. Internal Limiting Membrane (ILM)**",
+                "Basement membrane formed by expanded footplates of **Müller glial cells**; forms the vitreoretinal interface [1]."
+              ],
+              [
+                "**2. Retinal Nerve Fiber Layer (RNFL)**",
+                "Unmyelinated axons of RGCs running parallel to retinal surface toward the ONH, accompanied by astrocytes and superficial retinal vessels [1]."
+              ],
+              [
+                "**3. Ganglion Cell Layer (GCL)**",
+                "Cell bodies (somata) of retinal ganglion cells and displaced amacrine cells; 6–8 cells thick in the perifoveal macula, tapering to a single cell layer peripherally [1]."
+              ],
+              [
+                "**4. Inner Plexiform Layer (IPL)**",
+                "Synaptic zone between axons of bipolar/amacrine cells and dendrites of retinal ganglion cells [1]."
+              ],
+              [
+                "**5. Inner Nuclear Layer (INL)**",
+                "Cell bodies of **bipolar, horizontal, amacrine, and Müller glial cells** (the vertical and lateral processing hub) [1]."
+              ],
+              [
+                "**6. Outer Plexiform Layer (OPL)**",
+                "Synapses between photoreceptor pedicles/spherules and dendrites of bipolar and horizontal cells (forms Henle's fiber layer in the macula) [1]."
+              ],
+              [
+                "**7. Outer Nuclear Layer (ONL)**",
+                "Cell nuclei of rods and cones [1]."
+              ],
+              [
+                "**8. External Limiting Membrane (ELM)**",
+                "Not a true membrane; a row of **zonulae adherentes** (adherens junctions) between Müller cell apical processes and photoreceptor inner segments [1]."
+              ],
+              [
+                "**9. Photoreceptor Layer**",
+                "Inner and outer segments of **rods (~90–120 million)** for scotopic vision and **cones (~4.6–6 million)** for photopic acuity and color [1]."
+              ],
+              [
+                "**10. Retinal Pigment Epithelium (RPE)**",
+                "Single monolayer of hexagonal pigmented cells resting on Bruch's membrane; apical tight junctions form the **outer blood–retinal barrier** and phagocytose shed photoreceptor outer segments [1]."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "2. Special Focus: Retinal Ganglion Cell Layer (GCL)",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Retinal ganglion cells are the output projection neurons of the retina; over **50% of all RGCs reside in the macular region** (within 4.5 mm of the fovea), where the GCL reaches 6–8 layers in thickness, while it is completely absent at the foveola itself [2]. Based on morphology and central projections, three main functional subtypes exist [2]:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Parvocellular (Midget / P-cells, ~70–80%):** Small receptive fields and thin axons projecting to LGN layers 3–6; mediate **high-acuity vision and red–green color discrimination** [2].",
+              "**Magnocellular (Parasol / M-cells, ~10%):** Large cell bodies, broad dendritic fields, and fast-conducting thicker axons projecting to LGN layers 1–2; mediate **motion detection and low-contrast/temporal sensitivity** [2].",
+              "**Koniocellular (Bistratified / K-cells, ~8–10%):** Project to interlaminar LGN zones; mediate **blue–yellow color opponency** (targeted by Short-Wavelength Automated Perimetry [SWAP]) [2]."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "3. Special Focus: Retinal Nerve Fiber Layer (RNFL) & Stratification",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The RNFL consists of ~1.2 million unmyelinated RGC axons organized into a strict **depth-stratified arrangement**: axons from peripheral RGCs travel **deeper** (closer to the GCL) and enter the **peripheral** optic nerve head, whereas axons from central/macular RGCs travel more **superficially** (closer to the ILM) and enter the more **central** part of the neuroretinal rim [2]."
+          },
+          {
+            "type": "clinical",
+            "title": "Clinical & OCT Correlations in Glaucoma",
+            "items": [
+              "**Ganglion Cell Complex (GCC):** Spectral-domain OCT quantifies the **RNFL + GCL + IPL** (GCC) in the macula, where early glaucomatous RGC loss is detectable before visual field defects appear [2].",
+              "**Dual Blood Supply & Blood–Retinal Barriers:** The inner retina (ILM through inner INL, including RNFL and GCL) is nourished by the **central retinal artery** (tight junctions of retinal capillary endothelium = *inner blood–retinal barrier*), whereas the outer retina is nourished by the **choriocapillaris** across the RPE (*outer blood–retinal barrier*) [1]."
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 2: Fundamentals and Principles of Ophthalmology",
+        "chapter": "Ocular Anatomy — Microscopic Anatomy of the Retina",
+        "quote": "The ten retinal layers from inner to outer are ILM, RNFL, GCL, IPL, INL, OPL, ONL, ELM, photoreceptor inner/outer segments, and RPE. Inner layers (ILM to inner INL) are supplied by CRA (inner BRB), and outer layers by choriocapillaris across the RPE (outer BRB)."
+      },
+      "2": {
+        "book": "Shields' Textbook of Glaucoma (7th Ed.) & AAO BCSC Section 10",
+        "chapter": "Retinal Ganglion Cells, RNFL Organization & OCT GCC",
+        "quote": "Over 50% of RGCs are concentrated in the macula (GCL 6–8 cells thick). RGC subtypes include Parvocellular/Midget (~70–80%), Magnocellular/Parasol (~10%), and Koniocellular/Bistratified (~8–10%). Peripheral RGC axons run deep in the RNFL; macular OCT measures the Ganglion Cell Complex (RNFL + GCL + IPL)."
+      }
+    }
+  },
+  "basic-basic_science-5": {
+    "shortTitle": "Blood Supply of Optic Nerve & Ciliary Body",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Arterial Supply of the Optic Nerve Head & Optic Nerve",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The arterial supply of the optic nerve originates almost entirely from the **ophthalmic artery** (the first major intracranial branch of the internal carotid artery) via two main branch systems: the **central retinal artery (CRA)** and the **short posterior ciliary arteries (SPCAs)** [1]. Because each segment of the optic nerve head (ONH) has a distinct microvascular source, ischemic and glaucomatous vulnerability varies by anatomical zone [1]:"
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Four-zone arterial blood supply of the optic nerve head highlighting the CRA (surface RNFL), peripapillary choroid (prelaminar), Circle of Zinn–Haller (lamina cribrosa), and dual pial/axial supply (retrolaminar).",
+            "svg": "<svg viewBox=\"0 0 540 265\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Arterial blood supply of the four zones of the optic nerve head\">\n  <rect width=\"540\" height=\"265\" fill=\"#fcfdff\"/>\n  <!-- Optic nerve outline -->\n  <rect x=\"30\" y=\"45\" width=\"135\" height=\"16\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.2\"/>\n  <rect x=\"305\" y=\"45\" width=\"135\" height=\"16\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.2\"/>\n  <rect x=\"30\" y=\"61\" width=\"135\" height=\"16\" fill=\"#fecdd3\" stroke=\"#be123c\" stroke-width=\"1.2\"/>\n  <rect x=\"305\" y=\"61\" width=\"135\" height=\"16\" fill=\"#fecdd3\" stroke=\"#be123c\" stroke-width=\"1.2\"/>\n  <rect x=\"30\" y=\"77\" width=\"135\" height=\"32\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"1.3\"/>\n  <rect x=\"305\" y=\"77\" width=\"135\" height=\"32\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"1.3\"/>\n  <path d=\"M 165 45 Q 198 84 235 84 Q 272 84 305 45\" fill=\"#ffffff\" stroke=\"#0369a1\" stroke-width=\"1.8\"/>\n  <rect x=\"165\" y=\"88\" width=\"140\" height=\"21\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\"/>\n  <rect x=\"165\" y=\"109\" width=\"140\" height=\"120\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"1.4\"/>\n\n  <!-- CRA axial + surface branches (Red) -->\n  <line x1=\"235\" y1=\"62\" x2=\"235\" y2=\"238\" stroke=\"#dc2626\" stroke-width=\"2.6\"/>\n  <path d=\"M 235 66 Q 210 56 175 50\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\"/>\n  <path d=\"M 235 66 Q 260 56 295 50\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\"/>\n  <!-- Centrifugal intraneural CRA branches -->\n  <line x1=\"235\" y1=\"158\" x2=\"210\" y2=\"152\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <line x1=\"235\" y1=\"185\" x2=\"260\" y2=\"178\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n\n  <!-- SPCAs & Circle of Zinn-Haller (Crimson) -->\n  <path d=\"M 122 238 Q 130 140 148 98\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"2.4\"/>\n  <path d=\"M 348 238 Q 340 140 322 98\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"2.4\"/>\n  <!-- Circle of Zinn-Haller circles in sclera -->\n  <circle cx=\"148\" cy=\"94\" r=\"6\" fill=\"#fecaca\" stroke=\"#b91c1c\" stroke-width=\"1.8\"/>\n  <circle cx=\"322\" cy=\"94\" r=\"6\" fill=\"#fecaca\" stroke=\"#b91c1c\" stroke-width=\"1.8\"/>\n  <!-- Laminar & Prelaminar branches -->\n  <line x1=\"154\" y1=\"96\" x2=\"188\" y2=\"98\" stroke=\"#b91c1c\" stroke-width=\"1.6\"/>\n  <line x1=\"316\" y1=\"96\" x2=\"282\" y2=\"98\" stroke=\"#b91c1c\" stroke-width=\"1.6\"/>\n  <line x1=\"152\" y1=\"88\" x2=\"182\" y2=\"70\" stroke=\"#e11d48\" stroke-width=\"1.4\"/>\n  <line x1=\"318\" y1=\"88\" x2=\"288\" y2=\"70\" stroke=\"#e11d48\" stroke-width=\"1.4\"/>\n  <!-- Pial Plexus -->\n  <line x1=\"156\" y1=\"115\" x2=\"156\" y2=\"225\" stroke=\"#be123c\" stroke-width=\"1.8\" stroke-dasharray=\"4,2\"/>\n  <line x1=\"314\" y1=\"115\" x2=\"314\" y2=\"225\" stroke=\"#be123c\" stroke-width=\"1.8\" stroke-dasharray=\"4,2\"/>\n\n  <!-- Labels -->\n  <text x=\"165\" y=\"28\" font-size=\"10.5\" font-weight=\"700\" fill=\"#dc2626\">1. Surface RNFL &#8592; CRA Arterioles</text>\n  <text x=\"348\" y=\"34\" font-size=\"10\" font-weight=\"700\" fill=\"#be123c\">2. Prelaminar &#8592; Peripapillary Choroid</text>\n  <text x=\"364\" y=\"96\" font-size=\"10\" font-weight=\"700\" fill=\"#b91c1c\">3. Lamina Cribrosa</text>\n  <text x=\"364\" y=\"110\" font-size=\"9.2\" font-weight=\"700\" fill=\"#b91c1c\">&#8592; Circle of Zinn&#8211;Haller</text>\n  <text x=\"364\" y=\"156\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\">4. Retrolaminar (Dual):</text>\n  <text x=\"364\" y=\"170\" font-size=\"9.5\" fill=\"#be123c\">&#8226; Peripheral: Pial Plexus</text>\n  <text x=\"364\" y=\"184\" font-size=\"9.5\" fill=\"#dc2626\">&#8226; Axial: CRA Branches</text>\n  <text x=\"16\" y=\"148\" font-size=\"10\" font-weight=\"700\" fill=\"#b91c1c\">Short Posterior</text>\n  <text x=\"16\" y=\"162\" font-size=\"10\" font-weight=\"700\" fill=\"#b91c1c\">Ciliary Arteries</text>\n  <text x=\"16\" y=\"176\" font-size=\"9.5\" fill=\"#475569\">(SPCAs)</text>\n  <text x=\"206\" y=\"254\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">Central Retinal Artery</text>\n</svg>"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Optic Nerve Region",
+              "Primary Arterial Blood Supply"
+            ],
+            "rows": [
+              [
+                "**1. Surface Nerve Fiber Layer**",
+                "Retinal arterioles arising from the **central retinal artery (CRA)**; temporal sector may also receive a **cilioretinal artery** (present in ~15–30% of eyes) [1]."
+              ],
+              [
+                "**2. Prelaminar Region**",
+                "Centripetal branches from the **peripapillary choroidal vessels** and direct branches of the **short posterior ciliary arteries (SPCAs)** [1]."
+              ],
+              [
+                "**3. Laminar Region (Lamina Cribrosa)**",
+                "Supplied almost exclusively by the **Arterial Circle of Zinn–Haller** (an intrascleral vascular ring formed by anastomosing SPCAs) [1]."
+              ],
+              [
+                "**4. Retrolaminar Region**",
+                "**Dual supply:** Peripheral *centripetal* supply from the **pial vascular plexus** (recurrent SPCA, Zinn–Haller, and ophthalmic branches) + axial *centrifugal* supply from intraneural branches of the **CRA** [1]."
+              ],
+              [
+                "**5. Intraorbital, Intracanalicular & Intracranial Nerve**",
+                "Supplied by the **pial vascular plexus** fed by ophthalmic artery branches, internal carotid artery, and anterior cerebral/communicating arteries [1]."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**Venous Drainage of the ONH:** Venous return from all four layers of the optic nerve head drains almost exclusively into the **central retinal vein (CRV)**, which exits posteriorly to empty into the superior ophthalmic vein and cavernous sinus [1]."
+          },
+          {
+            "type": "clinical",
+            "title": "Clinical Significance of Watershed Zones",
+            "text": "The border between the medial and lateral short posterior ciliary artery territories forms a **watershed zone** often traversing the optic disc. Systemic nocturnal hypotension, vasospasm, or elevated IOP reduces ocular perfusion pressure (OPP = MAP − IOP), predisposing this watershed region to ischemic glaucomatous damage and anterior ischemic optic neuropathy (AION) [1]."
+          }
+        ]
+      },
+      {
+        "heading": "2. Blood Supply of the Ciliary Body",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The ciliary body receives a rich dual arterial supply derived from both the **posterior and anterior ciliary circulations**, creating an abundant anastomotic ring called the **major arterial circle of the iris** located within the anterior ciliary body stroma near the iris root [2]:"
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 2:** Dual arterial supply of the ciliary body (Long Posterior Ciliary Arteries + Anterior Ciliary Arteries forming the Major Arterial Circle of the Iris) and venous drainage via vortex veins.",
+            "svg": "<svg viewBox=\"0 0 540 220\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Blood supply of the ciliary body and major arterial circle of the iris\">\n  <rect width=\"540\" height=\"220\" fill=\"#fcfdff\"/>\n  <!-- Left inputs -->\n  <rect x=\"18\" y=\"28\" width=\"155\" height=\"62\" rx=\"7\" fill=\"#ffe4e6\" stroke=\"#be123c\" stroke-width=\"1.5\"/>\n  <text x=\"95\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#9f1239\">2 Long Posterior Ciliary</text>\n  <text x=\"95\" y=\"62\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#9f1239\">Arteries (LPCAs)</text>\n  <text x=\"95\" y=\"78\" text-anchor=\"middle\" font-size=\"9\" fill=\"#881337\">3 &amp; 9 o'clock suprachoroidal</text>\n\n  <rect x=\"18\" y=\"114\" width=\"155\" height=\"68\" rx=\"7\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <text x=\"95\" y=\"134\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#b91c1c\">7 Anterior Ciliary</text>\n  <text x=\"95\" y=\"148\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#b91c1c\">Arteries (ACAs)</text>\n  <text x=\"95\" y=\"164\" text-anchor=\"middle\" font-size=\"9\" fill=\"#7f1d1d\">2 per rectus (1 lateral rectus)</text>\n\n  <!-- Arrows to Major Circle -->\n  <line x1=\"173\" y1=\"60\" x2=\"215\" y2=\"95\" stroke=\"#be123c\" stroke-width=\"2\"/>\n  <line x1=\"173\" y1=\"148\" x2=\"215\" y2=\"112\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n\n  <!-- Major Arterial Circle -->\n  <circle cx=\"268\" cy=\"104\" r=\"52\" fill=\"#fff1f2\" stroke=\"#be123c\" stroke-width=\"2.4\"/>\n  <text x=\"268\" y=\"94\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#9f1239\">Major Arterial</text>\n  <text x=\"268\" y=\"109\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#9f1239\">Circle of Iris</text>\n  <text x=\"268\" y=\"124\" text-anchor=\"middle\" font-size=\"8.8\" fill=\"#881337\">(in Ciliary Stroma)</text>\n\n  <!-- Outputs -->\n  <line x1=\"320\" y1=\"88\" x2=\"365\" y2=\"55\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <line x1=\"320\" y1=\"104\" x2=\"365\" y2=\"104\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <line x1=\"320\" y1=\"120\" x2=\"365\" y2=\"155\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n\n  <rect x=\"368\" y=\"28\" width=\"154\" height=\"44\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.4\"/>\n  <text x=\"445\" y=\"47\" text-anchor=\"middle\" font-size=\"9.8\" font-weight=\"700\" fill=\"#92400e\">Ciliary Processes</text>\n  <text x=\"445\" y=\"62\" text-anchor=\"middle\" font-size=\"8.8\" fill=\"#78350f\">Fenestrated capillaries</text>\n\n  <rect x=\"368\" y=\"82\" width=\"154\" height=\"44\" rx=\"6\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"1.4\"/>\n  <text x=\"445\" y=\"101\" text-anchor=\"middle\" font-size=\"9.8\" font-weight=\"700\" fill=\"#9f1239\">Ciliary Muscle &amp; Iris</text>\n  <text x=\"445\" y=\"116\" text-anchor=\"middle\" font-size=\"8.8\" fill=\"#881337\">Radial iris arterioles</text>\n\n  <rect x=\"368\" y=\"136\" width=\"154\" height=\"48\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/>\n  <text x=\"445\" y=\"155\" text-anchor=\"middle\" font-size=\"9.8\" font-weight=\"700\" fill=\"#1e40af\">Venous Drainage</text>\n  <text x=\"445\" y=\"170\" text-anchor=\"middle\" font-size=\"8.8\" fill=\"#1e3a8a\">Vortex Veins (&gt;90%) + ACVs</text>\n\n  <text x=\"270\" y=\"206\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#475569\">Note: Avoid 3 &amp; 9 o'clock meridians during cyclophotocoagulation to spare the LPCAs</text>\n</svg>"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Long Posterior Ciliary Arteries (LPCAs — 2 vessels):** Piercing the sclera near the optic nerve, the medial and lateral LPCAs travel anteriorly in the suprachoroidal space along the **3 and 9 o'clock horizontal meridians** to reach the ciliary body [2].",
+              "**Anterior Ciliary Arteries (ACAs — 7 vessels):** Derived from muscular branches of the ophthalmic artery accompanying the four rectus muscles (**2 each for superior, inferior, and medial recti; 1 for the lateral rectus**), piercing the sclera near the limbus to anastomose with the LPCAs [2].",
+              "**Major Arterial Circle of the Iris & Microcirculation:** Located inside the ciliary body stroma (not the iris itself), this ring sends branches to the ciliary muscle, the iris, and each ciliary process, forming dense tufts of **fenestrated capillaries** beneath the ciliary epithelium to support aqueous secretion [2].",
+              "**Venous Drainage:** Over 90% of venous blood from the ciliary processes drains posteriorly into the **vortex veins** (via pars plana venules), while a smaller fraction from the ciliary muscle drains anteriorly into the anterior ciliary and episcleral veins [2]."
+            ]
+          },
+          {
+            "type": "clinical",
+            "title": "Surgical & Glaucoma Correlation",
+            "text": "During transscleral cyclophotocoagulation (TSCPC) or cyclocryotherapy, the **3 and 9 o'clock meridians must be spared** to prevent damaging the long posterior ciliary arteries and ciliary nerves, which can cause anterior segment ischemia or neurotrophic keratopathy [2]."
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 10: Glaucoma & Kanski's Clinical Ophthalmology",
+        "chapter": "Vascular Supply of the Optic Nerve Head",
+        "quote": "Surface RNFL is supplied by CRA arterioles (and occasional cilioretinal artery); prelaminar zone by peripapillary choroid/SPCAs; laminar zone by Circle of Zinn–Haller (SPCAs); retrolaminar zone by dual pial plexus and axial CRA branches. Venous return is via the CRV."
+      },
+      "2": {
+        "book": "AAO BCSC Section 2: Fundamentals and Principles of Ophthalmology",
+        "chapter": "Uveal Tract Vasculature — Ciliary Body & Major Arterial Circle",
+        "quote": "The ciliary body is supplied by 2 long posterior ciliary arteries (at 3 and 9 o'clock) and 7 anterior ciliary arteries (from the rectus muscles), which anastomose within the ciliary body stroma to form the major arterial circle of the iris. Venous drainage is primarily posteriorly via the vortex veins."
+      }
+    }
+  },
+  "basic-basic_science-6": {
+    "shortTitle": "Apoptotic Mechanism of RGC Death",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Concept of Glaucomatous RGC Apoptosis",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Glaucoma is a progressive optic neuropathy whose final common pathway is the **programmed cell death (apoptosis)** of retinal ganglion cells (RGCs) and degeneration of their axons [1]. Unlike necrosis—which causes cell swelling, membrane rupture, and acute inflammation—apoptosis is an energy-dependent, orderly suicide process featuring cell shrinkage, chromatin condensation, nuclear fragmentation, and silent phagocytosis of apoptotic bodies by retinal microglia and astrocytes without inciting tissue inflammation [1]."
+          }
+        ]
+      },
+      {
+        "heading": "2. Primary Upstream Triggers at the Optic Nerve Head",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Two complementary pathogenic theories explain how glaucomatous stress initiates RGC apoptosis [1]:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Mechanical Theory & Neurotrophin Deprivation:** Elevated IOP or an abnormal translaminar pressure gradient causes mechanical compression and posterior bowing of the **lamina cribrosa**, blocking both **retrograde and anterograde axoplasmic transport** [1]. Deprivation of target-derived neurotrophins—principally **Brain-Derived Neurotrophic Factor (BDNF)** transported retrogradely from the lateral geniculate nucleus and superior colliculus—switches off **TrkB receptor** pro-survival signaling (PI3K/Akt and Ras/MAPK pathways), priming the RGC for apoptosis [1].",
+              "**Vascular / Ischemic Theory & Oxidative Stress:** Compromised ONH microcirculation (reduced ocular perfusion pressure or vascular dysregulation) induces ischemia–reperfusion injury, generating **reactive oxygen species (ROS)** and **nitric oxide (NO)** via inducible nitric oxide synthase (iNOS), which damage axonal mitochondria [1].",
+              "**Glutamate Excitotoxicity:** Retinal stress and Müller-cell glutamate transporter (GLAST) dysfunction elevate extracellular **glutamate**, hyperactivating **NMDA receptors** on RGCs and causing massive intracellular **calcium (Ca²⁺) overload** [2]."
+            ]
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Convergent molecular cascade of RGC apoptosis in glaucoma linking lamina cribrosa stress, BDNF deprivation, NMDA excitotoxicity, mitochondrial cytochrome c release, and caspase-3 execution.",
+            "svg": "<svg viewBox=\"0 0 540 275\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Molecular pathway of retinal ganglion cell apoptosis in glaucoma\">\n  <rect width=\"540\" height=\"275\" fill=\"#fcfdff\"/>\n  <!-- Top Triggers -->\n  <rect x=\"16\" y=\"16\" width=\"160\" height=\"58\" rx=\"7\" fill=\"#ffe4e6\" stroke=\"#be123c\" stroke-width=\"1.5\"/>\n  <text x=\"96\" y=\"34\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#9f1239\">Elevated IOP / Strain</text>\n  <text x=\"96\" y=\"49\" text-anchor=\"middle\" font-size=\"8.8\" fill=\"#881337\">Axoplasmic Block</text>\n  <text x=\"96\" y=\"63\" text-anchor=\"middle\" font-size=\"8.8\" font-weight=\"700\" fill=\"#be123c\">&#8595; BDNF / TrkB Survival</text>\n\n  <rect x=\"190\" y=\"16\" width=\"160\" height=\"58\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n  <text x=\"270\" y=\"34\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#92400e\">Glutamate Excitotoxicity</text>\n  <text x=\"270\" y=\"49\" text-anchor=\"middle\" font-size=\"8.8\" fill=\"#78350f\">NMDA Overactivation</text>\n  <text x=\"270\" y=\"63\" text-anchor=\"middle\" font-size=\"8.8\" font-weight=\"700\" fill=\"#b45309\">Massive Ca2+ Influx</text>\n\n  <rect x=\"364\" y=\"16\" width=\"160\" height=\"58\" rx=\"7\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <text x=\"444\" y=\"34\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0369a1\">Ischemia &amp; Glial Activation</text>\n  <text x=\"444\" y=\"49\" text-anchor=\"middle\" font-size=\"8.8\" fill=\"#0c4a6e\">ROS, NO (iNOS), TNF-&#945;</text>\n  <text x=\"444\" y=\"63\" text-anchor=\"middle\" font-size=\"8.8\" font-weight=\"700\" fill=\"#0284c7\">Extrinsic Caspase-8</text>\n\n  <!-- Converging arrows -->\n  <line x1=\"96\" y1=\"74\" x2=\"210\" y2=\"104\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n  <line x1=\"270\" y1=\"74\" x2=\"270\" y2=\"104\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n  <line x1=\"444\" y1=\"74\" x2=\"330\" y2=\"104\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n\n  <!-- Mitochondrial Hub -->\n  <rect x=\"115\" y=\"106\" width=\"310\" height=\"54\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <text x=\"270\" y=\"125\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#5b21b6\">Mitochondrial (Intrinsic) Pathway</text>\n  <text x=\"270\" y=\"140\" text-anchor=\"middle\" font-size=\"9.2\" fill=\"#4c1d95\">Pro-apoptotic Bax/Bad &gt; Anti-apoptotic Bcl-2/Bcl-xL</text>\n  <text x=\"270\" y=\"153\" text-anchor=\"middle\" font-size=\"9.2\" font-weight=\"700\" fill=\"#6d28d9\">mPTP Opening &#8594; Cytochrome c Release into Cytosol</text>\n\n  <line x1=\"270\" y1=\"160\" x2=\"270\" y2=\"182\" stroke=\"#5b21b6\" stroke-width=\"2\"/>\n  <polygon points=\"270,184 265,176 275,176\" fill=\"#5b21b6\"/>\n\n  <!-- Apoptosome & Caspases -->\n  <rect x=\"115\" y=\"185\" width=\"310\" height=\"36\" rx=\"7\" fill=\"#fff1f2\" stroke=\"#e11d48\" stroke-width=\"1.6\"/>\n  <text x=\"270\" y=\"201\" text-anchor=\"middle\" font-size=\"9.8\" font-weight=\"700\" fill=\"#9f1239\">Apoptosome (Cyt c + Apaf-1 + Procaspase-9) &#8594; Caspase-9</text>\n  <text x=\"270\" y=\"214\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#be123c\">&#8594; Executioner Caspase-3 / Caspase-7 Activation</text>\n\n  <line x1=\"270\" y1=\"221\" x2=\"270\" y2=\"238\" stroke=\"#be123c\" stroke-width=\"2\"/>\n  <polygon points=\"270,240 265,232 275,232\" fill=\"#be123c\"/>\n\n  <!-- Outcome -->\n  <rect x=\"65\" y=\"241\" width=\"410\" height=\"26\" rx=\"6\" fill=\"#0f172a\"/>\n  <text x=\"270\" y=\"258\" text-anchor=\"middle\" font-size=\"9.8\" font-weight=\"700\" fill=\"#ffffff\">DNA Fragmentation, Cell Shrinkage &amp; Silent Microglial Phagocytosis &#8594; RNFL Loss</text>\n</svg>"
+          }
+        ]
+      },
+      {
+        "heading": "3. Intrinsic & Extrinsic Apoptotic Execution Cascades",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "**Intrinsic (Mitochondrial) Pathway:** Intracellular Ca²⁺ overload, oxidative stress, and loss of BDNF tip the **Bcl-2 family balance** toward pro-apoptotic proteins (**Bax, Bad, Bid**) over anti-apoptotic proteins (**Bcl-2, Bcl-xL**) [2]. This induces mitochondrial outer membrane permeabilization (MOMP) and opening of the mitochondrial permeability transition pore (mPTP), releasing **cytochrome c** into the cytosol [2].",
+              "**Apoptosome & Initiator Caspase-9:** Cytosolic cytochrome c binds **Apaf-1** and procaspase-9 in the presence of ATP to assemble the **apoptosome**, activating the initiator **caspase-9** [2].",
+              "**Extrinsic (Death Receptor) Pathway:** Reactive astrocytes and microglia release **TNF-α** and **Fas ligand**, which bind death receptors (TNFR1, Fas) on the RGC membrane and activate **caspase-8** (which also cleaves Bid to amplify the mitochondrial pathway) [2].",
+              "**Final Execution (Caspase-3 & -7):** Both pathways converge on executioner **caspase-3** (and caspase-7), which cleaves cytoskeletal proteins and activates endonucleases to produce internucleosomal DNA fragmentation, membrane blebbing, and apoptotic body clearance without inflammation [2]."
+            ]
+          },
+          {
+            "type": "clinical",
+            "title": "Therapeutic & Neuroprotection Relevance",
+            "text": "Currently, **IOP lowering** remains the only clinically proven intervention to halt upstream mechanical stress and neurotrophin deprivation. Investigational neuroprotective strategies target downstream nodes—such as **brimonidine** (upregulates Bcl-2/BDNF), **NMDA antagonists** (memantine—failed phase III primary endpoints), **nicotinamide (vitamin B3)** to support mitochondrial NAD⁺ metabolism, and gene-delivered BDNF/TrkB [1] [2]."
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 10: Glaucoma & Shields' Textbook of Glaucoma",
+        "chapter": "Pathogenesis of Glaucomatous Optic Neuropathy",
+        "quote": "Glaucomatous RGC loss occurs by apoptosis triggered by mechanical lamina cribrosa strain (blocking retrograde BDNF/TrkB axoplasmic transport) and vascular/ischemic oxidative stress (ROS, iNOS/NO)."
+      },
+      "2": {
+        "book": "Shields' Textbook of Glaucoma (7th Ed.) — Allingham et al.",
+        "chapter": "Molecular Mechanisms of Retinal Ganglion Cell Apoptosis",
+        "quote": "Glutamate excitotoxicity via NMDA receptors causes intracellular Ca2+ overload, tipping the Bcl-2/Bax ratio toward mitochondrial cytochrome c release, apoptosome assembly (Apaf-1 + caspase-9), and executioner caspase-3 activation; extrinsic TNF-alpha/Fas signaling activates caspase-8."
+      }
+    }
+  },
+  "basic-basic_science-7": {
+    "shortTitle": "Physiology of Visual-Field Examination",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Traquair's Hill of Vision & Normal Visual Field Extent",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The visual field is the entire spatial area perceived by an eye while maintaining steady central fixation [1]. H. M. Traquair conceptualized the normal visual field as a three-dimensional **'island (hill) of vision in a sea of darkness'** whose elevation represents differential light sensitivity [1]."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Peak of the Hill:** Corresponds to the **fovea**, where cone density and spatial resolution are maximal (~35–40 dB sensitivity), sloping gradually downward toward the periphery [1].",
+              "**Normal Monocular Boundaries:** Extends approximately **60° superiorly**, **60° nasally**, **75° inferiorly**, and **100° temporally** (shaped by the brow, nose, and cheek) [1].",
+              "**Physiologic Blind Spot:** Appears as an absolute bottomless pit corresponding to the optic nerve head (absent photoreceptors), located **15° temporal** and **1.5° inferior** to fixation (measuring ~5.5° wide × 7.5° tall) [1]."
+            ]
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Profile of Traquair's Hill of Vision illustrating foveal peak sensitivity, the physiologic blind spot (15° temporal), horizontal (kinetic) vs. vertical (static) sampling, and normal boundaries.",
+            "svg": "<svg viewBox=\"0 0 540 250\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Traquair's Hill of Vision profile showing fovea, blind spot, and kinetic versus static testing\">\n  <rect width=\"540\" height=\"250\" fill=\"#fcfdff\"/>\n  <!-- Axes -->\n  <line x1=\"50\" y1=\"205\" x2=\"505\" y2=\"205\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n  <line x1=\"255\" y1=\"26\" x2=\"255\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/>\n  <text x=\"54\" y=\"222\" font-size=\"9.5\" font-weight=\"700\" fill=\"#475569\">60&#176; Nasal</text>\n  <text x=\"234\" y=\"222\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0369a1\">0&#176; Fovea</text>\n  <text x=\"448\" y=\"222\" font-size=\"9.5\" font-weight=\"700\" fill=\"#475569\">100&#176; Temporal</text>\n  <text x=\"278\" y=\"240\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"600\" fill=\"#475569\">Normal Boundaries: Superior 60&#176; | Nasal 60&#176; | Inferior 75&#176; | Temporal 100&#176;</text>\n\n  <!-- Hill of Vision Curve with Blind Spot Dip -->\n  <path d=\"M 85 205 Q 155 155 215 110 Q 245 78 255 44 Q 266 78 286 104 L 296 205 L 314 205 L 320 124 Q 395 148 485 205 Z\" fill=\"#e0f2fe\" fill-opacity=\"0.7\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n\n  <!-- Foveal Peak Label -->\n  <circle cx=\"255\" cy=\"44\" r=\"4\" fill=\"#0369a1\"/>\n  <text x=\"264\" y=\"42\" font-size=\"10\" font-weight=\"700\" fill=\"#0369a1\">Foveal Peak (~35&#8211;40 dB)</text>\n\n  <!-- Blind Spot -->\n  <line x1=\"305\" y1=\"185\" x2=\"360\" y2=\"90\" stroke=\"#dc2626\" stroke-width=\"1.1\"/>\n  <text x=\"342\" y=\"75\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">Physiologic Blind Spot</text>\n  <text x=\"342\" y=\"88\" font-size=\"9\" fill=\"#991b1b\">(15&#176; Temporal, 1.5&#176; Inf.)</text>\n\n  <!-- Kinetic (Horizontal) Arrow -->\n  <line x1=\"72\" y1=\"145\" x2=\"178\" y2=\"145\" stroke=\"#0f766e\" stroke-width=\"2\"/>\n  <polygon points=\"178,145 169,140 169,150\" fill=\"#0f766e\"/>\n  <text x=\"64\" y=\"138\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0f766e\">Kinetic (Horizontal Slice)</text>\n\n  <!-- Static (Vertical) Arrow -->\n  <line x1=\"210\" y1=\"195\" x2=\"210\" y2=\"115\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n  <polygon points=\"210,115 205,124 215,124\" fill=\"#7c3aed\"/>\n  <text x=\"115\" y=\"188\" font-size=\"9.5\" font-weight=\"700\" fill=\"#7c3aed\">Static (Vertical)</text>\n\n  <!-- Y-axis label -->\n  <text x=\"16\" y=\"75\" font-size=\"9.5\" font-weight=\"700\" fill=\"#334155\">Sensitivity</text>\n  <text x=\"22\" y=\"88\" font-size=\"9.5\" font-weight=\"700\" fill=\"#334155\">(dB &#8593;)</text>\n</svg>"
+          }
+        ]
+      },
+      {
+        "heading": "2. Psychophysical Principles of Light Threshold & Units",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Visual field testing measures the **differential light threshold**—the dimmest stimulus intensity (ΔL) perceived **50% of the time** against a uniform background illumination (L) [1]. According to **Weber's law**, under photopic conditions the contrast ratio ΔL/L remains constant across background levels [1]."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Background Luminance (31.5 apostilbs [asb]):** Standard automated perimeters (Humphrey, Goldmann) illuminate the bowl at **31.5 asb** (10 cd/m²) to maintain photopic, cone-dominated adaptation where Weber's law holds [1].",
+              "**Apostilbs (asb) vs. Decibels (dB):** Stimulus luminance is measured linearly in **apostilbs** (0.08 to 10,000 asb on Humphrey), while retinal sensitivity is reported on an **inverted logarithmic decibel (dB) scale** where **0 dB = maximum machine brightness (10,000 asb)** and every **10 dB increase = 1 log-unit (10×) dimmer light** [1]. Thus, **higher dB values signify greater retinal sensitivity** [1].",
+              "**Spatial & Temporal Summation:** Within a critical area (**Ricco's law**), threshold depends on stimulus area × intensity (I × A = constant); within a critical duration (~100 ms, **Bloch's law**), stimulus duration × intensity is constant. Standard perimeters use a **200 ms stimulus**—longer than Bloch's critical duration (eliminating duration artifacts) yet shorter than the saccadic latency (~250 ms) so the patient cannot look toward the light [2]."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "3. Physiological & Patient Factors Affecting Interpretation",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Accurate visual field interpretation requires separating true glaucomatous neural loss from physiological and optical confounders [2]:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Age:** Retinal sensitivity declines linearly with age (~0.5–0.8 dB per decade), accounted for by age-matched normative databases in Total Deviation plots [2].",
+              "**Pupil Size:** Pupils **< 2.5–3.0 mm** cause diffuse depression and exaggerate peripheral defects due to reduced retinal luminance and diffraction [2].",
+              "**Media Opacity & Uncorrected Refractive Error:** Cataracts produce generalized depression (affecting Total Deviation more than Pattern Deviation), while each +1.0 D of defocus lowers central sensitivity by ~1.2–1.5 dB [2].",
+              "**Learning Effect & Fatigue:** First-time test takers often improve on their second or third field (learning effect), whereas prolonged test duration causes false depression (fatigue/cloverleaf artifact) [2]."
+            ]
+          },
+          {
+            "type": "clinical",
+            "title": "Structure–Function Caveat in Glaucoma",
+            "text": "Because the decibel scale is logarithmic and RGC receptive fields overlap, **25–40% of retinal ganglion cells may be lost before a statistically significant defect appears on standard white-on-white automated perimetry**—highlighting why structural ONH/OCT assessment complements visual fields [2]."
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 10: Glaucoma & Shields' Textbook of Glaucoma",
+        "chapter": "Visual Field Physiology & Perimetric Principles",
+        "quote": "Traquair's hill of vision peaks at the fovea and extends ~60° superior/nasal, 75° inferior, and 100° temporal, with the blind spot 15° temporal and 1.5° inferior. Differential light threshold (50% detection) is tested on a 31.5 asb photopic background using an inverted logarithmic dB scale (0 dB = 10,000 asb)."
+      },
+      "2": {
+        "book": "Shields' Textbook of Glaucoma (7th Edition) — Allingham et al.",
+        "chapter": "Assessment of Visual Fields — Psychophysics & Confounders",
+        "quote": "Stimulus duration (200 ms) exceeds Bloch's critical duration (~100 ms) while staying below saccadic latency (~250 ms). Pupil <2.5 mm, uncorrected refraction, cataract, age, learning effect, and fatigue confound sensitivity; 25–40% RGC loss may precede detectable SAP defects."
+      }
+    }
+  },
+  "basic-basic_science-8": {
+    "shortTitle": "Goldmann Kinetic/Static & Automated Perimetry",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Kinetic vs. Static Perimetry Fundamentals",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Perimetry maps Traquair's hill of vision using either **kinetic** (moving target) or **static** (stationary target) techniques [1]:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Kinetic Perimetry (Horizontal Slicing):** A stimulus of fixed size and brightness is moved steadily (2–4°/sec) from non-seeing periphery toward seeing center until detected. Connecting equal-threshold points forms an **isopter** (like elevation contours on a topographic map) [1].",
+              "**Static Perimetry (Vertical Slicing):** A stationary stimulus of fixed size is presented at preselected grid coordinates while luminance is varied until the exact differential light threshold (in dB) is measured at each locus [1]."
+            ]
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Comparison of Goldmann kinetic isopter mapping (left) versus Standard Automated Perimetry 4–2 dB static threshold bracketing (right).",
+            "svg": "<svg viewBox=\"0 0 540 230\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Kinetic isopter mapping versus static threshold bracketing\">\n  <rect width=\"540\" height=\"230\" fill=\"#fcfdff\"/>\n  <!-- Left Panel: Kinetic Isopters -->\n  <rect x=\"16\" y=\"14\" width=\"242\" height=\"202\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n  <text x=\"137\" y=\"34\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">Goldmann Kinetic (Isopters)</text>\n  <ellipse cx=\"142\" cy=\"122\" rx=\"88\" ry=\"62\" fill=\"#e0f2fe\" fill-opacity=\"0.45\" stroke=\"#0369a1\" stroke-width=\"1.6\"/>\n  <ellipse cx=\"140\" cy=\"122\" rx=\"60\" ry=\"42\" fill=\"#bae6fd\" fill-opacity=\"0.45\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <ellipse cx=\"138\" cy=\"122\" rx=\"32\" ry=\"22\" fill=\"#7dd3fc\" fill-opacity=\"0.45\" stroke=\"#0369a1\" stroke-width=\"1.4\"/>\n  <circle cx=\"138\" cy=\"122\" r=\"2.5\" fill=\"#0f172a\"/>\n  <!-- Blind spot -->\n  <ellipse cx=\"164\" cy=\"125\" rx=\"5\" ry=\"7\" fill=\"#334155\"/>\n  <!-- Inward kinetic arrows -->\n  <line x1=\"42\" y1=\"88\" x2=\"72\" y2=\"98\" stroke=\"#0f766e\" stroke-width=\"1.8\"/>\n  <polygon points=\"74,99 65,99 68,92\" fill=\"#0f766e\"/>\n  <text x=\"195\" y=\"75\" font-size=\"9\" font-weight=\"700\" fill=\"#0369a1\">V4e</text>\n  <text x=\"176\" y=\"95\" font-size=\"9\" font-weight=\"700\" fill=\"#0284c7\">III4e</text>\n  <text x=\"150\" y=\"108\" font-size=\"9\" font-weight=\"700\" fill=\"#0c4a6e\">I2e</text>\n  <text x=\"137\" y=\"204\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Moving target maps horizontal contours</text>\n\n  <!-- Right Panel: Static 4-2 Bracketing -->\n  <rect x=\"278\" y=\"14\" width=\"246\" height=\"202\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n  <text x=\"401\" y=\"34\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\">Static Threshold (4&#8211;2 dB Staircase)</text>\n  <line x1=\"312\" y1=\"52\" x2=\"312\" y2=\"178\" stroke=\"#334155\" stroke-width=\"1.4\"/>\n  <line x1=\"312\" y1=\"178\" x2=\"505\" y2=\"178\" stroke=\"#334155\" stroke-width=\"1.4\"/>\n  <line x1=\"312\" y1=\"118\" x2=\"505\" y2=\"118\" stroke=\"#0f766e\" stroke-width=\"1.4\" stroke-dasharray=\"5,3\"/>\n  <text x=\"456\" y=\"112\" font-size=\"9\" font-weight=\"700\" fill=\"#0f766e\">True Threshold</text>\n  <!-- Staircase steps -->\n  <circle cx=\"338\" cy=\"154\" r=\"4\" fill=\"#16a34a\"/>\n  <text x=\"330\" y=\"170\" font-size=\"8.5\" fill=\"#166534\">Seen</text>\n  <line x1=\"338\" y1=\"154\" x2=\"380\" y2=\"128\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <circle cx=\"380\" cy=\"128\" r=\"4\" fill=\"#16a34a\"/>\n  <text x=\"372\" y=\"143\" font-size=\"8.5\" fill=\"#166534\">&#8722;4 dB</text>\n  <line x1=\"380\" y1=\"128\" x2=\"422\" y2=\"96\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <circle cx=\"422\" cy=\"96\" r=\"4\" fill=\"#dc2626\"/>\n  <text x=\"410\" y=\"88\" font-size=\"8.5\" fill=\"#b91c1c\">Missed</text>\n  <line x1=\"422\" y1=\"96\" x2=\"464\" y2=\"118\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <circle cx=\"464\" cy=\"118\" r=\"4.5\" fill=\"#0f766e\"/>\n  <text x=\"456\" y=\"136\" font-size=\"8.5\" font-weight=\"700\" fill=\"#0f766e\">+2 dB (Hit)</text>\n  <text x=\"288\" y=\"64\" font-size=\"8.5\" font-weight=\"700\" fill=\"#475569\">Dim</text>\n  <text x=\"284\" y=\"174\" font-size=\"8.5\" font-weight=\"700\" fill=\"#475569\">Bright</text>\n  <text x=\"401\" y=\"204\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Stationary target quantifies exact dB depth</text>\n</svg>"
+          }
+        ]
+      },
+      {
+        "heading": "2. Goldmann Manual Perimetry",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The Goldmann perimeter is a hemispherical white bowl (30 cm radius, 31.5 asb background) capable of both manual kinetic and manual static testing [1]. Its standardized **Goldmann stimulus notation** (e.g., **III4e**) specifies three parameters [1]:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Roman Numeral (0 to V — Area/Size):** Each step quadruples area (doubles diameter): Size I = 0.25 mm², Size II = 1 mm², **Size III = 4 mm² (0.43° visual angle — standard in SAP)**, Size IV = 16 mm², Size V = 64 mm² [1].",
+              "**Arabic Numeral (1 to 4 — Coarse Intensity):** Each step changes luminance by 0.5 log unit (5 dB); **4** is the brightest setting (1,000 asb) [1].",
+              "**Lowercase Letter (a to e — Fine Intensity):** Each step changes luminance by 0.1 log unit (1 dB); **e** transmits 100% of the filter setting [1]."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**Clinical Role:** Goldmann kinetic perimetry remains invaluable for **severe/end-stage visual field loss**, neurological/peripheral fields beyond 30°, and patients unable to cooperate with automated machines; however, it is operator-dependent and less sensitive to subtle early paracentral glaucomatous scotomas [1]."
+          }
+        ]
+      },
+      {
+        "heading": "3. Standard Automated Perimetry (SAP)",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Standard Automated Perimetry (white-on-white static threshold testing, e.g., **Humphrey Field Analyzer [HFA]** or **Octopus**) is the clinical gold standard for diagnosing and monitoring glaucoma because it eliminates examiner bias, provides standardized statistical indices, and detects early localized scotomas [2]."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "SAP Component",
+              "Key Specifications & Exam Details"
+            ],
+            "rows": [
+              [
+                "**Test Patterns**",
+                "**24-2** (54 points, 6° grid covering central 24° + nasal 30° — standard for glaucoma), **30-2** (76 points), **10-2** (68 points, 2° spacing — essential in advanced glaucoma & macular threat), **24-2C** (adds 10 central macular points) [2]."
+              ],
+              [
+                "**Thresholding Algorithms**",
+                "**Full Threshold** (4–2 dB bracketing; accurate but slow ~12–15 min/eye); **SITA Standard** (Swedish Interactive Threshold Algorithm — halves test time to ~5–7 min using Bayesian priors without losing accuracy); **SITA Fast / SITA Faster** (~2–4 min) [2]."
+              ],
+              [
+                "**Reliability Indices**",
+                "**Fixation Losses** (<20%, Heijl–Krakau blind-spot check), **False Positives** (<15%, trigger-happy patient → 'white scotomas'), **False Negatives** (<33%, fatigue or genuine advanced field damage) [2]."
+              ],
+              [
+                "**Global Indices & Maps**",
+                "**Mean Deviation (MD)** measures generalized depression; **Pattern Standard Deviation (PSD)** measures focal/localized loss; **Visual Field Index (VFI, 0–100%)** tracks progression; **Glaucoma Hemifield Test (GHT)** compares 5 mirrored superior vs. inferior arcuate zones [2]."
+              ]
+            ]
+          },
+          {
+            "type": "clinical",
+            "title": "Anderson–Patella Criteria for Minimal Glaucomatous Abnormality",
+            "text": "On a reliable SAP field, minimal glaucomatous damage is defined by any one of: (1) **≥3 contiguous non-edge points** on the Pattern Deviation plot depressed at **P < 5%** with at least one at **P < 1%** in the same hemifield, (2) **PSD (or CPSD) with P < 5%**, or (3) **Glaucoma Hemifield Test 'Outside Normal Limits'** [2]."
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 10: Glaucoma",
+        "chapter": "Perimetry — Goldmann Kinetic & Static Principles",
+        "quote": "Goldmann perimetry uses a 30 cm bowl at 31.5 asb. Stimulus size ranges from 0 to V (Size III = 4 mm², 0.43°); Arabic numerals 1–4 vary brightness by 5 dB steps; letters a–e vary by 1 dB steps. Kinetic perimetry plots isopters; static perimetry measures point thresholds."
+      },
+      "2": {
+        "book": "Shields' Textbook of Glaucoma (7th Ed.) & AAO BCSC Section 10",
+        "chapter": "Standard Automated Perimetry, SITA & Anderson-Patella Criteria",
+        "quote": "SAP (24-2, 30-2, 10-2, 24-2C) uses SITA Standard/Fast/Faster algorithms to shorten testing while preserving accuracy. Reliability requires low fixation losses (<20%) and false positives (<15%). Anderson-Patella criteria use Pattern Deviation cluster, PSD <5%, or GHT Outside Normal Limits."
+      }
+    }
+  },
+  "basic-basic_science-9": {
+    "shortTitle": "Tonometry Principles, Outflow & Diurnal Curve",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Basic Principles of Tonometry",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tonometry estimates intraocular pressure (IOP) non-invasively by measuring the cornea's resistance to deformation—either by **applanation** (flattening) or **indentation**—because direct manometry via cannulation is invasive [1]. Normal population IOP averages **15.5 ± 2.6 mmHg** (statistical normal range 10–21 mmHg) [1]."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Applanation Tonometry (Imbert–Fick Principle):** For an ideal, dry, infinitely thin, perfectly elastic sphere, internal pressure equals the flattening force divided by the flattened area (**P = F / A**) [1]. Because the human cornea has structural rigidity (**S**, resisting flattening) and a surface tear meniscus exerting capillary attraction (**B**, pulling the prism inward), **Hans Goldmann** demonstrated that at a precise applanation diameter of **3.06 mm** (area **7.35 mm²**), corneal rigidity and tear film surface tension cancel each other out (**S ≈ B**), and displacing only ~0.5 µL of aqueous avoids ocular rigidity artifacts [1]. At 3.06 mm, 1 gram of applied force equals **10 mmHg** [1].",
+              "**Indentation Tonometry (Schiøtz):** Measures the depth to which a weighted plunger indents the cornea; because it displaces a relatively large volume (~15–20 µL), readings are significantly distorted by **scleral/ocular rigidity** (underestimates IOP in high myopes and post-vitrectomy eyes) [1].",
+              "**Other Modern Principles:** **Rebound tonometry (iCare)** calculates IOP from the deceleration rate of a lightweight magnetized probe bouncing off the cornea; **Dynamic Contour Tonometry (PASCAL)** matches corneal contour to measure IOP directly with minimal dependence on central corneal thickness (CCT) [1]."
+            ]
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Goldmann applanation force balance at 3.06 mm (top) and a 24-hour diurnal IOP curve demonstrating early-morning peak and daytime trough (bottom).",
+            "svg": "<svg viewBox=\"0 0 540 265\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Imbert-Fick force balance at 3.06 mm and 24-hour diurnal IOP curve\">\n  <rect width=\"540\" height=\"265\" fill=\"#fcfdff\"/>\n  <!-- Top Box: Imbert-Fick at 3.06 mm -->\n  <rect x=\"18\" y=\"12\" width=\"504\" height=\"82\" rx=\"8\" fill=\"#f0f9ff\" stroke=\"#bae6fd\" stroke-width=\"1.3\"/>\n  <text x=\"32\" y=\"32\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">Goldmann Applanation Principle (Modified Imbert&#8211;Fick Law)</text>\n  <text x=\"32\" y=\"50\" font-size=\"10\" font-weight=\"700\" fill=\"#0c4a6e\">W + B  =  P &#215; A + S    &#8658;    At Diameter = 3.06 mm (Area = 7.35 mm&#178;):  S &#8776; B,  so  P = W / A</text>\n  <text x=\"32\" y=\"68\" font-size=\"9.2\" fill=\"#475569\">W = Applied force | B = Tear meniscus capillary pull (inward) | S = Corneal bending resistance (outward)</text>\n  <text x=\"32\" y=\"83\" font-size=\"9.2\" font-weight=\"600\" fill=\"#0f766e\">Assumes normal CCT (~520&#8211;550 &#181;m): Thick cornea overestimates IOP; thin cornea underestimates IOP.</text>\n\n  <!-- Bottom Chart: Diurnal Curve -->\n  <rect x=\"18\" y=\"106\" width=\"504\" height=\"148\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n  <text x=\"270\" y=\"125\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0f172a\">24-Hour Diurnal IOP Curve (Peak, Trough &amp; Office-Hour Blind Spot)</text>\n\n  <!-- Office hours shading (9 AM - 5 PM) -->\n  <rect x=\"215\" y=\"135\" width=\"145\" height=\"90\" fill=\"#fef3c7\" fill-opacity=\"0.5\"/>\n  <text x=\"287\" y=\"148\" text-anchor=\"middle\" font-size=\"8.8\" font-weight=\"700\" fill=\"#92400e\">Clinic Hours (9 AM&#8211;5 PM)</text>\n\n  <!-- Axes -->\n  <line x1=\"65\" y1=\"135\" x2=\"65\" y2=\"225\" stroke=\"#475569\" stroke-width=\"1.3\"/>\n  <line x1=\"65\" y1=\"225\" x2=\"495\" y2=\"225\" stroke=\"#475569\" stroke-width=\"1.3\"/>\n  <text x=\"26\" y=\"152\" font-size=\"8.8\" font-weight=\"700\" fill=\"#be123c\">26 mmHg</text>\n  <text x=\"26\" y=\"185\" font-size=\"8.8\" font-weight=\"600\" fill=\"#475569\">18 mmHg</text>\n  <text x=\"26\" y=\"218\" font-size=\"8.8\" font-weight=\"600\" fill=\"#0f766e\">12 mmHg</text>\n\n  <text x=\"72\" y=\"240\" font-size=\"8.8\" fill=\"#475569\">12 AM</text>\n  <text x=\"148\" y=\"240\" font-size=\"8.8\" font-weight=\"700\" fill=\"#be123c\">5 AM (Peak)</text>\n  <text x=\"225\" y=\"240\" font-size=\"8.8\" fill=\"#475569\">10 AM</text>\n  <text x=\"310\" y=\"240\" font-size=\"8.8\" font-weight=\"700\" fill=\"#0f766e\">3 PM (Trough)</text>\n  <text x=\"415\" y=\"240\" font-size=\"8.8\" fill=\"#475569\">9 PM</text>\n\n  <!-- Glaucoma Curve (Red) -->\n  <path d=\"M 75 178 Q 130 144 170 145 Q 210 155 250 182 Q 305 204 345 200 Q 405 186 485 174\" fill=\"none\" stroke=\"#be123c\" stroke-width=\"2.3\"/>\n  <circle cx=\"170\" cy=\"145\" r=\"4\" fill=\"#be123c\"/>\n  <circle cx=\"332\" cy=\"202\" r=\"4\" fill=\"#0f766e\"/>\n\n  <!-- Normal Curve (Blue dashed) -->\n  <path d=\"M 75 204 Q 140 192 175 194 Q 240 202 330 212 Q 410 208 485 203\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"1.6\" stroke-dasharray=\"5,3\"/>\n  <text x=\"372\" y=\"164\" font-size=\"8.8\" font-weight=\"700\" fill=\"#be123c\">Glaucoma (&gt;6&#8211;10 mmHg swing)</text>\n  <text x=\"376\" y=\"217\" font-size=\"8.5\" font-weight=\"600\" fill=\"#0284c7\">Normal (3&#8211;5 mmHg swing)</text>\n</svg>"
+          }
+        ]
+      },
+      {
+        "heading": "2. Tonography & Measurement of Aqueous Outflow Facility",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Tonography** estimates conventional aqueous outflow facility (**C**) by resting a weighted electronic Schiøtz tonometer on the cornea for **4 minutes** [2]. The applied weight acutely elevates IOP, accelerating aqueous exit through the trabecular meshwork; from the rate of progressive IOP decay (using Grant's formula, **C = ΔV / [t × (Pt − Po)]**), outflow facility is calculated [2]. Normal **C** averages **0.22–0.28 µL/min/mmHg**, whereas values **< 0.13–0.18 µL/min/mmHg** strongly indicate impaired trabecular outflow (as in POAG) [2]."
+          }
+        ]
+      },
+      {
+        "heading": "3. Applications of Tonometric Data: Diurnal Curve, Peak & Trough",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Because IOP is a dynamic parameter exhibiting circadian rhythm and postural variation, single daytime clinic measurements frequently miss clinically critical pressure spikes [3]:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Diurnal Variation (Phasing):** Healthy eyes typically fluctuate by **3–5 mmHg** over 24 hours, whereas glaucomatous eyes often exhibit fluctuations **> 6–10 mmHg** [3]. Recording IOP every 2–3 hours over 24 hours (or office-hours phasing / water-drinking test as a surrogate stress test) reveals true peak pressure and fluctuation amplitude [3].",
+              "**Nocturnal & Early-Morning Peak:** Most unmedicated glaucomatous eyes peak during the **nocturnal or early-morning hours (04:00–06:00)**, amplified by the **supine posture** increasing episcleral venous pressure—a peak routinely missed during 09:00–17:00 office visits [3].",
+              "**Peak vs. Trough Drug Efficacy:** When evaluating glaucoma therapy, **peak effect** measures maximal IOP reduction (e.g., 2 hours after timolol/brimonidine), whereas **trough effect** measures residual control just before the next scheduled dose—ensuring 24-hour coverage without breakthrough spikes [3]."
+            ]
+          },
+          {
+            "type": "clinical",
+            "title": "High-Yield Clinical Uses of Diurnal Phasing",
+            "items": [
+              "Differentiating true **Normal-Tension Glaucoma (NTG)** from high-tension POAG with missed nocturnal/early-morning spikes [3].",
+              "Investigating **progressive visual field loss despite apparently controlled clinic IOP** [3].",
+              "Assessing **24-hour trough control** and selecting agents with flat diurnal efficacy (e.g., prostaglandin analogs provide superior nocturnal IOP control compared to beta-blockers) [3]."
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 10: Glaucoma",
+        "chapter": "Chapter 2: Tonometry Principles & Imbert-Fick Law",
+        "quote": "Goldmann applanation tonometry applies the modified Imbert–Fick principle at a 3.06 mm applanation diameter (7.35 mm² area), where corneal rigidity (S) balances tear film capillary attraction (B) and 1 g force = 10 mmHg."
+      },
+      "2": {
+        "book": "Shields' Textbook of Glaucoma (7th Edition) — Allingham et al.",
+        "chapter": "Tonography & Assessment of Outflow Facility",
+        "quote": "Tonography measures trabecular outflow facility (C) over 4 minutes using Grant's formula. Normal C is 0.22–0.28 µL/min/mmHg; reduced C (<0.18) characterizes impaired trabecular outflow in open-angle glaucoma."
+      },
+      "3": {
+        "book": "AAO BCSC Section 10 & Shields' Textbook of Glaucoma",
+        "chapter": "Circadian IOP Fluctuations, Peak & Trough Values",
+        "quote": "Normal diurnal IOP fluctuation is 3–5 mmHg versus >6–10 mmHg in glaucoma. Peaks frequently occur nocturnally or early morning (04:00–06:00), augmented by supine posture increasing episcleral venous pressure. Peak and trough measurements evaluate 24-hour drug efficacy."
+      }
+    }
+  },
+  "basic-clinical_science-1": {
+    "shortTitle": "Clinical Features: POAG, NTG, PACG, Suspect & OHT",
+    "marks": 10,
+    "sections": [
+      {
+        "heading": "1. Primary Open-Angle Glaucoma (High-Tension POAG & Normal-Tension Glaucoma)",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Primary open-angle glaucoma (POAG) is a chronic, bilateral (often asymmetric), progressive optic neuropathy occurring in adults with **open, normal-appearing anterior chamber angles** on gonioscopy and **no identifiable secondary ocular or systemic cause** [1]. It is classically asymptomatic until late central field involvement ('silent thief of sight') [1]."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**High-Tension POAG:** Characterized by untreated IOP persistently **> 21 mmHg**, open angles (Shaffer Grade 3–4), characteristic **glaucomatous optic neuropathy (GON)** (vertical cup-to-disc enlargement, focal inferior/superior rim notching, C:D asymmetry > 0.2, RNFL wedge defects, peripapillary beta-zone atrophy), and corresponding reproducible visual field defects (paracentral scotoma, nasal step, Bjerrum arcuate scotoma) [1].",
+              "**Low-Tension / Normal-Tension Glaucoma (NTG):** A clinical variant of POAG in which typical GON and visual field defects progress despite **diurnal IOP consistently ≤ 21 mmHg** [1]. Compared to high-tension POAG, NTG shows a higher prevalence of **splinter (Drance) optic disc hemorrhages**, **deeper, steeper paracentral scotomas closer to fixation**, thinner central corneas, and systemic vascular associations (migraine, Raynaud phenomenon, nocturnal hypotension, obstructive sleep apnea) [1]."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "2. Primary Angle-Closure Disease (ISGEO Classification)",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Primary angle-closure disease occurs in anatomically predisposed eyes (shallow AC, short axial length, thick/anteriorly positioned lens, hypermetropia) where **iridotrabecular contact (ITC)**—most commonly via **relative pupillary block**—obstructs aqueous outflow [2]. The **ISGEO classification** defines three progressive stages [2]:"
+          },
+          {
+            "type": "figure",
+            "caption": "**Figure 1:** Diagnostic continuum comparing the Open-Angle spectrum (OHT / Suspect → POAG / NTG) against the ISGEO Primary Angle-Closure progression (PACS → PAC → PACG).",
+            "svg": "<svg viewBox=\"0 0 540 225\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Clinical spectrum of open-angle glaucoma and ISGEO primary angle-closure disease\">\n  <rect width=\"540\" height=\"225\" fill=\"#fcfdff\"/>\n  <!-- Row 1: Open-Angle Spectrum -->\n  <text x=\"20\" y=\"24\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">A. Open-Angle Spectrum (Open Angle on Gonioscopy)</text>\n  <rect x=\"20\" y=\"34\" width=\"150\" height=\"62\" rx=\"7\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.4\"/>\n  <text x=\"95\" y=\"52\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0369a1\">Ocular Hypertension</text>\n  <text x=\"95\" y=\"67\" text-anchor=\"middle\" font-size=\"9\" fill=\"#0c4a6e\">IOP &gt; 21 mmHg</text>\n  <text x=\"95\" y=\"81\" text-anchor=\"middle\" font-size=\"9\" fill=\"#0c4a6e\">Normal ONH &amp; VF</text>\n\n  <line x1=\"170\" y1=\"65\" x2=\"195\" y2=\"65\" stroke=\"#0284c7\" stroke-width=\"1.8\"/>\n  <polygon points=\"195,65 187,61 187,69\" fill=\"#0284c7\"/>\n\n  <rect x=\"196\" y=\"34\" width=\"150\" height=\"62\" rx=\"7\" fill=\"#f0f9ff\" stroke=\"#0369a1\" stroke-width=\"1.4\" stroke-dasharray=\"4,2\"/>\n  <text x=\"271\" y=\"52\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0369a1\">Glaucoma Suspect</text>\n  <text x=\"271\" y=\"67\" text-anchor=\"middle\" font-size=\"9\" fill=\"#0c4a6e\">Suspicious ONH/RNFL</text>\n  <text x=\"271\" y=\"81\" text-anchor=\"middle\" font-size=\"9\" fill=\"#0c4a6e\">OR high IOP OR borderline VF</text>\n\n  <line x1=\"346\" y1=\"65\" x2=\"371\" y2=\"65\" stroke=\"#0284c7\" stroke-width=\"1.8\"/>\n  <polygon points=\"371,65 363,61 363,69\" fill=\"#0284c7\"/>\n\n  <rect x=\"372\" y=\"34\" width=\"150\" height=\"62\" rx=\"7\" fill=\"#0369a1\"/>\n  <text x=\"447\" y=\"52\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#ffffff\">POAG / NTG</text>\n  <text x=\"447\" y=\"67\" text-anchor=\"middle\" font-size=\"9\" fill=\"#e0f2fe\">Confirmed GON + VF Loss</text>\n  <text x=\"447\" y=\"81\" text-anchor=\"middle\" font-size=\"9\" fill=\"#bae6fd\">(POAG &gt;21 | NTG &#8804;21)</text>\n\n  <!-- Row 2: ISGEO Angle-Closure Spectrum -->\n  <text x=\"20\" y=\"124\" font-size=\"10.5\" font-weight=\"700\" fill=\"#be123c\">B. Angle-Closure Spectrum (ISGEO: &#8805;180&#176; Iridotrabecular Contact)</text>\n  <rect x=\"20\" y=\"134\" width=\"150\" height=\"66\" rx=\"7\" fill=\"#fff1f2\" stroke=\"#e11d48\" stroke-width=\"1.4\"/>\n  <text x=\"95\" y=\"152\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#be123c\">PACS (Suspect)</text>\n  <text x=\"95\" y=\"167\" text-anchor=\"middle\" font-size=\"9\" fill=\"#881337\">ITC &#8805;180&#176;, Normal IOP</text>\n  <text x=\"95\" y=\"182\" text-anchor=\"middle\" font-size=\"9\" fill=\"#881337\">No PAS, Normal ONH</text>\n\n  <line x1=\"170\" y1=\"167\" x2=\"195\" y2=\"167\" stroke=\"#be123c\" stroke-width=\"1.8\"/>\n  <polygon points=\"195,167 187,163 187,171\" fill=\"#be123c\"/>\n\n  <rect x=\"196\" y=\"134\" width=\"150\" height=\"66\" rx=\"7\" fill=\"#ffe4e6\" stroke=\"#be123c\" stroke-width=\"1.5\"/>\n  <text x=\"271\" y=\"152\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#9f1239\">PAC (Closure)</text>\n  <text x=\"271\" y=\"167\" text-anchor=\"middle\" font-size=\"9\" fill=\"#881337\">ITC + PAS / &#8593;IOP / Pigment</text>\n  <text x=\"271\" y=\"182\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"700\" fill=\"#9f1239\">Normal ONH &amp; VF</text>\n\n  <line x1=\"346\" y1=\"167\" x2=\"371\" y2=\"167\" stroke=\"#be123c\" stroke-width=\"1.8\"/>\n  <polygon points=\"371,167 363,163 363,171\" fill=\"#be123c\"/>\n\n  <rect x=\"372\" y=\"134\" width=\"150\" height=\"66\" rx=\"7\" fill=\"#be123c\"/>\n  <text x=\"447\" y=\"152\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#ffffff\">PACG (Glaucoma)</text>\n  <text x=\"447\" y=\"167\" text-anchor=\"middle\" font-size=\"9\" fill=\"#ffe4e6\">PAC + Confirmed GON</text>\n  <text x=\"447\" y=\"182\" text-anchor=\"middle\" font-size=\"9\" fill=\"#fecdd3\">&amp; Visual Field Loss</text>\n</svg>"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Primary Angle-Closure Suspect (PACS):** ≥180° of iridotrabecular contact (posterior pigmented TM not visible on gonioscopy) with **normal IOP, no peripheral anterior synechiae (PAS), and normal ONH/VF** [2].",
+              "**Primary Angle Closure (PAC):** Iridotrabecular contact **plus** signs of trabecular obstruction—elevated IOP, **PAS**, iris whorling/atrophy, excessive TM pigment smudging, or **Glaukomflecken** (anterior subcapsular lens opacities from prior ischemic attack)—but **without** glaucomatous optic neuropathy [2].",
+              "**Primary Angle-Closure Glaucoma (PACG):** PAC **plus** definite **glaucomatous optic neuropathy (GON)** and corresponding visual field loss [2]. Acute angle-closure crisis (AACC) presents dramatically with severe ocular pain, headache, nausea/vomiting, colored halos, markedly elevated IOP (often 40–70 mmHg), corneal edema, shallow AC, and a **mid-dilated vertically oval non-reactive pupil**, whereas chronic PACG mimics POAG asymptomatically [2]."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "3. Glaucoma Suspect & Ocular Hypertension (OHT)",
+        "blocks": [
+          {
+            "type": "ul",
+            "items": [
+              "**Glaucoma Suspect:** An adult with open angles who exhibits **at least one** concerning finding without definitive confirmed glaucoma: (a) persistently elevated IOP > 21 mmHg, (b) suspicious optic disc or RNFL appearance (e.g., large cup, C:D asymmetry ≥ 0.2, rim thinning, disc hemorrhage), or (c) suspicious/borderline visual field defect—requiring structured longitudinal monitoring [3].",
+              "**Ocular Hypertension (OHT):** A specific subset of glaucoma suspect defined by **IOP > 21 mmHg** on two or more occasions in the presence of **open normal angles, a completely normal optic disc/RNFL, and normal visual fields** [3]. The **Ocular Hypertension Treatment Study (OHTS)** established that ~9.5% of untreated OHT patients convert to POAG over 5 years (reduced to 4.4% with ≥20% IOP lowering), with **thin central corneal thickness (CCT)**, higher baseline IOP, older age, larger vertical C:D ratio, and higher PSD being key predictive risk factors [3]."
+            ]
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Entity",
+              "Gonioscopic Angle",
+              "Untreated IOP",
+              "Optic Disc (GON) & Visual Field"
+            ],
+            "rows": [
+              [
+                "**High-Tension POAG**",
+                "Open (normal)",
+                "> 21 mmHg",
+                "**Abnormal** (cupping, RNFL loss, VF defect) [1]"
+              ],
+              [
+                "**Normal-Tension (NTG)**",
+                "Open (normal)",
+                "≤ 21 mmHg",
+                "**Abnormal** (frequent disc hemorrhages, paracentral defects) [1]"
+              ],
+              [
+                "**Ocular Hypertension (OHT)**",
+                "Open (normal)",
+                "> 21 mmHg",
+                "**Normal** ONH, RNFL, and VF [3]"
+              ],
+              [
+                "**Glaucoma Suspect**",
+                "Open (normal)",
+                "Normal or > 21 mmHg",
+                "**Suspicious** ONH/RNFL or borderline VF (unconfirmed) [3]"
+              ],
+              [
+                "**PACS / PAC / PACG**",
+                "Narrow / Occludable (≥180° ITC)",
+                "Normal (PACS) → Elevated (PAC/PACG)",
+                "Normal (PACS/PAC) → **Abnormal** (PACG) [2]"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": {
+      "1": {
+        "book": "AAO BCSC Section 10: Glaucoma & Kanski (9th Ed.)",
+        "chapter": "Primary Open-Angle Glaucoma & Normal-Tension Glaucoma",
+        "quote": "POAG is a chronic bilateral asymmetric optic neuropathy with open angles and no secondary cause. NTG presents with IOP <= 21 mmHg, higher frequency of splinter disc hemorrhages, steeper paracentral visual field defects, and vascular dysregulation."
+      },
+      "2": {
+        "book": "Foster et al. (ISGEO Classification, Br J Ophthalmol) & AAO BCSC Section 10",
+        "chapter": "Primary Angle-Closure Disease (PACS, PAC, PACG)",
+        "quote": "ISGEO classifies PACD into PACS (occludable angle >=180° ITC, normal IOP, no PAS, normal ONH), PAC (ITC with PAS, elevated IOP, or Glaukomflecken, normal ONH), and PACG (PAC plus glaucomatous optic neuropathy)."
+      },
+      "3": {
+        "book": "Ocular Hypertension Treatment Study (OHTS) & AAO Preferred Practice Pattern",
+        "chapter": "Ocular Hypertension & Primary Open-Angle Glaucoma Suspect",
+        "quote": "OHT is defined as IOP >21 mmHg with open angles, normal ONH, and normal VF. OHTS showed >=20% IOP reduction halved 5-year POAG conversion (9.5% to 4.4%); major risk factors include thinner CCT, higher IOP, older age, larger C:D ratio, and higher PSD."
+      }
+    }
+  }
+}
