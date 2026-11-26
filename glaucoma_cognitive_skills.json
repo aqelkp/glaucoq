@@ -13,47 +13,82 @@
             {
               "id": "basic-basic_science-1",
               "number": 1,
-              "question": "Describe with figures the anatomy of the anterior chamber, angle, and ciliary body."
+              "question": "Describe with figures the anatomy of the anterior chamber, angle, and ciliary body.",
+              "tags": [
+                "Anatomy & Physiology",
+                "Gonioscopy & Angle"
+              ]
             },
             {
               "id": "basic-basic_science-2",
               "number": 2,
-              "question": "Describe the anatomy of the retinal nerve fiber layer, optic nerve head, with figures and visual pathway from the retina to the visual cortex."
+              "question": "Describe the anatomy of the retinal nerve fiber layer, optic nerve head, with figures and visual pathway from the retina to the visual cortex.",
+              "tags": [
+                "Anatomy & Physiology",
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "basic-basic_science-3",
               "number": 3,
-              "question": "Describe the mechanisms and dynamics of aqueous humor inflow and outflow."
+              "question": "Describe the mechanisms and dynamics of aqueous humor inflow and outflow.",
+              "tags": [
+                "Anatomy & Physiology",
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "basic-basic_science-4",
               "number": 4,
-              "question": "Describe the microscopic anatomy of the retina from inner to outer portions, with attention to the retinal ganglion cell layer and nerve fiber layer."
+              "question": "Describe the microscopic anatomy of the retina from inner to outer portions, with attention to the retinal ganglion cell layer and nerve fiber layer.",
+              "tags": [
+                "Anatomy & Physiology",
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "basic-basic_science-5",
               "number": 5,
-              "question": "Describe the blood supply of the optic nerve and ciliary body. With figure"
+              "question": "Describe the blood supply of the optic nerve and ciliary body. With figure",
+              "tags": [
+                "Anatomy & Physiology",
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "basic-basic_science-6",
               "number": 6,
-              "question": "Describe the apoptotic mechanism of retinal ganglion cell death."
+              "question": "Describe the apoptotic mechanism of retinal ganglion cell death.",
+              "tags": [
+                "Pathophysiology",
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "basic-basic_science-7",
               "number": 7,
-              "question": "Know the physiology underlying visual-field examination and its interpretation."
+              "question": "Know the physiology underlying visual-field examination and its interpretation.",
+              "tags": [
+                "Perimetry & Visual Fields",
+                "Anatomy & Physiology"
+              ]
             },
             {
               "id": "basic-basic_science-8",
               "number": 8,
-              "question": "Describe the fundamentals of Goldmann static, kinetic perimetry, and standard automated perimetry."
+              "question": "Describe the fundamentals of Goldmann static, kinetic perimetry, and standard automated perimetry.",
+              "tags": [
+                "Perimetry & Visual Fields"
+              ]
             },
             {
               "id": "basic-basic_science-9",
               "number": 9,
-              "question": "Know basic principles of tonometry and aqueous outflow, and applications of tonometric data (eg, diurnal curve, peak and trough values)."
+              "question": "Know basic principles of tonometry and aqueous outflow, and applications of tonometric data (eg, diurnal curve, peak and trough values).",
+              "tags": [
+                "Tonometry & IOP",
+                "Anatomy & Physiology"
+              ]
             }
           ]
         },
@@ -63,123 +98,237 @@
             {
               "id": "basic-clinical_science-1",
               "number": 1,
-              "question": "Describe the major clinical features of primary open-angle glaucoma (high and low tension), angle-closure glaucoma, glaucoma suspects, and ocular hypertension."
+              "question": "Describe the major clinical features of primary open-angle glaucoma (high and low tension), angle-closure glaucoma, glaucoma suspects, and ocular hypertension.",
+              "tags": [
+                "POAG & NTG",
+                "Angle Closure"
+              ]
             },
             {
               "id": "basic-clinical_science-2",
               "number": 2,
-              "question": "Describe the major risk factors for primary open-angle glaucoma and angle-closure glaucoma."
+              "question": "Describe the major risk factors for primary open-angle glaucoma and angle-closure glaucoma.",
+              "tags": [
+                "POAG & NTG",
+                "Angle Closure"
+              ]
             },
             {
               "id": "basic-clinical_science-3",
               "number": 3,
-              "question": "Describe the steps in evaluating primary open-angle glaucoma and angle-closure glaucoma."
+              "question": "Describe the steps in evaluating primary open-angle glaucoma and angle-closure glaucoma.",
+              "tags": [
+                "POAG & NTG",
+                "Angle Closure"
+              ]
             },
             {
               "id": "basic-clinical_science-4",
               "number": 4,
-              "question": "Describe the clinical features of glaucomatous optic neuropathy. (with schematic diagrams)"
+              "question": "Describe the clinical features of glaucomatous optic neuropathy. (with schematic diagrams)",
+              "tags": [
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "basic-clinical_science-5",
               "number": 5,
-              "question": "Describe the basic features of the major glaucomas: exfoliative glaucoma, and pigmentary glaucoma."
+              "question": "Describe the basic features of the major glaucomas: exfoliative glaucoma, and pigmentary glaucoma.",
+              "tags": [
+                "Secondary Glaucomas"
+              ]
             },
             {
               "id": "basic-clinical_science-6",
               "number": 6,
-              "question": "Know the role of intraocular pressure (IOP) in the development and progression of glaucoma."
+              "question": "Know the role of intraocular pressure (IOP) in the development and progression of glaucoma.",
+              "tags": [
+                "Tonometry & IOP",
+                "Pathophysiology"
+              ]
             },
             {
               "id": "basic-clinical_science-7",
               "number": 7,
-              "question": "Understand the factors that influence IOP."
+              "question": "Understand the factors that influence IOP.",
+              "tags": [
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "basic-clinical_science-8",
               "number": 8,
-              "question": "Describe and understand basic principles of Goldmann applanation tonometry."
+              "question": "Describe and understand basic principles of Goldmann applanation tonometry.",
+              "tags": [
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "basic-clinical_science-9",
               "number": 9,
-              "question": "Describe tonometers (eg, Schiøtz, Tono-Pen, NCT, Rebound, Dynamic Contour) and recognize artifacts of testing. Feel all tonometry techniques, where available should be basic for a Glaucoma Collegiate"
+              "question": "Describe tonometers (eg, Schiøtz, Tono-Pen, NCT, Rebound, Dynamic Contour) and recognize artifacts of testing. Feel all tonometry techniques, where available should be basic for a Glaucoma Collegiate",
+              "tags": [
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "basic-clinical_science-10",
               "number": 10,
-              "question": "Describe principles and basic techniques of gonioscopy (Goldmann type or 4 mirror indentation lenses) to evaluate angle structures. Include classification of each type of gonioscopes"
+              "question": "Describe principles and basic techniques of gonioscopy (Goldmann type or 4 mirror indentation lenses) to evaluate angle structures. Include classification of each type of gonioscopes",
+              "tags": [
+                "Gonioscopy & Angle"
+              ]
             },
             {
               "id": "basic-clinical_science-11",
               "number": 11,
-              "question": "Describe normal and abnormal angle findings. With diagram"
+              "question": "Describe normal and abnormal angle findings. With diagram",
+              "tags": [
+                "Gonioscopy & Angle"
+              ]
             },
             {
               "id": "basic-clinical_science-12",
               "number": 12,
-              "question": "Know non IOP dependent risk factors for primary open-angle glaucoma and NTG"
+              "question": "Know non IOP dependent risk factors for primary open-angle glaucoma and NTG",
+              "tags": [
+                "POAG & NTG",
+                "Pathophysiology"
+              ]
             },
             {
               "id": "basic-clinical_science-13",
               "number": 13,
-              "question": "Know subtypes of angle-closure glaucoma (eg, pupillary block, plateau iris, PACS, PAC, PACG)."
+              "question": "Know subtypes of angle-closure glaucoma (eg, pupillary block, plateau iris, PACS, PAC, PACG).",
+              "tags": [
+                "Angle Closure",
+                "Gonioscopy & Angle"
+              ]
             },
             {
               "id": "basic-clinical_science-14",
               "number": 14,
-              "question": "Describe corneal pachymetry and how biomechanics and measurements of corneal thickness affect IOP interpretations."
+              "question": "Describe corneal pachymetry and how biomechanics and measurements of corneal thickness affect IOP interpretations.",
+              "tags": [
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "basic-clinical_science-15",
               "number": 15,
-              "question": "Understand the principles of biomicroscopy to evaluate the optic nerve and retinal nerve fiber layer."
+              "question": "Understand the principles of biomicroscopy to evaluate the optic nerve and retinal nerve fiber layer.",
+              "tags": [
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "basic-clinical_science-16",
               "number": 16,
-              "question": "Describe the most common types of visual field defects in glaucoma. With schematic diagrams"
+              "question": "Describe the most common types of visual field defects in glaucoma. With schematic diagrams",
+              "tags": [
+                "Perimetry & Visual Fields"
+              ]
             },
             {
               "id": "basic-clinical_science-17",
               "number": 17,
-              "question": "Describe principles and mechanisms of medical management of glaucoma."
+              "question": "Describe principles and mechanisms of medical management of glaucoma.",
+              "tags": [
+                "Medical Therapy"
+              ]
             },
             {
               "id": "basic-clinical_science-18",
               "number": 18,
-              "question": "Describe major classes of glaucoma medications, their mechanisms of action, indications, contraindications, and side effects (topical and systemic)."
+              "question": "Describe major classes of glaucoma medications, their mechanisms of action, indications, contraindications, and side effects (topical and systemic).",
+              "tags": [
+                "Medical Therapy"
+              ]
             },
             {
               "id": "basic-clinical_science-19",
               "number": 19,
-              "question": "Know drug interactions between systemic drugs and glaucoma drugs."
+              "question": "Know drug interactions between systemic drugs and glaucoma drugs.",
+              "tags": [
+                "Medical Therapy"
+              ]
             },
             {
               "id": "basic-clinical_science-20",
               "number": 20,
-              "question": "Know basic medical statistics to interpret major glaucoma studies."
+              "question": "Know basic medical statistics to interpret major glaucoma studies.",
+              "tags": [
+                "Trials & Epidemiology"
+              ]
             },
             {
               "id": "basic-clinical_science-21",
               "number": 21,
               "question": "Describe the major results of large prospective clinical trials in addition to those appropriate to the practice region.",
               "sub_items": [
-                { "label": "a", "text": "The Glaucoma Laser Trial (GLT)" },
-                { "label": "b", "text": "The Ocular Hypertension Treatment Study (OHTS)" },
-                { "label": "c", "text": "The Collaborative Initial Glaucoma Treatment Study (CIGTS)" },
-                { "label": "d", "text": "The Fluorouracil Filtering Surgery Study (FFSS)" },
-                { "label": "e", "text": "The Normal Tension Glaucoma Study (NTGS)" },
-                { "label": "f", "text": "The Advanced Glaucoma Intervention Study (AGIS)" },
-                { "label": "g", "text": "The European Glaucoma Prevention Study (EGPS)" },
-                { "label": "h", "text": "The Early Manifest Glaucoma Trial (EMGT)" },
-                { "label": "i", "text": "Tube versus Trab study" },
-                { "label": "j", "text": "Ahmed versus Baerveldt Study" },
-                { "label": "k", "text": "The Vellore Eye Study" },
-                { "label": "l", "text": "The Aravind Comprehensive eye study" },
-                { "label": "m", "text": "The Andra Pradesh eye disease study" },
-                { "label": "n", "text": "The Chennai eye study" },
-                { "label": "o", "text": "Laser In Glaucoma and Ocular Hypertension Trial (LiGHT)" }
+                {
+                  "label": "a",
+                  "text": "The Glaucoma Laser Trial (GLT)"
+                },
+                {
+                  "label": "b",
+                  "text": "The Ocular Hypertension Treatment Study (OHTS)"
+                },
+                {
+                  "label": "c",
+                  "text": "The Collaborative Initial Glaucoma Treatment Study (CIGTS)"
+                },
+                {
+                  "label": "d",
+                  "text": "The Fluorouracil Filtering Surgery Study (FFSS)"
+                },
+                {
+                  "label": "e",
+                  "text": "The Normal Tension Glaucoma Study (NTGS)"
+                },
+                {
+                  "label": "f",
+                  "text": "The Advanced Glaucoma Intervention Study (AGIS)"
+                },
+                {
+                  "label": "g",
+                  "text": "The European Glaucoma Prevention Study (EGPS)"
+                },
+                {
+                  "label": "h",
+                  "text": "The Early Manifest Glaucoma Trial (EMGT)"
+                },
+                {
+                  "label": "i",
+                  "text": "Tube versus Trab study"
+                },
+                {
+                  "label": "j",
+                  "text": "Ahmed versus Baerveldt Study"
+                },
+                {
+                  "label": "k",
+                  "text": "The Vellore Eye Study"
+                },
+                {
+                  "label": "l",
+                  "text": "The Aravind Comprehensive eye study"
+                },
+                {
+                  "label": "m",
+                  "text": "The Andra Pradesh eye disease study"
+                },
+                {
+                  "label": "n",
+                  "text": "The Chennai eye study"
+                },
+                {
+                  "label": "o",
+                  "text": "Laser In Glaucoma and Ocular Hypertension Trial (LiGHT)"
+                }
+              ],
+              "tags": [
+                "Trials & Epidemiology"
               ]
             }
           ]
@@ -195,7 +344,13 @@
             {
               "id": "standard-1",
               "number": 1,
-              "question": "Know epidemiology of congenital glaucoma, primary open-angle glaucoma, exfoliation syndrome and exfoliative glaucoma, and angle-closure glaucoma."
+              "question": "Know epidemiology of congenital glaucoma, primary open-angle glaucoma, exfoliation syndrome and exfoliative glaucoma, and angle-closure glaucoma.",
+              "tags": [
+                "Trials & Epidemiology",
+                "Pediatric & Genetics",
+                "POAG & NTG",
+                "Angle Closure"
+              ]
             },
             {
               "id": "standard-2",
@@ -210,152 +365,271 @@
                   "label": "b",
                   "text": "Syndromes associated with congenital/developmental glaucoma",
                   "sub_items": [
-                    { "label": "i", "text": "Lowe syndrome" },
-                    { "label": "ii", "text": "Nail-patella syndrome" },
-                    { "label": "iii", "text": "Aniridia (PAX 6)" },
-                    { "label": "iv", "text": "Axenfeld-Rieger syndrome (PITX2, FOXC1, FKHL7)" }
+                    {
+                      "label": "i",
+                      "text": "Lowe syndrome"
+                    },
+                    {
+                      "label": "ii",
+                      "text": "Nail-patella syndrome"
+                    },
+                    {
+                      "label": "iii",
+                      "text": "Aniridia (PAX 6)"
+                    },
+                    {
+                      "label": "iv",
+                      "text": "Axenfeld-Rieger syndrome (PITX2, FOXC1, FKHL7)"
+                    }
                   ]
                 },
                 {
                   "label": "c",
                   "text": "Primary open-angle glaucoma",
                   "sub_items": [
-                    { "label": "i", "text": "GLC1A and the molecular biology of myocilin" },
-                    { "label": "ii", "text": "Optineurin" },
-                    { "label": "iii", "text": "Other genes as they become identified" }
+                    {
+                      "label": "i",
+                      "text": "GLC1A and the molecular biology of myocilin"
+                    },
+                    {
+                      "label": "ii",
+                      "text": "Optineurin"
+                    },
+                    {
+                      "label": "iii",
+                      "text": "Other genes as they become identified"
+                    }
                   ]
                 }
+              ],
+              "tags": [
+                "Pediatric & Genetics",
+                "POAG & NTG"
               ]
             },
             {
               "id": "standard-3",
               "number": 3,
-              "question": "Describe the features of primary infantile and juvenile glaucomas."
+              "question": "Describe the features of primary infantile and juvenile glaucomas.",
+              "tags": [
+                "Pediatric & Genetics"
+              ]
             },
             {
               "id": "standard-4",
               "number": 4,
-              "question": "Describe etiologies and major risk factors for secondary open-angle glaucomas."
+              "question": "Describe etiologies and major risk factors for secondary open-angle glaucomas.",
+              "tags": [
+                "Secondary Glaucomas"
+              ]
             },
             {
               "id": "standard-5",
               "number": 5,
-              "question": "Recognize secondary glaucomas (eg, angle recession, inflammatory, steroid induced, pigmentary, exfoliative, phacolytic, neovascular, postoperative, malignant, lens-particle glaucomas, plateau iris, glaucomatocyclitic crisis, iridocorneal endothelial syndrome) with attention to appropriate pathophysiology."
+              "question": "Recognize secondary glaucomas (eg, angle recession, inflammatory, steroid induced, pigmentary, exfoliative, phacolytic, neovascular, postoperative, malignant, lens-particle glaucomas, plateau iris, glaucomatocyclitic crisis, iridocorneal endothelial syndrome) with attention to appropriate pathophysiology.",
+              "tags": [
+                "Secondary Glaucomas",
+                "Pathophysiology"
+              ]
             },
             {
               "id": "standard-6",
               "number": 6,
-              "question": "Describe the evaluation and treatment of complex secondary glaucomas (eg, exfoliation, angle recession, inflammatory, steroid induced, pigmentary, phacolytic, neovascular, postoperative, malignant, lens-particle glaucomas; plateau iris; glaucomatocyclitic crisis; iridocorneal endothelial syndromes; aqueous misdirection/ ciliary block)."
+              "question": "Describe the evaluation and treatment of complex secondary glaucomas (eg, exfoliation, angle recession, inflammatory, steroid induced, pigmentary, phacolytic, neovascular, postoperative, malignant, lens-particle glaucomas; plateau iris; glaucomatocyclitic crisis; iridocorneal endothelial syndromes; aqueous misdirection/ ciliary block).",
+              "tags": [
+                "Secondary Glaucomas",
+                "Angle Closure"
+              ]
             },
             {
               "id": "standard-7",
               "number": 7,
-              "question": "Describe diurnal fluctuations in IOP and ocular perfusion pressure and their application in the approach to therapy."
+              "question": "Describe diurnal fluctuations in IOP and ocular perfusion pressure and their application in the approach to therapy.",
+              "tags": [
+                "Tonometry & IOP",
+                "Pathophysiology"
+              ]
             },
             {
               "id": "standard-8",
               "number": 8,
-              "question": "Recognize and describe more advanced optic nerve and nerve fiber layer anatomy in glaucoma and typical and atypical features associated with glaucomatous cupping (eg, rim pallor, disc hemorrhage, parapapillary atrophy, rim thinning, notching, circumlinear vessels, central acuity loss, hemianopic or other nonglaucomatous types of visual field loss)."
+              "question": "Recognize and describe more advanced optic nerve and nerve fiber layer anatomy in glaucoma and typical and atypical features associated with glaucomatous cupping (eg, rim pallor, disc hemorrhage, parapapillary atrophy, rim thinning, notching, circumlinear vessels, central acuity loss, hemianopic or other nonglaucomatous types of visual field loss).",
+              "tags": [
+                "Optic Nerve & RNFL",
+                "Perimetry & Visual Fields"
+              ]
             },
             {
               "id": "standard-9",
               "number": 9,
-              "question": "Describe tools and techniques for quantitative anterior segment imaging such as ultrasound biomicroscopy and anterior segment optical coherence tomography (OCT)."
+              "question": "Describe tools and techniques for quantitative anterior segment imaging such as ultrasound biomicroscopy and anterior segment optical coherence tomography (OCT).",
+              "tags": [
+                "Imaging & Diagnostics",
+                "Gonioscopy & Angle"
+              ]
             },
             {
               "id": "standard-10",
               "number": 10,
-              "question": "Describe basic principles of tools to analyze optic nerve and retinal nerve fiber layer such as OCT, Heidelberg Retina Tomograph (HRT), and GDx."
+              "question": "Describe basic principles of tools to analyze optic nerve and retinal nerve fiber layer such as OCT, Heidelberg Retina Tomograph (HRT), and GDx.",
+              "tags": [
+                "Imaging & Diagnostics",
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "standard-11",
               "number": 11,
-              "question": "Interpret HRT, OCT, and GDx scans, OCT Angiography, mf ERG."
+              "question": "Interpret HRT, OCT, and GDx scans, OCT Angiography, mf ERG.",
+              "tags": [
+                "Imaging & Diagnostics",
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "standard-12",
               "number": 12,
-              "question": "Describe and interpret more advanced forms of perimetry (kinetic and automated static), including various perimetry strategies such as threshold testing, suprathreshold testing, and special algorithms."
+              "question": "Describe and interpret more advanced forms of perimetry (kinetic and automated static), including various perimetry strategies such as threshold testing, suprathreshold testing, and special algorithms.",
+              "tags": [
+                "Perimetry & Visual Fields"
+              ]
             },
             {
               "id": "standard-13",
               "number": 13,
-              "question": "Describe the principles involved in determining glaucomatous progression both clinically and perimetrically and on OCT/HRT"
+              "question": "Describe the principles involved in determining glaucomatous progression both clinically and perimetrically and on OCT/HRT",
+              "tags": [
+                "Perimetry & Visual Fields",
+                "Imaging & Diagnostics",
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "standard-14",
               "number": 14,
-              "question": "Describe the principles, and more advanced anatomic gonioscopic features of primary and secondary glaucomas (eg, plateau iris, appositional closure)."
+              "question": "Describe the principles, and more advanced anatomic gonioscopic features of primary and secondary glaucomas (eg, plateau iris, appositional closure).",
+              "tags": [
+                "Gonioscopy & Angle",
+                "Angle Closure"
+              ]
             },
             {
               "id": "standard-15",
               "number": 15,
-              "question": "Describe target IOP and its use in glaucoma management."
+              "question": "Describe target IOP and its use in glaucoma management.",
+              "tags": [
+                "Tonometry & IOP",
+                "Medical Therapy"
+              ]
             },
             {
               "id": "standard-16",
               "number": 16,
-              "question": "Describe the principles of medical management of more advanced glaucomas (eg, advanced primary open-angle glaucoma, secondary open and closed angle glaucomas, normal tension glaucoma)."
+              "question": "Describe the principles of medical management of more advanced glaucomas (eg, advanced primary open-angle glaucoma, secondary open and closed angle glaucomas, normal tension glaucoma).",
+              "tags": [
+                "Medical Therapy",
+                "POAG & NTG",
+                "Secondary Glaucomas"
+              ]
             },
             {
               "id": "standard-17",
               "number": 17,
-              "question": "Describe pitfalls of medical treatment, in particular poor compliance and adherence."
+              "question": "Describe pitfalls of medical treatment, in particular poor compliance and adherence.",
+              "tags": [
+                "Medical Therapy"
+              ]
             },
             {
               "id": "standard-18",
               "number": 18,
-              "question": "Describe and recognize the features of angle-closure glaucomas and aqueous misdirection."
+              "question": "Describe and recognize the features of angle-closure glaucomas and aqueous misdirection.",
+              "tags": [
+                "Angle Closure"
+              ]
             },
             {
               "id": "standard-19",
               "number": 19,
-              "question": "Describe the most common clinical features and etiologies of ocular hypotony."
+              "question": "Describe the most common clinical features and etiologies of ocular hypotony.",
+              "tags": [
+                "Lasers & Surgery",
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "standard-20",
               "number": 20,
-              "question": "Describe differential diagnosis and management of hypotony."
+              "question": "Describe differential diagnosis and management of hypotony.",
+              "tags": [
+                "Lasers & Surgery",
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "standard-21",
               "number": 21,
-              "question": "Describe and know how to apply the results of major clinical trials in glaucoma to clinical practice (eg, GLT, OHTS, CIGTS, FFSS, NTGS, AGIS, EGPS, EMGT, TVT, ABC)."
+              "question": "Describe and know how to apply the results of major clinical trials in glaucoma to clinical practice (eg, GLT, OHTS, CIGTS, FFSS, NTGS, AGIS, EGPS, EMGT, TVT, ABC).",
+              "tags": [
+                "Trials & Epidemiology"
+              ]
             },
             {
               "id": "standard-22",
               "number": 22,
-              "question": "Describe and apply specific medical treatments in more advanced glaucoma."
+              "question": "Describe and apply specific medical treatments in more advanced glaucoma.",
+              "tags": [
+                "Medical Therapy"
+              ]
             },
             {
               "id": "standard-23",
               "number": 23,
-              "question": "Describe the principles, indications, and techniques of various types of laser energy, spot size, and laser wavelengths."
+              "question": "Describe the principles, indications, and techniques of various types of laser energy, spot size, and laser wavelengths.",
+              "tags": [
+                "Lasers & Surgery"
+              ]
             },
             {
               "id": "standard-24",
               "number": 24,
-              "question": "Describe the principles, indications, and techniques of trabeculectomy (with or without cataract surgery, with or without antimetabolites), glaucoma drainage devices, and cyclodestructive procedures."
+              "question": "Describe the principles, indications, and techniques of trabeculectomy (with or without cataract surgery, with or without antimetabolites), glaucoma drainage devices, and cyclodestructive procedures.",
+              "tags": [
+                "Lasers & Surgery"
+              ]
             },
             {
               "id": "standard-25",
               "number": 25,
-              "question": "Describe the major etiologies of dislocated or subluxated lens associated with glaucoma, Phacotopic Glaucoma (eg, trauma, Marfan syndrome, homocystinuria, Weill-Marchesani syndrome, syphilis)."
+              "question": "Describe the major etiologies of dislocated or subluxated lens associated with glaucoma, Phacotopic Glaucoma (eg, trauma, Marfan syndrome, homocystinuria, Weill-Marchesani syndrome, syphilis).",
+              "tags": [
+                "Secondary Glaucomas"
+              ]
             },
             {
               "id": "standard-26",
               "number": 26,
-              "question": "Describe the less common causes of lens abnormalities associated with glaucoma (eg, spherophakia, lenticonus, ectopia lentis)."
+              "question": "Describe the less common causes of lens abnormalities associated with glaucoma (eg, spherophakia, lenticonus, ectopia lentis).",
+              "tags": [
+                "Secondary Glaucomas",
+                "Pediatric & Genetics"
+              ]
             },
             {
               "id": "standard-27",
               "number": 27,
-              "question": "Define the relationships of glaucoma and uveitis."
+              "question": "Define the relationships of glaucoma and uveitis.",
+              "tags": [
+                "Secondary Glaucomas"
+              ]
             },
             {
               "id": "standard-28",
               "number": 28,
-              "question": "Describe diagnostic accuracy, false positive and false negative diagnoses and their significance at individual and societal levels, differences between case-based and community-based screening, including an understanding of sensitivity and specificity, number needed to treat, t tests, life-table analysis, prospective versus retrospective studies, case control and cohort studies."
+              "question": "Describe diagnostic accuracy, false positive and false negative diagnoses and their significance at individual and societal levels, differences between case-based and community-based screening, including an understanding of sensitivity and specificity, number needed to treat, t tests, life-table analysis, prospective versus retrospective studies, case control and cohort studies.",
+              "tags": [
+                "Trials & Epidemiology"
+              ]
             }
           ]
         }
@@ -370,107 +644,180 @@
             {
               "id": "advanced-1",
               "number": 1,
-              "question": "Describe the etiology, pathophysiology, and clinical characteristics of the most complex glaucomas (eg, angle recession, multimechanism glaucoma, traumatic glaucoma, neovascular, uveitic glaucoma, iridocorneal endothelial syndrome)."
+              "question": "Describe the etiology, pathophysiology, and clinical characteristics of the most complex glaucomas (eg, angle recession, multimechanism glaucoma, traumatic glaucoma, neovascular, uveitic glaucoma, iridocorneal endothelial syndrome).",
+              "tags": [
+                "Secondary Glaucomas",
+                "Pathophysiology"
+              ]
             },
             {
               "id": "advanced-2",
               "number": 2,
-              "question": "Identify the key examination techniques and management of complex medical and surgical problems in glaucoma (eg, complicated or postoperative primary and secondary open-angle and closed-angle glaucoma, uncommon visual field defects)."
+              "question": "Identify the key examination techniques and management of complex medical and surgical problems in glaucoma (eg, complicated or postoperative primary and secondary open-angle and closed-angle glaucoma, uncommon visual field defects).",
+              "tags": [
+                "POAG & NTG",
+                "Angle Closure",
+                "Secondary Glaucomas",
+                "Lasers & Surgery"
+              ]
             },
             {
               "id": "advanced-3",
               "number": 3,
-              "question": "Apply in clinical practice tonometric methods (eg, diurnal curve) in complicated or atypical cases of glaucoma, advanced tonometric methods, and the effect of central corneal thickness (pachymetry) on IOP readings."
+              "question": "Apply in clinical practice tonometric methods (eg, diurnal curve) in complicated or atypical cases of glaucoma, advanced tonometric methods, and the effect of central corneal thickness (pachymetry) on IOP readings.",
+              "tags": [
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "advanced-4",
               "number": 4,
-              "question": "Apply in clinical practice tonometric methods, such as PASCAL tonometer, pneumotonometry, and rebound tonometry (ICare)."
+              "question": "Apply in clinical practice tonometric methods, such as PASCAL tonometer, pneumotonometry, and rebound tonometry (ICare).",
+              "tags": [
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "advanced-5",
               "number": 5,
-              "question": "Apply the most advanced knowledge of optic nerve and nerve fiber layer anatomy and describe and interpret techniques, methods, and tools for analyzing the nerve fiber layer."
+              "question": "Apply the most advanced knowledge of optic nerve and nerve fiber layer anatomy and describe and interpret techniques, methods, and tools for analyzing the nerve fiber layer.",
+              "tags": [
+                "Optic Nerve & RNFL",
+                "Imaging & Diagnostics"
+              ]
             },
             {
               "id": "advanced-6",
               "number": 6,
-              "question": "Recognize and evaluate atypical or multifactorial glaucomatous cupping (eg, rim pallor) and when to order additional tests to rule out other pathologies (eg, magnetic resonance imaging, computerized tomography scan, carotid Doppler)."
+              "question": "Recognize and evaluate atypical or multifactorial glaucomatous cupping (eg, rim pallor) and when to order additional tests to rule out other pathologies (eg, magnetic resonance imaging, computerized tomography scan, carotid Doppler).",
+              "tags": [
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "advanced-7",
               "number": 7,
-              "question": "Know how to diagnose progression using special software available with optic nerve and retinal measurement technologies and know the errors and limitations of the instruments."
+              "question": "Know how to diagnose progression using special software available with optic nerve and retinal measurement technologies and know the errors and limitations of the instruments.",
+              "tags": [
+                "Imaging & Diagnostics"
+              ]
             },
             {
               "id": "advanced-8",
               "number": 8,
-              "question": "Describe, interpret, and apply the results of the most complex and advanced forms of perimetry, including special kinetic and automated static perimetry strategies (eg, special algorithms) in atypical or multifactorial glaucoma."
+              "question": "Describe, interpret, and apply the results of the most complex and advanced forms of perimetry, including special kinetic and automated static perimetry strategies (eg, special algorithms) in atypical or multifactorial glaucoma.",
+              "tags": [
+                "Perimetry & Visual Fields"
+              ]
             },
             {
               "id": "advanced-9",
               "number": 9,
-              "question": "Describe visual field damage, progression, rate of progression, caveats, and their use in glaucoma management."
+              "question": "Describe visual field damage, progression, rate of progression, caveats, and their use in glaucoma management.",
+              "tags": [
+                "Perimetry & Visual Fields"
+              ]
             },
             {
               "id": "advanced-10",
               "number": 10,
-              "question": "Describe medical management of the most advanced and complex glaucoma (eg, advanced primary open-angle glaucoma previously treated with medicine, laser, or surgery; secondary glaucomas)."
+              "question": "Describe medical management of the most advanced and complex glaucoma (eg, advanced primary open-angle glaucoma previously treated with medicine, laser, or surgery; secondary glaucomas).",
+              "tags": [
+                "Medical Therapy",
+                "POAG & NTG",
+                "Secondary Glaucomas"
+              ]
             },
             {
               "id": "advanced-11",
               "number": 11,
-              "question": "Describe, recognize, and know how to treat the most advanced cases of primary open-angle glaucoma (eg, monocular patients, repeat surgical cases), normal tension glaucoma, and secondary glaucomas (eg, inflammatory glaucoma, angle recession)."
+              "question": "Describe, recognize, and know how to treat the most advanced cases of primary open-angle glaucoma (eg, monocular patients, repeat surgical cases), normal tension glaucoma, and secondary glaucomas (eg, inflammatory glaucoma, angle recession).",
+              "tags": [
+                "POAG & NTG",
+                "Secondary Glaucomas"
+              ]
             },
             {
               "id": "advanced-12",
               "number": 12,
-              "question": "Describe, recognize, and know how to treat primary angle-closure glaucoma and complex glaucomas (eg, postoperative cases, secondary angle closure, aqueous misdirection)."
+              "question": "Describe, recognize, and know how to treat primary angle-closure glaucoma and complex glaucomas (eg, postoperative cases, secondary angle closure, aqueous misdirection).",
+              "tags": [
+                "Angle Closure"
+              ]
             },
             {
               "id": "advanced-13",
               "number": 13,
-              "question": "Describe the clinical features of ocular hypotony, recognize and know how to treat common and uncommon etiologies (eg, choroidal detachment, leaking trabeculectomy bleb)."
+              "question": "Describe the clinical features of ocular hypotony, recognize and know how to treat common and uncommon etiologies (eg, choroidal detachment, leaking trabeculectomy bleb).",
+              "tags": [
+                "Lasers & Surgery",
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "advanced-14",
               "number": 14,
-              "question": "Describe the results, apply the conclusions, and critically analyze the major clinical trials in glaucoma (eg, GLT, OHTS, CIGTS, FFSS, NTGS, AGIS, EGPS, EMGT), Vellore Eye Study, Aravind Comprehensive eye study, Andra Pradesh eye disease study, Chennai eye study as well as describe and use other publications in the management of glaucoma patients."
+              "question": "Describe the results, apply the conclusions, and critically analyze the major clinical trials in glaucoma (eg, GLT, OHTS, CIGTS, FFSS, NTGS, AGIS, EGPS, EMGT), Vellore Eye Study, Aravind Comprehensive eye study, Andra Pradesh eye disease study, Chennai eye study as well as describe and use other publications in the management of glaucoma patients.",
+              "tags": [
+                "Trials & Epidemiology"
+              ]
             },
             {
               "id": "advanced-15",
               "number": 15,
-              "question": "Describe the features of and know how to evaluate and treat or when to refer the primary infantile, developmental (eg, aniridia, Axenfeld-Rieger), and juvenile glaucomas."
+              "question": "Describe the features of and know how to evaluate and treat or when to refer the primary infantile, developmental (eg, aniridia, Axenfeld-Rieger), and juvenile glaucomas.",
+              "tags": [
+                "Pediatric & Genetics"
+              ]
             },
             {
               "id": "advanced-16",
               "number": 16,
-              "question": "Describe and know how to apply specific medical treatments in advanced glaucoma cases."
+              "question": "Describe and know how to apply specific medical treatments in advanced glaucoma cases.",
+              "tags": [
+                "Medical Therapy"
+              ]
             },
             {
               "id": "advanced-17",
               "number": 17,
-              "question": "Describe the principles, indications, and complications of laser treatment of more advanced or complex glaucoma (eg, repeat procedures)."
+              "question": "Describe the principles, indications, and complications of laser treatment of more advanced or complex glaucoma (eg, repeat procedures).",
+              "tags": [
+                "Lasers & Surgery"
+              ]
             },
             {
               "id": "advanced-18",
               "number": 18,
-              "question": "Describe the more advanced surgical treatment of glaucoma: (eg, trabeculectomy, combined cataract and trabeculectomy, glaucoma drainage devices, and cyclodestructive procedures), including indications, techniques, and complications."
+              "question": "Describe the more advanced surgical treatment of glaucoma: (eg, trabeculectomy, combined cataract and trabeculectomy, glaucoma drainage devices, and cyclodestructive procedures), including indications, techniques, and complications.",
+              "tags": [
+                "Lasers & Surgery"
+              ]
             },
             {
               "id": "advanced-19",
               "number": 19,
-              "question": "Describe use of antimetabolites and antiangiogenic agents and potential complications from their use."
+              "question": "Describe use of antimetabolites and antiangiogenic agents and potential complications from their use.",
+              "tags": [
+                "Lasers & Surgery",
+                "Medical Therapy"
+              ]
             },
             {
               "id": "advanced-20",
               "number": 20,
-              "question": "Recognize glaucoma surgical complications, their etiologies, and options for treatment."
+              "question": "Recognize glaucoma surgical complications, their etiologies, and options for treatment.",
+              "tags": [
+                "Lasers & Surgery"
+              ]
             },
             {
               "id": "advanced-21",
               "number": 21,
-              "question": "Describe and treat intraocular infections resulting from filtering blebs or other glaucoma procedures."
+              "question": "Describe and treat intraocular infections resulting from filtering blebs or other glaucoma procedures.",
+              "tags": [
+                "Lasers & Surgery"
+              ]
             }
           ]
         }
@@ -486,46 +833,90 @@
             {
               "id": "very_advanced-1",
               "number": 1,
-              "question": "List the main population-based studies in glaucoma prevalence, incidence, and risk factors (eg, Baltimore Eye Survey, Blue Mountains Eye Study, Barbados Eye Study, Rotterdam Eye Study, Thessaloniki Eye Study, Latinos Eye Study, Singapore Malay Eye Study)."
+              "question": "List the main population-based studies in glaucoma prevalence, incidence, and risk factors (eg, Baltimore Eye Survey, Blue Mountains Eye Study, Barbados Eye Study, Rotterdam Eye Study, Thessaloniki Eye Study, Latinos Eye Study, Singapore Malay Eye Study).",
+              "tags": [
+                "Trials & Epidemiology"
+              ]
             },
             {
               "id": "very_advanced-2",
               "number": 2,
-              "question": "Describe and critically discuss results of the above-mentioned studies on glaucoma prevalence, incidence, and risk factors."
+              "question": "Describe and critically discuss results of the above-mentioned studies on glaucoma prevalence, incidence, and risk factors.",
+              "tags": [
+                "Trials & Epidemiology"
+              ]
             },
             {
               "id": "very_advanced-3",
               "number": 3,
-              "question": "Describe rate of progression and use of special algorithms (eg, value function iteration, PROGRESSOR, Garway-Heath map)."
+              "question": "Describe rate of progression and use of special algorithms (eg, value function iteration, PROGRESSOR, Garway-Heath map).",
+              "tags": [
+                "Perimetry & Visual Fields"
+              ]
             },
             {
               "id": "very_advanced-4",
               "number": 4,
-              "question": "Describe and critically discuss literature on structure-function correlation."
+              "question": "Describe and critically discuss literature on structure-function correlation.",
+              "tags": [
+                "Optic Nerve & RNFL",
+                "Perimetry & Visual Fields",
+                "Pathophysiology"
+              ]
             },
             {
               "id": "very_advanced-6",
               "number": 6,
-              "question": "Describe use of other tonometers (eg, ocular response analyzer, dynamic contour tonometry, pneumotonometer)."
+              "question": "Describe use of other tonometers (eg, ocular response analyzer, dynamic contour tonometry, pneumotonometer).",
+              "tags": [
+                "Tonometry & IOP"
+              ]
             },
             {
               "id": "very_advanced-7",
               "number": 7,
-              "question": "Describe mechanisms of ganglion cell damage and potential pathways for neuroprotection."
+              "question": "Describe mechanisms of ganglion cell damage and potential pathways for neuroprotection.",
+              "tags": [
+                "Pathophysiology",
+                "Optic Nerve & RNFL"
+              ]
             },
             {
               "id": "very_advanced-8",
               "number": 8,
-              "question": "Describe and know specific medical and surgical treatments in the most complex and most advanced glaucoma cases (eg, refractory glaucoma, monocular patients, noncompliant patients)."
+              "question": "Describe and know specific medical and surgical treatments in the most complex and most advanced glaucoma cases (eg, refractory glaucoma, monocular patients, noncompliant patients).",
+              "tags": [
+                "Medical Therapy",
+                "Lasers & Surgery"
+              ]
             },
             {
               "id": "very_advanced-9",
               "number": 9,
-              "question": "Describe and know the specific management of complications related to the surgical intervention of the most complex and most advanced glaucomas."
+              "question": "Describe and know the specific management of complications related to the surgical intervention of the most complex and most advanced glaucomas.",
+              "tags": [
+                "Lasers & Surgery"
+              ]
             }
           ]
         }
       ]
     }
+  ],
+  "tags": [
+    "Anatomy & Physiology",
+    "Angle Closure",
+    "Gonioscopy & Angle",
+    "Imaging & Diagnostics",
+    "Lasers & Surgery",
+    "Medical Therapy",
+    "Optic Nerve & RNFL",
+    "POAG & NTG",
+    "Pathophysiology",
+    "Pediatric & Genetics",
+    "Perimetry & Visual Fields",
+    "Secondary Glaucomas",
+    "Tonometry & IOP",
+    "Trials & Epidemiology"
   ]
 }

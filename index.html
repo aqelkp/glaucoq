@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>GlaucoQ — AIOS-FAICO Glaucoma Exam Prep</title>
-  <meta name="description" content="High-yield 10-mark glaucoma fellowship exam answers with inline diagrams and grounded textbook citations." />
+  <meta name="description" content="High-yield 10-mark glaucoma fellowship exam answers with inline diagrams, topic tags, read tracking, and grounded revision MCQs." />
   <meta name="theme-color" content="#0369a1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -24,23 +24,24 @@
       --text-muted: #475569;
       --border: #e2e8f0;
       --primary: #0369a1;
+      --primary-dark: #0c4a6e;
       --primary-light: #e0f2fe;
       --accent: #0f766e;
       --accent-light: #f0fdfa;
       --clinical-bg: #fffbeb;
       --clinical-border: #d97706;
       --success-bg: #dcfce7;
+      --success-border: #86efac;
       --success-text: #166534;
-      --radius: 10px;
+      --danger-bg: #fee2e2;
+      --danger-border: #fca5a5;
+      --danger-text: #991b1b;
+      --radius: 12px;
       --shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
       --shadow-lg: 0 10px 25px -5px rgba(15, 23, 42, 0.14), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: "Google Sans", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -51,7 +52,9 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Header */
+    .hidden { display: none !important; }
+
+    /* Top Header */
     .topbar {
       position: sticky;
       top: 0;
@@ -59,7 +62,7 @@
       background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
-      padding: calc(0.7rem + env(safe-area-inset-top)) 1.25rem 0.7rem;
+      padding: calc(0.65rem + env(safe-area-inset-top)) 1.25rem 0.65rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -69,8 +72,52 @@
     .topbar-left {
       display: flex;
       align-items: center;
-      gap: 0.65rem;
+      gap: 0.6rem;
       min-width: 0;
+    }
+
+    .topbar-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: var(--surface-muted);
+      padding: 0.22rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .tab-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.84rem;
+      font-weight: 600;
+      padding: 0.36rem 0.85rem;
+      border-radius: 7px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .tab-btn:hover { color: var(--text); }
+
+    .tab-btn.active {
+      background: #ffffff;
+      color: var(--primary);
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+    }
+
+    .tab-count {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.08rem 0.42rem;
+      border-radius: 999px;
+      background: var(--primary-light);
+      color: var(--primary);
     }
 
     .topbar-right {
@@ -83,47 +130,28 @@
     .menu-btn {
       display: none;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.35rem;
       background: var(--surface-muted);
       border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 0.45rem 0.7rem;
+      padding: 0.4rem 0.65rem;
       font-family: inherit;
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       font-weight: 600;
       color: var(--text);
       cursor: pointer;
     }
 
-    .menu-btn:hover {
-      background: #e2e8f0;
-    }
-
-    .install-btn {
-      display: none;
-      align-items: center;
-      gap: 0.35rem;
-      background: var(--primary);
-      color: #ffffff;
-      border: none;
-      border-radius: 999px;
-      padding: 0.36rem 0.78rem;
-      font-family: inherit;
-      font-size: 0.78rem;
-      font-weight: 600;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-
-    .install-btn.visible {
-      display: inline-flex;
-    }
-
-    .brand {
+    .brand-btn {
       display: flex;
       align-items: center;
-      gap: 0.65rem;
-      min-width: 0;
+      gap: 0.55rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      padding: 0;
+      text-align: left;
     }
 
     .brand-badge {
@@ -134,59 +162,379 @@
       padding: 0.28rem 0.62rem;
       border-radius: 6px;
       letter-spacing: 0.02em;
-      flex-shrink: 0;
-    }
-
-    .brand-text {
-      min-width: 0;
     }
 
     .brand-title {
-      font-size: 1rem;
+      font-size: 0.96rem;
       font-weight: 700;
       color: var(--text);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
 
-    .brand-sub {
+    .install-btn {
+      display: none;
+      align-items: center;
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      border-radius: 999px;
+      padding: 0.34rem 0.75rem;
+      font-family: inherit;
       font-size: 0.76rem;
-      color: var(--text-muted);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      font-weight: 600;
+      cursor: pointer;
     }
+
+    .install-btn.visible { display: inline-flex; }
 
     .progress-pill {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
       background: var(--accent-light);
       color: var(--accent);
       border: 1px solid #99f6e4;
-      font-size: 0.78rem;
-      font-weight: 600;
-      padding: 0.3rem 0.72rem;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 0.28rem 0.68rem;
       border-radius: 999px;
       white-space: nowrap;
     }
 
-    /* Layout */
-    .layout {
+    /* Buttons */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      background: var(--primary);
+      color: #ffffff;
+      border: 1px solid var(--primary);
+      border-radius: 9px;
+      padding: 0.62rem 1.15rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn-primary:hover:not(:disabled) { background: var(--primary-dark); }
+    .btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      background: #ffffff;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 0.58rem 1rem;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn-outline:hover:not(:disabled) {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .btn-outline:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    /* ==================== HOME PAGE ==================== */
+    .page-container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem calc(3rem + env(safe-area-inset-bottom));
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, #0369a1 0%, #0f766e 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 1.85rem 2rem;
+      box-shadow: var(--shadow-lg);
+      display: grid;
+      grid-template-columns: 1.35fr 0.9fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .hero-kicker {
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #bae6fd;
+      margin-bottom: 0.35rem;
+    }
+
+    .hero-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.55rem;
+    }
+
+    .hero-desc {
+      font-size: 0.94rem;
+      color: #e0f2fe;
+      margin-bottom: 1.15rem;
+      max-width: 560px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+    }
+
+    .btn-hero {
+      background: #ffffff;
+      color: var(--primary-dark);
+      border: none;
+      border-radius: 9px;
+      padding: 0.68rem 1.2rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.16);
+      transition: transform 0.12s ease;
+    }
+
+    .btn-hero:hover { transform: translateY(-1px); }
+
+    .btn-hero-ghost {
+      background: rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      border-radius: 9px;
+      padding: 0.65rem 1.1rem;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-hero-ghost:hover { background: rgba(255, 255, 255, 0.25); }
+
+    .hero-stats {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 12px;
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.86rem;
+    }
+
+    .stat-val {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.25);
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #5eead4;
+      border-radius: 999px;
+      transition: width 0.25s ease;
+    }
+
+    .home-section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .home-section-title {
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .home-section-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Tag Grid on Home */
+    .tag-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .tag-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      box-shadow: var(--shadow);
+      transition: all 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .tag-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(3, 105, 161, 0.1);
+    }
+
+    .tag-card.has-answered {
+      border-left: 3.5px solid var(--primary);
+    }
+
+    .tag-card-name {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .tag-card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+    }
+
+    .tag-card-live {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* Next Up Cards + Level Cards */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1rem;
+    }
+
+    .panel-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.15rem 1.25rem;
+      box-shadow: var(--shadow);
+    }
+
+    .quick-q-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .quick-q-item {
+      width: 100%;
+      text-align: left;
+      background: var(--surface-muted);
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 0.65rem 0.8rem;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.14s ease;
+    }
+
+    .quick-q-item:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+    }
+
+    .quick-q-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.15rem;
+    }
+
+    .quick-q-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.65rem;
+    }
+
+    .level-tile {
+      background: var(--surface-muted);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 0.75rem 0.85rem;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.14s ease;
+    }
+
+    .level-tile:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+    }
+
+    .level-tile-name {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .level-tile-meta {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    /* ==================== STUDY VIEW ==================== */
+    .study-layout {
       max-width: 1240px;
       margin: 0 auto;
       padding: 1.25rem 1.5rem calc(5.5rem + env(safe-area-inset-bottom));
       display: grid;
-      grid-template-columns: 310px minmax(0, 1fr);
+      grid-template-columns: 315px minmax(0, 1fr);
       gap: 1.5rem;
       align-items: start;
     }
 
-    /* Sidebar Navigation */
-    .sidebar-backdrop {
-      display: none;
-    }
+    .sidebar-backdrop { display: none; }
 
     .sidebar {
       background: var(--surface);
@@ -202,11 +550,11 @@
     }
 
     .sidebar-top {
-      padding: 0.9rem 0.9rem 0.65rem;
+      padding: 0.85rem 0.85rem 0.65rem;
       border-bottom: 1px solid var(--border);
       display: flex;
       flex-direction: column;
-      gap: 0.6rem;
+      gap: 0.55rem;
       background: #ffffff;
     }
 
@@ -217,7 +565,7 @@
     }
 
     .sidebar-heading {
-      font-size: 0.74rem;
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -238,19 +586,21 @@
       justify-content: center;
     }
 
-    .search-input {
+    .search-input,
+    .tag-select {
       width: 100%;
-      padding: 0.48rem 0.72rem;
+      padding: 0.46rem 0.68rem;
       border: 1px solid var(--border);
       border-radius: 7px;
       font-family: inherit;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       color: var(--text);
       background: var(--bg);
       outline: none;
     }
 
-    .search-input:focus {
+    .search-input:focus,
+    .tag-select:focus {
       border-color: var(--primary);
       background: #ffffff;
     }
@@ -258,17 +608,17 @@
     .filter-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.3rem;
+      gap: 0.28rem;
     }
 
     .filter-pill {
-      padding: 0.22rem 0.52rem;
+      padding: 0.2rem 0.5rem;
       border-radius: 6px;
       border: 1px solid var(--border);
       background: var(--surface);
       color: var(--text-muted);
       font-family: inherit;
-      font-size: 0.73rem;
+      font-size: 0.72rem;
       font-weight: 600;
       cursor: pointer;
     }
@@ -283,14 +633,15 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 0.76rem;
+      gap: 0.5rem;
+      font-size: 0.75rem;
       color: var(--text-muted);
     }
 
     .toggle-label {
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.32rem;
       cursor: pointer;
       font-weight: 600;
       color: var(--text);
@@ -298,28 +649,26 @@
 
     .sidebar-scroll {
       overflow-y: auto;
-      padding: 0.65rem 0.75rem 1rem;
+      padding: 0.6rem 0.7rem 1rem;
       flex: 1;
     }
 
-    .nav-group {
-      margin-bottom: 0.85rem;
-    }
+    .nav-group { margin-bottom: 0.8rem; }
 
     .nav-group-title {
-      font-size: 0.7rem;
+      font-size: 0.69rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       color: var(--text-muted);
-      padding: 0.25rem 0.35rem;
-      margin-bottom: 0.3rem;
+      padding: 0.22rem 0.35rem;
+      margin-bottom: 0.28rem;
     }
 
     .nav-list {
       display: flex;
       flex-direction: column;
-      gap: 0.32rem;
+      gap: 0.3rem;
     }
 
     .nav-item {
@@ -331,25 +680,21 @@
       background: transparent;
       border: 1px solid transparent;
       border-radius: 7px;
-      padding: 0.52rem 0.6rem;
+      padding: 0.5rem 0.58rem;
       cursor: pointer;
       transition: all 0.14s ease;
       font-family: inherit;
       color: var(--text);
     }
 
-    .nav-item:hover {
-      background: var(--surface-muted);
-    }
+    .nav-item:hover { background: var(--surface-muted); }
 
     .nav-item.active {
       background: var(--primary-light);
       border-color: var(--primary);
     }
 
-    .nav-item.pending {
-      opacity: 0.65;
-    }
+    .nav-item.pending { opacity: 0.65; }
 
     .nav-dot {
       width: 8px;
@@ -360,49 +705,62 @@
       background: #cbd5e1;
     }
 
-    .nav-item.answered .nav-dot {
-      background: var(--primary);
-    }
+    .nav-item.answered .nav-dot { background: var(--primary); }
+    .nav-item.read .nav-dot { background: #16a34a; }
 
-    .nav-item.studied .nav-dot {
-      background: #16a34a;
-    }
-
-    .nav-item-body {
-      min-width: 0;
-      flex: 1;
-    }
+    .nav-item-body { min-width: 0; flex: 1; }
 
     .nav-item-meta {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 0.4rem;
-      font-size: 0.69rem;
+      font-size: 0.68rem;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: 0.12rem;
+      margin-bottom: 0.1rem;
     }
 
-    .nav-item.pending .nav-item-meta {
-      color: var(--text-muted);
-    }
+    .nav-item.read .nav-item-meta .meta-state { color: #15803d; }
+    .nav-item.pending .nav-item-meta { color: var(--text-muted); }
 
     .nav-item-title {
-      font-size: 0.82rem;
+      font-size: 0.81rem;
       font-weight: 500;
-      line-height: 1.35;
-      color: var(--text);
+      line-height: 1.34;
     }
 
-    .nav-item.active .nav-item-title {
+    .nav-item.active .nav-item-title { font-weight: 700; }
+
+    /* Active Filter Banner */
+    .active-filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+      background: var(--primary-light);
+      border: 1px solid #bae6fd;
+      color: var(--primary-dark);
+      border-radius: 9px;
+      padding: 0.55rem 0.9rem;
+      margin-bottom: 0.9rem;
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+
+    .clear-filter-btn {
+      background: #ffffff;
+      border: 1px solid #7dd3fc;
+      color: var(--primary);
+      border-radius: 6px;
+      padding: 0.2rem 0.55rem;
+      font-family: inherit;
+      font-size: 0.76rem;
       font-weight: 700;
+      cursor: pointer;
     }
 
-    /* Main Question Sheet */
-    .main {
-      min-width: 0;
-    }
+    /* Question Card */
+    .main { min-width: 0; }
 
     .question-card {
       background: var(--surface);
@@ -442,45 +800,57 @@
       letter-spacing: 0.04em;
     }
 
-    .tag-level {
-      background: var(--primary-light);
-      color: var(--primary);
+    .tag-level { background: var(--primary-light); color: var(--primary); }
+    .tag-cat { background: var(--surface-muted); color: var(--text-muted); }
+    .tag-marks { background: var(--success-bg); color: var(--success-text); }
+
+    .topic-tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.65rem;
     }
 
-    .tag-cat {
-      background: var(--surface-muted);
+    .topic-tag-chip {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
       color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.74rem;
+      font-weight: 600;
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.14s ease;
     }
 
-    .tag-marks {
-      background: var(--success-bg);
-      color: var(--success-text);
+    .topic-tag-chip:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-light);
     }
 
-    .study-btn {
+    .read-btn {
       display: inline-flex;
       align-items: center;
       gap: 0.35rem;
-      padding: 0.32rem 0.72rem;
+      padding: 0.36rem 0.8rem;
       border-radius: 999px;
       border: 1px solid var(--border);
       background: #ffffff;
-      color: var(--text-muted);
+      color: var(--text);
       font-family: inherit;
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.15s ease;
     }
 
-    .study-btn:hover {
-      border-color: #16a34a;
-      color: #166534;
-    }
+    .read-btn:hover { border-color: #16a34a; color: #166534; }
 
-    .study-btn.studied {
+    .read-btn.is-read {
       background: var(--success-bg);
-      border-color: #86efac;
+      border-color: var(--success-border);
       color: var(--success-text);
     }
 
@@ -498,7 +868,6 @@
       gap: 1.55rem;
     }
 
-    /* Exam Section Typography */
     .exam-section h2 {
       font-size: 1.1rem;
       font-weight: 700;
@@ -516,21 +885,9 @@
       margin-bottom: 0.42rem;
     }
 
-    .exam-section p {
-      margin-bottom: 0.75rem;
-      color: #1e293b;
-    }
-
-    .exam-section ul,
-    .exam-section ol {
-      padding-left: 1.35rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .exam-section li {
-      margin-bottom: 0.48rem;
-      color: #1e293b;
-    }
+    .exam-section p { margin-bottom: 0.75rem; color: #1e293b; }
+    .exam-section ul, .exam-section ol { padding-left: 1.35rem; margin-bottom: 0.8rem; }
+    .exam-section li { margin-bottom: 0.48rem; color: #1e293b; }
 
     .formula-box {
       background: #f0f9ff;
@@ -542,7 +899,6 @@
       font-size: 1.02rem;
       font-weight: 700;
       color: #0c4a6e;
-      letter-spacing: 0.01em;
     }
 
     .clinical-note {
@@ -554,17 +910,10 @@
       font-size: 0.93rem;
     }
 
-    .clinical-note-title {
-      font-weight: 700;
-      color: #92400e;
-      margin-bottom: 0.25rem;
-    }
+    .clinical-note-title { font-weight: 700; color: #92400e; margin-bottom: 0.25rem; }
+    .clinical-note ul { margin-bottom: 0; }
 
-    .clinical-note ul {
-      margin-bottom: 0;
-    }
-
-    /* Inline Exam Figures */
+    /* Inline Figures */
     .inline-figure {
       position: relative;
       margin: 1rem auto;
@@ -596,55 +945,15 @@
       pointer-events: none;
     }
 
-    .inline-figure svg {
-      width: 100%;
-      height: auto;
-      display: block;
-      background: #fcfdff;
-      border-radius: 6px;
-    }
-
-    .figure-caption {
-      margin-top: 0.55rem;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.45;
-      text-align: center;
-    }
+    .inline-figure svg { width: 100%; height: auto; display: block; background: #fcfdff; border-radius: 6px; }
+    .figure-caption { margin-top: 0.55rem; font-size: 0.82rem; color: var(--text-muted); line-height: 1.45; text-align: center; }
 
     /* Tables */
-    .table-wrap {
-      overflow-x: auto;
-      margin: 0.85rem 0;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-      text-align: left;
-    }
-
-    th {
-      background: var(--surface-muted);
-      font-weight: 700;
-      color: var(--text);
-      padding: 0.65rem 0.8rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    td {
-      padding: 0.6rem 0.8rem;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-      line-height: 1.55;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
+    .table-wrap { overflow-x: auto; margin: 0.85rem 0; border: 1px solid var(--border); border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left; }
+    th { background: var(--surface-muted); font-weight: 700; color: var(--text); padding: 0.65rem 0.8rem; border-bottom: 1px solid var(--border); }
+    td { padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.55; }
+    tr:last-child td { border-bottom: none; }
 
     /* Citation Badges */
     .cite-btn {
@@ -664,47 +973,30 @@
       background: var(--primary-light);
       color: var(--primary);
       cursor: pointer;
-      transition: all 0.14s ease;
       font-family: inherit;
     }
 
     @media (pointer: coarse) {
-      .cite-btn {
-        min-width: 1.6rem;
-        height: 1.4rem;
-        font-size: 0.74rem;
-        vertical-align: baseline;
-      }
+      .cite-btn { min-width: 1.6rem; height: 1.4rem; font-size: 0.74rem; vertical-align: baseline; }
     }
 
-    .cite-btn:hover,
-    .cite-btn.active {
-      background: var(--primary);
-      color: #ffffff;
-      border-color: var(--primary);
+    .cite-btn:hover, .cite-btn.active { background: var(--primary); color: #ffffff; border-color: var(--primary); }
+
+    /* Question Footer Action Bar */
+    .q-footer-cta {
+      padding: 1.15rem 1.75rem;
+      border-top: 1px solid var(--border);
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
     }
 
-    /* Pending state card */
-    .pending-box {
-      padding: 2.25rem 1.5rem;
-      text-align: center;
+    .q-footer-hint {
+      font-size: 0.84rem;
       color: var(--text-muted);
-    }
-
-    .pending-box h3 {
-      color: var(--text);
-      margin-bottom: 0.45rem;
-      font-size: 1.05rem;
-    }
-
-    .pending-subitems {
-      text-align: left;
-      max-width: 540px;
-      margin: 1rem auto 0;
-      background: var(--surface-muted);
-      padding: 0.9rem 1.25rem;
-      border-radius: 8px;
-      font-size: 0.88rem;
     }
 
     /* References footer */
@@ -714,44 +1006,18 @@
       padding: 1.1rem 1.75rem;
     }
 
-    .refs-title {
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-muted);
-      margin-bottom: 0.55rem;
-    }
+    .refs-title { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 0.55rem; }
+    .refs-list { list-style: none; display: flex; flex-direction: column; gap: 0.32rem; font-size: 0.84rem; }
+    .ref-row { display: flex; align-items: baseline; gap: 0.5rem; padding: 0.3rem 0.5rem; border-radius: 6px; cursor: pointer; }
+    .ref-row:hover { background: #e2e8f0; }
+    .ref-num { font-weight: 700; color: var(--primary); min-width: 1.6rem; }
 
-    .refs-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.32rem;
-      font-size: 0.84rem;
-    }
+    /* Pending state */
+    .pending-box { padding: 2.25rem 1.5rem; text-align: center; color: var(--text-muted); }
+    .pending-box h3 { color: var(--text); margin-bottom: 0.45rem; font-size: 1.05rem; }
+    .pending-subitems { text-align: left; max-width: 540px; margin: 1rem auto 0; background: var(--surface-muted); padding: 0.9rem 1.25rem; border-radius: 8px; font-size: 0.88rem; }
 
-    .ref-row {
-      display: flex;
-      align-items: baseline;
-      gap: 0.5rem;
-      padding: 0.3rem 0.5rem;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.14s ease;
-    }
-
-    .ref-row:hover {
-      background: #e2e8f0;
-    }
-
-    .ref-num {
-      font-weight: 700;
-      color: var(--primary);
-      min-width: 1.6rem;
-    }
-
-    /* Sticky Bottom Question Pager */
+    /* Sticky Bottom Question Pager (Study view only) */
     .bottom-pager {
       position: fixed;
       left: 0;
@@ -761,7 +1027,7 @@
       background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(8px);
       border-top: 1px solid var(--border);
-      padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom));
+      padding: 0.55rem 1rem calc(0.55rem + env(safe-area-inset-bottom));
     }
 
     .bottom-pager-inner {
@@ -777,36 +1043,212 @@
       display: inline-flex;
       align-items: center;
       gap: 0.35rem;
-      padding: 0.48rem 0.9rem;
+      padding: 0.46rem 0.88rem;
       border-radius: 8px;
       border: 1px solid var(--border);
       background: var(--surface);
       color: var(--text);
       font-family: inherit;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       font-weight: 600;
       cursor: pointer;
     }
 
-    .pager-btn:hover:not(:disabled) {
-      background: var(--primary-light);
-      border-color: var(--primary);
-      color: var(--primary);
+    .pager-btn:hover:not(:disabled) { background: var(--primary-light); border-color: var(--primary); color: var(--primary); }
+    .pager-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .pager-status { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-align: center; }
+
+    /* ==================== REVISION MCQ VIEW ==================== */
+    .rev-container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem calc(3rem + env(safe-area-inset-bottom));
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
     }
 
-    .pager-btn:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
+    .rev-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.6rem 1.75rem;
+      box-shadow: var(--shadow);
     }
 
-    .pager-status {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--text-muted);
+    .rev-empty {
       text-align: center;
+      padding: 2.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.85rem;
     }
 
-    /* Source Drawer / Mobile Bottom Sheet */
+    .rev-empty-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .rev-setup-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 0.75rem;
+      margin: 1rem 0 1.25rem;
+    }
+
+    .rev-stat-tile {
+      background: var(--surface-muted);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+    }
+
+    .rev-stat-label { font-size: 0.74rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); }
+    .rev-stat-num { font-size: 1.35rem; font-weight: 700; color: var(--primary); margin-top: 0.15rem; }
+
+    .rev-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .mcq-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.9rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .mcq-bar {
+      width: 100%;
+      height: 6px;
+      background: var(--surface-muted);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 1.15rem;
+    }
+
+    .mcq-bar-fill {
+      height: 100%;
+      background: var(--primary);
+      transition: width 0.2s ease;
+    }
+
+    .mcq-stem {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.48;
+      margin-bottom: 1.1rem;
+    }
+
+    .mcq-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .mcq-option {
+      width: 100%;
+      text-align: left;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 0.78rem 0.95rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      font-family: inherit;
+      font-size: 0.93rem;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.14s ease;
+    }
+
+    .mcq-option:hover:not(:disabled) {
+      border-color: var(--primary);
+      background: #f0f9ff;
+    }
+
+    .mcq-option:disabled { cursor: default; }
+
+    .mcq-option.correct {
+      background: var(--success-bg);
+      border-color: #16a34a;
+      color: var(--success-text);
+      font-weight: 600;
+    }
+
+    .mcq-option.wrong {
+      background: var(--danger-bg);
+      border-color: #dc2626;
+      color: var(--danger-text);
+    }
+
+    .mcq-letter {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: var(--surface-muted);
+      color: var(--text);
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .mcq-option.correct .mcq-letter { background: #16a34a; color: #ffffff; }
+    .mcq-option.wrong .mcq-letter { background: #dc2626; color: #ffffff; }
+
+    .mcq-feedback {
+      margin-top: 1.15rem;
+      padding: 1rem 1.1rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .mcq-feedback-head {
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .mcq-feedback.is-correct { background: #f0fdf4; border-color: #bbf7d0; }
+    .mcq-feedback.is-correct .mcq-feedback-head { color: #166534; }
+    .mcq-feedback.is-wrong { background: #fef2f2; border-color: #fecaca; }
+    .mcq-feedback.is-wrong .mcq-feedback-head { color: #991b1b; }
+
+    .mcq-feedback-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.25rem;
+    }
+
+    /* Source Drawer & Lightbox */
     .drawer-backdrop {
       position: fixed;
       inset: 0;
@@ -816,9 +1258,7 @@
       justify-content: flex-end;
     }
 
-    .drawer-backdrop.open {
-      display: flex;
-    }
+    .drawer-backdrop.open { display: flex; }
 
     .drawer {
       width: 100%;
@@ -834,320 +1274,73 @@
       animation: slideIn 0.18s ease-out;
     }
 
-    @keyframes slideIn {
-      from { transform: translateX(100%); }
-      to { transform: translateX(0); }
-    }
+    @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
+    @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 
-    @keyframes slideUp {
-      from { transform: translateY(100%); }
-      to { transform: translateY(0); }
-    }
+    .drawer-handle { display: none; width: 40px; height: 4px; border-radius: 999px; background: #cbd5e1; margin: -0.35rem auto 0.25rem; }
+    .drawer-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.7rem; }
+    .drawer-badge { background: var(--primary); color: #fff; font-weight: 700; font-size: 0.82rem; padding: 0.22rem 0.6rem; border-radius: 5px; }
+    .drawer-close { background: var(--surface-muted); border: 1px solid var(--border); border-radius: 6px; width: 32px; height: 32px; font-size: 1.15rem; cursor: pointer; color: var(--text); display: flex; align-items: center; justify-content: center; }
+    .drawer-field-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.2rem; }
+    .drawer-book { font-size: 1.04rem; font-weight: 700; color: var(--text); line-height: 1.35; }
+    .drawer-chapter { font-size: 0.9rem; color: var(--primary); font-weight: 600; }
+    .drawer-quote { background: var(--surface-muted); border-left: 3.5px solid var(--primary); padding: 0.9rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.92rem; color: var(--text); line-height: 1.65; }
+    .drawer-nav { margin-top: auto; padding-top: 0.9rem; border-top: 1px solid var(--border); display: flex; gap: 0.75rem; }
+    .btn-secondary { flex: 1; padding: 0.55rem 0.75rem; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-weight: 600; font-size: 0.86rem; font-family: inherit; cursor: pointer; }
+    .btn-secondary:disabled { opacity: 0.45; cursor: not-allowed; }
 
-    .drawer-handle {
-      display: none;
-      width: 40px;
-      height: 4px;
-      border-radius: 999px;
-      background: #cbd5e1;
-      margin: -0.35rem auto 0.25rem;
-    }
-
-    .drawer-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.7rem;
-    }
-
-    .drawer-badge {
-      background: var(--primary);
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.82rem;
-      padding: 0.22rem 0.6rem;
-      border-radius: 5px;
-    }
-
-    .drawer-close {
-      background: var(--surface-muted);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      width: 32px;
-      height: 32px;
-      font-size: 1.15rem;
-      cursor: pointer;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .drawer-field-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-muted);
-      margin-bottom: 0.2rem;
-    }
-
-    .drawer-book {
-      font-size: 1.04rem;
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1.35;
-    }
-
-    .drawer-chapter {
-      font-size: 0.9rem;
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    .drawer-quote {
-      background: var(--surface-muted);
-      border-left: 3.5px solid var(--primary);
-      padding: 0.9rem 1rem;
-      border-radius: 0 6px 6px 0;
-      font-size: 0.92rem;
-      color: var(--text);
-      line-height: 1.65;
-    }
-
-    .drawer-nav {
-      margin-top: auto;
-      padding-top: 0.9rem;
-      border-top: 1px solid var(--border);
-      display: flex;
-      gap: 0.75rem;
-    }
-
-    .btn-secondary {
-      flex: 1;
-      padding: 0.55rem 0.75rem;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text);
-      font-weight: 600;
-      font-size: 0.86rem;
-      font-family: inherit;
-      cursor: pointer;
-    }
-
-    .btn-secondary:disabled {
-      opacity: 0.45;
-      cursor: not-allowed;
-    }
-
-    /* Fullscreen Figure Zoom Lightbox */
-    .lightbox-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.74);
-      z-index: 60;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-
-    .lightbox-backdrop.open {
-      display: flex;
-    }
-
-    .lightbox-card {
-      background: #ffffff;
-      border-radius: 12px;
-      width: 100%;
-      max-width: 920px;
-      max-height: 92vh;
-      overflow: auto;
-      padding: 1rem;
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .lightbox-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.6rem;
-    }
-
-    .lightbox-title {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--primary);
-    }
-
-    .lightbox-stage {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .lightbox-stage svg {
-      width: 100%;
-      min-width: 520px;
-      height: auto;
-      display: block;
-      background: #fcfdff;
-      border-radius: 6px;
-    }
-
-    .lightbox-caption {
-      font-size: 0.86rem;
-      color: var(--text-muted);
-      text-align: center;
-    }
+    .lightbox-backdrop { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.74); z-index: 60; display: none; align-items: center; justify-content: center; padding: 1rem; }
+    .lightbox-backdrop.open { display: flex; }
+    .lightbox-card { background: #ffffff; border-radius: 12px; width: 100%; max-width: 920px; max-height: 92vh; overflow: auto; padding: 1rem; box-shadow: var(--shadow-lg); display: flex; flex-direction: column; gap: 0.75rem; }
+    .lightbox-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.6rem; }
+    .lightbox-title { font-size: 0.9rem; font-weight: 700; color: var(--primary); }
+    .lightbox-stage { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .lightbox-stage svg { width: 100%; min-width: 520px; height: auto; display: block; background: #fcfdff; border-radius: 6px; }
+    .lightbox-caption { font-size: 0.86rem; color: var(--text-muted); text-align: center; }
 
     /* Responsive Breakpoints */
     @media (max-width: 1023px) {
-      .menu-btn {
-        display: inline-flex;
-      }
+      .study-mode .menu-btn { display: inline-flex; }
+      .study-layout { grid-template-columns: minmax(0, 1fr); max-width: 840px; padding: 1rem 1rem calc(5.5rem + env(safe-area-inset-bottom)); }
+      .sidebar-backdrop { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.4); z-index: 40; }
+      .sidebar-backdrop.open { display: block; }
+      .sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: min(335px, 88vw); max-height: 100vh; z-index: 45; border-radius: 0; border: none; border-right: 1px solid var(--border); padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); transform: translateX(-100%); transition: transform 0.2s ease; }
+      .sidebar.open { transform: translateX(0); }
+      .sidebar-close { display: flex; }
+    }
 
-      .layout {
-        grid-template-columns: minmax(0, 1fr);
-        max-width: 840px;
-        padding: 1.1rem 1rem calc(5.5rem + env(safe-area-inset-bottom));
-      }
-
-      .sidebar-backdrop {
-        position: fixed;
-        inset: 0;
-        background: rgba(15, 23, 42, 0.4);
-        z-index: 40;
-      }
-
-      .sidebar-backdrop.open {
-        display: block;
-      }
-
-      .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: min(330px, 88vw);
-        max-height: 100vh;
-        z-index: 45;
-        border-radius: 0;
-        border: none;
-        border-right: 1px solid var(--border);
-        padding-top: env(safe-area-inset-top);
-        padding-bottom: env(safe-area-inset-bottom);
-        transform: translateX(-100%);
-        transition: transform 0.2s ease;
-      }
-
-      .sidebar.open {
-        transform: translateX(0);
-      }
-
-      .sidebar-close {
-        display: flex;
-      }
+    @media (max-width: 820px) {
+      .hero-card { grid-template-columns: 1fr; padding: 1.4rem 1.25rem; }
+      .brand-title { display: none; }
     }
 
     @media (max-width: 767px) {
-      .drawer-backdrop {
-        align-items: flex-end;
-        justify-content: center;
-      }
-
-      .drawer {
-        max-width: 100%;
-        height: auto;
-        max-height: 82vh;
-        border-radius: 16px 16px 0 0;
-        padding: 1.15rem 1.2rem calc(1.25rem + env(safe-area-inset-bottom));
-        animation: slideUp 0.2s ease-out;
-      }
-
-      .drawer-handle {
-        display: block;
-      }
+      .drawer-backdrop { align-items: flex-end; justify-content: center; }
+      .drawer { max-width: 100%; height: auto; max-height: 82vh; border-radius: 16px 16px 0 0; padding: 1.15rem 1.2rem calc(1.25rem + env(safe-area-inset-bottom)); animation: slideUp 0.2s ease-out; }
+      .drawer-handle { display: block; }
     }
 
     @media (max-width: 640px) {
-      body {
-        font-size: 15px;
-      }
-
-      .topbar {
-        padding: calc(0.6rem + env(safe-area-inset-top)) 0.85rem 0.6rem;
-      }
-
-      .brand-sub {
-        display: none;
-      }
-
-      .brand-title {
-        display: none;
-      }
-
-      .progress-pill {
-        font-size: 0.74rem;
-        padding: 0.26rem 0.6rem;
-      }
-
-      .layout {
-        padding: 0.8rem 0.65rem calc(5.2rem + env(safe-area-inset-bottom));
-      }
-
-      .q-header {
-        padding: 1.05rem 1rem;
-      }
-
-      .q-body {
-        padding: 1.15rem 1rem;
-      }
-
-      .q-title {
-        font-size: 1.12rem;
-      }
-
-      .refs-section {
-        padding: 1rem;
-      }
-
-      .table-wrap table,
-      .table-wrap tbody,
-      .table-wrap tr,
-      .table-wrap td {
-        display: block;
-        width: 100%;
-      }
-
-      .table-wrap thead {
-        display: none;
-      }
-
-      .table-wrap tr {
-        border-bottom: 1px solid var(--border);
-        padding: 0.65rem 0.8rem;
-      }
-
-      .table-wrap tr:last-child {
-        border-bottom: none;
-      }
-
-      .table-wrap td {
-        border: none;
-        padding: 0.15rem 0;
-      }
-
-      .table-wrap td:first-child {
-        color: var(--primary);
-        font-size: 0.94rem;
-        margin-bottom: 0.2rem;
-      }
+      body { font-size: 15px; }
+      .topbar { padding: calc(0.55rem + env(safe-area-inset-top)) 0.7rem 0.55rem; gap: 0.4rem; }
+      .tab-btn { padding: 0.34rem 0.58rem; font-size: 0.79rem; }
+      .progress-pill { display: none; }
+      .page-container { padding: 1rem 0.85rem calc(2.5rem + env(safe-area-inset-bottom)); }
+      .hero-title { font-size: 1.32rem; }
+      .study-layout { padding: 0.75rem 0.65rem calc(5.2rem + env(safe-area-inset-bottom)); }
+      .q-header { padding: 1.05rem 1rem; }
+      .q-body { padding: 1.15rem 1rem; }
+      .q-title { font-size: 1.12rem; }
+      .q-footer-cta, .refs-section { padding: 1rem; }
+      .rev-container { padding: 1rem 0.75rem calc(2.5rem + env(safe-area-inset-bottom)); }
+      .rev-card { padding: 1.15rem 1rem; }
+      .level-grid { grid-template-columns: 1fr; }
+      .table-wrap table, .table-wrap tbody, .table-wrap tr, .table-wrap td { display: block; width: 100%; }
+      .table-wrap thead { display: none; }
+      .table-wrap tr { border-bottom: 1px solid var(--border); padding: 0.65rem 0.8rem; }
+      .table-wrap tr:last-child { border-bottom: none; }
+      .table-wrap td { border: none; padding: 0.15rem 0; }
+      .table-wrap td:first-child { color: var(--primary); font-size: 0.94rem; margin-bottom: 0.2rem; }
     }
   </style>
 </head>
@@ -1156,62 +1349,78 @@
     <div class="topbar-left">
       <button class="menu-btn" id="menuBtn" type="button" aria-label="Open questions menu" aria-expanded="false">
         <span>&#9776;</span>
-        <span>Questions</span>
       </button>
-      <div class="brand">
+      <button class="brand-btn" id="brandBtn" type="button" aria-label="Go to Home">
         <span class="brand-badge">GlaucoQ</span>
-        <div class="brand-text">
-          <div class="brand-title">AIOS-FAICO Glaucoma Prep</div>
-          <div class="brand-sub">10-Mark Exam Answers · Inline Figures · Textbook Sources</div>
-        </div>
-      </div>
+        <span class="brand-title">AIOS-FAICO Prep</span>
+      </button>
     </div>
+
+    <nav class="topbar-nav" aria-label="Primary navigation">
+      <button class="tab-btn active" data-view="home" id="tabHome" type="button">Home</button>
+      <button class="tab-btn" data-view="study" id="tabStudy" type="button">Study</button>
+      <button class="tab-btn" data-view="revision" id="tabRevision" type="button">
+        <span>Revision</span>
+        <span class="tab-count" id="revBadge">0</span>
+      </button>
+    </nav>
+
     <div class="topbar-right">
-      <button class="install-btn" id="installBtn" type="button">Install App</button>
-      <div class="progress-pill" id="progressPill">Loading…</div>
+      <button class="install-btn" id="installBtn" type="button">Install</button>
+      <div class="progress-pill" id="progressPill">0 / 10 Read</div>
     </div>
   </header>
 
   <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
-  <div class="layout">
+  <!-- VIEW 1: HOME DASHBOARD -->
+  <section id="viewHome" class="page-container"></section>
+
+  <!-- VIEW 2: STUDY VIEW -->
+  <section id="viewStudy" class="study-layout hidden">
     <aside class="sidebar" id="sidebar" aria-label="Question navigation">
       <div class="sidebar-top">
         <div class="sidebar-header">
           <div class="sidebar-heading">Syllabus Navigator</div>
           <button class="sidebar-close" id="sidebarClose" type="button" aria-label="Close questions menu">&times;</button>
         </div>
-        <input class="search-input" id="searchInput" type="search" placeholder="Search questions or topics…" aria-label="Search questions" />
+        <input class="search-input" id="searchInput" type="search" placeholder="Search questions, topics, trials…" aria-label="Search questions" />
+        <select class="tag-select" id="tagSelect" aria-label="Filter by topic tag"></select>
         <div class="filter-row" id="levelFilters" role="tablist" aria-label="Filter by curriculum level"></div>
         <div class="scope-row">
           <label class="toggle-label">
             <input type="checkbox" id="answeredOnlyToggle" checked />
-            <span>Answered only</span>
+            <span>Answered</span>
           </label>
-          <span id="studiedCount">0 studied</span>
+          <label class="toggle-label">
+            <input type="checkbox" id="unreadOnlyToggle" />
+            <span>Unread only</span>
+          </label>
         </div>
       </div>
       <div class="sidebar-scroll" id="sidebarList"></div>
     </aside>
 
     <main class="main" id="mainContainer">
-      <article class="question-card" id="questionCard">
-        <div class="pending-box">
-          <h3>Loading Glaucoma Curriculum…</h3>
-          <p>Preparing 10-mark exam answers and textbook citations.</p>
-        </div>
-      </article>
+      <div id="activeFilterBar" class="active-filter-bar hidden">
+        <span id="activeFilterLabel"></span>
+        <button class="clear-filter-btn" id="clearFilterBtn" type="button">Clear filter &times;</button>
+      </div>
+      <article class="question-card" id="questionCard"></article>
     </main>
-  </div>
+  </section>
 
-  <!-- Sticky Bottom Pager -->
-  <nav class="bottom-pager" aria-label="Question pagination">
+  <!-- Sticky Bottom Pager (Study view only) -->
+  <nav class="bottom-pager hidden" id="bottomPager" aria-label="Question pagination">
     <div class="bottom-pager-inner">
       <button class="pager-btn" id="prevQBtn" type="button">&larr; Previous</button>
       <div class="pager-status" id="pagerStatus">Question 1</div>
       <button class="pager-btn" id="nextQBtn" type="button">Next &rarr;</button>
     </div>
   </nav>
+
+  <!-- VIEW 3: REVISION MCQ PAGE -->
+  <section id="viewRevision" class="rev-container hidden"></section>
 
   <!-- Source Inspector Drawer / Mobile Bottom Sheet -->
   <div class="drawer-backdrop" id="drawerBackdrop" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
@@ -1254,29 +1463,59 @@
 
   <script>
     (function () {
-      const STUDIED_KEY = "glaucoq_studied_v1";
+      const READ_KEY = "glaucoq_read_v1";
+      const LEGACY_STUDIED_KEY = "glaucoq_studied_v1";
+      const MISSED_MCQ_KEY = "glaucoq_missed_mcq_v1";
+
       let allQuestions = [];
+      let allTags = [];
       let answersMap = {};
+      let readSet = new Set();
+      let missedMcqSet = new Set();
+
+      // View & Filter State
+      let currentView = "home"; // "home" | "study" | "revision"
       let activeLevel = "All";
+      let activeTag = "All";
       let searchQuery = "";
       let answeredOnly = true;
+      let unreadOnly = false;
       let activeQuestionId = null;
       let currentSources = {};
       let currentCiteId = null;
-      let studiedSet = new Set();
+      const searchCache = {};
 
+      // Revision Quiz State
+      let revTagFilter = "All";
+      let quizState = null; // { items: [], idx: 0, score: 0, answered: false, chosen: -1, results: [] }
+
+      // Load local progress (one-time migration from legacy studied key)
       try {
-        const saved = JSON.parse(localStorage.getItem(STUDIED_KEY) || "[]");
-        if (Array.isArray(saved)) studiedSet = new Set(saved);
+        const rawRead = localStorage.getItem(READ_KEY);
+        if (rawRead !== null) {
+          const savedRead = JSON.parse(rawRead);
+          if (Array.isArray(savedRead)) savedRead.forEach(function (id) { readSet.add(id); });
+        } else {
+          const legacy = JSON.parse(localStorage.getItem(LEGACY_STUDIED_KEY) || "[]");
+          if (Array.isArray(legacy) && legacy.length) {
+            legacy.forEach(function (id) { readSet.add(id); });
+            localStorage.setItem(READ_KEY, JSON.stringify(Array.from(readSet)));
+          }
+        }
+        localStorage.removeItem(LEGACY_STUDIED_KEY);
+        const savedMissed = JSON.parse(localStorage.getItem(MISSED_MCQ_KEY) || "[]");
+        if (Array.isArray(savedMissed)) missedMcqSet = new Set(savedMissed);
       } catch (_) {}
 
-      function saveStudied() {
-        try {
-          localStorage.setItem(STUDIED_KEY, JSON.stringify(Array.from(studiedSet)));
-        } catch (_) {}
+      function saveRead() {
+        try { localStorage.setItem(READ_KEY, JSON.stringify(Array.from(readSet))); } catch (_) {}
       }
 
-      // Safe rich-text renderer (zero innerHTML: supports **bold**, *italic*, [n] citations)
+      function saveMissed() {
+        try { localStorage.setItem(MISSED_MCQ_KEY, JSON.stringify(Array.from(missedMcqSet))); } catch (_) {}
+      }
+
+      // Safe rich-text renderer (zero innerHTML)
       function appendRichText(parent, text) {
         if (!text) return;
         const tokenRegex = /(\*\*[^*]+\*\*|\*[^*]+\*|\[\d+\])/g;
@@ -1311,41 +1550,50 @@
         }
       }
 
-      // Safe SVG parser using DOMParser (per secure coding guidelines)
+      // Safe SVG parser using DOMParser
       function parseSafeSvg(svgString) {
         const parser = new DOMParser();
         const doc = parser.parseFromString(svgString, "image/svg+xml");
         const svgEl = doc.documentElement;
         if (!svgEl || svgEl.nodeName.toLowerCase() !== "svg") return null;
-        svgEl.querySelectorAll("script, foreignObject").forEach(function (bad) {
-          bad.remove();
-        });
+        svgEl.querySelectorAll("script, foreignObject").forEach(function (bad) { bad.remove(); });
         svgEl.querySelectorAll("*").forEach(function (node) {
           Array.from(node.attributes).forEach(function (attr) {
-            if (attr.name.toLowerCase().startsWith("on")) {
-              node.removeAttribute(attr.name);
-            }
+            if (attr.name.toLowerCase().startsWith("on")) node.removeAttribute(attr.name);
           });
         });
         return document.importNode(svgEl, true);
       }
 
-      // Elements
+      // DOM References
+      const viewHome = document.getElementById("viewHome");
+      const viewStudy = document.getElementById("viewStudy");
+      const viewRevision = document.getElementById("viewRevision");
+      const bottomPager = document.getElementById("bottomPager");
+      const tabHome = document.getElementById("tabHome");
+      const tabStudy = document.getElementById("tabStudy");
+      const tabRevision = document.getElementById("tabRevision");
+      const revBadge = document.getElementById("revBadge");
       const progressPill = document.getElementById("progressPill");
-      const studiedCount = document.getElementById("studiedCount");
-      const levelFiltersEl = document.getElementById("levelFilters");
-      const searchInput = document.getElementById("searchInput");
-      const answeredOnlyToggle = document.getElementById("answeredOnlyToggle");
-      const sidebarList = document.getElementById("sidebarList");
-      const questionCard = document.getElementById("questionCard");
-      const prevQBtn = document.getElementById("prevQBtn");
-      const nextQBtn = document.getElementById("nextQBtn");
-      const pagerStatus = document.getElementById("pagerStatus");
+      const brandBtn = document.getElementById("brandBtn");
 
       const menuBtn = document.getElementById("menuBtn");
       const sidebar = document.getElementById("sidebar");
       const sidebarBackdrop = document.getElementById("sidebarBackdrop");
       const sidebarClose = document.getElementById("sidebarClose");
+      const searchInput = document.getElementById("searchInput");
+      const tagSelect = document.getElementById("tagSelect");
+      const levelFiltersEl = document.getElementById("levelFilters");
+      const answeredOnlyToggle = document.getElementById("answeredOnlyToggle");
+      const unreadOnlyToggle = document.getElementById("unreadOnlyToggle");
+      const sidebarList = document.getElementById("sidebarList");
+      const activeFilterBar = document.getElementById("activeFilterBar");
+      const activeFilterLabel = document.getElementById("activeFilterLabel");
+      const clearFilterBtn = document.getElementById("clearFilterBtn");
+      const questionCard = document.getElementById("questionCard");
+      const prevQBtn = document.getElementById("prevQBtn");
+      const nextQBtn = document.getElementById("nextQBtn");
+      const pagerStatus = document.getElementById("pagerStatus");
 
       const drawerBackdrop = document.getElementById("drawerBackdrop");
       const drawerClose = document.getElementById("drawerClose");
@@ -1361,6 +1609,75 @@
       const lightboxStage = document.getElementById("lightboxStage");
       const lightboxCaption = document.getElementById("lightboxCaption");
 
+      // Helpers
+      function getAnsweredQuestions() {
+        return allQuestions.filter(function (q) { return Boolean(answersMap[q.id]); });
+      }
+
+      function getNextUnreadQuestion(list) {
+        const pool = list || getAnsweredQuestions();
+        const unread = pool.find(function (q) { return Boolean(answersMap[q.id]) && !readSet.has(q.id); });
+        return unread || pool.find(function (q) { return Boolean(answersMap[q.id]); }) || pool[0] || null;
+      }
+
+      function getUnlockedMcqs(tagFilter) {
+        const pool = [];
+        allQuestions.forEach(function (q) {
+          if (!readSet.has(q.id)) return;
+          const ans = answersMap[q.id];
+          if (!ans || !Array.isArray(ans.mcqs)) return;
+          if (tagFilter && tagFilter !== "All" && (q.tags || []).indexOf(tagFilter) === -1) return;
+          ans.mcqs.forEach(function (m) {
+            pool.push({
+              mcq: m,
+              question: q,
+              answerObj: ans
+            });
+          });
+        });
+        return pool;
+      }
+
+      function buildSearchHaystack(item) {
+        const ans = answersMap[item.id];
+        const parts = [item.question, item.level, item.category, (item.tags || []).join(" ")];
+        if (ans) {
+          if (ans.shortTitle) parts.push(ans.shortTitle);
+          (ans.sections || []).forEach(function (sec) {
+            parts.push(sec.heading || "");
+            (sec.blocks || []).forEach(function (blk) {
+              if (blk.text) parts.push(blk.text);
+              if (blk.title) parts.push(blk.title);
+              if (blk.items) parts.push(blk.items.join(" "));
+              if (blk.rows) blk.rows.forEach(function (r) { parts.push(r.join(" ")); });
+            });
+          });
+        }
+        return parts.join(" ").toLowerCase();
+      }
+
+      function getFilteredQuestions() {
+        const qLower = searchQuery.trim().toLowerCase();
+        return allQuestions.filter(function (item) {
+          if (answeredOnly && !answersMap[item.id]) return false;
+          if (unreadOnly && readSet.has(item.id)) return false;
+          if (activeLevel !== "All" && item.level !== activeLevel) return false;
+          if (activeTag !== "All" && (item.tags || []).indexOf(activeTag) === -1) return false;
+          if (!qLower) return true;
+          if (!searchCache[item.id]) searchCache[item.id] = buildSearchHaystack(item);
+          return searchCache[item.id].indexOf(qLower) !== -1;
+        });
+      }
+
+      function updateGlobalCounters() {
+        const answered = getAnsweredQuestions();
+        const readAnsweredCount = answered.filter(function (q) { return readSet.has(q.id); }).length;
+        progressPill.textContent = readAnsweredCount + " / " + answered.length + " Read";
+        const unlockedCount = getUnlockedMcqs("All").length;
+        revBadge.textContent = String(unlockedCount);
+      }
+
+      // Sidebar & Modals
       function openSidebar() {
         sidebar.classList.add("open");
         sidebarBackdrop.classList.add("open");
@@ -1376,6 +1693,9 @@
       menuBtn.addEventListener("click", openSidebar);
       sidebarClose.addEventListener("click", closeSidebar);
       sidebarBackdrop.addEventListener("click", closeSidebar);
+      window.addEventListener("resize", function () {
+        if (window.innerWidth >= 1024) closeSidebar();
+      });
 
       function openLightbox(svgEl, captionText) {
         lightboxStage.replaceChildren(svgEl.cloneNode(true));
@@ -1393,97 +1713,368 @@
         if (e.target === lightboxBackdrop) closeLightbox();
       });
 
-      function openCitation(id) {
-        const src = currentSources[id];
+      function openCitation(id, customSources) {
+        const srcMap = customSources || currentSources;
+        const src = srcMap[id];
         if (!src) return;
+        currentSources = srcMap;
         currentCiteId = id;
         drawerBadge.textContent = "Source [" + id + "]";
         drawerTitle.textContent = src.book;
         drawerChapter.textContent = src.chapter;
         drawerQuote.textContent = src.quote;
 
-        const ids = Object.keys(currentSources);
+        const ids = Object.keys(srcMap);
         const idx = ids.indexOf(id);
         prevCiteBtn.disabled = idx <= 0;
         nextCiteBtn.disabled = idx >= ids.length - 1;
 
-        document.querySelectorAll(".cite-btn.active").forEach(function (el) {
-          el.classList.remove("active");
-        });
-        document.querySelectorAll('.cite-btn[data-cite="' + id + '"]').forEach(function (el) {
-          el.classList.add("active");
-        });
+        document.querySelectorAll(".cite-btn.active").forEach(function (el) { el.classList.remove("active"); });
+        document.querySelectorAll('.cite-btn[data-cite="' + id + '"]').forEach(function (el) { el.classList.add("active"); });
         drawerBackdrop.classList.add("open");
       }
 
       function closeDrawer() {
         drawerBackdrop.classList.remove("open");
-        document.querySelectorAll(".cite-btn.active").forEach(function (el) {
-          el.classList.remove("active");
-        });
+        document.querySelectorAll(".cite-btn.active").forEach(function (el) { el.classList.remove("active"); });
         currentCiteId = null;
       }
 
       drawerClose.addEventListener("click", closeDrawer);
-      drawerBackdrop.addEventListener("click", function (e) {
-        if (e.target === drawerBackdrop) closeDrawer();
-      });
-
+      drawerBackdrop.addEventListener("click", function (e) { if (e.target === drawerBackdrop) closeDrawer(); });
       prevCiteBtn.addEventListener("click", function () {
         const ids = Object.keys(currentSources);
         const idx = ids.indexOf(currentCiteId);
         if (idx > 0) openCitation(ids[idx - 1]);
       });
-
       nextCiteBtn.addEventListener("click", function () {
         const ids = Object.keys(currentSources);
         const idx = ids.indexOf(currentCiteId);
         if (idx >= 0 && idx < ids.length - 1) openCitation(ids[idx + 1]);
       });
 
-      function buildSearchHaystack(item) {
-        const ans = answersMap[item.id];
-        let parts = [item.question, item.level, item.category];
-        if (ans) {
-          if (ans.shortTitle) parts.push(ans.shortTitle);
-          (ans.sections || []).forEach(function (sec) {
-            parts.push(sec.heading || "");
-            (sec.blocks || []).forEach(function (blk) {
-              if (blk.text) parts.push(blk.text);
-              if (blk.title) parts.push(blk.title);
-              if (blk.items) parts.push(blk.items.join(" "));
-              if (blk.rows) {
-                blk.rows.forEach(function (r) {
-                  parts.push(r.join(" "));
-                });
-              }
-            });
+      // ==================== VIEW SWITCHER ====================
+      function switchView(viewName, options) {
+        currentView = viewName;
+        closeSidebar();
+        closeDrawer();
+        document.body.classList.toggle("study-mode", viewName === "study");
+
+        viewHome.classList.toggle("hidden", viewName !== "home");
+        viewStudy.classList.toggle("hidden", viewName !== "study");
+        bottomPager.classList.toggle("hidden", viewName !== "study");
+        viewRevision.classList.toggle("hidden", viewName !== "revision");
+
+        [tabHome, tabStudy, tabRevision].forEach(function (btn) {
+          btn.classList.toggle("active", btn.getAttribute("data-view") === viewName);
+        });
+
+        if (viewName === "home") {
+          history.replaceState(null, "", "#home");
+          renderHome();
+          window.scrollTo({ top: 0, behavior: "instant" });
+        } else if (viewName === "study") {
+          const opts = options || {};
+          if (opts.tag !== undefined) {
+            activeTag = opts.tag;
+            tagSelect.value = activeTag;
+          }
+          if (opts.level !== undefined) {
+            activeLevel = opts.level;
+          }
+          if (opts.answeredOnly !== undefined) {
+            answeredOnly = opts.answeredOnly;
+            answeredOnlyToggle.checked = answeredOnly;
+          }
+          renderLevelFilters();
+          const filtered = getFilteredQuestions();
+          let targetQ = null;
+          if (opts.questionId) {
+            targetQ = allQuestions.find(function (q) { return q.id === opts.questionId; });
+          } else {
+            // Open next unread question by default!
+            targetQ = getNextUnreadQuestion(filtered.length ? filtered : getAnsweredQuestions());
+          }
+          if (targetQ) {
+            selectQuestion(targetQ.id, true);
+          } else {
+            renderSidebar();
+            updatePager();
+          }
+        } else if (viewName === "revision") {
+          history.replaceState(null, "", "#revision");
+          renderRevision();
+          window.scrollTo({ top: 0, behavior: "instant" });
+        }
+      }
+
+      // ==================== RENDER HOME DASHBOARD ====================
+      function renderHome() {
+        viewHome.replaceChildren();
+        const answered = getAnsweredQuestions();
+        const readAnswered = answered.filter(function (q) { return readSet.has(q.id); });
+        const nextUnread = getNextUnreadQuestion(answered);
+        const allReadDone = answered.length > 0 && readAnswered.length === answered.length;
+        const unlockedMcqs = getUnlockedMcqs("All");
+        const pct = answered.length ? Math.round((readAnswered.length / answered.length) * 100) : 0;
+
+        // 1. Hero Card
+        const hero = document.createElement("div");
+        hero.className = "hero-card";
+
+        const heroLeft = document.createElement("div");
+        const kicker = document.createElement("div");
+        kicker.className = "hero-kicker";
+        kicker.textContent = "AIOS-FAICO Glaucoma Fellowship Exam";
+        heroLeft.appendChild(kicker);
+
+        const h1 = document.createElement("h1");
+        h1.className = "hero-title";
+        h1.textContent = allReadDone
+          ? "All Available Questions Read!"
+          : nextUnread
+            ? "Next Unread: Q" + nextUnread.globalIndex + " — " + (answersMap[nextUnread.id].shortTitle || nextUnread.question)
+            : "Glaucoma Cognitive Skills Prep";
+        heroLeft.appendChild(h1);
+
+        const desc = document.createElement("p");
+        desc.className = "hero-desc";
+        desc.textContent = allReadDone
+          ? "You have marked all " + answered.length + " live 10-mark answers as read. Reinforce retention with " + unlockedMcqs.length + " textbook-grounded Revision MCQs."
+          : "Concise 10-mark full-sentence exam answers with inline diagrams and clickable textbook references. Mark each question as Read to unlock its Revision MCQs.";
+        heroLeft.appendChild(desc);
+
+        const actions = document.createElement("div");
+        actions.className = "hero-actions";
+
+        const primaryBtn = document.createElement("button");
+        primaryBtn.type = "button";
+        primaryBtn.className = "btn-hero";
+        if (allReadDone) {
+          primaryBtn.textContent = "Start Revision MCQs (" + unlockedMcqs.length + ") →";
+          primaryBtn.addEventListener("click", function () { switchView("revision"); });
+        } else {
+          primaryBtn.textContent = nextUnread
+            ? (readAnswered.length === 0 ? "Start Studying Q" + nextUnread.globalIndex + " →" : "Continue: Q" + nextUnread.globalIndex + " (Next Unread) →")
+            : "Open Study View →";
+          primaryBtn.addEventListener("click", function () {
+            activeTag = "All";
+            activeLevel = "All";
+            tagSelect.value = "All";
+            switchView("study", { answeredOnly: true });
           });
         }
-        return parts.join(" ").toLowerCase();
-      }
+        actions.appendChild(primaryBtn);
 
-      const searchCache = {};
+        const revBtn = document.createElement("button");
+        revBtn.type = "button";
+        revBtn.className = "btn-hero-ghost";
+        revBtn.textContent = "Revision MCQs (" + unlockedMcqs.length + " unlocked)";
+        revBtn.addEventListener("click", function () { switchView("revision"); });
+        actions.appendChild(revBtn);
 
-      function getFilteredQuestions() {
-        const qLower = searchQuery.trim().toLowerCase();
-        return allQuestions.filter(function (item) {
-          if (answeredOnly && !answersMap[item.id]) return false;
-          if (activeLevel !== "All" && item.level !== activeLevel) return false;
-          if (!qLower) return true;
-          if (!searchCache[item.id]) {
-            searchCache[item.id] = buildSearchHaystack(item);
-          }
-          return searchCache[item.id].indexOf(qLower) !== -1;
+        heroLeft.appendChild(actions);
+        hero.appendChild(heroLeft);
+
+        // Hero Stats Box
+        const stats = document.createElement("div");
+        stats.className = "hero-stats";
+
+        const s1 = document.createElement("div");
+        s1.className = "stat-row";
+        const s1L = document.createElement("span"); s1L.textContent = "Questions Read";
+        const s1V = document.createElement("span"); s1V.className = "stat-val"; s1V.textContent = readAnswered.length + " / " + answered.length;
+        s1.appendChild(s1L); s1.appendChild(s1V);
+        stats.appendChild(s1);
+
+        const track = document.createElement("div");
+        track.className = "progress-track";
+        const fill = document.createElement("div");
+        fill.className = "progress-fill";
+        fill.style.width = pct + "%";
+        track.appendChild(fill);
+        stats.appendChild(track);
+
+        const s2 = document.createElement("div");
+        s2.className = "stat-row";
+        const s2L = document.createElement("span"); s2L.textContent = "Syllabus Live";
+        const s2V = document.createElement("span"); s2V.style.fontWeight = "700"; s2V.textContent = answered.length + " of " + allQuestions.length + " Qs";
+        s2.appendChild(s2L); s2.appendChild(s2V);
+        stats.appendChild(s2);
+
+        const s3 = document.createElement("div");
+        s3.className = "stat-row";
+        const s3L = document.createElement("span"); s3L.textContent = "Revision MCQs Unlocked";
+        const s3V = document.createElement("span"); s3V.style.fontWeight = "700"; s3V.textContent = unlockedMcqs.length + " MCQs";
+        s3.appendChild(s3L); s3.appendChild(s3V);
+        stats.appendChild(s3);
+
+        hero.appendChild(stats);
+        viewHome.appendChild(hero);
+
+        // 2. Browse by Topic Tag
+        const tagSec = document.createElement("div");
+        const tagHead = document.createElement("div");
+        tagHead.className = "home-section-head";
+        const thTitle = document.createElement("h2");
+        thTitle.className = "home-section-title";
+        thTitle.textContent = "Browse by Topic Tag";
+        const thSub = document.createElement("span");
+        thSub.className = "home-section-sub";
+        thSub.textContent = "Tap any tag to study its questions";
+        tagHead.appendChild(thTitle); tagHead.appendChild(thSub);
+        tagSec.appendChild(tagHead);
+
+        const tagGrid = document.createElement("div");
+        tagGrid.className = "tag-grid";
+
+        // Compute counts per tag and sort answered-first
+        const tagMeta = allTags.map(function (t) {
+          const qs = allQuestions.filter(function (q) { return (q.tags || []).indexOf(t) !== -1; });
+          const ansQs = qs.filter(function (q) { return Boolean(answersMap[q.id]); });
+          const readQs = ansQs.filter(function (q) { return readSet.has(q.id); });
+          return { name: t, total: qs.length, answered: ansQs.length, read: readQs.length };
+        }).sort(function (a, b) {
+          if (b.answered !== a.answered) return b.answered - a.answered;
+          return b.total - a.total;
         });
+
+        tagMeta.forEach(function (tm) {
+          const card = document.createElement("button");
+          card.type = "button";
+          card.className = "tag-card" + (tm.answered > 0 ? " has-answered" : "");
+
+          const name = document.createElement("div");
+          name.className = "tag-card-name";
+          name.textContent = tm.name;
+          card.appendChild(name);
+
+          const meta = document.createElement("div");
+          meta.className = "tag-card-meta";
+          const left = document.createElement("span");
+          if (tm.answered > 0) {
+            left.className = "tag-card-live";
+            left.textContent = tm.answered + " ready · " + tm.read + " read";
+          } else {
+            left.textContent = "Upcoming";
+          }
+          const right = document.createElement("span");
+          right.textContent = tm.total + " Qs";
+          meta.appendChild(left); meta.appendChild(right);
+          card.appendChild(meta);
+
+          card.addEventListener("click", function () {
+            switchView("study", {
+              tag: tm.name,
+              level: "All",
+              answeredOnly: tm.answered > 0
+            });
+          });
+          tagGrid.appendChild(card);
+        });
+
+        tagSec.appendChild(tagGrid);
+        viewHome.appendChild(tagSec);
+
+        // 3. Lower 2-Column Panel: Up Next (Unread) + Browse by Level
+        const lower = document.createElement("div");
+        lower.className = "grid-2";
+
+        // Up Next Panel
+        const upNextPanel = document.createElement("div");
+        upNextPanel.className = "panel-card";
+        const upHead = document.createElement("div");
+        upHead.className = "home-section-head";
+        const uhT = document.createElement("h2"); uhT.className = "home-section-title"; uhT.textContent = "Up Next (Unread)";
+        upHead.appendChild(uhT);
+        upNextPanel.appendChild(upHead);
+
+        const unreadList = answered.filter(function (q) { return !readSet.has(q.id); }).slice(0, 4);
+        const qList = document.createElement("div");
+        qList.className = "quick-q-list";
+        if (unreadList.length === 0) {
+          const doneMsg = document.createElement("p");
+          doneMsg.style.fontSize = "0.88rem";
+          doneMsg.style.color = "var(--text-muted)";
+          doneMsg.textContent = "All answered questions have been marked as read! Head to Revision MCQs to test yourself.";
+          qList.appendChild(doneMsg);
+        } else {
+          unreadList.forEach(function (q) {
+            const btn = document.createElement("button");
+            btn.type = "button";
+            btn.className = "quick-q-item";
+            const top = document.createElement("div");
+            top.className = "quick-q-top";
+            const l = document.createElement("span"); l.textContent = "Q" + q.globalIndex + " · " + q.category;
+            const r = document.createElement("span"); r.textContent = (q.tags || []).slice(0, 2).join(" · ");
+            top.appendChild(l); top.appendChild(r);
+            btn.appendChild(top);
+            const t = document.createElement("div");
+            t.className = "quick-q-title";
+            t.textContent = answersMap[q.id].shortTitle || q.question;
+            btn.appendChild(t);
+            btn.addEventListener("click", function () {
+              switchView("study", { tag: "All", level: "All", answeredOnly: true, questionId: q.id });
+            });
+            qList.appendChild(btn);
+          });
+        }
+        upNextPanel.appendChild(qList);
+        lower.appendChild(upNextPanel);
+
+        // Browse by Level Panel
+        const levelPanel = document.createElement("div");
+        levelPanel.className = "panel-card";
+        const lvHead = document.createElement("div");
+        lvHead.className = "home-section-head";
+        const lhT = document.createElement("h2"); lhT.className = "home-section-title"; lhT.textContent = "Curriculum Levels";
+        lvHead.appendChild(lhT);
+        levelPanel.appendChild(lvHead);
+
+        const lvGrid = document.createElement("div");
+        lvGrid.className = "level-grid";
+        ["Basic Level", "Standard Level", "Advanced Level", "Very Advanced Level"].forEach(function (lvName) {
+          const qs = allQuestions.filter(function (q) { return q.level === lvName; });
+          const ansQs = qs.filter(function (q) { return Boolean(answersMap[q.id]); });
+          const rdQs = ansQs.filter(function (q) { return readSet.has(q.id); });
+          const tile = document.createElement("button");
+          tile.type = "button";
+          tile.className = "level-tile";
+          const nm = document.createElement("div"); nm.className = "level-tile-name"; nm.textContent = lvName.replace(" Level", "");
+          const mt = document.createElement("div"); mt.className = "level-tile-meta";
+          mt.textContent = ansQs.length > 0
+            ? ansQs.length + "/" + qs.length + " live · " + rdQs.length + " read"
+            : qs.length + " questions (upcoming)";
+          tile.appendChild(nm); tile.appendChild(mt);
+          tile.addEventListener("click", function () {
+            switchView("study", { tag: "All", level: lvName, answeredOnly: ansQs.length > 0 });
+          });
+          lvGrid.appendChild(tile);
+        });
+        levelPanel.appendChild(lvGrid);
+        lower.appendChild(levelPanel);
+
+        viewHome.appendChild(lower);
       }
 
-      function updateCounters() {
-        const answeredCount = allQuestions.filter(function (q) {
-          return Boolean(answersMap[q.id]);
-        }).length;
-        progressPill.textContent = answeredCount + " / " + allQuestions.length + " Answered";
-        studiedCount.textContent = studiedSet.size + " studied";
+      // ==================== STUDY VIEW RENDERING ====================
+      function renderTagDropdown() {
+        tagSelect.replaceChildren();
+        const optAll = document.createElement("option");
+        optAll.value = "All";
+        optAll.textContent = "All Topic Tags (" + allTags.length + ")";
+        tagSelect.appendChild(optAll);
+
+        allTags.forEach(function (t) {
+          const count = allQuestions.filter(function (q) {
+            return (q.tags || []).indexOf(t) !== -1 && (!answeredOnly || answersMap[q.id]);
+          }).length;
+          const opt = document.createElement("option");
+          opt.value = t;
+          opt.textContent = t + " (" + count + ")";
+          tagSelect.appendChild(opt);
+        });
+        tagSelect.value = activeTag;
       }
 
       function renderLevelFilters() {
@@ -1510,14 +2101,31 @@
         });
       }
 
+      function updateActiveFilterBar() {
+        const parts = [];
+        if (activeTag !== "All") parts.push("Tag: " + activeTag);
+        if (activeLevel !== "All") parts.push("Level: " + activeLevel);
+        if (unreadOnly) parts.push("Unread only");
+        if (searchQuery.trim()) parts.push('Search: "' + searchQuery.trim() + '"');
+
+        if (parts.length === 0) {
+          activeFilterBar.classList.add("hidden");
+        } else {
+          activeFilterLabel.textContent = "Active Filter — " + parts.join(" · ");
+          activeFilterBar.classList.remove("hidden");
+        }
+      }
+
       function renderSidebar() {
+        renderTagDropdown();
+        updateActiveFilterBar();
         const filtered = getFilteredQuestions();
         sidebarList.replaceChildren();
 
         if (filtered.length === 0) {
           const empty = document.createElement("div");
           empty.className = "pending-box";
-          empty.textContent = "No matching questions. Try turning off 'Answered only' or clearing search.";
+          empty.textContent = "No matching questions. Try unchecking 'Answered' or clearing filters.";
           sidebarList.appendChild(empty);
           return;
         }
@@ -1547,15 +2155,14 @@
 
           group.items.forEach(function (item) {
             const isAnswered = Boolean(answersMap[item.id]);
-            const isStudied = studiedSet.has(item.id);
+            const isRead = readSet.has(item.id);
             const btn = document.createElement("button");
             btn.type = "button";
             btn.className =
               "nav-item" +
               (isAnswered ? " answered" : " pending") +
-              (isStudied ? " studied" : "") +
+              (isRead ? " read" : "") +
               (item.id === activeQuestionId ? " active" : "");
-            btn.setAttribute("data-qid", item.id);
 
             const dot = document.createElement("span");
             dot.className = "nav-dot";
@@ -1568,19 +2175,16 @@
             meta.className = "nav-item-meta";
             const leftSpan = document.createElement("span");
             leftSpan.textContent = "Q" + item.globalIndex;
-            meta.appendChild(leftSpan);
-
             const rightSpan = document.createElement("span");
-            rightSpan.textContent = isStudied ? "Studied" : isAnswered ? "10 Marks" : "Upcoming";
+            rightSpan.className = "meta-state";
+            rightSpan.textContent = isRead ? "✓ Read" : isAnswered ? "Unread" : "Upcoming";
+            meta.appendChild(leftSpan);
             meta.appendChild(rightSpan);
             body.appendChild(meta);
 
             const label = document.createElement("div");
             label.className = "nav-item-title";
-            label.textContent =
-              isAnswered && answersMap[item.id].shortTitle
-                ? answersMap[item.id].shortTitle
-                : item.question;
+            label.textContent = isAnswered && answersMap[item.id].shortTitle ? answersMap[item.id].shortTitle : item.question;
             body.appendChild(label);
 
             btn.appendChild(body);
@@ -1598,21 +2202,16 @@
 
       function updatePager() {
         const list = getFilteredQuestions();
-        const idx = list.findIndex(function (q) {
-          return q.id === activeQuestionId;
-        });
-
+        const idx = list.findIndex(function (q) { return q.id === activeQuestionId; });
         if (idx === -1) {
           prevQBtn.disabled = true;
           nextQBtn.disabled = list.length === 0;
-          pagerStatus.textContent = list.length + " in view";
+          pagerStatus.textContent = list.length + " in filter";
           return;
         }
-
         prevQBtn.disabled = idx <= 0;
         nextQBtn.disabled = idx >= list.length - 1;
-        pagerStatus.textContent =
-          "Q" + list[idx].globalIndex + "  (" + (idx + 1) + " of " + list.length + ")";
+        pagerStatus.textContent = "Q" + list[idx].globalIndex + "  (" + (idx + 1) + " of " + list.length + ")";
       }
 
       function renderQuestion(item) {
@@ -1630,40 +2229,29 @@
         const tags = document.createElement("div");
         tags.className = "q-tags";
 
-        const tLevel = document.createElement("span");
-        tLevel.className = "tag tag-level";
-        tLevel.textContent = item.level;
-        tags.appendChild(tLevel);
-
-        const tCat = document.createElement("span");
-        tCat.className = "tag tag-cat";
-        tCat.textContent = item.category + " · #" + item.number + " (Q" + item.globalIndex + "/87)";
-        tags.appendChild(tCat);
-
+        const tLevel = document.createElement("span"); tLevel.className = "tag tag-level"; tLevel.textContent = item.level; tags.appendChild(tLevel);
+        const tCat = document.createElement("span"); tCat.className = "tag tag-cat"; tCat.textContent = item.category + " · Q" + item.globalIndex + "/87"; tags.appendChild(tCat);
         if (ans) {
-          const tMarks = document.createElement("span");
-          tMarks.className = "tag tag-marks";
-          tMarks.textContent = (ans.marks || 10) + " Marks";
-          tags.appendChild(tMarks);
+          const tMarks = document.createElement("span"); tMarks.className = "tag tag-marks"; tMarks.textContent = (ans.marks || 10) + " Marks"; tags.appendChild(tMarks);
         }
-
         headerTop.appendChild(tags);
 
         if (ans) {
-          const studyBtn = document.createElement("button");
-          studyBtn.type = "button";
-          const isStudied = studiedSet.has(item.id);
-          studyBtn.className = "study-btn" + (isStudied ? " studied" : "");
-          studyBtn.textContent = isStudied ? "✓ Studied" : "Mark as Studied";
-          studyBtn.addEventListener("click", function () {
-            if (studiedSet.has(item.id)) studiedSet.delete(item.id);
-            else studiedSet.add(item.id);
-            saveStudied();
-            updateCounters();
-            renderSidebar();
+          const readBtn = document.createElement("button");
+          readBtn.type = "button";
+          const isRead = readSet.has(item.id);
+          readBtn.className = "read-btn" + (isRead ? " is-read" : "");
+          readBtn.textContent = isRead ? "✓ Marked as Read" : "Mark as Read";
+          readBtn.addEventListener("click", function () {
+            if (readSet.has(item.id)) readSet.delete(item.id);
+            else readSet.add(item.id);
+            saveRead();
+            updateGlobalCounters();
             renderQuestion(item);
+            renderSidebar();
+            updatePager();
           });
-          headerTop.appendChild(studyBtn);
+          headerTop.appendChild(readBtn);
         }
 
         header.appendChild(headerTop);
@@ -1672,20 +2260,41 @@
         h1.className = "q-title";
         h1.textContent = item.question;
         header.appendChild(h1);
+
+        // Clickable topic tags on question
+        if (item.tags && item.tags.length) {
+          const tRow = document.createElement("div");
+          tRow.className = "topic-tags-row";
+          item.tags.forEach(function (tName) {
+            const chip = document.createElement("button");
+            chip.type = "button";
+            chip.className = "topic-tag-chip";
+            chip.textContent = "# " + tName;
+            chip.addEventListener("click", function () {
+              activeTag = tName;
+              activeLevel = "All";
+              const hasAns = allQuestions.some(function (q) { return (q.tags || []).indexOf(tName) !== -1 && Boolean(answersMap[q.id]); });
+              answeredOnly = hasAns;
+              answeredOnlyToggle.checked = answeredOnly;
+              renderLevelFilters();
+              const filtered = getFilteredQuestions();
+              const target = getNextUnreadQuestion(filtered);
+              if (target) selectQuestion(target.id, true);
+              else { renderSidebar(); updatePager(); }
+            });
+            tRow.appendChild(chip);
+          });
+          header.appendChild(tRow);
+        }
+
         questionCard.appendChild(header);
 
-        // If unanswered yet
+        // Pending question fallback
         if (!ans) {
           const pending = document.createElement("div");
           pending.className = "pending-box";
-          const ph = document.createElement("h3");
-          ph.textContent = "Answer Coming in an Upcoming Batch";
-          pending.appendChild(ph);
-          const pp = document.createElement("p");
-          pp.textContent =
-            "Questions are being authored and deployed in batches of 10 with exam diagrams and grounded textbook citations.";
-          pending.appendChild(pp);
-
+          const ph = document.createElement("h3"); ph.textContent = "Answer Coming in an Upcoming Batch"; pending.appendChild(ph);
+          const pp = document.createElement("p"); pp.textContent = "Questions are authored and deployed in batches of 10 with inline diagrams, grounded references, and revision MCQs."; pending.appendChild(pp);
           if (item.sub_items && item.sub_items.length) {
             const subBox = document.createElement("div");
             subBox.className = "pending-subitems";
@@ -1698,7 +2307,6 @@
             subBox.appendChild(ul);
             pending.appendChild(subBox);
           }
-
           questionCard.appendChild(pending);
           return;
         }
@@ -1710,140 +2318,105 @@
         (ans.sections || []).forEach(function (sec) {
           const secEl = document.createElement("section");
           secEl.className = "exam-section";
-
-          const h2 = document.createElement("h2");
-          h2.textContent = sec.heading;
-          secEl.appendChild(h2);
+          const h2 = document.createElement("h2"); h2.textContent = sec.heading; secEl.appendChild(h2);
 
           (sec.blocks || []).forEach(function (blk) {
             if (blk.type === "p") {
-              const p = document.createElement("p");
-              appendRichText(p, blk.text);
-              secEl.appendChild(p);
+              const p = document.createElement("p"); appendRichText(p, blk.text); secEl.appendChild(p);
             } else if (blk.type === "subheading") {
-              const h3 = document.createElement("h3");
-              h3.textContent = blk.text;
-              secEl.appendChild(h3);
+              const h3 = document.createElement("h3"); h3.textContent = blk.text; secEl.appendChild(h3);
             } else if (blk.type === "formula") {
-              const div = document.createElement("div");
-              div.className = "formula-box";
-              appendRichText(div, blk.text);
-              secEl.appendChild(div);
+              const div = document.createElement("div"); div.className = "formula-box"; appendRichText(div, blk.text); secEl.appendChild(div);
             } else if (blk.type === "ul" || blk.type === "ol") {
               const list = document.createElement(blk.type);
-              (blk.items || []).forEach(function (it) {
-                const li = document.createElement("li");
-                appendRichText(li, it);
-                list.appendChild(li);
-              });
+              (blk.items || []).forEach(function (it) { const li = document.createElement("li"); appendRichText(li, it); list.appendChild(li); });
               secEl.appendChild(list);
             } else if (blk.type === "clinical") {
-              const box = document.createElement("div");
-              box.className = "clinical-note";
-              if (blk.title) {
-                const ct = document.createElement("div");
-                ct.className = "clinical-note-title";
-                ct.textContent = blk.title;
-                box.appendChild(ct);
-              }
-              if (blk.text) {
-                const cp = document.createElement("p");
-                cp.style.marginBottom = blk.items ? "0.45rem" : "0";
-                appendRichText(cp, blk.text);
-                box.appendChild(cp);
-              }
+              const box = document.createElement("div"); box.className = "clinical-note";
+              if (blk.title) { const ct = document.createElement("div"); ct.className = "clinical-note-title"; ct.textContent = blk.title; box.appendChild(ct); }
+              if (blk.text) { const cp = document.createElement("p"); cp.style.marginBottom = blk.items ? "0.45rem" : "0"; appendRichText(cp, blk.text); box.appendChild(cp); }
               if (blk.items && blk.items.length) {
                 const cul = document.createElement("ul");
-                blk.items.forEach(function (it) {
-                  const li = document.createElement("li");
-                  appendRichText(li, it);
-                  cul.appendChild(li);
-                });
+                blk.items.forEach(function (it) { const li = document.createElement("li"); appendRichText(li, it); cul.appendChild(li); });
                 box.appendChild(cul);
               }
               secEl.appendChild(box);
             } else if (blk.type === "table") {
-              const wrap = document.createElement("div");
-              wrap.className = "table-wrap";
+              const wrap = document.createElement("div"); wrap.className = "table-wrap";
               const tbl = document.createElement("table");
               const thead = document.createElement("thead");
               const htr = document.createElement("tr");
-              (blk.headers || []).forEach(function (h) {
-                const th = document.createElement("th");
-                th.textContent = h;
-                htr.appendChild(th);
-              });
-              thead.appendChild(htr);
-              tbl.appendChild(thead);
-
+              (blk.headers || []).forEach(function (h) { const th = document.createElement("th"); th.textContent = h; htr.appendChild(th); });
+              thead.appendChild(htr); tbl.appendChild(thead);
               const tbody = document.createElement("tbody");
               (blk.rows || []).forEach(function (row) {
                 const tr = document.createElement("tr");
-                row.forEach(function (cell) {
-                  const td = document.createElement("td");
-                  appendRichText(td, cell);
-                  tr.appendChild(td);
-                });
+                row.forEach(function (cell) { const td = document.createElement("td"); appendRichText(td, cell); tr.appendChild(td); });
                 tbody.appendChild(tr);
               });
-              tbl.appendChild(tbody);
-              wrap.appendChild(tbl);
-              secEl.appendChild(wrap);
+              tbl.appendChild(tbody); wrap.appendChild(tbl); secEl.appendChild(wrap);
             } else if (blk.type === "figure") {
-              const fig = document.createElement("figure");
-              fig.className = "inline-figure";
+              const fig = document.createElement("figure"); fig.className = "inline-figure";
               const svgNode = parseSafeSvg(blk.svg);
               if (svgNode) {
                 fig.appendChild(svgNode);
-                const hint = document.createElement("span");
-                hint.className = "figure-zoom-hint";
-                hint.textContent = "Tap to zoom";
-                fig.appendChild(hint);
-
-                const cap = document.createElement("figcaption");
-                cap.className = "figure-caption";
-                appendRichText(cap, blk.caption || "");
-                fig.appendChild(cap);
-
-                fig.addEventListener("click", function () {
-                  openLightbox(svgNode, cap.textContent.trim());
-                });
+                const hint = document.createElement("span"); hint.className = "figure-zoom-hint"; hint.textContent = "Tap to zoom"; fig.appendChild(hint);
+                const cap = document.createElement("figcaption"); cap.className = "figure-caption"; appendRichText(cap, blk.caption || ""); fig.appendChild(cap);
+                fig.addEventListener("click", function () { openLightbox(svgNode, cap.textContent.trim()); });
                 secEl.appendChild(fig);
               }
             }
           });
-
           body.appendChild(secEl);
         });
 
         questionCard.appendChild(body);
 
+        // Bottom Mark Read & Next Unread CTA bar
+        const footerCta = document.createElement("div");
+        footerCta.className = "q-footer-cta";
+        const isReadNow = readSet.has(item.id);
+        const hint = document.createElement("div");
+        hint.className = "q-footer-hint";
+        hint.textContent = isReadNow
+          ? "This question is marked Read — its " + ((ans.mcqs || []).length) + " MCQs are unlocked in Revision."
+          : "Finished studying? Mark as Read to unlock its " + ((ans.mcqs || []).length) + " Revision MCQs.";
+        footerCta.appendChild(hint);
+
+        const nextBtn = document.createElement("button");
+        nextBtn.type = "button";
+        nextBtn.className = "btn-primary";
+        nextBtn.textContent = isReadNow ? "Go to Next Unread →" : "Mark as Read & Next Unread →";
+        nextBtn.addEventListener("click", function () {
+          if (!readSet.has(item.id)) {
+            readSet.add(item.id);
+            saveRead();
+            updateGlobalCounters();
+          }
+          const filtered = getFilteredQuestions();
+          const nextU = filtered.find(function (q) { return Boolean(answersMap[q.id]) && !readSet.has(q.id); }) ||
+                        getAnsweredQuestions().find(function (q) { return !readSet.has(q.id); });
+          if (nextU) {
+            selectQuestion(nextU.id, true);
+          } else {
+            renderQuestion(item);
+            renderSidebar();
+            updatePager();
+          }
+        });
+        footerCta.appendChild(nextBtn);
+        questionCard.appendChild(footerCta);
+
         // References Footer
         const srcKeys = Object.keys(currentSources);
         if (srcKeys.length) {
-          const refs = document.createElement("div");
-          refs.className = "refs-section";
-
-          const rTitle = document.createElement("div");
-          rTitle.className = "refs-title";
-          rTitle.textContent = "Grounded Textbook References (Click to inspect)";
-          refs.appendChild(rTitle);
-
-          const ul = document.createElement("ul");
-          ul.className = "refs-list";
+          const refs = document.createElement("div"); refs.className = "refs-section";
+          const rTitle = document.createElement("div"); rTitle.className = "refs-title"; rTitle.textContent = "Grounded Textbook References (Click to inspect)"; refs.appendChild(rTitle);
+          const ul = document.createElement("ul"); ul.className = "refs-list";
           srcKeys.forEach(function (k) {
-            const li = document.createElement("li");
-            li.className = "ref-row";
-            li.setAttribute("data-cite", k);
-
-            const num = document.createElement("span");
-            num.className = "ref-num";
-            num.textContent = "[" + k + "]";
-            li.appendChild(num);
-
-            const txt = document.createElement("span");
-            txt.textContent = currentSources[k].book + " — " + currentSources[k].chapter;
-            li.appendChild(txt);
+            const li = document.createElement("li"); li.className = "ref-row"; li.setAttribute("data-cite", k);
+            const num = document.createElement("span"); num.className = "ref-num"; num.textContent = "[" + k + "]"; li.appendChild(num);
+            const txt = document.createElement("span"); txt.textContent = currentSources[k].book + " — " + currentSources[k].chapter; li.appendChild(txt);
             ul.appendChild(li);
           });
           refs.appendChild(ul);
@@ -1852,9 +2425,7 @@
       }
 
       function selectQuestion(qid, scrollToTop) {
-        const item = allQuestions.find(function (q) {
-          return q.id === qid;
-        });
+        const item = allQuestions.find(function (q) { return q.id === qid; });
         if (!item) return;
         activeQuestionId = item.id;
         if (window.location.hash !== "#" + item.id) {
@@ -1864,57 +2435,468 @@
         renderQuestion(item);
         renderSidebar();
         updatePager();
-        if (scrollToTop) {
-          window.scrollTo({ top: 0, behavior: "smooth" });
+        if (scrollToTop) window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // ==================== REVISION MCQ ENGINE ====================
+      function shuffleArray(arr) {
+        const copy = arr.slice();
+        for (let i = copy.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          const tmp = copy[i]; copy[i] = copy[j]; copy[j] = tmp;
+        }
+        return copy;
+      }
+
+      function startQuiz(pool, limit) {
+        const shuffled = shuffleArray(pool);
+        const items = limit && limit < shuffled.length ? shuffled.slice(0, limit) : shuffled;
+        quizState = { items: items, idx: 0, score: 0, answered: false, chosen: -1, results: [] };
+        renderRevision();
+      }
+
+      function renderRevision() {
+        viewRevision.replaceChildren();
+        const allUnlocked = getUnlockedMcqs("All");
+
+        // Empty State: No Read Questions yet
+        if (allUnlocked.length === 0) {
+          const card = document.createElement("div");
+          card.className = "rev-card rev-empty";
+          const icon = document.createElement("div"); icon.className = "rev-empty-icon"; icon.textContent = "✓"; card.appendChild(icon);
+          const h2 = document.createElement("h2"); h2.textContent = "Revision MCQs Unlock as You Read"; card.appendChild(h2);
+          const p = document.createElement("p");
+          p.style.maxWidth = "460px";
+          p.style.color = "var(--text-muted)";
+          p.textContent = "Mark at least 1 question as Read in the Study tab. Every read question unlocks 3 FAICO-style MCQs grounded in standard ophthalmology textbooks.";
+          card.appendChild(p);
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "btn-primary";
+          btn.textContent = "Open Next Unread Question →";
+          btn.addEventListener("click", function () { switchView("study", { tag: "All", level: "All", answeredOnly: true }); });
+          card.appendChild(btn);
+          viewRevision.appendChild(card);
+          return;
+        }
+
+        // Active Quiz Session
+        if (quizState) {
+          if (quizState.idx >= quizState.items.length) {
+            renderQuizSummary();
+          } else {
+            renderQuizQuestion();
+          }
+          return;
+        }
+
+        // Revision Launcher Dashboard
+        const card = document.createElement("div");
+        card.className = "rev-card";
+
+        const h2 = document.createElement("h2");
+        h2.textContent = "MCQ Revision — From Questions You've Read";
+        h2.style.marginBottom = "0.35rem";
+        card.appendChild(h2);
+
+        const sub = document.createElement("p");
+        sub.style.color = "var(--text-muted)";
+        sub.style.fontSize = "0.92rem";
+        sub.textContent = "Every MCQ below is drawn exclusively from questions you have already marked as Read, with instant textbook explanations.";
+        card.appendChild(sub);
+
+        const readCount = getAnsweredQuestions().filter(function (q) { return readSet.has(q.id); }).length;
+        const missedPool = allUnlocked.filter(function (entry) { return missedMcqSet.has(entry.mcq.id); });
+
+        const statGrid = document.createElement("div");
+        statGrid.className = "rev-setup-grid";
+        [
+          { label: "Questions Read", val: String(readCount) },
+          { label: "MCQs Unlocked", val: String(allUnlocked.length) },
+          { label: "Needs Review", val: String(missedPool.length) }
+        ].forEach(function (st) {
+          const t = document.createElement("div"); t.className = "rev-stat-tile";
+          const l = document.createElement("div"); l.className = "rev-stat-label"; l.textContent = st.label;
+          const v = document.createElement("div"); v.className = "rev-stat-num"; v.textContent = st.val;
+          t.appendChild(l); t.appendChild(v);
+          statGrid.appendChild(t);
+        });
+        card.appendChild(statGrid);
+
+        // Filter by tag among unlocked MCQs
+        const unlockedTags = allTags.filter(function (t) { return getUnlockedMcqs(t).length > 0; });
+        const controls = document.createElement("div");
+        controls.className = "rev-controls";
+
+        const sel = document.createElement("select");
+        sel.className = "tag-select";
+        sel.style.maxWidth = "280px";
+        sel.setAttribute("aria-label", "Filter revision MCQs by topic tag");
+
+        const optAll = document.createElement("option");
+        optAll.value = "All";
+        optAll.textContent = "All Read Topics (" + allUnlocked.length + " MCQs)";
+        sel.appendChild(optAll);
+
+        unlockedTags.forEach(function (t) {
+          const cnt = getUnlockedMcqs(t).length;
+          const opt = document.createElement("option");
+          opt.value = t;
+          opt.textContent = t + " (" + cnt + " MCQs)";
+          sel.appendChild(opt);
+        });
+        if (revTagFilter !== "All" && unlockedTags.indexOf(revTagFilter) === -1) revTagFilter = "All";
+        sel.value = revTagFilter;
+        sel.addEventListener("change", function () {
+          revTagFilter = sel.value;
+          renderRevision();
+        });
+        controls.appendChild(sel);
+        card.appendChild(controls);
+
+        const filteredPool = getUnlockedMcqs(revTagFilter);
+
+        const btnRow = document.createElement("div");
+        btnRow.style.display = "flex";
+        btnRow.style.flexWrap = "wrap";
+        btnRow.style.gap = "0.65rem";
+
+        const startAllBtn = document.createElement("button");
+        startAllBtn.type = "button";
+        startAllBtn.className = "btn-primary";
+        startAllBtn.textContent = "Start Quiz (" + filteredPool.length + " MCQs) →";
+        startAllBtn.addEventListener("click", function () { startQuiz(filteredPool, filteredPool.length); });
+        btnRow.appendChild(startAllBtn);
+
+        if (filteredPool.length > 5) {
+          const quick5Btn = document.createElement("button");
+          quick5Btn.type = "button";
+          quick5Btn.className = "btn-outline";
+          quick5Btn.textContent = "Quick 5-MCQ Drill";
+          quick5Btn.addEventListener("click", function () { startQuiz(filteredPool, 5); });
+          btnRow.appendChild(quick5Btn);
+        }
+
+        if (missedPool.length > 0) {
+          const retryMissedBtn = document.createElement("button");
+          retryMissedBtn.type = "button";
+          retryMissedBtn.className = "btn-outline";
+          retryMissedBtn.textContent = "Retry Missed (" + missedPool.length + ")";
+          retryMissedBtn.addEventListener("click", function () { startQuiz(missedPool, missedPool.length); });
+          btnRow.appendChild(retryMissedBtn);
+        }
+
+        card.appendChild(btnRow);
+        viewRevision.appendChild(card);
+      }
+
+      function renderQuizQuestion() {
+        const entry = quizState.items[quizState.idx];
+        const m = entry.mcq;
+        const q = entry.question;
+        const ans = entry.answerObj;
+
+        const card = document.createElement("div");
+        card.className = "rev-card";
+
+        const top = document.createElement("div");
+        top.className = "mcq-top";
+        const left = document.createElement("span");
+        left.textContent = "MCQ " + (quizState.idx + 1) + " of " + quizState.items.length + " · From Q" + q.globalIndex;
+        const right = document.createElement("span");
+        right.textContent = "Score: " + quizState.score + " / " + (quizState.answered ? quizState.idx + 1 : quizState.idx);
+        top.appendChild(left); top.appendChild(right);
+        card.appendChild(top);
+
+        const bar = document.createElement("div"); bar.className = "mcq-bar";
+        const fill = document.createElement("div"); fill.className = "mcq-bar-fill";
+        fill.style.width = Math.round(((quizState.idx + (quizState.answered ? 1 : 0)) / quizState.items.length) * 100) + "%";
+        bar.appendChild(fill);
+        card.appendChild(bar);
+
+        const stem = document.createElement("div");
+        stem.className = "mcq-stem";
+        stem.textContent = m.q;
+        card.appendChild(stem);
+
+        const optsWrap = document.createElement("div");
+        optsWrap.className = "mcq-options";
+        const letters = ["A", "B", "C", "D"];
+
+        m.options.forEach(function (optText, optIdx) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "mcq-option";
+          btn.disabled = quizState.answered;
+
+          if (quizState.answered) {
+            if (optIdx === m.answer) btn.classList.add("correct");
+            else if (optIdx === quizState.chosen) btn.classList.add("wrong");
+          }
+
+          const lBadge = document.createElement("span"); lBadge.className = "mcq-letter"; lBadge.textContent = letters[optIdx];
+          const txt = document.createElement("span"); txt.textContent = optText;
+          btn.appendChild(lBadge); btn.appendChild(txt);
+
+          btn.addEventListener("click", function () {
+            if (quizState.answered) return;
+            quizState.answered = true;
+            quizState.chosen = optIdx;
+            const isCorrect = optIdx === m.answer;
+            if (isCorrect) {
+              quizState.score += 1;
+              missedMcqSet.delete(m.id);
+            } else {
+              missedMcqSet.add(m.id);
+            }
+            saveMissed();
+            quizState.results.push({ entry: entry, correct: isCorrect });
+            renderRevision();
+          });
+          optsWrap.appendChild(btn);
+        });
+        card.appendChild(optsWrap);
+
+        if (quizState.answered) {
+          const isCorrect = quizState.chosen === m.answer;
+          const fb = document.createElement("div");
+          fb.className = "mcq-feedback " + (isCorrect ? "is-correct" : "is-wrong");
+
+          const fh = document.createElement("div");
+          fh.className = "mcq-feedback-head";
+          fh.textContent = isCorrect ? "✓ Correct!" : "✗ Incorrect — Correct answer is " + letters[m.answer];
+          fb.appendChild(fh);
+
+          const fp = document.createElement("p");
+          fp.style.fontSize = "0.92rem";
+          fp.textContent = m.explanation + " ";
+          if (m.cite && ans.sources && ans.sources[m.cite]) {
+            const cBtn = document.createElement("button");
+            cBtn.type = "button";
+            cBtn.className = "cite-btn";
+            cBtn.textContent = m.cite;
+            cBtn.addEventListener("click", function () { openCitation(m.cite, ans.sources); });
+            fp.appendChild(cBtn);
+          }
+          fb.appendChild(fp);
+
+          const actions = document.createElement("div");
+          actions.className = "mcq-feedback-actions";
+
+          const reviewBtn = document.createElement("button");
+          reviewBtn.type = "button";
+          reviewBtn.className = "btn-outline";
+          reviewBtn.style.fontSize = "0.82rem";
+          reviewBtn.style.padding = "0.42rem 0.78rem";
+          reviewBtn.textContent = "Review Full Answer (Q" + q.globalIndex + ")";
+          reviewBtn.addEventListener("click", function () {
+            quizState = null;
+            switchView("study", { tag: "All", level: "All", answeredOnly: true, questionId: q.id });
+          });
+          actions.appendChild(reviewBtn);
+
+          const nextBtn = document.createElement("button");
+          nextBtn.type = "button";
+          nextBtn.className = "btn-primary";
+          nextBtn.textContent = quizState.idx + 1 < quizState.items.length ? "Next MCQ →" : "See Results →";
+          nextBtn.addEventListener("click", function () {
+            quizState.idx += 1;
+            quizState.answered = false;
+            quizState.chosen = -1;
+            renderRevision();
+          });
+          actions.appendChild(nextBtn);
+
+          fb.appendChild(actions);
+          card.appendChild(fb);
+        }
+
+        const exitWrap = document.createElement("div");
+        exitWrap.style.marginTop = "0.9rem";
+        exitWrap.style.textAlign = "right";
+        const exitBtn = document.createElement("button");
+        exitBtn.type = "button";
+        exitBtn.className = "btn-outline";
+        exitBtn.style.fontSize = "0.78rem";
+        exitBtn.style.padding = "0.35rem 0.7rem";
+        exitBtn.textContent = "End Session";
+        exitBtn.addEventListener("click", function () { quizState = null; renderRevision(); });
+        exitWrap.appendChild(exitBtn);
+        card.appendChild(exitWrap);
+
+        viewRevision.appendChild(card);
+      }
+
+      function renderQuizSummary() {
+        const total = quizState.items.length;
+        const pct = total ? Math.round((quizState.score / total) * 100) : 0;
+        const missed = quizState.results.filter(function (r) { return !r.correct; }).map(function (r) { return r.entry; });
+
+        const card = document.createElement("div");
+        card.className = "rev-card";
+        card.style.textAlign = "center";
+
+        const h2 = document.createElement("h2");
+        h2.textContent = "Revision Session Complete";
+        card.appendChild(h2);
+
+        const big = document.createElement("div");
+        big.style.fontSize = "2.2rem";
+        big.style.fontWeight = "700";
+        big.style.color = pct >= 70 ? "#166534" : "var(--primary)";
+        big.style.margin = "0.65rem 0 0.25rem";
+        big.textContent = quizState.score + " / " + total + " (" + pct + "%)";
+        card.appendChild(big);
+
+        const note = document.createElement("p");
+        note.style.color = "var(--text-muted)";
+        note.style.marginBottom = "1.25rem";
+        note.textContent = missed.length === 0
+          ? "Perfect score! Every concept from this session is locked in."
+          : pct >= 70
+            ? "Above the 70% FAICO Stage-I MCQ passing benchmark — review the missed items below to reach 100%."
+            : "FAICO Stage-I MCQ pass mark is 70% — review the missed questions below to lock them in.";
+        card.appendChild(note);
+
+        const btns = document.createElement("div");
+        btns.style.display = "flex";
+        btns.style.flexWrap = "wrap";
+        btns.style.justifyContent = "center";
+        btns.style.gap = "0.65rem";
+
+        if (missed.length > 0) {
+          const retryBtn = document.createElement("button");
+          retryBtn.type = "button";
+          retryBtn.className = "btn-primary";
+          retryBtn.textContent = "Retry Missed (" + missed.length + ") →";
+          retryBtn.addEventListener("click", function () { startQuiz(missed, missed.length); });
+          btns.appendChild(retryBtn);
+        }
+
+        const newBtn = document.createElement("button");
+        newBtn.type = "button";
+        newBtn.className = missed.length > 0 ? "btn-outline" : "btn-primary";
+        newBtn.textContent = "New Revision Session";
+        newBtn.addEventListener("click", function () { quizState = null; renderRevision(); });
+        btns.appendChild(newBtn);
+
+        const homeBtn = document.createElement("button");
+        homeBtn.type = "button";
+        homeBtn.className = "btn-outline";
+        homeBtn.textContent = "Back to Home";
+        homeBtn.addEventListener("click", function () { quizState = null; switchView("home"); });
+        btns.appendChild(homeBtn);
+
+        card.appendChild(btns);
+        viewRevision.appendChild(card);
+
+        if (missed.length > 0) {
+          const letters = ["A", "B", "C", "D"];
+          const reviewCard = document.createElement("div");
+          reviewCard.className = "rev-card";
+
+          const rh = document.createElement("h3");
+          rh.style.fontSize = "1.02rem";
+          rh.style.marginBottom = "0.85rem";
+          rh.textContent = "Missed Questions to Review (" + missed.length + ")";
+          reviewCard.appendChild(rh);
+
+          const list = document.createElement("div");
+          list.style.display = "flex";
+          list.style.flexDirection = "column";
+          list.style.gap = "0.85rem";
+
+          missed.forEach(function (entry) {
+            const m = entry.mcq;
+            const q = entry.question;
+            const ans = entry.answerObj;
+
+            const itemBox = document.createElement("div");
+            itemBox.className = "mcq-feedback is-wrong";
+            itemBox.style.marginTop = "0";
+
+            const stemEl = document.createElement("div");
+            stemEl.style.fontWeight = "700";
+            stemEl.style.fontSize = "0.94rem";
+            stemEl.style.color = "var(--text)";
+            stemEl.textContent = "Q" + q.globalIndex + " · " + m.q;
+            itemBox.appendChild(stemEl);
+
+            const ansLine = document.createElement("div");
+            ansLine.style.fontSize = "0.88rem";
+            ansLine.style.fontWeight = "700";
+            ansLine.style.color = "#166534";
+            ansLine.textContent = "Correct Answer (" + letters[m.answer] + "): " + m.options[m.answer];
+            itemBox.appendChild(ansLine);
+
+            const expLine = document.createElement("p");
+            expLine.style.fontSize = "0.88rem";
+            expLine.style.color = "var(--text)";
+            expLine.textContent = m.explanation + " ";
+            if (m.cite && ans.sources && ans.sources[m.cite]) {
+              const cBtn = document.createElement("button");
+              cBtn.type = "button";
+              cBtn.className = "cite-btn";
+              cBtn.textContent = m.cite;
+              cBtn.addEventListener("click", function () { openCitation(m.cite, ans.sources); });
+              expLine.appendChild(cBtn);
+            }
+            itemBox.appendChild(expLine);
+
+            const actionRow = document.createElement("div");
+            const jumpBtn = document.createElement("button");
+            jumpBtn.type = "button";
+            jumpBtn.className = "btn-outline";
+            jumpBtn.style.fontSize = "0.8rem";
+            jumpBtn.style.padding = "0.35rem 0.7rem";
+            jumpBtn.textContent = "Review Full Answer (Q" + q.globalIndex + ") →";
+            jumpBtn.addEventListener("click", function () {
+              quizState = null;
+              switchView("study", { tag: "All", level: "All", answeredOnly: true, questionId: q.id });
+            });
+            actionRow.appendChild(jumpBtn);
+            itemBox.appendChild(actionRow);
+
+            list.appendChild(itemBox);
+          });
+
+          reviewCard.appendChild(list);
+          viewRevision.appendChild(reviewCard);
         }
       }
 
-      // Global click delegation for citations
+      // ==================== EVENT LISTENERS ====================
+      brandBtn.addEventListener("click", function () { switchView("home"); });
+      tabHome.addEventListener("click", function () { switchView("home"); });
+      tabStudy.addEventListener("click", function () { switchView("study"); });
+      tabRevision.addEventListener("click", function () { quizState = null; switchView("revision"); });
+
       document.addEventListener("click", function (e) {
         const citeTarget = e.target.closest("[data-cite]");
-        if (citeTarget) {
-          openCitation(citeTarget.getAttribute("data-cite"));
-        }
+        if (citeTarget) openCitation(citeTarget.getAttribute("data-cite"));
       });
 
-      // Bottom pager
-      prevQBtn.addEventListener("click", function () {
-        const list = getFilteredQuestions();
-        const idx = list.findIndex(function (q) {
-          return q.id === activeQuestionId;
-        });
-        if (idx > 0) selectQuestion(list[idx - 1].id, true);
+      clearFilterBtn.addEventListener("click", function () {
+        activeTag = "All";
+        activeLevel = "All";
+        unreadOnly = false;
+        searchQuery = "";
+        searchInput.value = "";
+        unreadOnlyToggle.checked = false;
+        tagSelect.value = "All";
+        renderLevelFilters();
+        renderSidebar();
+        updatePager();
       });
 
-      nextQBtn.addEventListener("click", function () {
-        const list = getFilteredQuestions();
-        const idx = list.findIndex(function (q) {
-          return q.id === activeQuestionId;
-        });
-        if (idx >= 0 && idx < list.length - 1) selectQuestion(list[idx + 1].id, true);
-        else if (idx === -1 && list.length > 0) selectQuestion(list[0].id, true);
+      tagSelect.addEventListener("change", function () {
+        activeTag = tagSelect.value;
+        const filtered = getFilteredQuestions();
+        const target = getNextUnreadQuestion(filtered);
+        if (target) selectQuestion(target.id, true);
+        else { renderSidebar(); updatePager(); }
       });
 
-      // Keyboard navigation
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-          if (lightboxBackdrop.classList.contains("open")) closeLightbox();
-          else if (drawerBackdrop.classList.contains("open")) closeDrawer();
-          else if (sidebar.classList.contains("open")) closeSidebar();
-          return;
-        }
-        if (document.activeElement === searchInput) return;
-        if (
-          lightboxBackdrop.classList.contains("open") ||
-          drawerBackdrop.classList.contains("open")
-        ) {
-          return;
-        }
-        if (e.key === "ArrowLeft") prevQBtn.click();
-        else if (e.key === "ArrowRight") nextQBtn.click();
-      });
-
-      // Filters
       searchInput.addEventListener("input", function () {
         searchQuery = searchInput.value;
         renderSidebar();
@@ -1925,6 +2907,38 @@
         answeredOnly = answeredOnlyToggle.checked;
         renderSidebar();
         updatePager();
+      });
+
+      unreadOnlyToggle.addEventListener("change", function () {
+        unreadOnly = unreadOnlyToggle.checked;
+        renderSidebar();
+        updatePager();
+      });
+
+      prevQBtn.addEventListener("click", function () {
+        const list = getFilteredQuestions();
+        const idx = list.findIndex(function (q) { return q.id === activeQuestionId; });
+        if (idx > 0) selectQuestion(list[idx - 1].id, true);
+      });
+
+      nextQBtn.addEventListener("click", function () {
+        const list = getFilteredQuestions();
+        const idx = list.findIndex(function (q) { return q.id === activeQuestionId; });
+        if (idx >= 0 && idx < list.length - 1) selectQuestion(list[idx + 1].id, true);
+        else if (idx === -1 && list.length > 0) selectQuestion(list[0].id, true);
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          if (lightboxBackdrop.classList.contains("open")) closeLightbox();
+          else if (drawerBackdrop.classList.contains("open")) closeDrawer();
+          else if (sidebar.classList.contains("open")) closeSidebar();
+          return;
+        }
+        if (currentView !== "study" || document.activeElement === searchInput) return;
+        if (lightboxBackdrop.classList.contains("open") || drawerBackdrop.classList.contains("open")) return;
+        if (e.key === "ArrowLeft") prevQBtn.click();
+        else if (e.key === "ArrowRight") nextQBtn.click();
       });
 
       // PWA Service Worker & Install Prompt
@@ -1941,7 +2955,6 @@
         deferredPrompt = e;
         installBtn.classList.add("visible");
       });
-
       installBtn.addEventListener("click", function () {
         if (!deferredPrompt) return;
         deferredPrompt.prompt();
@@ -1951,7 +2964,7 @@
         });
       });
 
-      // Load curriculum + answer batches
+      // Bootstrap
       async function bootstrap() {
         try {
           const [currRes, manifestRes] = await Promise.all([
@@ -1961,6 +2974,7 @@
           const curriculum = await currRes.json();
           const manifest = await manifestRes.json();
 
+          allTags = Array.isArray(curriculum.tags) ? curriculum.tags : [];
           let gIdx = 1;
           (curriculum.levels || []).forEach(function (lv) {
             (lv.categories || []).forEach(function (cat) {
@@ -1972,6 +2986,7 @@
                   level: lv.level,
                   category: cat.category,
                   question: q.question,
+                  tags: q.tags || [],
                   sub_items: q.sub_items || null
                 });
               });
@@ -1980,49 +2995,35 @@
 
           const batchResults = await Promise.all(
             (manifest.batches || []).map(function (url) {
-              return fetch(url).then(function (r) {
-                return r.json();
-              });
+              return fetch(url).then(function (r) { return r.json(); });
             })
           );
 
           batchResults.forEach(function (batchObj) {
-            Object.keys(batchObj).forEach(function (k) {
-              answersMap[k] = batchObj[k];
-            });
+            Object.keys(batchObj).forEach(function (k) { answersMap[k] = batchObj[k]; });
           });
 
-          updateCounters();
+          updateGlobalCounters();
           renderLevelFilters();
+          renderTagDropdown();
 
-          const hashId = window.location.hash ? window.location.hash.slice(1) : "";
-          const target =
-            allQuestions.find(function (q) {
-              return q.id === hashId;
-            }) ||
-            allQuestions.find(function (q) {
-              return Boolean(answersMap[q.id]);
-            }) ||
-            allQuestions[0];
-
-          if (target) {
-            if (!answersMap[target.id]) {
-              answeredOnly = false;
-              answeredOnlyToggle.checked = false;
-            }
-            selectQuestion(target.id, false);
+          const hash = window.location.hash ? window.location.hash.slice(1) : "";
+          if (hash === "revision") {
+            switchView("revision");
+          } else if (hash === "study") {
+            switchView("study");
+          } else if (hash && allQuestions.some(function (q) { return q.id === hash; })) {
+            const found = allQuestions.find(function (q) { return q.id === hash; });
+            switchView("study", { questionId: found.id, answeredOnly: Boolean(answersMap[found.id]) });
+          } else {
+            switchView("home");
           }
-        } catch (err) {
-          questionCard.replaceChildren();
-          const errBox = document.createElement("div");
-          errBox.className = "pending-box";
-          const h3 = document.createElement("h3");
-          h3.textContent = "Unable to load study data";
-          errBox.appendChild(h3);
-          const p = document.createElement("p");
-          p.textContent = "Please check your connection or reload the page.";
-          errBox.appendChild(p);
-          questionCard.appendChild(errBox);
+        } catch (_) {
+          viewHome.replaceChildren();
+          const box = document.createElement("div");
+          box.className = "rev-card";
+          box.textContent = "Unable to load study data. Please reload the page.";
+          viewHome.appendChild(box);
         }
       }
 

@@ -173,7 +173,48 @@
         "chapter": "Ocular Anatomy — Ciliary Body & Blood-Aqueous Barrier",
         "quote": "Ciliary body length is 4.6–5.2 mm nasally and 5.6–6.3 mm temporally, divided into Pars Plicata (1.5–2.0 mm, 70–80 processes) and Pars Plana (3.5–4.5 mm). Apical tight junctions between inner non-pigmented epithelial cells form the blood-aqueous barrier."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-1-1",
+        "q": "Which layer of the trabecular meshwork provides the primary resistance to conventional aqueous humor outflow?",
+        "options": [
+          "Uveal trabecular meshwork (openings 25–75 µm)",
+          "Corneoscleral trabecular meshwork (openings 5–50 µm)",
+          "Juxtacanalicular (cribriform) tissue and inner wall of Schlemm's canal",
+          "Anterior non-pigmented trabecular meshwork"
+        ],
+        "answer": 2,
+        "explanation": "The juxtacanalicular tissue (2–5 layers thick, narrowest 2–20 µm spaces and dense extracellular matrix) together with the inner wall endothelium of Schlemm's canal accounts for maximal conventional outflow resistance.",
+        "cite": "3"
+      },
+      {
+        "id": "mcq-1-2",
+        "q": "Following blunt ocular trauma, separation of the ciliary body band from the scleral spur results in which clinical entity and IOP change?",
+        "options": [
+          "Angle recession causing elevated IOP",
+          "Cyclodialysis cleft causing hypotony (decreased IOP)",
+          "Sampaolesi line causing elevated IOP",
+          "Posterior embryotoxon with normal IOP"
+        ],
+        "answer": 1,
+        "explanation": "A cyclodialysis cleft separates the ciliary body from the scleral spur, creating a direct communication into the suprachoroidal space and causing hypotony. In contrast, angle recession is a tear between longitudinal and circular ciliary muscle fibers causing elevated IOP.",
+        "cite": "2"
+      },
+      {
+        "id": "mcq-1-3",
+        "q": "Which anatomical structure forms the tight-junction barrier constituting the Blood–Aqueous Barrier in the ciliary body?",
+        "options": [
+          "Fenestrated endothelium of the ciliary stromal capillaries",
+          "Basal infoldings of the outer pigmented ciliary epithelium",
+          "Apical zonulae occludentes of the inner non-pigmented ciliary epithelium (NPE)",
+          "Longitudinal fibers of Brücke's ciliary muscle"
+        ],
+        "answer": 2,
+        "explanation": "While ciliary stromal capillaries are fenestrated, apical tight junctions (zonulae occludentes) between adjacent inner non-pigmented ciliary epithelial (NPE) cells form the blood–aqueous barrier.",
+        "cite": "4"
+      }
+    ]
   },
   "basic-basic_science-2": {
     "shortTitle": "RNFL, Optic Nerve Head & Visual Pathway",
@@ -302,7 +343,48 @@
         "chapter": "Clinical Evaluation of the Optic Nerve Head",
         "quote": "Normal neuroretinal rim width traditionally follows the ISNT rule (Inferior >= Superior >= Nasal >= Temporal). The Border Tissue of Elschnig separates the choroid/Bruch's membrane from neural ONH tissue."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-2-1",
+        "q": "Why do early glaucomatous visual field defects (such as nasal steps and Bjerrum scotomas) strictly respect the horizontal meridian?",
+        "options": [
+          "The papillomacular bundle crosses vertically across the fovea",
+          "Temporal arcuate RNFL fibers arch around the macula without crossing the horizontal raphe",
+          "Nasal retinal fibers decussate at the optic chiasm",
+          "Lamina cribrosa pores are absent in the nasal optic disc"
+        ],
+        "answer": 1,
+        "explanation": "Superior and inferior arcuate RNFL bundles originate on either side of the temporal horizontal raphe without crossing it, so focal pole damage produces field defects bounded sharply at the horizontal midline.",
+        "cite": "1"
+      },
+      {
+        "id": "mcq-2-2",
+        "q": "In the six-layered Lateral Geniculate Nucleus (LGN), where do magnocellular (M) and crossed contralateral nasal fibers synapse respectively?",
+        "options": [
+          "Layers 1–2 (Magnocellular); crossed fibers in layers 1, 4, and 6",
+          "Layers 3–6 (Magnocellular); crossed fibers in layers 2, 3, and 5",
+          "Layers 1–2 (Magnocellular); crossed fibers in layers 2, 3, and 5",
+          "Layers 3–6 (Magnocellular); crossed fibers in layers 1, 4, and 6"
+        ],
+        "answer": 0,
+        "explanation": "Ventral layers 1–2 of the LGN are magnocellular (motion/contrast) and dorsal layers 3–6 are parvocellular (color/acuity). Crossed contralateral nasal retinal fibers synapse in layers 1, 4, and 6 (ipsilateral uncrossed in 2, 3, and 5).",
+        "cite": "3"
+      },
+      {
+        "id": "mcq-2-3",
+        "q": "A lesion selectively involving Meyer's loop in the right temporal lobe produces which visual field defect?",
+        "options": [
+          "Bitemporal hemianopia",
+          "Left inferior homonymous quadrantanopia ('pie on the floor')",
+          "Left superior homonymous quadrantanopia ('pie in the sky')",
+          "Right monocular altitudinal defect"
+        ],
+        "answer": 2,
+        "explanation": "Meyer's loop carries inferior retinal fibers (superior visual field) through the temporal lobe; a right temporal lesion causes a contralateral (left) superior homonymous quadrantanopia ('pie in the sky').",
+        "cite": "3"
+      }
+    ]
   },
   "basic-basic_science-3": {
     "shortTitle": "Aqueous Humor Inflow & Outflow Dynamics",
@@ -409,7 +491,48 @@
         "chapter": "Goldmann Equation & Clinical Regulation of IOP",
         "quote": "Steady-state IOP follows the Goldmann equation Po = (F − U)/C + Pv, where Pv (episcleral venous pressure) averages 8–12 mmHg. Glaucoma medications target inflow (F), trabecular facility (C), uveoscleral outflow (U), or episcleral venous pressure (Pv)."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-3-1",
+        "q": "Which mechanism accounts for the majority (80–90%) of aqueous humor formation by the non-pigmented ciliary epithelium?",
+        "options": [
+          "Simple passive diffusion across lipid bilayers",
+          "Hydrostatic ultrafiltration across ciliary capillaries",
+          "Energy-dependent active secretion via Na+/K+-ATPase and carbonic anhydrase",
+          "Osmotic bulk absorption from the vitreous cavity"
+        ],
+        "answer": 2,
+        "explanation": "Active secretion across the NPE—driven by Na+/K+-ATPase and carbonic anhydrase (CA-II/CA-IV)—accounts for 80–90% of the normal 2.0–2.5 µL/min aqueous production rate.",
+        "cite": "1"
+      },
+      {
+        "id": "mcq-3-2",
+        "q": "In the modified Goldmann equation Po = (F − U) / C + Pv, what is the normal value range for conventional outflow facility (C) and episcleral venous pressure (Pv)?",
+        "options": [
+          "C = 0.05–0.10 µL/min/mmHg; Pv = 2–4 mmHg",
+          "C = 0.22–0.28 µL/min/mmHg; Pv = 8–12 mmHg",
+          "C = 1.0–1.5 µL/min/mmHg; Pv = 16–20 mmHg",
+          "C = 2.0–2.5 µL/min/mmHg; Pv = 15–21 mmHg"
+        ],
+        "answer": 1,
+        "explanation": "Normal trabecular outflow facility (C) is 0.22–0.28 µL/min/mmHg, and normal episcleral venous pressure (Pv) is 8–12 mmHg.",
+        "cite": "2"
+      },
+      {
+        "id": "mcq-3-3",
+        "q": "Which class of glaucoma medication primarily increases the variable U (uveoscleral outflow) in the Goldmann equation?",
+        "options": [
+          "Topical carbonic anhydrase inhibitors (dorzolamide)",
+          "Topical beta-blockers (timolol)",
+          "Prostaglandin analogs (latanoprost, travoprost)",
+          "Cholinergic miotics (pilocarpine)"
+        ],
+        "answer": 2,
+        "explanation": "Prostaglandin analogs remodel ciliary muscle extracellular matrix via matrix metalloproteinases (MMPs) to increase pressure-independent uveoscleral outflow (U). Pilocarpine actually decreases uveoscleral outflow while increasing conventional trabecular facility (C).",
+        "cite": "3"
+      }
+    ]
   },
   "basic-basic_science-4": {
     "shortTitle": "Microscopic Anatomy of Retina (RGC & RNFL)",
@@ -524,7 +647,48 @@
         "chapter": "Retinal Ganglion Cells, RNFL Organization & OCT GCC",
         "quote": "Over 50% of RGCs are concentrated in the macula (GCL 6–8 cells thick). RGC subtypes include Parvocellular/Midget (~70–80%), Magnocellular/Parasol (~10%), and Koniocellular/Bistratified (~8–10%). Peripheral RGC axons run deep in the RNFL; macular OCT measures the Ganglion Cell Complex (RNFL + GCL + IPL)."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-4-1",
+        "q": "Which three inner retinal layers together constitute the macular Ganglion Cell Complex (GCC) measured by spectral-domain OCT in glaucoma?",
+        "options": [
+          "ILM, OPL, and ONL",
+          "RNFL, Ganglion Cell Layer (GCL), and Inner Plexiform Layer (IPL)",
+          "GCL, Inner Nuclear Layer (INL), and Outer Plexiform Layer (OPL)",
+          "RNFL, Photoreceptor layer, and RPE"
+        ],
+        "answer": 1,
+        "explanation": "The Ganglion Cell Complex (GCC) comprises the axons (RNFL), cell bodies (GCL), and dendrites (IPL) of retinal ganglion cells—the three innermost neural layers selectively thinned in glaucoma.",
+        "cite": "2"
+      },
+      {
+        "id": "mcq-4-2",
+        "q": "How are peripheral versus macular retinal ganglion cell axons depth-stratified within the Retinal Nerve Fiber Layer (RNFL)?",
+        "options": [
+          "Peripheral RGC axons travel deeper (near GCL) and enter the peripheral ONH; central axons travel more superficially (near ILM)",
+          "Peripheral RGC axons travel most superficially (near ILM) and enter the central ONH",
+          "All RGC axons mix randomly without depth stratification",
+          "Macular RGC axons travel deep in the outer plexiform layer"
+        ],
+        "answer": 0,
+        "explanation": "Peripheral RGC axons lie deeper in the RNFL (closer to the GCL) and exit peripherally in the optic nerve head, while central/macular axons run superficially beneath the ILM and occupy the central neuroretinal rim.",
+        "cite": "2"
+      },
+      {
+        "id": "mcq-4-3",
+        "q": "Which retinal ganglion cell subtype constitutes ~70–80% of all RGCs and mediates high-acuity vision and red–green color discrimination?",
+        "options": [
+          "Magnocellular (Parasol / M-cells)",
+          "Koniocellular (Bistratified / K-cells)",
+          "Parvocellular (Midget / P-cells)",
+          "Intrinsically photosensitive melanopsin RGCs"
+        ],
+        "answer": 2,
+        "explanation": "Parvocellular (midget / P-cells) make up ~70–80% of RGCs, project to LGN layers 3–6, and subserve fine spatial acuity and red–green color vision.",
+        "cite": "2"
+      }
+    ]
   },
   "basic-basic_science-5": {
     "shortTitle": "Blood Supply of Optic Nerve & Ciliary Body",
@@ -622,7 +786,48 @@
         "chapter": "Uveal Tract Vasculature — Ciliary Body & Major Arterial Circle",
         "quote": "The ciliary body is supplied by 2 long posterior ciliary arteries (at 3 and 9 o'clock) and 7 anterior ciliary arteries (from the rectus muscles), which anastomose within the ciliary body stroma to form the major arterial circle of the iris. Venous drainage is primarily posteriorly via the vortex veins."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-5-1",
+        "q": "Which vascular structure provides the primary arterial blood supply to the laminar region (lamina cribrosa) of the optic nerve head?",
+        "options": [
+          "Superficial capillary branches of the central retinal artery",
+          "Arterial Circle of Zinn–Haller formed by short posterior ciliary arteries (SPCAs)",
+          "Long posterior ciliary arteries",
+          "Anterior ciliary arteries"
+        ],
+        "answer": 1,
+        "explanation": "The lamina cribrosa is supplied almost exclusively by the intrascleral Arterial Circle of Zinn–Haller, formed by anastomoses of the short posterior ciliary arteries (SPCAs).",
+        "cite": "1"
+      },
+      {
+        "id": "mcq-5-2",
+        "q": "Where is the Major Arterial Circle of the Iris anatomically located, and which vessels form it?",
+        "options": [
+          "At the pupillary collarette; formed by central retinal and short posterior ciliary arteries",
+          "Within the anterior ciliary body stroma; formed by 2 long posterior ciliary arteries and 7 anterior ciliary arteries",
+          "Within the sclera at the limbus; formed by vortex veins and episcleral arteries",
+          "Within the pars plana; formed exclusively by short posterior ciliary arteries"
+        ],
+        "answer": 1,
+        "explanation": "Despite its name, the major arterial circle of the iris lies within the anterior ciliary body stroma near the iris root, formed by the anastomosis of the 2 long posterior ciliary arteries (LPCAs) and 7 anterior ciliary arteries (ACAs).",
+        "cite": "2"
+      },
+      {
+        "id": "mcq-5-3",
+        "q": "Why must the 3 and 9 o'clock meridians be spared during transscleral cyclophotocoagulation (TSCPC)?",
+        "options": [
+          "To avoid perforating the vortex vein ampullae",
+          "To avoid injuring the long posterior ciliary arteries and long ciliary nerves traveling horizontally",
+          "Because ciliary processes are absent at 3 and 9 o'clock",
+          "To protect the superior and inferior rectus muscle insertions"
+        ],
+        "answer": 1,
+        "explanation": "The medial and lateral long posterior ciliary arteries (LPCAs) and long ciliary nerves run anteriorly in the suprachoroidal space along the 3 and 9 o'clock meridians; damaging them risks anterior segment ischemia and neurotrophic keratitis.",
+        "cite": "2"
+      }
+    ]
   },
   "basic-basic_science-6": {
     "shortTitle": "Apoptotic Mechanism of RGC Death",
@@ -690,7 +895,48 @@
         "chapter": "Molecular Mechanisms of Retinal Ganglion Cell Apoptosis",
         "quote": "Glutamate excitotoxicity via NMDA receptors causes intracellular Ca2+ overload, tipping the Bcl-2/Bax ratio toward mitochondrial cytochrome c release, apoptosome assembly (Apaf-1 + caspase-9), and executioner caspase-3 activation; extrinsic TNF-alpha/Fas signaling activates caspase-8."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-6-1",
+        "q": "Mechanical blockade of retrograde axoplasmic transport at the lamina cribrosa deprives RGCs primarily of which target-derived survival factor?",
+        "options": [
+          "Vascular endothelial growth factor (VEGF)",
+          "Brain-Derived Neurotrophic Factor (BDNF) acting via TrkB receptors",
+          "Transforming growth factor-beta (TGF-β)",
+          "Matrix metalloproteinase-9 (MMP-9)"
+        ],
+        "answer": 1,
+        "explanation": "Blockade of retrograde axoplasmic flow from the LGN/superior colliculus starves RGCs of Brain-Derived Neurotrophic Factor (BDNF), shutting down TrkB-mediated PI3K/Akt survival signaling and triggering apoptosis.",
+        "cite": "1"
+      },
+      {
+        "id": "mcq-6-2",
+        "q": "In the intrinsic (mitochondrial) pathway of RGC apoptosis, release of cytochrome c into the cytosol combines with Apaf-1 and procaspase-9 to activate which sequence of caspases?",
+        "options": [
+          "Caspase-8 followed by Caspase-1",
+          "Caspase-9 (initiator) followed by Caspase-3 (executioner)",
+          "Caspase-3 (initiator) followed by Caspase-9 (executioner)",
+          "Caspase-12 followed by Bcl-2 activation"
+        ],
+        "answer": 1,
+        "explanation": "Cytochrome c + Apaf-1 + procaspase-9 form the apoptosome, activating initiator caspase-9, which in turn cleaves and activates executioner caspase-3 (and caspase-7) to dismantle the cell.",
+        "cite": "2"
+      },
+      {
+        "id": "mcq-6-3",
+        "q": "How does glutamate excitotoxicity contribute to glaucomatous RGC death?",
+        "options": [
+          "By hyperactivating NMDA receptors and causing toxic intracellular Ca2+ overload",
+          "By blocking Na+/K+-ATPase in the corneal endothelium",
+          "By increasing Bcl-2 expression in mitochondria",
+          "By preventing microglial phagocytosis of apoptotic bodies"
+        ],
+        "answer": 0,
+        "explanation": "Excess extracellular glutamate overactivates postsynaptic NMDA receptors on RGCs, causing massive Ca2+ influx that triggers mitochondrial permeability transition (mPTP), cytochrome c release, and apoptosis.",
+        "cite": "2"
+      }
+    ]
   },
   "basic-basic_science-7": {
     "shortTitle": "Physiology of Visual-Field Examination",
@@ -770,7 +1016,48 @@
         "chapter": "Assessment of Visual Fields — Psychophysics & Confounders",
         "quote": "Stimulus duration (200 ms) exceeds Bloch's critical duration (~100 ms) while staying below saccadic latency (~250 ms). Pupil <2.5 mm, uncorrected refraction, cataract, age, learning effect, and fatigue confound sensitivity; 25–40% RGC loss may precede detectable SAP defects."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-7-1",
+        "q": "On standard automated perimetry (Humphrey Field Analyzer), what does a retinal sensitivity reading of 0 dB indicate?",
+        "options": [
+          "Normal foveal sensitivity seeing the dimmest possible stimulus",
+          "Failure to see the brightest stimulus the perimeter can project (10,000 asb)",
+          "Background bowl illumination of 31.5 apostilbs",
+          "A physiological blind spot artifact due to a small pupil"
+        ],
+        "answer": 1,
+        "explanation": "The perimetric decibel (dB) scale is an inverted logarithmic scale of stimulus attenuation: 0 dB corresponds to the instrument's maximum brightness (10,000 asb), meaning an absolute defect where even the brightest light is missed.",
+        "cite": "1"
+      },
+      {
+        "id": "mcq-7-2",
+        "q": "Why is the standard stimulus duration on automated perimeters set to 200 milliseconds?",
+        "options": [
+          "It matches the exact duration of dark adaptation",
+          "It is longer than Bloch's critical temporal summation (~100 ms) yet shorter than saccadic latency (~250 ms)",
+          "It prevents pupillary constriction during testing",
+          "It is the minimum duration required to activate rods under scotopic light"
+        ],
+        "answer": 1,
+        "explanation": "At 200 ms, temporal summation (Bloch's law, ~100 ms) is complete so small duration fluctuations do not alter threshold, while remaining shorter than the ~250 ms latency needed to make a saccade toward the target.",
+        "cite": "2"
+      },
+      {
+        "id": "mcq-7-3",
+        "q": "Where is the physiologic blind spot normally located in the visual field?",
+        "options": [
+          "15° nasal and 1.5° superior to fixation",
+          "15° temporal and 1.5° inferior to fixation",
+          "5° temporal and 5° superior to fixation",
+          "30° temporal along the horizontal meridian"
+        ],
+        "answer": 1,
+        "explanation": "Because the optic nerve head lies nasal and slightly superior to the fovea, the projected physiologic blind spot lies ~15° temporal and 1.5° inferior to fixation.",
+        "cite": "1"
+      }
+    ]
   },
   "basic-basic_science-8": {
     "shortTitle": "Goldmann Kinetic/Static & Automated Perimetry",
@@ -869,7 +1156,48 @@
         "chapter": "Standard Automated Perimetry, SITA & Anderson-Patella Criteria",
         "quote": "SAP (24-2, 30-2, 10-2, 24-2C) uses SITA Standard/Fast/Faster algorithms to shorten testing while preserving accuracy. Reliability requires low fixation losses (<20%) and false positives (<15%). Anderson-Patella criteria use Pattern Deviation cluster, PSD <5%, or GHT Outside Normal Limits."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-8-1",
+        "q": "In Goldmann stimulus notation (e.g., III4e), what are the exact dimensions of the standard Size III target used in Standard Automated Perimetry?",
+        "options": [
+          "0.25 mm² (0.11° visual angle)",
+          "1.0 mm² (0.22° visual angle)",
+          "4.0 mm² (0.43° visual angle)",
+          "64.0 mm² (1.72° visual angle)"
+        ],
+        "answer": 2,
+        "explanation": "Goldmann Size III has an area of 4 mm² (subtending 0.43° at 30 cm bowl radius). Each consecutive Roman numeral quadruples the target area.",
+        "cite": "1"
+      },
+      {
+        "id": "mcq-8-2",
+        "q": "Which of the following fulfills the Anderson–Patella criteria for a minimal glaucomatous visual field defect on a reliable SAP printout?",
+        "options": [
+          "Two edge points depressed at P < 5% on Total Deviation",
+          "≥3 contiguous non-edge points in the same hemifield on Pattern Deviation depressed at P < 5%, with at least one at P < 1%",
+          "Fixation losses > 20% with Mean Deviation of −1.0 dB",
+          "False positives > 15% producing 'white scotomas'"
+        ],
+        "answer": 1,
+        "explanation": "Anderson–Patella criteria require any one of: ≥3 contiguous non-edge Pattern Deviation points (P < 5%, with ≥1 at P < 1%) in the same hemifield, PSD with P < 5%, or Glaucoma Hemifield Test 'Outside Normal Limits'.",
+        "cite": "2"
+      },
+      {
+        "id": "mcq-8-3",
+        "q": "Which automated perimetry test pattern is most appropriate for detecting and monitoring central visual field threat in advanced glaucoma?",
+        "options": [
+          "Humphrey 10-2 (68 points spaced 2° apart within the central 10°)",
+          "Goldmann V4e kinetic outer isopter only",
+          "Humphrey 60-4 peripheral screening grid",
+          "Suprathreshold confrontation testing"
+        ],
+        "answer": 0,
+        "explanation": "The 10-2 pattern tests 68 densely spaced points (2° grid) across the central 10° macular field, revealing macular vulnerability and split-fixation defects that the coarser 6° 24-2 grid can miss.",
+        "cite": "2"
+      }
+    ]
   },
   "basic-basic_science-9": {
     "shortTitle": "Tonometry Principles, Outflow & Diurnal Curve",
@@ -949,7 +1277,48 @@
         "chapter": "Circadian IOP Fluctuations, Peak & Trough Values",
         "quote": "Normal diurnal IOP fluctuation is 3–5 mmHg versus >6–10 mmHg in glaucoma. Peaks frequently occur nocturnally or early morning (04:00–06:00), augmented by supine posture increasing episcleral venous pressure. Peak and trough measurements evaluate 24-hour drug efficacy."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-9-1",
+        "q": "At what exact corneal applanation diameter do corneal rigidity (S) and tear-film capillary attraction (B) cancel out in Goldmann Applanation Tonometry?",
+        "options": [
+          "1.50 mm (area 1.77 mm²)",
+          "3.06 mm (area 7.35 mm²)",
+          "4.50 mm (area 15.9 mm²)",
+          "5.50 mm (area 23.8 mm²)"
+        ],
+        "answer": 1,
+        "explanation": "At an applanation diameter of 3.06 mm (area 7.35 mm²), corneal bending resistance balances tear meniscus capillary pull (S ≈ B), and 1 gram of force corresponds directly to 10 mmHg.",
+        "cite": "1"
+      },
+      {
+        "id": "mcq-9-2",
+        "q": "During a 24-hour circadian IOP curve in an unmedicated glaucoma patient, when does the true peak IOP most frequently occur?",
+        "options": [
+          "Mid-afternoon between 14:00 and 16:00",
+          "Late evening between 19:00 and 21:00",
+          "Nocturnal / early morning hours (04:00–06:00), amplified by supine posture",
+          "Exactly at noon regardless of posture"
+        ],
+        "answer": 2,
+        "explanation": "Unmedicated glaucoma patients most frequently peak during nocturnal/early-morning hours (04:00–06:00), augmented by supine posture increasing episcleral venous pressure—often missed during standard office hours.",
+        "cite": "3"
+      },
+      {
+        "id": "mcq-9-3",
+        "q": "In Schiøtz indentation tonometry, how does low ocular (scleral) rigidity (e.g., high myopia or post-vitrectomy eye) affect the measured IOP?",
+        "options": [
+          "Produces a falsely low (underestimated) IOP reading",
+          "Produces a falsely high (overestimated) IOP reading",
+          "Has no effect because Schiøtz displaces < 0.5 µL of aqueous",
+          "Only affects readings when IOP exceeds 40 mmHg"
+        ],
+        "answer": 0,
+        "explanation": "Schiøtz tonometry displaces 15–20 µL of aqueous; eyes with low scleral rigidity yield easily to the weighted plunger, causing a falsely low IOP reading.",
+        "cite": "1"
+      }
+    ]
   },
   "basic-clinical_science-1": {
     "shortTitle": "Clinical Features: POAG, NTG, PACG, Suspect & OHT",
@@ -1063,6 +1432,47 @@
         "chapter": "Ocular Hypertension & Primary Open-Angle Glaucoma Suspect",
         "quote": "OHT is defined as IOP >21 mmHg with open angles, normal ONH, and normal VF. OHTS showed >=20% IOP reduction halved 5-year POAG conversion (9.5% to 4.4%); major risk factors include thinner CCT, higher IOP, older age, larger C:D ratio, and higher PSD."
       }
-    }
+    },
+    "mcqs": [
+      {
+        "id": "mcq-10-1",
+        "q": "According to the ISGEO classification, an eye with ≥180° of iridotrabecular contact, peripheral anterior synechiae (PAS), IOP of 26 mmHg, and a completely normal optic disc and visual field is classified as:",
+        "options": [
+          "Primary Angle-Closure Suspect (PACS)",
+          "Primary Angle Closure (PAC)",
+          "Primary Angle-Closure Glaucoma (PACG)",
+          "Ocular Hypertension (OHT)"
+        ],
+        "answer": 1,
+        "explanation": "ISGEO defines PAC as an occludable angle (ITC) plus evidence of trabecular obstruction (PAS, elevated IOP, pigment smudging, or Glaukomflecken) WITHOUT glaucomatous optic neuropathy. Once GON is present, it becomes PACG.",
+        "cite": "2"
+      },
+      {
+        "id": "mcq-10-2",
+        "q": "Compared to high-tension POAG, which clinical findings are characteristically more frequent in Normal-Tension Glaucoma (NTG)?",
+        "options": [
+          "Glaukomflecken and a vertically oval mid-dilated pupil",
+          "Splinter (Drance) optic disc hemorrhages and deeper paracentral scotomas closer to fixation",
+          "Peripheral anterior synechiae and Sampaolesi line",
+          "Diffuse corneal edema and markedly thick central corneas (>600 µm)"
+        ],
+        "answer": 1,
+        "explanation": "NTG shows higher rates of splinter (Drance) disc hemorrhages, steeper paracentral visual field defects closer to fixation, thinner corneas, and systemic vascular dysregulation (migraine, Raynaud, nocturnal hypotension).",
+        "cite": "1"
+      },
+      {
+        "id": "mcq-10-3",
+        "q": "In the Ocular Hypertension Treatment Study (OHTS), lowering IOP by ≥20% in OHT patients reduced the 5-year conversion rate to POAG from:",
+        "options": [
+          "25.0% down to 12.5%",
+          "9.5% down to 4.4%",
+          "5.0% down to 4.8% (not significant)",
+          "40.0% down to 10.0%"
+        ],
+        "answer": 1,
+        "explanation": "OHTS demonstrated that medical IOP reduction of ≥20% more than halved the 5-year cumulative probability of developing POAG from 9.5% in the observation group to 4.4% in the treated group.",
+        "cite": "3"
+      }
+    ]
   }
 }
