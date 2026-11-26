@@ -234,6 +234,36 @@
         "explanation": "Corneal bending resistance depends heavily on viscoelastic properties (corneal hysteresis, stromal hydration, edema) rather than thickness alone; for example, a thick edematous cornea paradoxically causes GAT underestimation, so linear subtraction nomograms worsen clinical error.",
         "cite": "3"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-61-1",
+        "label": "Circadian IOP Peaks",
+        "front": "When does peak 24-hour IOP occur, why does it rise despite reduced nocturnal inflow, and how many peaks do office curves miss?",
+        "back": "Peaks during **nocturnal supine sleep (2:00–6:00 AM)** despite a **40–50% drop** in aqueous secretion, driven by supine elevation of **episcleral venous pressure (EVP)** and choroidal engorgement • Diurnal swing is **2–6 mmHg** in normal eyes vs **>6–10 mmHg** in POAG (up to **15–20 mmHg** in PXF/PDS) • Office-hour mDTC (8 AM–4/6 PM q2h) misses **60–70%** of true 24-hour peaks.",
+        "cite": "1"
+      },
+      {
+        "id": "card-61-2",
+        "label": "WDT & Biomechanics",
+        "front": "What is the Water-Drinking Test (WDT) protocol, and how does ORA Corneal Hysteresis (CH) predict glaucoma risk?",
+        "back": "**WDT:** 2-hour fast, drink **800–1000 mL** (10 mL/kg) in 5 min, check IOP q15 min × 45–60 min; stresses trabecular outflow reserve and correlates with diurnal peak • **ORA CH = P1 − P2** (normal **~10–11 mmHg**) measures corneal viscoelastic damping • **Low CH** is an independent predictor of VF progression (often stronger than thin CCT), while **Corvis ST** (4,330 fps Scheimpflug) yields **bIOP**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-61-3",
+        "label": "Atypical Cornea GAT Traps",
+        "front": "How do you adjust GAT for >3 D regular astigmatism, and which tonometers work best for corneal edema, scars, bandage CL, or KPro?",
+        "back": "**Astigmatism (>3 D):** Align GAT red line to **minus-cylinder (flat) axis** (43° rule) or average **0° and 90°** (~1 mmHg error/4 D) • **Edema:** Boggy stroma causes paradoxical GAT underestimation despite thick CCT → use **pneumatonometer, Tono-Pen, or DCT** • **Scars/PKP/BCL:** Pneumatonometer or Tono-Pen • **Boston KPro:** Digital scleral palpation or Eyemate • **TED:** Measure in primary/downgaze.",
+        "cite": "2"
+      },
+      {
+        "id": "card-61-4",
+        "label": "Pachymetry & OHTS Rule",
+        "front": "How should CCT be used clinically without correction tables, and what did OHTS establish for thin corneas?",
+        "back": "Document **raw unadjusted IOP alongside raw CCT** (normal **540–550 µm**; artifact ~0.4–0.7 mmHg/10 µm is non-linear and confounded by edema/elasticity) • Stratify clinically: **thin (<520 µm)** (higher risk, lower target), **average (520–580 µm)**, **thick (>580 µm)** • **OHTS:** Thin CCT was the strongest baseline POAG predictor (**HR 1.71 per 40 µm thinner**; **3× risk** for ≤555 µm vs >588 µm).",
+        "cite": "4"
+      }
     ]
   },
   "advanced-4": {
@@ -468,6 +498,36 @@
         "explanation": "The pneumatonometer uses a 5 mm air-bearing Silastic membrane (Mackay–Marg principle) that accurately measures IOP over edematous corneas and soft bandage contact lenses, operates in both sitting and supine postures, and includes a dedicated 2-minute electronic tonography mode to determine aqueous outflow facility (C).",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-62-1",
+        "label": "PASCAL DCT Mechanics",
+        "front": "What operating principle, tip geometry, sampling rate, and quality scores govern PASCAL Dynamic Contour Tonometry (DCT)?",
+        "back": "Uses **contour matching** + **Pascal's hydrostatic law** (no applanation bending) • **Concave tip (R = 10.5 mm**, 7 mm OD) with flush **1.2 mm piezoresistive sensor**, applied at **1 g force** for 5–8 s (**100 Hz**) • Largely **CCT- and post-LASIK-independent**, reading **1.5–2.5 mmHg higher than GAT** • Accept **Q1–Q2** (discard Q4–Q5); requires steady upright fixation.",
+        "cite": "4"
+      },
+      {
+        "id": "card-62-2",
+        "label": "Ocular Pulse Amplitude",
+        "front": "Define Ocular Pulse Amplitude (OPA) on PASCAL DCT, its normal range, and the clinical significance of low or asymmetric OPA.",
+        "back": "**OPA = systolic peak minus diastolic trough IOP** (normal **2–4 mmHg**, mean ~2.5–3.0 mmHg), serving as a surrogate for pulsatile choroidal blood flow • **Inter-eye OPA asymmetry (>0.5–1.0 mmHg)** strongly warrants ruling out ipsilateral **internal carotid artery stenosis** or ocular ischemic syndrome • Persistently low OPA is also linked to **normal-tension glaucoma (NTG)** progression.",
+        "cite": "2"
+      },
+      {
+        "id": "card-62-3",
+        "label": "Pneumatonometry Pearls",
+        "front": "How does a pneumatonometer function, and what four specialized capabilities make it indispensable in complex glaucoma?",
+        "back": "Pneumatic applanation via **Mackay–Marg force isolation** across a **5 mm fenestrated Silastic membrane** on a frictionless air-bearing piston (reads **1–3 mmHg > GAT**) • Excels over **corneal edema, scars, PKP/DSAEK**, and **soft bandage contact lenses**, operates in **sitting OR supine** positions (EUA/sleep-lab), and offers a **2-minute tonography mode** (*C* normal **0.22–0.30 µL/min/mmHg**).",
+        "cite": "2"
+      },
+      {
+        "id": "card-62-4",
+        "label": "ICare Rebound Models",
+        "front": "Compare the ICare rebound tonometer models, their clinical advantages, and their main calibration caveats.",
+        "back": "Solenoid propels a **26.5 mg, 1.8 mm** disposable probe from **4–8 mm**; averages middle 4 of **6 readings** with **no anesthesia or fluorescein** (zero cross-infection) • **TA01i/ic100:** upright only • **PRO/ic200:** **200° multi-positional/supine** (pediatric EUA) • **HOME/HOME2:** unsupervised diurnal curves • **Caveats:** High **CCT sensitivity** (~0.5–0.8 mmHg/10 µm); peripheral impact reads falsely low.",
+        "cite": "3"
+      }
     ]
   },
   "advanced-5": {
@@ -692,6 +752,36 @@
         "explanation": "Because the fovea lies 6°–8° inferior to the disc center, axons from the inferior macula (Macular Vulnerability Zone) curve into the vulnerable inferotemporal quadrant of the optic disc, causing inferior macular GCIPL thinning respecting the horizontal raphe and a concordant superior paracentral defect on 10-2 visual field testing.",
         "cite": "4"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-63-1",
+        "label": "RNFL Depth & Red-Free Sign",
+        "front": "How are peripheral versus peripapillary axons layered by depth in the RNFL, and what confirms a true wedge defect on red-free exam?",
+        "back": "**Depth stratification (Radius/Ogden):** Long **peripheral retinal axons** course **deep** in the RNFL and exit at the **peripheral disc edge**; short **peripapillary axons** travel **superficially** into the **central rim** • On **red-free (~540 nm)** exam, a true glaucomatous wedge extends continuously to the disc margin and is **wider than an adjacent retinal arteriole** (preceding SAP by **5–6 years**).",
+        "cite": "2"
+      },
+      {
+        "id": "card-63-2",
+        "label": "ONH Zones & Vascular Supply",
+        "front": "Name the four anatomical zones of the optic nerve head with their primary blood supply and structural basis for vertical cupping.",
+        "back": "**1. Surface RNFL:** CRA branches • **2. Prelaminar:** **SPCAs** via peripapillary choroid and circle of Zinn–Haller • **3. Laminar:** SPCAs/Zinn–Haller; ~200–400 pores — **larger pores and thinner septa at superior/inferior poles** provide less support, driving vertical cupping & ISNT violation • **4. Retrolaminar:** Myelinated (diameter 1.5 → 3–4 mm); pial plexus + axial CRA.",
+        "cite": "1"
+      },
+      {
+        "id": "card-63-3",
+        "label": "BMO-MRW & FoBMO Axis",
+        "front": "Why is BMO-MRW superior to the clinical disc margin on SD-OCT, and how does foveal position explain the Macular Vulnerability Zone?",
+        "back": "**Bruch's Membrane Opening (BMO)** is a true anatomical aperture (unlike the variable optical disc margin); **BMO-MRW** measures the shortest perpendicular distance from **BMO to ILM** aligned to the **FoBMO axis** (fovea **6°–8° inferior** to disc center) • Inferior macular axons enter the vulnerable **inferotemporal disc**, causing early **inferior GCIPL** thinning (respecting horizontal raphe) and **superior paracentral 10-2** scotomas.",
+        "cite": "3"
+      },
+      {
+        "id": "card-63-4",
+        "label": "OCT vs GDx vs HRT",
+        "front": "Contrast the optical principles, key metrics, and abnormal cutoffs of SD-OCT, GDx (VCC/ECC), and HRT.",
+        "back": "**SD/SS-OCT (840/1050 nm interferometry):** Direct 3.4–3.46 mm cpRNFL (**TSNIT double hump**, normal ~95–100 µm; inter-eye asymmetry **>8–9 µm**), macular **GCIPL/GCC**, BMO-MRW, and **OCTA** (RPC density) • **GDx (780 nm polarimetry):** Microtubule birefringence; **ECC** suppresses ARPs; **NFI >50** abnormal (<30 low) • **HRT (670 nm CSLO):** 3D topography **50 µm below** temporal contour (**MRA** & operator-free **GPS**).",
+        "cite": "1"
+      }
     ]
   },
   "advanced-6": {
@@ -906,6 +996,36 @@
         ],
         "answer": 2,
         "explanation": "This patient meets all four Greenfield red flags (age <50, VA <20/40, rim pallor, and bitemporal vertical-meridian VF defect), strongly indicating a chiasmal compressive mass (e.g., pituitary adenoma or craniopharyngioma). Contrast-enhanced MRI of the brain and orbits with sella/chiasmal views is the diagnostic gold standard.",
+        "cite": "1"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-64-1",
+        "label": "Greenfield Neuroimaging Rule",
+        "front": "List the four Greenfield et al. (1998) clinical red flags distinguishing non-glaucomatous cupping from typical NTG.",
+        "back": "**1. Neuroretinal rim pallor out of proportion to cupping** (**highest single specificity ~90–94%** — inspect *remaining* rim color, not cup floor) • **2. Age <50 years** at presentation • **3. Best-corrected VA <20/40 (6/12)** unexplained by cataract/macula/split fixation • **4. Visual field defects respecting the vertical meridian** (chiasmal or retrochiasmal localization).",
+        "cite": "3"
+      },
+      {
+        "id": "card-64-2",
+        "label": "Pseudoglaucomatous Cupping",
+        "front": "Which five non-glaucomatous optic neuropathies classically cause deep, glaucoma-like ('pseudoglaucomatous') excavation?",
+        "back": "**1. Arteritic AION / Giant Cell Arteritis** (deep chalky excavation in 80–90% — STAT ESR/CRP/CBC + steroids if >50 yrs) • **2. Compressive tumors/aneurysms** (pituitary adenoma, meningioma; **band/bow-tie atrophy**) • **3. Methanol toxicity** • **4. Dominant Optic Atrophy (OPA1)** (bilateral temporal wedge excavation + blue-yellow loss) • **5. Hemodynamic shock**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-64-3",
+        "label": "Tilted Disc vs Chiasm",
+        "front": "How do you clinically differentiate tilted disc syndrome superotemporal field defects from true chiasmal bitemporal hemianopia?",
+        "back": "**Chiasmal compression:** Strictly **respects the vertical meridian**, accompanied by rim pallor, dyschromatopsia, or endocrine signs, and persists regardless of refraction • **Tilted disc syndrome** (inferior nasal staphyloma): Defects **cross the vertical meridian** smoothly and **partially or completely resolve** on re-testing with an added **−2.00 to −4.00 D** myopic trial lens.",
+        "cite": "2"
+      },
+      {
+        "id": "card-64-4",
+        "label": "Ancillary Test Triage",
+        "front": "State the exact indications for MRI/MRA, CT, Carotid Doppler, and 24-hour ABPM in atypical or progressing NTG.",
+        "back": "**MRI brain/orbits + gadolinium** (fat-suppressed thin slices; +MRA for aneurysms): First-line for any Greenfield red flag, rapid unilateral loss, or unexplained RAPD • **CT:** MRI contraindication, optic canal trauma, calcified lesions • **Carotid Doppler:** NOT routine in symmetric NTG; order for **amaurosis fugax, OIS, emboli, or asymmetric low OPA** • **24-h ABPM:** Progressing NTG despite low IOP (detect nocturnal DBP <60 mmHg / >10–20% dip).",
         "cite": "1"
       }
     ]
@@ -1134,6 +1254,36 @@
         "answer": 2,
         "explanation": "Cirrus GPA event analysis compares follow-up scans to the average of two baseline scans: ≥20 contiguous superpixels thinning beyond test–retest variability are shaded yellow ('Possible Loss') on initial detection and turn red ('Likely Loss') when confirmed in the same region on at least two consecutive follow-up scans.",
         "cite": "1"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-65-1",
+        "label": "OCT Event vs Trend Rates",
+        "front": "Compare event-based and trend-based OCT progression analysis, citing normal aging slopes and test–retest variability.",
+        "back": "**Normal aging:** cpRNFL **−0.2 to −0.5 µm/yr**; GCIPL **−0.1 to −0.3 µm/yr** • **Test–retest variability:** ~**4–5 µm** global cpRNFL (~7–8 µm sectoral) • **Event-based:** Compares against **2 baselines** (Cirrus ≥20 contiguous superpixels: yellow **Possible** × 1 visit, red **Likely** × 2 consecutive) • **Trend-based:** Linear slope (**≥4–5 scans over ≥1.5–2 yrs**; rapid loss **>1.0–1.5 µm/yr**).",
+        "cite": "1"
+      },
+      {
+        "id": "card-65-2",
+        "label": "Platform Progression Tools",
+        "front": "Contrast the progression algorithms of Cirrus GPA, Spectralis GMPE, HRT TCA, and GDx GPA, and state the cross-device rule.",
+        "back": "**Cirrus GPA:** Auto-registered disc/macula cubes, Thickness Change Map + **Panomap** • **Spectralis GMPE:** **APS (FoBMO)** + **TruTrack**, tracking **BMO-MRW** & 3 cpRNFL rings (3.5/4.1/4.7 mm) • **HRT TCA:** **4×4 superpixel** surface-height depression confirmed on ≥2–3 visits • **GDx GPA:** Fast vs Extended (3-scan avg) TSNIT trends • **Rule:** Raw OCT thickness is **never interchangeable** across machines; re-baseline on upgrade.",
+        "cite": "2"
+      },
+      {
+        "id": "card-65-3",
+        "label": "OCT Floors & Compliance",
+        "front": "What are the residual measurement floors for cpRNFL and macular GCIPL, and why can BMO-MRW thicken after trabeculectomy?",
+        "back": "Residual **astrocytes, Müller endfeet, and vessels** create asymptotic floors: **cpRNFL ~45–55 µm** (reached at **MD −10 to −14 dB**), while **macular GCIPL ~40–45 µm** tracks deeper (**MD −15 to −20 dB**) before requiring SAP 10-2/OCTA • Surgical IOP drop causes anterior **lamina cribrosa rebound**, mechanically thickening **BMO-MRW** (not regeneration) → establish a new post-op baseline.",
+        "cite": "3"
+      },
+      {
+        "id": "card-65-4",
+        "label": "Red vs Green Disease Traps",
+        "front": "Distinguish OCT 'Red Disease' from 'Green Disease' and list key acquisition artifacts causing pseudo-progression.",
+        "back": "**Artifacts affect 15–46%** of OCT scans • **'Red Disease' (false positive):** High myopia/tilted discs (temporal peak shift, PPA on 3.46 mm circle) flagging healthy eyes red • **'Green Disease' (false negative):** **ERM, VMT, edema, myopic schisis**, or thick normal baseline masking thinning (and ERM/PVD release mimics **pseudo-progression**) • **Traps:** Low signal (**Cirrus <6/10, Spectralis <15 dB** / cataract), circle decentration, blinks/segmentation drift.",
+        "cite": "4"
       }
     ]
   },
@@ -1377,6 +1527,36 @@
         "answer": 3,
         "explanation": "SITA Faster 24-2C adds 10 asymmetric central macular loci onto the 54-point 24-2 grid, initiates at age-expected thresholds with single reversals at primary points, omits false-negative and blind-spot catch trials, and relies on gaze tracking and reaction-time false positives.",
         "cite": "1"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-66-1",
+        "label": "SITA Faster, TOP & ZEST",
+        "front": "Compare the operational mechanisms and key limitations of SITA Faster, Octopus TOP, and ZEST thresholding algorithms.",
+        "back": "**SITA Faster (~2–3 min):** Starts at age-expected threshold, single reversal at 4 primary seeds, **omits FN catch trials & Heijl–Krakau blind-spot checks** (uses gaze tracking); **do not mix** with SITA Standard baselines • **Octopus TOP (~2.5 min):** Tests each locus once across 4 sub-matrices via spatial interpolation; blurs steep focal scotoma edges • **ZEST:** Updates PDF after every stimulus (Matrix FDT).",
+        "cite": "1"
+      },
+      {
+        "id": "card-66-2",
+        "label": "24-2C, 10-2 & Size V Grids",
+        "front": "How do 24-2C, 10-2, and Goldmann Size V static perimetry overcome the macular and end-stage limits of standard 24-2 Size III?",
+        "back": "**24-2 (6° grid)** places only **4 points in central 8°** (>30% of RGCs) and hits a **variability floor below 15–20 dB** • **24-2C** adds **10 macular points** (Hood MVZ) onto 24-2 • **10-2 (68 pts, 2° spacing)** captures early NTG/GCIPL/split-fixation scotomas • **Size V (1.72°, 16× area of Size III)** expands dynamic range **~5–8 dB** in MD < −20 dB (track raw dB maps; lacks standard STATPAC PD).",
+        "cite": "3"
+      },
+      {
+        "id": "card-66-3",
+        "label": "Selective & Microperimetry",
+        "front": "Contrast SWAP, Frequency-Doubling Technology (FDT), and Fundus-Tracked Microperimetry by target pathway and clinical caveats.",
+        "back": "**SWAP (440 nm blue Size V on 100 cd/m² yellow):** Isolates S-cone/**koniocellular** pathway (~5–10% RGCs); heavily confounded by **nuclear cataract** and variance • **FDT/Matrix (<1 cpd, >15–25 Hz flicker):** Targets **magnocellular (My)** RGCs; resists **defocus up to ~6 D** and miosis • **Microperimetry (MP-3/MAIA):** Real-time SLO tracking anchors points despite eccentric fixation or coexisting AMD/ERM.",
+        "cite": "4"
+      },
+      {
+        "id": "card-66-4",
+        "label": "SKP & Multifactorial Traps",
+        "front": "State standard target velocities and roles of Semi-Automated Kinetic Perimetry (SKP), plus key functional and reliability pitfalls.",
+        "back": "**SKP (Octopus 900):** Moves targets at **2°/s centrally, 3–5°/s peripherally** with **reaction-time vector correction** (>5°/s shifts isopters inward); maps **end-stage V4e/III4e temporal islands**, driving (**Esterman**), and **non-organic loss** (spiraling/crossed isopters, non-expanding tunnel fields) • **Traps:** **Riddoch statokinetic dissociation** (occipital); **FP >15%** yields 'white scotomas' (>40 dB) hiding progression.",
+        "cite": "2"
       }
     ]
   },
@@ -1633,6 +1813,36 @@
         "explanation": "In EMGT, untreated pseudoexfoliation glaucoma progressed at a markedly rapid mean rate of ~−3.13 dB/year, compared with ~−1.31 dB/year in high-tension POAG and ~−0.36 dB/year in normal-tension glaucoma.",
         "cite": "4"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-67-1",
+        "label": "Anderson–Patella & HPA",
+        "front": "State the Anderson–Patella criteria for minimal glaucomatous VF loss and the Hodapp–Parrish–Anderson (HPA) staging thresholds.",
+        "back": "**Anderson–Patella (≥1 on 2 consecutive reliable VFs):** GHT *Outside Normal Limits*, **≥3 contiguous non-edge PD points** (*p* < 5%, ≥1 at *p* < 1%), or PSD *p* < 5% • **HPA Staging:** **Early** MD > −6 dB (none <15 dB in central 5°); **Moderate** −6 to −12 dB (no 0 dB in central 5°, <15 dB in 1 hemifield max); **Severe** MD < −12 dB (≥50% pts, **any 0 dB in central 5°**, or <15 dB in both hemifields).",
+        "cite": "1"
+      },
+      {
+        "id": "card-67-2",
+        "label": "GPA Event vs PLR Criteria",
+        "front": "Compare progression criteria across Humphrey GPA event analysis, AGIS/CIGTS trials, and PROGRESSOR pointwise linear regression.",
+        "back": "**GPA (EMGT-based, 2 baselines):** Open triangle = 1 VF, half = 2, solid = 3; **Possible** = ≥3 pts on **2 consecutive VFs**, **Likely** = ≥3 pts on **3 consecutive VFs** (halts at MD < −20 dB) • **AGIS:** ≥4 pts (0–20 scale) × 3 VFs • **CIGTS:** ≥3 pts × 3 VFs • **PLR (PROGRESSOR):** Slope worse than **−1.0 dB/yr** (*p* < 0.01; −2.0 dB/yr edge); global trends require **≥5 VFs over ≥2–3 yrs**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-67-3",
+        "label": "RoP Benchmarks & EMGT",
+        "front": "Contrast normal aging and untreated EMGT progression rates across glaucoma subtypes, plus clinical RoP grades and the EMGT IOP rule.",
+        "back": "**Aging:** −0.06 to −0.10 dB/yr • **Untreated EMGT mean:** −1.08 dB/yr overall (**NTG −0.36**, **HTG −1.31**, **PXFG −3.13 dB/yr**); every **1 mmHg** IOP drop reduces progression risk **~10%** • **Clinical RoP:** Slow (< −0.5), Moderate (−0.5 to −1.0), Fast (−1.0 to −2.0), Catastrophic (> −2.0 dB/yr) • **Projected years to disability** ≈ (Current MD − [−20 to −25 dB]) ÷ RoP.",
+        "cite": "4"
+      },
+      {
+        "id": "card-67-4",
+        "label": "Confirmation & Caveats",
+        "front": "Why must an isolated worsening VF be confirmed before escalating therapy, and what perimetric artifacts confound longitudinal trends?",
+        "back": "In **OHTS, 86%** of initial abnormal VFs failed to confirm on re-test → verify with **1–2 repeat VFs** and check adherence, diurnal IOP, and disc hemorrhages • **Confounders:** Cataract depresses **MD** while sparing PD/VFI; **FP >15%** hides progression whereas high **FN** accompanies true severe loss; **miosis (<2.5–3 mm)** and switching SITA Standard/Faster invalidate slopes • **Re-baseline** (2 new VFs) after learning, cataract surgery, or trabeculectomy.",
+        "cite": "3"
+      }
     ]
   },
   "advanced-10": {
@@ -1824,6 +2034,36 @@
         ],
         "answer": 2,
         "explanation": "Early initiation of aqueous suppressants during the post-GDD hypertensive phase lowers intrableb pressure and limits delivery of pro-inflammatory aqueous cytokines to the remodeling fibrous capsule, improving long-term IOP control.",
+        "cite": "2"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-68-1",
+        "label": "AGIS-7 & MTMT Ceiling",
+        "front": "What target IOP did AGIS-7 link to zero mean VF progression, and why does rational MTMT stop at 3–4 complementary classes?",
+        "back": "**AGIS-7:** Eyes keeping **IOP <18 mmHg at 100% of visits** (mean **12.3 mmHg**) had virtually zero mean VF progression over 6 years → target **10–12 mmHg** (≥30–40% drop) in severe POAG • True **MTMT** combines 3–4 complementary classes via **fixed-dose combinations** (5-min spacing + **2–3 min punctal occlusion** cutting systemic absorption **~60–70%**); a 4th–5th bottle adds <10–15% drop while driving >50% non-adherence and BAK fibrosis.",
+        "cite": "4"
+      },
+      {
+        "id": "card-68-2",
+        "label": "Drug Mechanisms & Traps",
+        "front": "Compare the unique mechanisms and critical contraindications of ROCK inhibitors, CAIs, beta-blockers, and alpha-2 agonists.",
+        "back": "**ROCKi (netarsudil/ripasudil):** Relax TM actin (disassemble **steroid CLANs**) + **lower EVP** (Sturge–Weber/CCF); side effects: hyperemia (~50%), cornea verticillata • **CAIs:** Active **nocturnally**; avoid topical CAIs in **Fuchs/ICE/graft** endothelial failure and oral CAIs in **sickle cell** • **Beta-blockers:** Minimal nocturnal efficacy; worsen NTG nocturnal hypotension • **Brimonidine:** Contraindicated in **children <2–6 yrs** (apnea/CNS depression).",
+        "cite": "1"
+      },
+      {
+        "id": "card-68-3",
+        "label": "Pre-Op & Post-Op Drops",
+        "front": "How do you manage early trabeculectomy bleb encapsulation and prepare a chronically BAK-exposed conjunctiva before repeat filtering surgery?",
+        "back": "**Early Encapsulated Bleb (3–8 wks):** Aqueous suppressants lower intracapsular tension alongside intensive prednisolone 1% ± **bleb needling + 5-FU/MMC** (avoid over-suppressing immediately post-op, which starves the tract) • **Pre-Op Conjunctival Conditioning (2–4 wks):** Stop BAK/hyperemic drops, switch to **preservative-free FDCs**, add topical **fluorometholone/prednisolone**, and bridge with **oral acetazolamide** if needed.",
+        "cite": "3"
+      },
+      {
+        "id": "card-68-4",
+        "label": "Secondary Med Rules",
+        "front": "Summarize drug-selection rules and strict contraindications for uveitic glaucoma, NVG, sickle-cell hyphema, and aqueous misdirection.",
+        "back": "**Uveitis:** Aqueous suppressants + steroids/cycloplegics; **no miotics** (BAB breakdown/synechiae); PGAs only if quiet without CME/HSK • **NVG:** Aqueous suppressants + atropine + steroids bridging to anti-VEGF/PRP; **no pilocarpine** • **Sickle-cell hyphema:** **Avoid CAIs** (acidosis → sickling) & hyperosmotics; use beta-blockers/brimonidine; washout if IOP >24 mmHg >24 h • **Aqueous misdirection:** Atropine + aqueous suppressants + mannitol; **no pilocarpine**.",
         "cite": "2"
       }
     ]
@@ -2020,6 +2260,36 @@
         "answer": 1,
         "explanation": "Pallor exceeding cupping and visual field defects respecting the vertical meridian are classic red flags for compressive chiasmal/intracranial lesions (e.g., pituitary adenoma or meningioma) masquerading as NTG and require urgent MRI neuroimaging.",
         "cite": "3"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-69-1",
+        "label": "Monocular & Repeat POAG",
+        "front": "What perioperative safeguards prevent 'wipe-out' in a monocular eye, and how do you audit a failed trabeculectomy?",
+        "back": "**Monocular safeguards:** Prefer **topical or gentle sub-Tenon's anesthesia** (avoid retrobulbar hemorrhage/ischemia), maintain steady pressure with **AC maintainer/OVD**, and place **tight releasable sutures** to avoid early hypotony (<5 mmHg) or spikes (>25–30 mmHg; wipe-out ~0.5–2%) • **Failed trab audit:** Gonioscopy separates **internal ostium block** (YAG/iridoplasty) from **external fibrosis** (needling with 5-FU/MMC if patent ostium, or **GDD** per TVT).",
+        "cite": "1"
+      },
+      {
+        "id": "card-69-2",
+        "label": "NTG Recognition & Trials",
+        "front": "List classic clinical hallmarks of NTG and summarize the treatment benchmarks from CNTGS and LoGTS.",
+        "back": "**Hallmarks:** Diurnal IOP ≤21 mmHg, **Drance disc hemorrhages**, focal inferior notching, beta-zone PPA, **steeper paracentral scotomas** (check 10-2), migraine/Raynaud's/OSA/nocturnal hypotension • **CNTGS:** **≥30% IOP drop** reduced progression **35% → 12%** (cataract-censored; ~50% untreated stable) • **LoGTS:** **Brimonidine 0.2% (9.1%)** beat **timolol 0.5% (39.2%)** at ~14 mmHg → favor PGA/brimonidine, avoid evening beta-blockers; MMC trab targets **8–10 mmHg**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-69-3",
+        "label": "Uveitic Glaucoma Rules",
+        "front": "How do specific uveitic syndromes present, and what are the laser and primary surgical rules for refractory uveitic glaucoma?",
+        "back": "**Clues:** Stellate KPs/heterochromia (**Fuchs**), sectoral iris atrophy/reduced corneal sensation (**HSV/VZV**), coin KPs (**CMV**), Koeppe/Busacca nodules (**sarcoid/TB/VKH**) • **Lasers:** Perform **2 large Nd:YAG LPIs** for iris bombé (small openings fibrin-occlude); **avoid SLT/ALT** in active uveitis • **Surgery (≥3 mo quiescence if feasible):** **Primary GDD** preferred in active/chronic uveitis, JIA, and pseudophakia; quiet phakic → MMC trab; pediatric/JIA → goniotomy/trabeculotomy.",
+        "cite": "2"
+      },
+      {
+        "id": "card-69-4",
+        "label": "Angle Recession Natural History",
+        "front": "What is the anatomical cleavage plane, gonioscopic hallmark, bimodal course, and fellow-eye risk of angle-recession glaucoma?",
+        "back": "**Cleavage plane:** Tear within ciliary body **between longitudinal and circular ciliary muscle fibers** • **Comparative gonioscopy (4–6 wks post-trauma):** Asymmetric **widened ciliary body band (CBB)**, bright white **scleral spur**, torn iris processes • **Course:** High risk if **>180°–240°** (7–10% lifetime); bimodal (<1 yr & **10–20+ yrs** via **Descemet-like hyaline membrane**); **~50%** develop OAG in **uninjured fellow eye** • SLT weak; check for occult zonular/vitreous loss.",
+        "cite": "2"
       }
     ]
   },
@@ -2236,6 +2506,36 @@
         "answer": 3,
         "explanation": "The EAGLE randomized controlled trial showed that clear-lens extraction in patients ≥50 years with PAC (IOP ≥30 mmHg) or PACG was more efficacious and cost-effective than LPI plus topical medical therapy, achieving better quality of life and lower IOP with fewer drops.",
         "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-70-1",
+        "label": "ISGEO PACD & Ritch Levels",
+        "front": "Define PACS, PAC, and PACG by ISGEO criteria, and list Ritch's four anatomical levels of angle closure.",
+        "back": "**ISGEO (≥180° dark-room ITC):** **PACS** = ≥180° ITC, normal IOP/disc, no PAS • **PAC** = ≥180° ITC + **IOP >21 mmHg and/or PAS** (or prior APAC signs), no GON • **PACG** = PAC + **GON/VF loss** • **Ritch's 4 levels:** (1) **Pupillary block** (~75%), (2) **Plateau iris / ciliary body** (**double-hump sign** on indentation), (3) **Lens crowding**, (4) **Retrolenticular/choroidal expansion**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-70-2",
+        "label": "APAC, ZAP & Plateau Iris",
+        "front": "State the acute APAC medical sequence (including pilocarpine timing), ZAP trial takeaway, and plateau iris management.",
+        "back": "**APAC:** IV mannitol + acetazolamide + timolol/brimonidine/prednisolone; give **pilocarpine 1–2% only once IOP <40 mmHg** (sphincter ischemia resolves); **fellow-eye LPI** (~50% 5-yr acute risk) • **ZAP Trial (2019):** Prophylactic LPI in PACS halved low progression (4.19 vs 7.97/1,000 eye-yrs; **NNT ~44**) → **selective LPI** for high-risk PACS • **Plateau iris (post-LPI ITC):** **ALPI** (500 µm, 0.5 s) or low-dose pilocarpine.",
+        "cite": "4"
+      },
+      {
+        "id": "card-70-3",
+        "label": "Secondary Angle Closure",
+        "front": "Contrast anterior 'pulling' versus posterior 'pushing' secondary angle closure, including silicone oil, epithelial downgrowth, and nanophthalmos.",
+        "back": "**Anterior pulling (LPI futile):** **NVG** (360° zipper PAS → anti-VEGF + PRP + GDD), **ICE** (unilateral middle-aged female, hammered-silver endothelium), **epithelial downgrowth** (**chalky white on argon laser**) • **Posterior pushing (with block):** Phacomorphic (LPI/cataract), **aphakic silicone oil** (**inferior 6 o'clock Ando PI**) • **Posterior pushing (no block):** **Nanophthalmos** (thick sclera → prophylactic **scleral windows** during surgery); topiramate effusion.",
+        "cite": "2"
+      },
+      {
+        "id": "card-70-4",
+        "label": "Post-Op Shallow AC & IZHV",
+        "front": "How do you triage postoperative shallow AC by IOP, and what are the three stepwise tiers to cure aqueous misdirection?",
+        "back": "**Low IOP (<6):** Seidel+ leak, Seidel− overfiltration, or serous choroidals • **High IOP (>21):** Pupillary block (iris bombé → LPI), SCH (pain/B-scan clot → drain **7–14 d**), or **aqueous misdirection** (uniform central + peripheral shallowing, patent PI) • **Malignant glaucoma cure:** 1) **Atropine 1% QID** + suppressants + mannitol (~50% cure; **no miotics**), 2) **Nd:YAG posterior capsulotomy + anterior hyaloidotomy**, 3) **PPV + IZHV** (**>85–95% cure**) + fellow-eye prophylaxis.",
+        "cite": "2"
       }
     ]
   }

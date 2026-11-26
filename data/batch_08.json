@@ -232,6 +232,36 @@
         "explanation": "Spaeth Grade III flat AC (lenticulocorneal touch) causes rapid corneal endothelial decompensation and cataract formation and mandates urgent AC reformation and serous choroidal drainage. In contrast, delayed SCH drainage is generally deferred 7–14 days until clot liquefaction unless intractable pain or lens-cornea touch intervenes.",
         "cite": "1"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-71-1",
+        "label": "Hypotony Criteria & Spaeth",
+        "front": "Distinguish statistical from clinical ocular hypotony via Goldmann dynamics, and define Spaeth Shallow AC Grades I–III.",
+        "back": "**Statistical hypotony:** **IOP ≤6.5 mmHg** (>3 SD below 15.5 mmHg mean) • **Clinical hypotony:** IOP causing structural/visual impairment (**≤5–6 mmHg**), via reduced inflow (**F ↓**) or excess outflow (**C/Fu ↑ or leak**) in IOP = (F − Fu)/C + Pv • **Spaeth Shallow AC:** **Gr I** = peripheral iris–cornea touch; **Gr II** = mid-iris/pupillary border touch; **Gr III** = **lenticulocorneal touch** (emergency!).",
+        "cite": "1"
+      },
+      {
+        "id": "card-71-2",
+        "label": "Hypotony Maculopathy",
+        "front": "Identify the highest-risk patient profile, hallmark fundus/OCT findings, and critical surgical window for hypotony maculopathy.",
+        "back": "**High-risk profile:** **Young, male, myopic** eyes after **primary MMC trabeculectomy** (low scleral rigidity → inward scleral buckling and axial shortening/hyperopic shift) • **Signs:** **Radiating stellate foveal chorioretinal folds**, vascular tortuosity, disc edema; **macular OCT** (gold standard) shows undulating RPE–Bruch's complex • **Critical window:** Restore IOP ≥10–12 mmHg within **2–6 months** before irreversible chorioretinal fibrosis.",
+        "cite": "4"
+      },
+      {
+        "id": "card-71-3",
+        "label": "Leak vs Overfiltration Rx",
+        "front": "Compare management of early wound leaks, late avascular MMC bleb leaks, and Seidel-negative overfiltration.",
+        "back": "**First steps:** Stop all aqueous suppressants (audit fellow-eye beta-blocker crossover), start intensive steroids + **atropine 1%** • **Early leak (Seidel+):** Large **16–22 mm BCL**, Simmons shell, glue, brief suppressants (formed AC), or direct resuturing • **Late avascular MMC leak:** **Surgical bleb excision + conjunctival advancement** (± scleral patch) to prevent endophthalmitis • **Overfiltration (Seidel−):** OVD AC reform, **Palmberg compression sutures**, or flap resuturing.",
+        "cite": "2"
+      },
+      {
+        "id": "card-71-4",
+        "label": "Uncommon Hypotony & Clefts",
+        "front": "List uncommon posterior/systemic causes of hypotony and outline stepwise management of a traumatic cyclodialysis cleft.",
+        "back": "**Uncommon causes:** **Cyclodialysis cleft (UBM)**, rhegmatogenous RD, anterior PVR **cyclitic membrane** (needs PPV/silicone oil), **ocular ischemic syndrome**, **myotonic dystrophy**, DKA/dehydration, systemic **cidofovir** • **Cyclodialysis cleft:** Small (<1.5–2 clock hrs) → **atropine 1% + taper steroids** (encourages fibrotic closure); persistent/≥2 hrs → argon laser or **direct surgical cyclopexy** → expect an acute **40–60 mmHg rebound IOP spike**.",
+        "cite": "3"
+      }
     ]
   },
   "advanced-14": {
@@ -463,6 +493,36 @@
         "explanation": "Although overall 5–8 year VF outcomes in CIGTS were similar between initial medicine and surgery, patients with advanced baseline VF loss (MD ≤ -10 dB) progressed significantly less with initial trabeculectomy, whereas diabetics fared worse with initial surgery.",
         "cite": "1"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-72-1",
+        "label": "OHT & Early POAG RCTs",
+        "front": "Summarize primary outcomes and key methodological caveats of OHTS, EMGT, GLT, and CIGTS.",
+        "back": "**OHTS:** ≥20% drop cut 5-yr POAG **9.5% → 4.4%** (NNT ~20; thin CCT ≤555 µm = 3× risk; excluded PXF) • **EMGT:** 25% drop cut 6-yr progression **62% → 45%** (**−10% risk/mmHg**; PXF 2× rate) • **GLT:** Initial ALT ≥ timolol (confounded by **contralateral timolol crossover**) • **CIGTS:** Overall Med ≈ Surg VF, but **initial surgery won if baseline MD ≤ −10 dB** (diabetics fared worse with surgery).",
+        "cite": "1"
+      },
+      {
+        "id": "card-72-2",
+        "label": "NTG, Advanced & Modern RCTs",
+        "front": "Contrast headline findings and critical biases of CNTGS, AGIS, FFSS, LiGHT, EAGLE, and TAGS.",
+        "back": "**CNTGS:** ≥30% drop cut NTG progression **35% → 12%** (post-hoc **cataract-censored**; ~50% untreated stable) • **AGIS-7 (post-hoc):** **IOP <18 mmHg all visits** (mean 12.3) → ~0 VF loss; Black: ATT, White: TAT • **FFSS:** 5-FU cut 5-yr failure **74% → 51%** (corneal/bleb toxicity) • **Modern:** **LiGHT** (~70% drop-free 6 yrs post-SLT), **EAGLE** (CLE > LPI in PAC ≥30/PACG), **TAGS** (primary MMC trab superior in advanced POAG without wipe-out).",
+        "cite": "2"
+      },
+      {
+        "id": "card-72-3",
+        "label": "Indian Population Surveys",
+        "front": "Compare prevalence rates and major methodological limitations across VES, APEDS, ACES, and the Chennai Glaucoma Study (CGS).",
+        "back": "**VES (N=972, 30–60 y):** POAG 0.41%, PACG 4.32% (**age cap 60** cut POAG; pre-ISGEO inflated PACG; 50.3% response) • **APEDS (≥40 y):** Urban POAG **2.56%** (rural 1.62%), PACG **1.08%** (pre-ISGEO) • **ACES (N=5,150, rural):** POAG **1.7%**, PACG **0.5%** (**selective gonioscopy** missed PACG) • **CGS (N=7,774, universal gonioscopy + ISGEO):** Urban POAG **3.51%** vs rural **1.62%**, PACG **0.88%/0.87%**, PACS 6.3–7.2%.",
+        "cite": "4"
+      },
+      {
+        "id": "card-72-4",
+        "label": "Indian Clinical Translation",
+        "front": "How do Chennai Glaucoma Study (CGS) findings reshape adult glaucoma screening and intervention thresholds in India?",
+        "back": "India has **11.2–12 million** glaucoma cases with **>90% undiagnosed** • In **CGS, 67–82% of POAG** presented with baseline **IOP ≤21 mmHg** → **never screen by IOP alone** (mandate disc exam + pachymetry) • **PACS/PAC exceeds 7–10%** → perform **universal indentation gonioscopy** before labeling OHT/POAG • Late Indian presentations and high PXF favor earlier **SLT (LiGHT), lens surgery (EAGLE), or primary MMC trab (TAGS/PTVT)**.",
+        "cite": "3"
+      }
     ]
   },
   "advanced-15": {
@@ -692,6 +752,36 @@
         "explanation": "Volatile inhalational agents (sevoflurane, halothane) and propofol rapidly lower IOP by 20–50%, risking missed diagnoses; therefore IOP must be measured immediately upon light induction (or with ketamine/awake rebound tonometry).",
         "cite": "3"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-73-1",
+        "label": "CGRN Criteria & STUMPED",
+        "front": "State the CGRN criteria for childhood glaucoma, the PCG triad, and how to separate PCG from forceps trauma and simple megalocornea.",
+        "back": "**CGRN (≥2 of 5):** IOP >21 mmHg; cupping/asymmetry ≥0.2; **corneal diameter ≥11 mm newborn, >12 mm <1 yr, >13 mm any age** or Haab striae/edema; myopic shift; VF defect • **PCG triad:** **Epiphora, photophobia, blepharospasm** • **Haab striae** are **horizontal/concentric** (vs **vertical/oblique** unilateral forceps trauma) • **STUMPED** differential includes CHED & **simple megalocornea** (X-linked, clear cornea, normal IOP/disc).",
+        "cite": "1"
+      },
+      {
+        "id": "card-73-2",
+        "label": "Developmental Genetics",
+        "front": "Match PCG, JOAG, Axenfeld–Rieger Syndrome (ARS), and Aniridia to their genes, inheritance, and hallmark ocular/systemic anomalies.",
+        "back": "**PCG:** Sporadic (90%) or AR **CYP1B1** (predominant in India; *LTBP2, TEK, ANGPT1*) • **JOAG (4–35 yrs, IOP 35–50+):** AD **MYOC/TIGR** (1q24, 10–36% familial; no buphthalmos) • **ARS (~50% glaucoma):** AD **PITX2** (maxillary/dental/umbilical/pituitary) & **FOXC1** (cardiac/hearing); posterior embryotoxon, iris strands, corectopia • **Aniridia (50–75% glaucoma):** **PAX6 (11p13)**; rudimentary iris stump rotating onto TM, foveal hypoplasia, limbal keratopathy.",
+        "cite": "2"
+      },
+      {
+        "id": "card-73-3",
+        "label": "Pediatric EUA Essentials",
+        "front": "List the structured EUA measurements for infantile glaucoma and the key longitudinal marker of surgical control.",
+        "back": "Measure **IOP immediately upon light induction** (Perkins/Tono-Pen/awake iCare) before volatile agents lower IOP 20–50% • Record **white-to-white diameters** (normal newborn 9.5–10.5 mm), CCT, portable slit-lamp exam, and **Koeppe/Swan-Jacob direct gonioscopy** • Obtain **A-scan axial length** (**most objective longitudinal progression marker**; newborn ~16.5–17 mm, 1 yr ~20.5 mm), cycloplegic refraction, and RetCam disc photos.",
+        "cite": "3"
+      },
+      {
+        "id": "card-73-4",
+        "label": "Pediatric Surgery & Amblyopia",
+        "front": "Contrast primary surgical choices across PCG, ARS, Aniridia, and JOAG, and identify the top cause of permanent poor vision.",
+        "back": "**PCG (primary surgery):** **Goniotomy** (clear cornea, 70–90% infantile success), **360° microcatheter/suture trabeculotomy** (cloudy/failed, 85–90%), or **primary CTT** (Indian standard for severe/neonatal/cloudy PCG) • **ARS:** Meds first → MMC trab/GDD (angle surgery 30–50%) • **Aniridia:** PF drops, early prophylactic goniotomy, or GDD (limit limbal MMC) • **JOAG:** **GATT/360° trabeculotomy** or MMC trab • **#1 cause of poor final VA:** **Amblyopia** → lifelong refraction + patching!",
+        "cite": "4"
+      }
     ]
   },
   "advanced-16": {
@@ -866,6 +956,36 @@
         "answer": 1,
         "explanation": "Chronic BAK toxicity induces subclinical conjunctival inflammation and fibroblast activation that increase bleb scarring. Transitioning to preservative-free therapy, stopping miotics/pro-inflammatory drops, and pre-conditioning the conjunctiva with topical steroids significantly improve surgical survival.",
         "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-74-1",
+        "label": "24-Hour Drug Physiology",
+        "front": "Contrast the 24-hour IOP efficacy and perfusion effects of PGAs, topical CAIs, ROCK inhibitors, and beta-blockers in advanced glaucoma.",
+        "back": "Target **≥40–50% drop (≤10–12 mmHg)** (**AGIS-7:** <18 mmHg all visits, mean 12.3 mmHg; **TAGS:** primary trab ~12.4 vs 15.1 mmHg) • **PGAs** (25–33%, flattest 24-h curve; bimatoprost 0.03%/latanoprostene bunod strongest) & **topical CAIs** preserve **nocturnal efficacy** • **ROCKi** lower **EVP**, staying effective at **IOP <15–18 mmHg** • **Beta-blockers** lose nocturnal effect & worsen nocturnal OPP → dose **qAM** in NTG/vascular eyes.",
+        "cite": "2"
+      },
+      {
+        "id": "card-74-2",
+        "label": "Emergency Systemic Bridges",
+        "front": "State dosing, IOP drop, and major systemic contraindications for acetazolamide, IV mannitol, oral glycerol, and isosorbide.",
+        "back": "**Acetazolamide** (250 mg QID / 500 mg SR BD / 500 mg IV; **30–40% extra drop**; **methazolamide** hepatic/fewer stones): Risks hypokalemia, metabolic acidosis, stones, aplastic anemia; avoid in **sickle cell**, renal/hepatic failure, sulfa allergy; adding topical CAI adds **zero extra drop** • **IV Mannitol 20% (1–2 g/kg over 30–60 min):** Avoid in **CHF, pulmonary edema, anuric renal failure** • **Oral Glycerol:** Avoid in **diabetics** (DKA → use **isosorbide 1.5 g/kg**).",
+        "cite": "1"
+      },
+      {
+        "id": "card-74-3",
+        "label": "Pilocarpine & FDC Strategy",
+        "front": "Why is chronic pilocarpine risky in advanced tubular fields, and how do 2-bottle FDC regimens optimize adherence and bleb survival?",
+        "back": "**Pilocarpine traps:** Miosis **artificially constricts tubular VFs**, impairs dim vision, disrupts BAB (accelerates trab scarring — stop 1–2 wks pre-op), and raises RD risk in myopes • **Rational 2-bottle FDC MTMT** (e.g. netarsudil–latanoprost qPM + CAI–timolol or brinzolamide–brimonidine BD) delivers **3–4 classes** without washout, cutting cumulative **BAK** fibrosis • Space drops **5 min** + **2–3 min punctal occlusion** (~60% less systemic uptake).",
+        "cite": "4"
+      },
+      {
+        "id": "card-74-4",
+        "label": "Subtype & Perfusion Rules",
+        "front": "Tailor medical therapy for progressing advanced NTG versus uveitic and neovascular glaucoma, incorporating LoGTS and ABPM.",
+        "back": "**Advanced NTG:** PGA + **ROCKi** + **brimonidine** (**LoGTS:** less VF progression vs timolol at equal IOP; ~28% allergy) + topical CAI; obtain **24-h ABPM** to shift bedtime antihypertensives if nocturnal dip **>20%** and screen for **OSA** • **Uveitic:** Intensive steroids + aqueous suppressants (**no pilocarpine**; hold PGAs if active/CME) • **NVG:** Aqueous suppressants + **atropine** + steroids + urgent anti-VEGF/PRP (**no pilocarpine/PGAs**).",
+        "cite": "3"
       }
     ]
   },
@@ -1049,6 +1169,36 @@
         "answer": 0,
         "explanation": "MP-TSCPC delivers 810 nm diode energy in chopped short pulses (31.3% duty cycle: 0.5 ms ON, 1.1 ms OFF) via sweeping motion, allowing surrounding tissues to dissipate heat between pulses and avoiding the severe collateral coagulative necrosis that drives hypotony in CW-TSCPC.",
         "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-75-1",
+        "label": "Repeat SLT & PXF Rules",
+        "front": "Why is SLT repeatable unlike ALT, what did repeat-SLT / LiGHT analyses show, and how must SLT be modified in PXF/PDS?",
+        "back": "**ALT** thermally scars TM beams (**never repeat** over treated quadrants → severe spikes), whereas **3 ns 532 nm SLT** stimulates pigmented trabeculocytes without beam necrosis • **Repeat 360° SLT** after a durable (≥6–12 mo) first response delivers **15–20% IOP drop** with equal/longer duration (**LiGHT**) • **PXF/PDS heavy pigment:** Cut energy (**0.4–0.6 mJ**) and treat **180°/session**; contraindicated in NVG, active uveitis, ICE, angle recession.",
+        "cite": "3"
+      },
+      {
+        "id": "card-75-2",
+        "label": "ALPI & Sequential LPI",
+        "front": "Specify laser parameters and complex indications for Argon Laser Peripheral Iridoplasty (ALPI) and sequential Argon + Nd:YAG LPI.",
+        "back": "**ALPI (514/532 nm):** Large spot (**200–500 µm**), long duration (**0.2–0.5 s**), low power (**200–400 mW**), 20–24 extreme peripheral spots/360° → contracts iris stroma in **plateau iris**, medically refractory APAC, nanophthalmos, phacomorphic bridge • **Sequential Argon + Nd:YAG LPI:** Thin dark brown/inflamed iris first (200 µm/0.2 s → 50 µm/0.05 s), then punch **≥200–300 µm** opening (or **2 LPIs in uveitis**) with Nd:YAG (3–6 mJ).",
+        "cite": "2"
+      },
+      {
+        "id": "card-75-3",
+        "label": "CW-TSCPC, MP-TSCPC & ECP",
+        "front": "Contrast laser parameters, clinical indications, and complication rates across CW-TSCPC, MicroPulse TSCPC, and ECP.",
+        "back": "**CW-TSCPC (810 nm G-probe):** 1500–2000 mW × 2 s (slow-coag **1250 mW × 4 s**), 18–24 spots/270°, **spare 3 & 9 o'clock**; hypotony **2–10%**, phthisis **1–5%**, rare sympathetic ophthalmia • **MP-TSCPC:** **31.3% duty cycle** (0.5 ms ON / 1.1 ms OFF), 2000–2500 mW sweeping 3 mm post-limbus; hypotony **<1–3%**, repeatable in **seeing eyes** • **ECP:** Ab interno **200–350 mW** until ciliary processes whiten/shrink (watch fibrinous uveitis).",
+        "cite": "4"
+      },
+      {
+        "id": "card-75-4",
+        "label": "Rescue Lasers & Spike Rule",
+        "front": "Detail the timing and risks of laser suture lysis, Nd:YAG ostium clearance, goniopuncture, and post-laser wipe-out prevention.",
+        "back": "**Laser Suture Lysis (50 µm, 0.05–0.1 s, 200–500 mW):** Delay **3–6+ wks after MMC trab**, cut **1 suture/session** (risk: buttonhole/hypotony) • **Nd:YAG Ostium/Tube Revision (3–6 mJ):** Clears iris/fibrin/vitreous • **Nd:YAG Goniopuncture (2–5 mJ):** Perforates TDM post-NPDS (watch iris prolapse/hypotony) • **Wipe-out safety:** Pre-laser **brimonidine/apraclonidine** + mandatory **1-hour IOP check** (plus 24 h in PXF/PDS).",
+        "cite": "1"
       }
     ]
   },
@@ -1271,6 +1421,36 @@
         "explanation": "The long posterior ciliary arteries and nerves traverse the horizontal 3 and 9 o'clock meridians; laser ablation at these clock hours risks anterior segment ischemia, ciliary nerve injury, and neurotrophic keratopathy.",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-76-1",
+        "label": "Moorfields Trabeculectomy",
+        "front": "List the core steps of the Moorfields Safer Surgery trabeculectomy and why a fornix-based peritomy is preferred.",
+        "back": "**Corneal traction suture** (avoids superior rectus bleed) • **Fornix-based peritomy** (4–6 mm + broad posterior sub-Tenon dissection → diffuse posterior bleb, avoiding anterior limbus-based 'Ring of Steel' scarring) • **Wide posterior MMC** (0.2–0.4 mg/mL × 1–3 min) sparing wound edge • **~50% scleral flap**, paracentesis, **0.5–1.0 mm Kelly punch ostium**, broad basal **PI**, **releasable sutures**, and watertight limbal closure.",
+        "cite": "2"
+      },
+      {
+        "id": "card-76-2",
+        "label": "Phacotrabeculectomy Rules",
+        "front": "Compare two-site versus one-site combined phacotrabeculectomy, their indications, and why MMC is strongly recommended.",
+        "back": "**Indications:** Visually significant cataract + uncontrolled/advanced glaucoma (averts post-phaco IOP spike wipe-out; staged phaco later carries **10–39% bleb failure**) • **Two-site (preferred):** Temporal clear corneal phaco + IOL first, then superior MMC trabeculectomy (less conjunctival trauma, flap distortion, and astigmatism than one-site) • Greater BAB breakdown/fibrin yields slightly less IOP drop than trab alone → **intraoperative MMC** strongly advised.",
+        "cite": "1"
+      },
+      {
+        "id": "card-76-3",
+        "label": "Valved vs Non-Valved GDDs",
+        "front": "Compare Ahmed FP7 versus Baerveldt 350/AADI across plate size, flow valve, anatomical placement, and early post-op behavior.",
+        "back": "**Ahmed FP7 (Valved):** **184 mm²** silicone plate (pediatric FP8 = 96 mm²); Venturi valve opens **8–12 mmHg** (**must prime** with BSS); immediate IOP drop, low early hypotony, frequent **hypertensive phase (1–3 mo)** • **Baerveldt 350 / AADI (Non-valved):** **350 mm²** tucked under superior & lateral recti (**superotemporal** avoids superonasal **Brown syndrome**), **8–10 mm** post-limbus; needs **6-0/7-0 Vicryl ligature (4–6 wks)** + venting slits/ripcord + **patch graft**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-76-4",
+        "label": "PTVT, ABC & AVB Outcomes",
+        "front": "Contrast the 5-year surgical outcomes of PTVT (surgically naïve eyes) and pooled ABC/AVB trials (Ahmed vs Baerveldt).",
+        "back": "**PTVT (5-yr, virgin eyes):** Similar overall failure (**42% tube vs 35% trab**, *p*=0.21), but **primary MMC trabeculectomy** achieved lower mean IOP (**12.1 vs 13.4 mmHg**) on fewer medications (**1.3 vs 2.2**) • **ABC & AVB (5-yr):** Non-valved **Baerveldt 350** achieved lower mean IOP (~1–2 mmHg lower), fewer drops, and lower high-IOP failure than **Ahmed FP7**, at the cost of **higher hypotony-related failure** and re-interventions.",
+        "cite": "4"
+      }
     ]
   },
   "advanced-19": {
@@ -1486,6 +1666,36 @@
         "explanation": "While 5-FU significantly reduced 5-year failure (51% vs. 74% in controls) in the FFSS, it caused higher rates of early corneal epithelial toxicity/defects and late-onset bleb leaks (9% vs. 2%).",
         "cite": "3"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-77-1",
+        "label": "MMC vs 5-FU Potency & Risks",
+        "front": "Compare dosing, potency, and signature toxicities of Mitomycin C (MMC) versus 5-Fluorouracil (5-FU) in trabeculectomy.",
+        "back": "**MMC (*Streptomyces caespitosus*):** **~100× more potent**; **0.2–0.4 mg/mL × 1–3 min** (wide posterior sponge or 0.1 mL sub-Tenon; lower 0.1–0.2 mg/mL in young myopes) → risks **thin avascular cystic blebs, late leaks (3–5×), hypotony maculopathy, scleral melt, blebitis/BRE** • **5-FU:** **5 mg/0.1 mL** post-op SC injections (or 25–50 mg/mL × 3–5 min) → risks **corneal epithelial toxicity** (PEK, epithelial defects, filamentary keratitis).",
+        "cite": "1"
+      },
+      {
+        "id": "card-77-2",
+        "label": "MMC Safety & GDD Rule",
+        "front": "State two non-negotiable intraoperative safety rules for Mitomycin C delivery in trabeculectomy and GDD surgery.",
+        "back": "**1. Prevent intraocular entry:** Apply MMC broadly in the posterior sub-Tenon pocket (sparing conjunctival edges) and **irrigate copiously with ≥20–50 mL BSS BEFORE entering the anterior chamber** — intraocular MMC causes catastrophic **corneal endothelial failure, TASS, cataract, and phthisis** • **2. Do NOT apply MMC over GDD endplates:** RCTs prove no long-term IOP improvement while significantly increasing **conjunctival erosion and plate exposure**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-77-3",
+        "label": "Anti-VEGF Agents & Trab",
+        "front": "List the three anti-VEGF drugs with doses used in glaucoma, and explain their limited role in routine trabeculectomy.",
+        "back": "**Agents:** Bevacizumab **1.25 mg/0.05 mL** (149 kDa full IgG1), Ranibizumab **0.5 mg/0.05 mL** (48 kDa Fab), Aflibercept **2.0 mg/0.05 mL** (115 kDa decoy receptor) • **NVG:** Regresses NVI/NVA in **24–72 hrs** for a temporary **2–4 week window** bridging to PRP or GDD • **Routine Trabeculectomy:** Anti-VEGF monotherapy is **inferior to MMC** for long-term IOP, and combining it with full-dose MMC worsens **avascular bleb thinning and late leaks**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-77-4",
+        "label": "Anti-VEGF Complications",
+        "front": "What ocular and systemic complications must clinicians counsel and monitor for during repeated intravitreal anti-VEGF therapy?",
+        "back": "**IOP spikes:** Acute volume spikes (>30–50 mmHg × 30–60 min) AND **sustained chronic IOP elevation in 3–11%** of repeated IVT eyes (silicone microdroplets/protein aggregates or TM NO suppression) • **Infectious endophthalmitis (0.02–0.05%/injection)** & sterile uveitis (prevent with **5% povidone-iodine**) • **PDR tractional 'crunch' RD** & rare CRAO • **Systemic arterial thromboembolism** (MI/stroke; caution within 3–6 mo and pregnancy).",
+        "cite": "4"
+      }
     ]
   },
   "advanced-20": {
@@ -1660,6 +1870,36 @@
         "explanation": "Delayed suprachoroidal hemorrhage is initially managed with aggressive IOP lowering, analgesia, and systemic steroids; surgical drainage is ideally delayed 7–14 days until B-scan confirms clot liquefaction (unless intractable IOP/pain, Grade III flat AC, kissing choroidals, or retinal detachment force earlier intervention).",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-78-1",
+        "label": "Intraoperative Complication Rx",
+        "front": "State immediate intraoperative management for a conjunctival buttonhole, scleral flap tear, vitreous prolapse, and expulsive SCH.",
+        "back": "**Conjunctival buttonhole:** Watertight 10-0 nylon or 9-0/10-0 Vicryl on tapered vascular needle; **never apply MMC over a tear** • **Scleral flap tear/amputation:** Donor scleral/pericardial patch graft or shift site • **Vitreous prolapse:** Automated anterior vitrectomy clearing all ostium strands • **Expulsive SCH:** **Immediate watertight wound closure** / digital tamponade + IV mannitol + BP control + systemic steroids; avoid premature drainage.",
+        "cite": "2"
+      },
+      {
+        "id": "card-78-2",
+        "label": "Shallow AC Triage Matrix",
+        "front": "Stratify the six causes of postoperative shallow/flat AC (Spaeth I–III) by IOP, bleb height, and Seidel test.",
+        "back": "**Spaeth Gr III = lenticulocorneal/IOL touch (emergency)** • **LOW IOP:** (1) **Bleb leak** (flat, **Seidel+** → BCL/glue/resuture), (2) **Overfiltration** (high, **Seidel−** → atropine/steroids, OVD reform, Palmberg/flap resuture), (3) **Serous choroidals** (translucent domes → drain Gr III/kissing) • **HIGH IOP:** (4) **Pupillary block** (iris bombé → YAG LPI), (5) **Aqueous misdirection** (uniform shallow, patent PI), (6) **Delayed SCH** (severe pain, B-scan clot).",
+        "cite": "1"
+      },
+      {
+        "id": "card-78-3",
+        "label": "Early High IOP & Deep AC",
+        "front": "What are the three major causes of early postoperative high IOP with a DEEP anterior chamber, and how is each treated?",
+        "back": "**1. Tight scleral flap sutures (patent ostium on gonioscopy):** **Laser suture lysis** (POD 3–14; delayed **3–6 wks** after MMC) or sequential releasable suture removal + massage • **2. Internal ostium block:** Argon iridoplasty/pilocarpine (iris), **intracameral tPA 10–25 µg** (fibrin/clot), Nd:YAG membranotomy, or anterior vitrectomy (vitreous) • **3. Tenon's cyst / encapsulated bleb (2–6 wks):** Aqueous suppressants + steroids → **bleb needling + 5-FU/MMC** if refractory.",
+        "cite": "2"
+      },
+      {
+        "id": "card-78-4",
+        "label": "GDD & Late Bleb Salvage",
+        "front": "Outline definitive management for GDD tube exposure, tube–corneal touch, superonasal plate diplopia, and late leaking blebs.",
+        "back": "**Tube/plate exposure:** Urgent fresh **scleral/corneal/pericardial patch graft + tension-free conjunctival closure** (or explant if recurrent/infected) to avert endophthalmitis • **Tube–corneal touch:** Trim or relocate to **ciliary sulcus / pars plana** • **Superonasal plate diplopia:** Acquired **Brown syndrome** → prisms, Botox, or plate revision • **Late MMC bleb leak:** **Surgical bleb excision + conjunctival advancement** (± scleral patch).",
+        "cite": "4"
+      }
     ]
   },
   "advanced-21": {
@@ -1830,6 +2070,36 @@
         "answer": 0,
         "explanation": "An exposed, colonized GDD harbors persistent bacterial biofilm that drives refractory or recurrent endophthalmitis; therefore, urgent surgical explantation of the exposed device is strongly recommended alongside intravitreal antibiotics and vitrectomy.",
         "cite": "3"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-79-1",
+        "label": "BRI Risk & Pathogens",
+        "front": "Compare incidence, major risk factors, and microbiology of early-onset (<6 weeks) versus late-onset (>6 weeks) bleb-related infections.",
+        "back": "**Incidence:** **0.2–1.5%/yr** in superior MMC blebs vs **7–9%/yr** in inferior blebs; **late Seidel+ leak raises risk ~25-fold** (GDD infection **0.8–2%**) • **Early (<6 wks):** **Coagulase-negative *Staphylococcus* (*S. epidermidis*)** (intraoperative seeding, better prognosis) • **Late (>6 wks, transconjunctival):** Virulent ***Streptococcus* spp. (30–50%, worst prognosis)**, ***Haemophilus influenzae* (15–25%)**, *S. aureus*, *Moraxella*, *Enterococcus*.",
+        "cite": "2"
+      },
+      {
+        "id": "card-79-2",
+        "label": "BRI Staging & Biopsy Rule",
+        "front": "Define Stages I–III of bleb-related infection (Greenfield/Yamamoto), the RSVP red flags, and the key Stage I diagnostic prohibition.",
+        "back": "**RSVP:** **R**edness, **S**ensitivity to light, **V**ision drop, **P**ain + **'white-on-red'** milky purulent bleb • **Stage I (Blebitis):** Purulent bleb, ≤1+ AC cells (**no hypopyon**), **clear vitreous** • **Stage II (Anterior BRE):** **Hypopyon**/fibrin, clear vitreous • **Stage III (Vitreous BRE):** **Vitritis** (IIIa fundus partly visible; IIIb dense vitritis/no red reflex → mandatory **B-scan**) • **Stage I rule:** Swab surface ONLY — **NEVER needle-aspirate the bleb**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-79-3",
+        "label": "Stage I vs BRE & EVS Caveat",
+        "front": "Contrast Stage I blebitis treatment with Stage II/III BRE, and explain why the EVS light-perception PPV cutoff does NOT apply.",
+        "back": "**Stage I:** Hourly **fortified vancomycin (25–50 mg/mL) + ceftazidime (50 mg/mL) or tobramycin (14 mg/mL)** + **oral moxifloxacin 400 mg OD**; hold steroids 24–48 h; review q12–24 h • **Stage II/III:** Immediate **vitreous/AC tap + IVT vancomycin (1.0 mg/0.1 mL) + ceftazidime (2.25 mg/0.1 mL)** + topical/systemic antibiotics • **EVS Caveat:** EVS **excluded BRE**; virulent *Streptococcus* causes 30–50% VA ≤20/400 → **early PPV** favored even at **HM/CF vision**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-79-4",
+        "label": "Long-Term BRI Prevention",
+        "front": "List five evidence-based rules to prevent bleb-related and office bleb-needling infections long term.",
+        "back": "**1.** Avoid **inferior limbal trabeculectomy** (7–9%/yr infection) • **2.** Use **wide posterior MMC** (Moorfields) for thick diffuse blebs • **3.** Enforce **5% povidone-iodine**, sterile speculum, and sterile tools during office needling • **4.** Educate on **RSVP** signs and treat blepharitis/NLDO promptly; **avoid chronic prophylactic topical antibiotics** (selects resistance) • **5.** Perform **bleb excision + conjunctival advancement** for chronic leaks once sterile.",
+        "cite": "2"
       }
     ]
   },
@@ -2030,6 +2300,36 @@
         "answer": 2,
         "explanation": "LALES reported 4.74% OAG prevalence with 75% undiagnosed and 82% having baseline IOP ≤21 mmHg; SiMES reported 3.4% overall glaucoma (2.5% POAG, 0.12% PACG) with 92% undiagnosed and ~85% of POAG eyes having IOP ≤21 mmHg—reinforcing that IOP alone is an insensitive population screening tool.",
         "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-80-1",
+        "label": "Global, Baltimore & Barbados",
+        "front": "State the global glaucoma burden (2020 → 2040) and compare headline prevalence, incidence, and risk numbers in Baltimore and Barbados.",
+        "back": "**Global:** ~**76M** (projected **111.8M by 2040**); PACG causes ~half of bilateral glaucoma blindness • **Baltimore (n=5,308, ≥40 y):** POAG **4.2–4.7% Black** vs **1.1–1.3% White** (4–5×), ~50% undiagnosed, >50% IOP <21, **sibling OR 3.7 > parent OR 2.2** • **Barbados (n=4,709):** World's highest POAG (**7.0% Black**), **4-yr inc. 2.2% / 9-yr 4.4%**, thin CCT (**RR 1.41/40 µm**), low OPP (**RR 2.2–2.6**).",
+        "cite": "3"
+      },
+      {
+        "id": "card-80-2",
+        "label": "BMES, Rotterdam & LALES",
+        "front": "Compare the key prevalence, incidence, and risk-factor benchmarks from Blue Mountains (BMES), Rotterdam, and LALES.",
+        "back": "**Blue Mountains (n=3,654, ≥49 y):** OAG **3.0%** (51% undiagnosed, 10-yr inc. ~3.9%); linked to **myopia (OR 2.3–3.3)**, **PXF (5–8×)**, **diabetes (OR 2.1)**, inhaled/systemic steroids • **Rotterdam (n=6,780, ≥55 y):** Definite POAG **0.8–1.1%** (5-yr inc. 1.2%, 10-yr 2.8%), high myopia (< −4 D, RR 2.3), GWAS loci (*CDKN2B-AS1, TMCO1*) • **LALES (n=6,357):** OAG **4.74%** (21.8% ≥80 y), **4-yr inc. 2.31%**, diabetes (+40% risk), early NEI-VFQ-25 drop.",
+        "cite": "3"
+      },
+      {
+        "id": "card-80-3",
+        "label": "Asian & Indian Cohorts",
+        "front": "Contrast glaucoma subtype prevalence and undiagnosed rates across SiMES, Tanjong Pagar, Tajimi, and South Indian surveys (CGS/ACES).",
+        "back": "**SiMES (Malays, n=3,280):** All glaucoma **3.4%** (POAG **2.5%**, **PACG 0.12%**, 6-yr inc. 1.38%), **92% undiagnosed**, ~85% IOP ≤21, axial myopia OR 2.8 • **Tanjong Pagar (Chinese):** PACG **~1.0%** (Liwan **~1.5%**) • **Tajimi (Japan):** POAG **3.9%**, of which **92% NTG** • **India (CGS):** Urban POAG **3.51%** vs rural **1.62%**, PACG **~0.88%**, **>90% undiagnosed** (ACES overall 2.6%).",
+        "cite": "5"
+      },
+      {
+        "id": "card-80-4",
+        "label": "OPP Formulas & Cutoffs",
+        "front": "Write the formulas for Diastolic OPP (DOPP) and Mean OPP (MOPP), and summarize the vascular thresholds across population studies.",
+        "back": "**DOPP = Diastolic BP − IOP** • **MOPP = 2/3 × [DBP + 1/3(SBP − DBP)] − IOP** • **Population evidence:** **DOPP <30 mmHg** raised POAG risk **~6× in Baltimore**; low systolic/diastolic/mean OPP predicted incident OAG (**RR 2.2–2.6**) in **Barbados**; antihypertensive-induced **DBP <90 mmHg** raised POAG/cupping in **Thessaloniki (OR 2.4)** and **Rotterdam**, confirming low OPP across 6 major surveys.",
+        "cite": "1"
       }
     ]
   }

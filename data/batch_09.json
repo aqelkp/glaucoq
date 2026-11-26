@@ -238,6 +238,36 @@
         "explanation": "LALES reported an OAG prevalence of 4.74% and 4-year incidence of 2.31%, with 75% previously undiagnosed and 82% exhibiting IOP ≤21 mmHg on single screening—reinforcing the inadequacy of IOP-only screening.",
         "cite": "5"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-81-1",
+        "label": "ISGEO Definition Impact",
+        "front": "Define ISGEO Categories 1 and 2, and explain how diagnostic specificity alters cross-survey prevalence comparisons.",
+        "back": "**ISGEO (Foster 2002):** **Category 1** requires *both* structural damage (**VCDR ≥97.5th percentile** or asymmetry ≥0.2) *and* a reproducible VF defect; **Category 2** uses extreme structure (**≥99.5th percentile**) when perimetry is impossible • Applying strict ISGEO-like criteria gave **Rotterdam 0.8%** definite OAG (1.1% total) vs **3.0% in BMES** (broader consensus grading) in similar White cohorts—demonstrating strong case-definition bias.",
+        "cite": "1"
+      },
+      {
+        "id": "card-81-2",
+        "label": "Discordant Systemic Risks",
+        "front": "Why did diabetes mellitus and systemic hypertension produce conflicting or U-shaped associations across major population studies?",
+        "back": "**Diabetes:** Positive in **BMES (OR 2.12)** and **LALES (OR 1.4)**, yet **null in Baltimore, Barbados (9-yr), and Rotterdam**—driven by self-report vs HbA1c ascertainment, frequent-exam **detection bias**, and mild IOP rise (~0.5–1 mmHg) • **Hypertension (U-shaped):** Higher baseline BP in **Barbados** was protective (maintained OPP), whereas **iatrogenic low DBP** (**TES** DBP <90 mmHg; **Rotterdam** low DPP) compromised ONH perfusion.",
+        "cite": "4"
+      },
+      {
+        "id": "card-81-3",
+        "label": "Epidemiological Survey Biases",
+        "front": "List four methodological biases that distort glaucoma prevalence, incidence, and risk-factor estimates in community surveys.",
+        "back": "**1. Single daytime IOP:** Misses nocturnal peaks, inflating 'normal-tension' POAG (**~50% Baltimore/BMES; 82% LALES**) and diluting IOP risk • **2. Verification bias & omitted gonioscopy:** Two-stage screening misses early OAG and PAC/PACG • **3. Selection & survival bias:** 65–85% uptake under-samples frail elderly; 4–10 yr attrition skews incidence • **4. Systemic confounding:** Office BP misses nocturnal drops; self-reported family history misses ≥50% undiagnosed kin.",
+        "cite": "2"
+      },
+      {
+        "id": "card-81-4",
+        "label": "Annual Incidence & Screening",
+        "front": "Compare annualized community OAG incidence across ethnicities and state the core public-health screening conclusion.",
+        "back": "**Annualized OAG incidence:** **0.12–0.18%/yr** in White Europeans (**Rotterdam** 0.6% 5-yr / 1.8% 10-yr definite; VIP 0.5% 5-yr) vs **~0.55–0.58%/yr** in Afro-Caribbean/Hispanic cohorts (**Barbados** 2.2% 4-yr / 4.4% 9-yr; **LALES** 2.31% 4-yr) • **Policy rule:** With **50–82%** of POAG presenting at IOP ≤21 mmHg, **IOP-only screening is obsolete** → use targeted high-risk **case-finding** (disc/OCT + gonioscopy) and standardized ISGEO reporting.",
+        "cite": "3"
+      }
     ]
   },
   "very_advanced-3": {
@@ -474,6 +504,36 @@
         "explanation": "Due to optical vertical and horizontal inversion, superior arcuate and superior nasal step visual field defects map directly to the narrow 40° inferotemporal (IT) optic disc sector spanning 271°–310°—the most common site of early glaucomatous rim thinning.",
         "cite": "5"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-82-1",
+        "label": "Untreated vs Treated RoP",
+        "front": "Compare untreated EMGT progression rates across glaucoma subtypes with treated clinical cohorts and clinical RoP categories.",
+        "back": "**Untreated EMGT:** Median −0.40 dB/yr, mean **−1.08 dB/yr** (**PEXG −3.13**, **HTG −1.31**, **NTG −0.36 dB/yr**; CNTGS NTG ~−0.4 dB/yr, ~50% stable) • **Treated cohorts:** Median −0.05 to −0.15 dB/yr, yet **4–6% are catastrophic (< −1.5 dB/yr)** and 10–15% moderate–fast (−0.5 to −1.5) • **Clinical RoP:** Slow (> −0.5), Moderate (−0.5 to −1.0), Fast (−1.0 to −2.0), Catastrophic (< −2.0 dB/yr); weigh against life expectancy.",
+        "cite": "2"
+      },
+      {
+        "id": "card-82-2",
+        "label": "VFI Index vs Value Iteration",
+        "front": "Distinguish Bengtsson & Heijl's Visual Field Index (VFI) from computational Value Function Iteration (VFI) in dynamic scheduling.",
+        "back": "**Visual Field Index (100%→0%):** Centrally weighted, **PD-based** (cataract-resistant) until **MD = −20 dB** (switches to TD → jump artifact; early ceiling effect); ≥5 VFs/2–3 yrs give %/yr + 3–5 yr forecast • **Value Function Iteration (MDP/POMDP + Kalman filter):** Recursively solves the **Bellman optimality equation** to optimize personalized next-test timing and target-IOP escalation—detecting progression **~30–50% faster** with fewer tests in stable eyes.",
+        "cite": "6"
+      },
+      {
+        "id": "card-82-3",
+        "label": "PROGRESSOR PLR & PoPLR",
+        "front": "How does PROGRESSOR visually encode pointwise linear regression (PLR), what are its peripheral vs central slope cutoffs, and its caveats?",
+        "back": "**PROGRESSOR (Fitzke 1996):** Independent linear regression at every locus: **bar length = defect depth**, **bar color = p-value** (grey NS → yellow/orange/red to *p* < 0.001) • **Criteria:** Peripheral **≤ −1.0 dB/yr (*p* < 0.01)**; **central 10° ≤ −0.5 dB/yr (*p* < 0.01)** • **Modern extensions:** **PoPLR** (permutation eye-level *p*), **ANSWERS** (heteroscedastic + OCT) • **Caveats:** High pointwise noise (<15–19 dB floor), multiple-testing FPs, and **cataract confounding**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-82-4",
+        "label": "Garway-Heath 6-Sector Map",
+        "front": "List the exact angular boundaries (right eye, clockwise from 0° temporal) of all 6 Garway-Heath (2000) disc sectors and their 24-2 VF maps.",
+        "back": "Mapped 52 24-2 points to 6 ONH sectors (**OD clockwise from 0° temporal**): **T (311°–40°, 90°)** = central/PMB; **ST (41°–80°, 40°)** = inferior arcuate/nasal step; **SN (81°–120°, 40°)** = inferotemporal periphery; **N (121°–230°, 110°)** = temporal wedge; **IN (231°–270°, 40°)** = superotemporal periphery; **IT (271°–310°, 40°)** = superior arcuate/nasal step • Powers **Cluster Trend** & **Bayesian OCT-prior** models (~±7–15° FoDi/myopia variance).",
+        "cite": "5"
+      }
     ]
   },
   "very_advanced-4": {
@@ -696,6 +756,36 @@
         ],
         "answer": 0,
         "explanation": "At ~49 µm, cpRNFL has reached its non-axonal measurement floor (~45–55 µm) and can no longer thin significantly despite ongoing RGC loss. Clinicians must transition to 10-2 perimetry (or Size V SAP), macular GCIPL (if central tissue persists), and OCTA vessel density (which has a lower floor).",
+        "cite": "6"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-83-1",
+        "label": "Hood–Kardon Linear Model",
+        "front": "Write the Hood–Kardon (2007) structure–function equation and explain its dB-to-linear scaling conversions.",
+        "back": "**Formula:** R = s₀ · 10^(0.1 × TD) + b (**s₀** = axonal thickness; **b ≈ 45–55 µm** non-axonal glial/vascular floor, ~33% of baseline) • Each **−3 dB** equals a **50% reduction** in linear light sensitivity (1/Lambert) and **−10 dB** equals **90% loss** • Hence **early POAG (0 to −5 dB)** appears OCT-dominant while **advanced POAG (< −10 to −15 dB)** hits the ~50 µm OCT floor while SAP tracks down to −30 dB.",
+        "cite": "3"
+      },
+      {
+        "id": "card-83-2",
+        "label": "Harwerth, CSFI & Tipping Pt",
+        "front": "Summarize Harwerth's RGC count model, Medeiros' CSFI, and Wollstein's empirical cpRNFL tipping point.",
+        "back": "**Harwerth (2004–2010):** Converts both SAP sensitivities (adjusted for eccentricity/stimulus size) and OCT RNFL (adjusted for age/gliosis) into unified **estimated RGC counts** • **CSFI (Medeiros 2012):** Stage-weighted % RGC loss weighting **OCT higher early** and **SAP higher late**, beating either alone • **Wollstein Tipping Point (2012):** Cirrus cpRNFL **~75.3 µm (~17% loss)**, below which SAP MD declines steeply.",
+        "cite": "4"
+      },
+      {
+        "id": "card-83-3",
+        "label": "Macular MVZ & Henle Shift",
+        "front": "Why does 24-2 perimetry miss early macular structure–function defects, and what anatomical shift must macular OCT mapping adjust for?",
+        "back": "**Hood Macular Vulnerability Zone (MVZ, 2013):** Inferior macular RGCs project into the crowded **inferotemporal disc (271°–310°)** • Standard **24-2 (6° spacing)** places only **4 test points in the central 8°**, missing deep arcuate macular loss visible on **GCIPL/GCC OCT** unless paired with **10-2 perimetry (2° spacing)** • Accurate macular point mapping must correct for **~0.5–0.6 mm radial Henle fiber displacement** of RGCs outward from foveal photoreceptors.",
+        "cite": "5"
+      },
+      {
+        "id": "card-83-4",
+        "label": "Discordance & Dual Floors",
+        "front": "Why do clinical OCT–SAP R² values remain 0.30–0.65, and what is Gardiner's (2014) perimetric censoring floor versus OCTA?",
+        "back": "**Discordance drivers:** Wide healthy cpRNFL range (**80–120 µm** → 30 µm loss stays 'green' while SAP drops), pre-death **RGC dysfunction** (PERG/PhNR), glial thickening, FoBMO/myopic tilt shift, and 24-2 undersampling • **Dual floors:** Not only **cpRNFL (~45–55 µm)** and **GCIPL (~40–45 µm)**, but also **SAP pointwise reliability floor (~15–19 dB)** (Gardiner 2014; switch to Size V/10-2) • **OCTA vessel density** retains a **lower floor** and tighter linear SAP link in severe loss.",
         "cite": "6"
       }
     ]
@@ -952,6 +1042,36 @@
         "explanation": "The pneumotonometer's compliant silicone air-bearing tip permits reliable IOP assessment over edematous, scarred, or grafted corneas and through therapeutic soft bandage contact lenses, and operates accurately in both sitting and supine positions—unlike slit-lamp-mounted GAT, DCT, or ORA.",
         "cite": "4"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-84-1",
+        "label": "ORA Formulas & Quality",
+        "front": "State the exact Ocular Response Analyzer (ORA) formulas for CH, CRF, IOPg, and IOPcc, plus the reliable Waveform Score cutoff.",
+        "back": "25 ms bidirectional air jet measures inward (**P1**) and lower viscoelastic outward (**P2**) applanation • **CH = P1 − P2** (normal **10.0–11.5 mmHg**, damping) • **CRF = P1 − 0.7·P2** (overall elastic rigidity, tracks CCT) • **IOPg = (P1 + P2)/2** (GAT-correlated) • **IOPcc = P2 − 0.43·P1 + constant** (stable before/after **LASIK/PRK**; reads higher than GAT in low-CH NTG) • Reliable **Waveform Score ≥3.5–5.0**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-84-2",
+        "label": "Biomechanical Risk of Low CH",
+        "front": "Why does low baseline Corneal Hysteresis (CH) outperform thin CCT in predicting glaucoma progression, and what conditions lower CH?",
+        "back": "**Low CH (<8–9 mmHg)** reflects impaired viscoelastic energy dissipation across the corneoscleral shell—correlating with reduced compliance/damping of the **posterior lamina cribrosa** • Longitudinal studies (**Medeiros 2013; De Moraes 2012**) proved lower baseline CH independently accelerates VF progression more strongly than CCT alone • CH is also lowered in **NTG, keratoconus, Fuchs dystrophy, post-LASIK**, and aging.",
+        "cite": "5"
+      },
+      {
+        "id": "card-84-3",
+        "label": "DCT Manometry & Limits",
+        "front": "What did intracameral manometry confirm about PASCAL DCT, and what are its OPA norms, quality grades, and corneal limits?",
+        "back": "**Contour matching** (10.5 mm concave tip, flush 1.2 mm piezoresistive sensor, 1 g force, **100 Hz**) matches **true intracameral manometric IOP** independent of CCT/LASIK (reads **~1.5–2.5 mmHg > GAT**; accept **Q1–Q3**) • **OPA (normal 2.0–3.5 mmHg):** Low/asymmetric (**>0.5–1.0 mmHg** inter-eye gap) signals **NTG progression** or **carotid stenosis** • **Limits:** Requires **5–8 s** upright slit-lamp fixation; fails on scarred or **ultra-steep (>50 D)** corneas.",
+        "cite": "3"
+      },
+      {
+        "id": "card-84-4",
+        "label": "Pneumotonometer Pitfalls",
+        "front": "Summarize the pneumotonometer's unique mechanical capabilities and two surprising calibration pitfalls relative to GAT.",
+        "back": "**Mechanism:** Air-bearing piston with **5 mm fenestrated Silastic membrane** (~2 mm central contact, ~40 Hz continuous trace) • **Strengths:** Reliable on **edema, scars, PKP, soft BCLs, Boston KPro (temporal limbus)**, **sitting or supine** curves/EUA, plus **10 g 2–4 min tonography (*C*)** and OPA/POBF • **Calibration pitfalls:** Overestimates GAT by **1–3 mmHg** (especially >25 mmHg) and **remains moderate-to-highly CCT-dependent** in compact normal corneas.",
+        "cite": "4"
+      }
     ]
   },
   "very_advanced-7": {
@@ -1206,6 +1326,36 @@
         "explanation": "Nicotinamide is a precursor of NAD+ that combats age- and IOP-related bioenergetic depletion in mitochondria-rich RGC axons, prevents SARM1-driven Wallerian axonal degeneration, and has demonstrated short-term ERG PhNR and visual field sensitivity gains in Phase II randomized trials.",
         "cite": "5"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-85-1",
+        "label": "Translaminar & Compartments",
+        "front": "Write the Translaminar Pressure Gradient formula and identify the three molecularly distinct compartments of RGC degeneration.",
+        "back": "**Primary site:** **Lamina cribrosa** (~1.2M unmyelinated axons) driven by **TLPG = IOP − ICP**, with trans-synaptic degeneration to **LGN and V1** • **Compartmentalized death:** (1) **Dendritic pruning** (complement **C1q/C3** in IPL), (2) **Distal Wallerian axon decay** (NMNAT2 loss → **SARM1** NADase), and (3) **Somal apoptosis** (**Bax/Bak** → cytochrome c/Apaf-1/caspase-9 → caspase-3; TNF-α/TNFR1/caspase-8 → tBid; ER stress PERK–CHOP; RIPK1/3/MLKL necroptosis).",
+        "cite": "2"
+      },
+      {
+        "id": "card-85-2",
+        "label": "Excitotoxic & Glial Cascades",
+        "front": "Connect glutamate excitotoxicity, mitochondrial dynamics, and reactive A1 astrocytes in glaucomatous RGC loss.",
+        "back": "**Excitotoxicity:** Müller **EAAT1/GLAST** loss → NMDA Ca²⁺ overload → **calpains, calcineurin, nNOS** → cytotoxic **peroxynitrite (ONOO⁻)** • **Mitochondria:** Unmyelinated axons suffer **NAD⁺ depletion**, fusion **OPA1 ↓ / fission Drp1 ↑**, and **SARM1** axonopathy • **Neuroinflammation:** Microglial **IL-1α, TNF-α, C1q** polarize astrocytes into neurotoxic **A1 reactive astrocytes** (GFAP, TGF-β2, MMP-2/9 remodeling); **DLK → JNK → c-Jun** drives Bim/Puma.",
+        "cite": "2"
+      },
+      {
+        "id": "card-85-3",
+        "label": "Clinical Neuroprotection Trials",
+        "front": "Compare translational evidence for oral memantine (Phase III), nicotinamide ± pyruvate (Phase II), NT-501, and ANX007.",
+        "back": "**Memantine (Weinreb 2018, n=2,298):** Two 48-mo Phase III NMDA-antagonist RCTs **failed primary VF endpoints** (highlighting slow kinetics & background IOP therapy) • **Nicotinamide (1.5–3 g/d ± pyruvate):** Restores **NAD⁺**; Phase II RCTs (**Hui 2020; De Moraes 2022**) improved **ERG PhNR** & VF sensitivity (Phase III NAMinG/TGNT ongoing) • **NT-501 (CNTF implant)** preserved/thickened RNFL; **ANX007 (anti-C1q)** completed Phase II; **rhNGF/AAV2-BDNF-TrkB** advancing.",
+        "cite": "4"
+      },
+      {
+        "id": "card-85-4",
+        "label": "Regeneration & Biomarkers",
+        "front": "Name key experimental targets for RGC axonal regeneration and three emerging surrogate trial endpoints replacing slow SAP alone.",
+        "back": "**Regeneration:** Co-deleting **PTEN + SOCS3** (activating mTOR/JAK-STAT3), inhibiting **KLF4/KLF9**, or AAV **OSK (Oct4/Sox2/Klf4)** epigenetic reprogramming reverses methylation age and regenerates murine axons (hPSC-RGC grafts face ILM/synaptic hurdles) • **Surrogate biomarkers:** (1) **OCT RNFL/GCIPL slopes**, (2) **ERG Photopic Negative Response (PhNR)** (reversible neuroenhancement), and (3) **DARC** (in vivo confocal **annexin V** imaging of apoptosing RGCs).",
+        "cite": "5"
+      }
     ]
   },
   "very_advanced-8": {
@@ -1401,6 +1551,36 @@
         ],
         "answer": 0,
         "explanation": "iDose TR (75 µg travoprost) is a titanium micro-reservoir anchored into the trabecular meshwork/scleral wall providing continuous multi-year (~3 years) travoprost release and exchangeability, whereas Durysta (bimatoprost SR) is a free-floating biodegradable PLGA rod placed in the inferior angle approved for single use.",
+        "cite": "5"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-86-1",
+        "label": "Refractory Secondary Surgery",
+        "front": "Match NVG, uveitic glaucoma, post-keratoplasty glaucoma, ICE syndrome, and silicone oil glaucoma to their preferred surgical strategy.",
+        "back": "**NVG:** Immediate **intravitreal anti-VEGF + PRP** → **valved Ahmed GDD** (or MMC-trab) • **Uveitic:** Steroid/IMT quiescence → **valved GDD** or MMC-trab under systemic steroid cover • **Post-PKP/DSAEK/DMEK:** **Pars plana GDD (with PPV)**, **ciliary sulcus tube**, or **MP-TLT** (protects graft endothelium) • **ICE:** **Long/pars plana GDD** (endothelial membrane closes trab) • **Silicone oil:** Oil removal + **inferior PI** + **inferior/pars plana GDD** or MP-TLT.",
+        "cite": "2"
+      },
+      {
+        "id": "card-86-2",
+        "label": "Valved vs Non-Valved Selection",
+        "front": "How do PTVT and pooled 5-year ABC/AVB data guide selecting primary trabeculectomy, Baerveldt 350/AADI, or Ahmed FP7?",
+        "back": "**PTVT (virgin eyes, 5-yr):** Primary MMC-trab achieved lower mean IOP (**13.0 vs 14.0 mmHg**) on fewer drops (**1.3 vs 2.2**) • **Pooled ABC/AVB (5-yr):** Non-valved **Baerveldt 350** gave lower mean IOP (**13.2 vs 15.8 mmHg**), fewer drops, and lower failure than **Ahmed FP7**, but requires **6-0/7-0 Vicryl ligature + Sherwood slits/ripcord** • Choose **Ahmed FP7** when **immediate IOP drop or strict hypotony avoidance** is paramount (NVG, active uveitis, thin sclera).",
+        "cite": "3"
+      },
+      {
+        "id": "card-86-3",
+        "label": "Monocular Wipe-Out Safeguards",
+        "front": "What preoperative, anesthetic, and postoperative rules protect a monocular split-fixation patient beyond standard filtering technique?",
+        "back": "Exhaust **PF drops + 360° SLT** first; monitor with **10-2 SAP & macular GCIPL OCT**; prescribe **full-time polycarbonate safety spectacles** • **Wipe-out (~0.5–2%) prevention:** Strictly **avoid epinephrine-containing retrobulbar/peribulbar blocks** (orbital pressure/ONH vasoconstriction) → prefer topical/intracameral lidocaine or epinephrine-free sub-Tenon's; pre-op acetazolamide/mannitol if IOP >30; **AC maintainer/OVD** + tight releasable sutures (or NPDS/valved GDD); review **D1/D3/W1**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-86-4",
+        "label": "Adherence-Free Therapy Rules",
+        "front": "Compare SLT (LiGHT), Bimatoprost SR (Durysta), iDose TR, and surgical selection for chronically non-adherent patients (40–60% at 1 yr).",
+        "back": "**First-line SLT (LiGHT 6-yr):** **~70% drop-free control**, fewer trabs and less VF loss • **Bimatoprost SR (Durysta 10 µg, ARTEMIS):** Biodegradable PLGA angle rod (~30% IOP drop ≥4–6 mo; **single-use only** due to endothelial cell loss on repeat dosing) • **iDose TR (75 µg travoprost):** Titanium TM implant eluting **up to 3 years** (exchangeable) • **Surgery:** Favor **Phaco+MIGS, primary GDD, or MP-TLT** over high-maintenance MMC-trab if follow-up/post-op drops are unreliable.",
         "cite": "5"
       }
     ]
@@ -1611,6 +1791,36 @@
         "answer": 2,
         "explanation": "Late-onset bleb-related endophthalmitis (BRE) is predominantly caused by virulent Streptococcus species (carrying a dismal prognosis), and early pars plana vitrectomy combined with intravitreal vancomycin (1 mg) and ceftazidime (2.25 mg) is favored even when visual acuity is better than light perception.",
         "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-87-1",
+        "label": "Expulsive vs Delayed SCH",
+        "front": "Contrast emergency management of intraoperative expulsive SCH with secondary drainage indications and technique for delayed SCH.",
+        "back": "**Intraoperative expulsive SCH** (stony globe, lost red reflex): **Immediate watertight closure (8-0/9-0 nylon)** / finger tamponade + BSS/air/OVD AC firming + **IV mannitol (1–2 g/kg)** + **IV acetazolamide (500 mg)** + BP control; **avoid premature sclerotomy** • **Delayed SCH:** Steroids, atropine, analgesics, IOP meds → **delay drainage 7–14 d** for B-scan clot liquefaction via **6–8 mm post-limbal** radial sclerotomies + ACM (indications: kissing, lens touch, RD, intractable pain/IOP).",
+        "cite": "2"
+      },
+      {
+        "id": "card-87-2",
+        "label": "Refractory Hypotony & Kissing",
+        "front": "Summarize stepwise salvage for refractory hypotony maculopathy, kissing serous choroidals, and late avascular MMC bleb leaks.",
+        "back": "**Hypotony maculopathy (young myopic males):** Intervene within **2–6 mo** (BCL/shell, autologous blood, **Palmberg sutures**, flap resuturing, or scleral patch; GDDs: **re-ligation** or **3-0/4-0 Prolene ripcord**) • **Kissing serous choroidals:** Urgent inferior radial sclerotomies (**3.5–4 mm** post-limbus) + AC reform • **Late MMC bleb leak (5–26× BRE risk):** **Excise avascular bleb + vascularized conjunctival advancement** (± scleral patch).",
+        "cite": "2"
+      },
+      {
+        "id": "card-87-3",
+        "label": "Blebitis vs BRE Salvage",
+        "front": "Contrast emergency management of Stage I blebitis versus Stage II/III bleb-related endophthalmitis (BRE).",
+        "back": "**Stage I Blebitis ('white-on-red', clear vitreous):** Surface swabs → **fortified topical vancomycin (25–50 mg/mL) + ceftazidime (50 mg/mL) or tobramycin (14 mg/mL)** q15–30 min + **oral moxifloxacin 400 mg OD**; add steroids only after 24–48 h improvement; revise leak once sterile • **Stage II/III BRE (virulent *Streptococcus* spp., *H. influenzae*):** **Early PPV** + vitreous biopsy + **IVT vancomycin (1.0 mg) + ceftazidime (2.25 mg)** (± IVT dexamethasone 0.4 mg) **even when VA > LP**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-87-4",
+        "label": "GDD & Cyclodestruction Salvage",
+        "front": "State definitive salvage for GDD tube exposure, endothelial failure, lumen block, pseudo-Brown diplopia, and sympathetic ophthalmia.",
+        "back": "**Exposure (2–8%):** Urgent **fresh corneal/scleral/pericardial patch + vascularized conjunctiva** (never observe; **explant** if recurrent/infected) • **Corneal failure (~10–15%/yr loss):** Move tube to **sulcus or pars plana (+ PPV)** before DMEK/DSAEK • **Lumen block:** **Intracameral tPA (10–25 µg)** for fibrin/clot, argon/YAG for iris, vitrectomy for vitreous • **Pseudo-Brown:** Prisms/capsule excision/plate swap • **Sympathetic ophthalmia:** **High-dose systemic steroids + IMT**.",
+        "cite": "3"
       }
     ]
   }

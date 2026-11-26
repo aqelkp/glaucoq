@@ -227,6 +227,36 @@
         "explanation": "PACG classically affects older females (2–4× higher risk) of East/South Asian or Inuit descent who possess hypermetropic, short eyes with shallow ACD (<2.5 mm) and thick anteriorly vaulted lenses.",
         "cite": "1"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-11-1",
+        "label": "POAG Risk Quantified",
+        "front": "Quantify ethnic, familial, myopic, and vascular risk factors for POAG and name key monogenic vs. polygenic risk loci.",
+        "back": "**African/Afro-Caribbean:** **3–5×** prevalence (Baltimore/Barbados), ~10 yrs earlier, 6–8× blindness • **Family Hx:** **4–9×** (**9.2× in siblings**, Rotterdam) • **Myopia > −3 D:** **2–3×** (Blue Mountains) • **Low DOPP (<50–55 mmHg)** • **Genes:** *MYOC* (high IOP), *OPTN*/*TBK1* (NTG); GWAS *CDKN2B-AS1, TMCO1, CAV1/2, SIX1/6*.",
+        "cite": "2"
+      },
+      {
+        "id": "card-11-2",
+        "label": "OHTS Risk vs. Prognostic",
+        "front": "Distinguish risk factors from prognostic factors in glaucoma epidemiology and state the exact OHTS IOP and CCT hazard ratios.",
+        "back": "**Risk factors** predict glaucoma *onset* in unaffected eyes (OHTS); **prognostic factors** predict *progression rate* once established (EMGT/AGIS) • **IOP (sole modifiable factor):** **+10% risk per +1 mmHg** • **Thin CCT:** **HR 1.71 per 40 µm thinner**; **CCT ≤555 µm carries 3× risk** vs. >588 µm.",
+        "cite": "3"
+      },
+      {
+        "id": "card-11-3",
+        "label": "PACG Biometry & Dynamic",
+        "front": "State PACG demographic risk factors, static biometric cutoffs, and the 2 dynamic physiological mechanisms causing angle closure.",
+        "back": "**>80% live in Asia** (Inuit/East & South Asian); **female 2–4×**; peaks **6th–7th decade** (lens grows ~0.02 mm/yr); **3.5–6×** family risk (*PLEKHA7, COL11A1, EPDR1, CHAT*) • **Static:** **ACD <2.5 mm**, **AL <22.5 mm** (nanophthalmos <20 mm), lens >4.5–5 mm, **high lens vault** • **Dynamic:** **retained iris volume on dilation** + **choroidal expansion**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-11-4",
+        "label": "PACG Precipitants",
+        "front": "Contrast environmental and pharmacologic triggers of pupillary-block angle closure versus topiramate-induced angle closure.",
+        "back": "**Pupillary-block triggers (mid-dilation 3–5 mm):** dim light, stress, topical mydriatics, systemic **anticholinergics** (antihistamines, TCAs, ipratropium, oxybutynin), adrenergic decongestants • **Non-pupillary-block trigger:** **topiramate & sulfonamides** induce **ciliochoroidal effusion** with forward lens–iris shift causing **bilateral** acute angle closure.",
+        "cite": "1"
+      }
     ]
   },
   "basic-clinical_science-3": {
@@ -422,6 +452,36 @@
         ],
         "answer": 0,
         "explanation": "Bright ambient light or illumination falling across the pupil stimulates the pupillary light reflex (miosis), pulling the peripheral iris centrally and artificially opening an angle that would otherwise be closed in dim lighting.",
+        "cite": "1"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-12-1",
+        "label": "History & Acute Sequelae",
+        "front": "List the classic slit-lamp sequelae of prior acute angle closure and the key systemic medication contraindications to screen in history.",
+        "back": "**Prior acute PAC signs:** **glaucomflecken** (anterior subcapsular necrotic lens opacities), **sectoral spiral iris atrophy**, **mid-dilated vertically oval sluggish/fixed pupil**, PAS • **Systemic screen:** asthma/COPD, bradycardia/AV block (β-blockers); sulfa allergy/renal calculi (CAIs); steroid exposure or topiramate/anticholinergics.",
+        "cite": "4"
+      },
+      {
+        "id": "card-12-2",
+        "label": "Van Herick & RAPD",
+        "front": "State Van Herick peripheral AC depth grades, its critical limitation, and the threshold of asymmetric loss needed to produce an RAPD.",
+        "back": "**Van Herick (60° narrow temporal limbal slit vs. corneal thickness CT):** **Gr 4 (≥1 CT)** & **Gr 3 (1/2–1/4 CT)** = low risk; **Gr 2 (1/4 CT)** & **Gr 1 (<1/4 CT)** = occludable → **screening adjunct only, NEVER replaces gonioscopy** • **RAPD (check pre-dilation):** objective sign of asymmetric GON requiring **≥30–50%** asymmetric nerve fiber loss.",
+        "cite": "2"
+      },
+      {
+        "id": "card-12-3",
+        "label": "Static & Dynamic Gonio",
+        "front": "Summarize Shaffer vs. Spaeth static grading and the 3 diagnostic outcomes of 4-mirror dynamic indentation gonioscopy.",
+        "back": "**Shaffer:** Gr 4 (35–45°, CBB), Gr 3 (25–35°, SS), Gr 2 (20°, TM), Gr 1 (≤10°, Schwalbe), Gr 0 (ITC) • **Spaeth:** insertion A–E, angle °, iris contour (r/steep/q), TM pigment 0–4+ • **Indentation (9 mm 4-mirror):** **opens** = appositional (reversible with LPI); **stays shut** = synechial (**PAS**); **double-hump** = plateau iris.",
+        "cite": "2"
+      },
+      {
+        "id": "card-12-4",
+        "label": "Dilation, OCT & Imaging",
+        "front": "State the safe dilation rule for narrow angles, contrast AS-OCT vs. UBM, and outline baseline posterior-segment testing.",
+        "back": "**Dilation rule:** NEVER dilate Van Herick 1–2 without **dark-room gonioscopy** first (defer dilation until post-LPI if occludable) • **AS-OCT:** non-contact dark-room AOD500/TISA500/lens vault; **UBM:** penetrates iris to show plateau iris, cysts, aqueous misdirection • **Posterior workup:** stereo ONH (78D/90D), OCT (**pRNFL, GCIPL/GCC, BMO-MRW**), repeatable **SAP 24-2 (+10-2/24-2C)**.",
         "cite": "1"
       }
     ]
@@ -644,6 +704,36 @@
         ],
         "answer": 3,
         "explanation": "The senile sclerotic phenotype presents with shallow saucerization ('moth-eaten' rim), prominent circumferential β-PPA, and choroidal sclerosis in older patients with systemic vascular/ischemic disease.",
+        "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-13-1",
+        "label": "ONH 5-R Framework",
+        "front": "Name the '5 R's' of ONH evaluation, disc size categories, and red flags of non-glaucomatous cupping requiring MRI.",
+        "back": "**5 R's:** **1. Scleral Ring** (disc size: small **<1.5**, average **1.5–2.2**, large **>2.2 mm**), **2. Neuroretinal Rim**, **3. RNFL**, **4. Region of PPA**, **5. Retinal/disc hemorrhages** • **30–50% RGC loss** precedes SAP loss; **VCDR asymmetry >0.2** (<1% normals) is suspicious • **MRI red flags:** **rim pallor > cupping**, age <50 normal IOP, early VA/color loss, **vertical-meridian VF**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-13-2",
+        "label": "Cupping & Vascular Signs",
+        "front": "List the hallmark excavation and vascular remodeling signs of glaucomatous optic neuropathy, including APON and vessel signs.",
+        "back": "**Excavation:** ISNT violation, vertical elongation, **polar notching**, **APON** (acquired laminar pit — NTG & fixation-threatening scotomas), **undermined 'bean-pot'** walls vs. **saucerization**, **laminar dot sign** (slit pores) • **Vascular:** **Drance hemorrhage** (7–8 OD/4–5 OS, clears 4–12 wks), **bayoneting** (Z-kink), **nasalization**, **circumlinear baring**, **overpass vessels**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-13-3",
+        "label": "RNFL & PPA Zones",
+        "front": "Differentiate localized vs. diffuse RNFL defects under red-free light and contrast α-PPA, OCT true β-PPA, and γ-PPA.",
+        "back": "**Red-free RNFL:** **wedge/slit defect** (> arteriole width touching disc margin = highly specific) vs. **diffuse loss** (lost striations, crisp bare vessel walls) • **PPA:** **α-zone** (outer irregular RPE pigment, nonspecific) • **True β-zone (OCT: BM intact, no RPE/choriocapillaris)** → **glaucoma** (tracks rim notching) • **γ-zone (BM absent)** → **axial myopia**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-13-4",
+        "label": "Nicolela–Drance Phenotypes",
+        "front": "Compare the 4 Nicolela–Drance glaucomatous optic disc phenotypes by cup morphology and clinical/systemic correlations.",
+        "back": "**1. Focal ischemic:** localized polar notch/APON; **female, migraine/vasospasm, NTG, Drance hemorrhages, dense paracentral scotomas** • **2. Myopic:** tilted/oblique disc, temporal γ-PPA crescent; **younger myopic males** • **3. Senile sclerotic:** shallow sloping saucerized cup, **360° β-PPA**; **elderly vascular disease** • **4. Generalized enlargement:** steep concentric cup; **younger, higher untreated IOP**.",
         "cite": "4"
       }
     ]
@@ -875,6 +965,36 @@
         "explanation": "Heavily pigmented trabecular meshworks in pigmentary glaucoma absorb SLT energy avidly, creating a high risk of severe, sustained post-laser IOP spikes; clinicians therefore lower pulse energy (typically 0.3–0.5 mJ) and often treat 180° initially.",
         "cite": "1"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-14-1",
+        "label": "XFG Signs & Genetics",
+        "front": "State the genetics, laterality, and signature anterior-segment/gonioscopic findings of Exfoliative Glaucoma (XFG).",
+        "back": "**Most common secondary OAG** (>60–70 yrs; Nordic, Mediterranean, South Indian); *LOXL1* (**15q24.1**) systemic elastosis (asymmetric clinically, bilateral histologically) • **3-zone anterior lens target sign** (central disc, wiped clear zone, frosted peripheral band) • **Peripupillary 'moth-eaten' TIDs**, poor dilation • **Patchy uneven TM pigment** + **Sampaolesi line**; ~15–25% narrow angles.",
+        "cite": "1"
+      },
+      {
+        "id": "card-14-2",
+        "label": "XFG Course & Surgery",
+        "front": "Why does XFG progress faster than POAG, and what cataract surgical complications must be anticipated?",
+        "back": "**Course:** higher baseline IOP, wider diurnal swings, **>2× faster VF progression (EMGT)**, poorer long-term medical control, earlier trabeculectomy • **Zonular instability:** **phacodonesis**, iridodonesis, lens subluxation → high risk of **zonular dialysis, PCR, vitreous loss, post-op IOP spikes, and late in-the-bag IOL dislocation** (prepare pupil expanders & CTR).",
+        "cite": "2"
+      },
+      {
+        "id": "card-14-3",
+        "label": "PG Mechanism & Signs",
+        "front": "Explain Campbell's rubbing theory, Karickhoff's reverse pupillary block, and the classic slit-lamp/gonioscopic signs of Pigmentary Glaucoma.",
+        "back": "**Young (20–45 yr) myopic Caucasian males (2:1)**; AD **7q35–36**/*PMEL* • **Reverse pupillary block:** blinking acts as a 1-way valve (AC > PC), bowing peripheral iris **concavely** onto anterior **lens zonules** (Campbell rubbing) • **Signs:** **Krukenberg spindle**, **mid-peripheral radial spoke TIDs**, **Zentmayer ring (Scheie's line)**, **dense homogeneous 360° TM pigment** + Sampaolesi line.",
+        "cite": "4"
+      },
+      {
+        "id": "card-14-4",
+        "label": "PG Burn-Out & Risks",
+        "front": "State PDS-to-PG conversion rates, the 'burn-out' phase with reversal sign, retinal risk, and medical/laser caveats in PG.",
+        "back": "**Conversion:** **10% at 5 yrs**, **15% at 15 yrs**; **6–7% retinal detachment risk** (examine peripheral retina before pilocarpine!) • **'Burn-out' (5th–6th decade):** thicker lens lifts iris off zonules → inferior TM clears (**reversal sign**: superior TM darker than inferior), IOP eases • **LPI** flattens concavity in active PDS; **SLT** needs **low energy (0.3–0.5 mJ), 180°**.",
+        "cite": "2"
+      }
     ]
   },
   "basic-clinical_science-6": {
@@ -1075,6 +1195,36 @@
         "answer": 2,
         "explanation": "AGIS Analysis 7 showed that eyes maintaining IOP <18 mmHg at 100% of visits—corresponding to a mean IOP of 12.3 mmHg—had essentially zero mean change in visual field defect score over 6–8 years.",
         "cite": "5"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-15-1",
+        "label": "IOP Risk Paradigm",
+        "front": "State normal adult IOP statistics, the NTG/OHT overlap, and the UKGTS trial result proving IOP's continuous causal role.",
+        "back": "Mean IOP **15.5 ± 2.6 mmHg** (10–21 mmHg; **right-skewed** in older adults) • 5–10% >40 yrs have OHT without damage, while **30–50% of POAG** screens ≤21 mmHg (NTG) • **Continuous, dose-dependent sole modifiable risk factor** • **UKGTS:** latanoprost halved 24-month VF progression vs. placebo (**HR 0.44**, p=0.0003).",
+        "cite": "1"
+      },
+      {
+        "id": "card-15-2",
+        "label": "TLPG & OPP Cascade",
+        "front": "Write the TLPG and OPP formulas and explain how elevated IOP induces both mechanical and vascular RGC death.",
+        "back": "**TLPG = IOP − ICP (CSF pressure)** • **OPP = MAP − IOP** (**DOPP = DBP − IOP**) • Elevated TLPG bows the **lamina cribrosa** posteriorly (worst at superior/inferior poles), compressing axons and blocking **retrograde BDNF transport** → RGC apoptosis • Reduced OPP exceeds autoregulation → chronic ONH ischemia, oxidative stress, and excitotoxicity.",
+        "cite": "2"
+      },
+      {
+        "id": "card-15-3",
+        "label": "OHTS Conversion Proof",
+        "front": "What target IOP reduction and exact 5-year POAG conversion rates did OHTS establish in ocular hypertension?",
+        "back": "**OHTS (2002):** enrolled OHT eyes (IOP 24–32 mmHg) targeting **≥20% IOP reduction** (achieved mean **22.5%**) • **5-year POAG conversion** dropped from **9.5%** (observed) to **4.4%** (treated) — **HR 0.40 (>50% relative risk reduction)**, proving IOP lowering delays or prevents glaucoma onset.",
+        "cite": "3"
+      },
+      {
+        "id": "card-15-4",
+        "label": "Fluctuation & Targets",
+        "front": "Compare AGIS, CIGTS, and EMGT findings on IOP fluctuation and state severity-stratified initial target IOP reductions.",
+        "back": "**Diurnal swing:** normal **3–6** vs. glaucoma **>8–10 mmHg** • **AGIS:** inter-visit IOP SD **>3 mmHg** predicted VF loss; **CIGTS:** peak/range predicted medical loss; **EMGT:** mean IOP dominated • **Initial targets:** **Mild 20–30% ↓** (high teens), **Moderate 30–40% ↓** (mid-teens), **Severe ≥40% ↓** (**10–14 mmHg**), **NTG ≥30% ↓** • Reset lower on progression.",
+        "cite": "2"
       }
     ]
   },
@@ -1277,6 +1427,36 @@
         "explanation": "Corticosteroids reduce trabecular outflow facility (C) by inhibiting trabecular endothelial phagocytosis and promoting accumulation of extracellular matrix, glycosaminoglycans, and myocilin within the juxtacanalicular meshwork.",
         "cite": "1"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-16-1",
+        "label": "Circadian & Pregnancy",
+        "front": "How do diurnal variation, advancing age, and third-trimester pregnancy influence intraocular pressure?",
+        "back": "**Diurnal swing:** normal **2–6 mmHg** vs. glaucoma **>8–10 mmHg** • **Age:** rises subtly in Western cohorts (↓ C & ↓ U outweigh ~2.4%/decade ↓ F), stable/↓ in some East Asian cohorts • **Pregnancy (3rd trimester):** **10–20% IOP drop** via progesterone/relaxin increasing outflow facility • **Water-drinking test** spikes IOP when outflow facility is impaired.",
+        "cite": "3"
+      },
+      {
+        "id": "card-16-2",
+        "label": "Ocular & Lid Factors",
+        "front": "Quantify how accommodation, blinking/eyelid squeezing, thyroid orbitopathy, and anterior uveitis affect IOP.",
+        "back": "**Accommodation:** Brücke's muscle pulls scleral spur → ↑ C (**↓ 2–4 mmHg**) • **Gentle blink:** **+5–10 mmHg**; **forceful lid squeezing:** **+50–90 mmHg** • **Thyroid eye disease:** upgaze against fibrotic IR spikes IOP (**Braley's sign**) • **Uveitis:** dual effect — ciliary shutdown (↓ F → low IOP) vs. trabeculitis/debris/PAS/steroids (↓ C → high IOP).",
+        "cite": "2"
+      },
+      {
+        "id": "card-16-3",
+        "label": "Posture, Exercise & Diet",
+        "front": "Contrast the IOP effects of supine/inverted postures, Valsalva, aerobic vs. isometric exercise, caffeine, and alcohol.",
+        "back": "**Supine:** **+2–6 mmHg** (nocturnal peak via ↑ Pv despite ~45% ↓ F) • **Headstand** (*Sirsasana*) / **Trendelenburg:** **+20–40 mmHg** • **Valsalva / tight necktie / wind instruments:** **+30–45 mmHg** • **Aerobic exercise:** **↓ 2–6 mmHg** (lactic acidosis/osmolarity) vs. **isometric Valsalva ↑** • **Caffeine:** **+1–3 mmHg**; **Ethanol:** ↓ IOP (↓ ADH).",
+        "cite": "4"
+      },
+      {
+        "id": "card-16-4",
+        "label": "Anesthetics & EUA Rule",
+        "front": "Contrast general anesthetic effects on IOP and state the practical protocol for pediatric Examination Under Anesthesia (EUA).",
+        "back": "**Raise IOP (+6–10 mmHg):** **succinylcholine** (tonic EOM contraction) and **ketamine** (sympathetic/EOM tone) • **Lower IOP (dose-dependent):** **sevoflurane, isoflurane, halothane, propofol, barbiturates, opioids** (can mask congenital glaucoma!) • **EUA rule:** check IOP **immediately post-induction** (pre-intubation) via Perkins/iCare/Tono-Pen + corneal diameter/Haab striae/AL/disc.",
+        "cite": "4"
+      }
     ]
   },
   "basic-clinical_science-8": {
@@ -1470,6 +1650,36 @@
         "answer": 3,
         "explanation": "Unlike a naturally thick, compact cornea (which overestimates IOP), corneal stromal edema creates a soft, spongy cushion that reduces corneal bending resistance, causing GAT to read falsely LOW despite high pachymetry.",
         "cite": "3"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-17-1",
+        "label": "Modified Imbert–Fick",
+        "front": "Write Goldmann's modified Imbert–Fick equation and list the physical constants achieved at the 3.06 mm applanation diameter.",
+        "back": "**W + M = (P × A) + S** (W = force, M = tear capillary pull, S = corneal rigidity) • Calibrated for **~520 µm CCT** at **3.06 mm** diameter (**A = 7.354 mm²**) → **S ≈ M**, **0.1 g = 1 mmHg** (**1.0 g = 10 mmHg**), and aqueous displacement is only **~0.56 µL** (~2.5–3% IOP rise, independent of scleral rigidity).",
+        "cite": "1"
+      },
+      {
+        "id": "card-17-2",
+        "label": "Biprism & Mire Rules",
+        "front": "How does the Goldmann biprism work, what is the endpoint, and how do mire separation and fluorescein width affect readings?",
+        "back": "Apex-to-base **biprism** splits the fluorescein ring horizontally by **3.06 mm** (cobalt blue **~490→520 nm**, beam **60°**, start dial at **10 mmHg**) • Endpoint: **inner margins kiss** at pulse midpoint • **Separated mires** = dial too low (turn up); **overlapping** = too high (turn down) • **Excess fluorescein (>0.3 mm)** → **falsely HIGH**; **faint** → **falsely LOW**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-17-3",
+        "label": "GAT Errors & Cylinder",
+        "front": "Compare causes of falsely high vs. falsely low GAT readings and state both ways to correct >3.00 D regular astigmatism.",
+        "back": "**Falsely HIGH:** thick/scarred cornea, excess fluorescein, steep cornea (~1 mmHg/3 D), **ATR astigmatism** (horizontal prism), lid squeezing/Valsalva • **Falsely LOW:** thin/post-LASIK cornea, **corneal edema** (spongy despite thick CCT), faint fluorescein, **WTR astigmatism**, repeated applanation (**tonographic massage**) • **>3 D (~1 mmHg/4 D):** red **43° mark on minus axis** OR **average 0° & 90°**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-17-4",
+        "label": "Calibration & Disinfection",
+        "front": "State the monthly GAT calibration checkpoints/tolerance and the AAO/CDC prism disinfection protocol.",
+        "back": "**Calibration (monthly weight bar):** verify at **0, 20 (dial 2), and 60 mmHg (dial 6)**; arm must rock smoothly within **±0.5 to ±1.0 mmHg** • **Disinfection:** soak prism in **1:10 sodium hypochlorite (bleach, ~5000 ppm) for 5–10 min** (or 3% H₂O₂), rinse thoroughly & air-dry • Alcohol wipes fail vs. **adenovirus (EKC)** and damage cement; use **disposable prisms** in EKC/CJD.",
+        "cite": "1"
       }
     ]
   },
@@ -1701,6 +1911,36 @@
         "answer": 0,
         "explanation": "Corneal Hysteresis (CH) is the pressure difference between inward (P1) and outward (P2) applanation events (P1 − P2) reflecting viscoelastic energy absorption; lower CH is an established independent predictor of faster visual field loss in glaucoma.",
         "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-18-1",
+        "label": "Schiøtz & Rigidity Error",
+        "front": "Explain Schiøtz indentation mechanics, plunger weights, and how abnormal scleral rigidity confounds its readings.",
+        "back": "Supine patient; **5.5 g** plunger (add **7.5/10/15 g** if scale <4); 0.05 mm = 1 unit (0–20; higher = softer eye) via **Friedenwald tables** • Displaces **15–20 µL** → major **scleral rigidity (E ~0.0215)** error: **falsely LOW** in high myopia, thyroid orbitopathy, post-buckle, gas, edema; **falsely HIGH** in hyperopia/nanophthalmos/scars • Paired weights detect abnormal E.",
+        "cite": "2"
+      },
+      {
+        "id": "card-18-2",
+        "label": "Tono-Pen & Pneumatonometer",
+        "front": "Contrast Tono-Pen and Pneumatonometer physical principles, ideal corneal indications, and systematic biases vs. GAT.",
+        "back": "**Tono-Pen (MacKay–Marg, 1.02 mm tip):** sleeve absorbs corneal rigidity; averages 4–10 touches (**<5% reliability**); **overestimates low IOP (<10)** & **underestimates high IOP (>30)** • **Pneumatonometer (5 mm air-balanced silicone membrane):** traces **OPA**, reads **1–3 mmHg > GAT** • Both excel on **scarred, irregular, edematous corneas, PKP, and bandage CL**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-18-3",
+        "label": "iCare & NCT/ORA",
+        "front": "Compare iCare rebound, standard NCT, and ORA tonometry principles, practical roles, and signature artifacts.",
+        "back": "**iCare (26.5 mg magnetized probe, 4–8 mm gap):** faster deceleration = higher IOP (avg 6 readings); **no anesthetic**, ideal in **pediatrics**, supine (**ic200**) & home (**HOME**); sensitive to alignment/distance/CCT • **NCT (air-puff):** **highest CCT sensitivity**, pulse spikes (avg ≥3), fails in scars • **ORA:** bidirectional P1/P2 → **CH = P1 − P2** & **IOPcc**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-18-4",
+        "label": "Pascal DCT & Selection",
+        "front": "Explain Pascal DCT contour-matching mechanics and match the optimal tonometer to 4 common clinical scenarios.",
+        "back": "**Pascal DCT:** **concave 7-mm tip (10.5 mm radius)** with piezoresistive sensor (100 Hz, 5–8 s, **Q1–Q3 reliable**) neutralizes bending forces; reads **1–3 mmHg > GAT** + **OPA** • **Selection:** Routine clinic → **GAT** • Scar/edema/bandage CL → **Tono-Pen / Pneumatonometer** • Post-LASIK/extreme CCT → **DCT / ORA IOPcc** • Pediatric/EUA/home → **iCare / Perkins**.",
+        "cite": "3"
       }
     ]
   },
@@ -1947,6 +2187,36 @@
         "explanation": "In Spaeth notation, parentheses denote the apparent static iris insertion—here (B) behind Schwalbe's line—while the unparenthesized letter D denotes the true deep insertion into the ciliary body band revealed after dynamic indentation (indicating appositional closure).",
         "cite": "4"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-19-1",
+        "label": "TIR & Critical Angle",
+        "front": "Derive the critical angle causing total internal reflection (TIR) at the cornea and explain how direct vs. indirect goniolenses overcome it.",
+        "back": "**Snell's law:** **sin θc = n(air)/n(cornea) = 1.000/1.376 = 0.727 → θc ≈ 46.6°** • Angle rays strike cornea–air >46.6° and reflect back into the AC • Coupling a glass/PMMA lens (**n ≈ 1.49–1.52**) via tears (1.34) or methylcellulose (1.40) eliminates the tear–air interface: **direct** lenses refract rays straight; **indirect** lenses reflect via mirrors.",
+        "cite": "1"
+      },
+      {
+        "id": "card-19-2",
+        "label": "Gonioscope Classification",
+        "front": "Compare Direct, Goldmann Indirect, and 4-Mirror Indirect gonioscopes by models, mirror angles, diameter, coupling, and clinical use.",
+        "back": "**Direct (supine, erect, BSS/OVD):** **Koeppe** (16–22.5 mm), **Swan–Jacob/Barkan** (9.5 mm) → EUA, goniotomy, MIGS • **Goldmann (seated, inverted, ~12 mm, radius 7.38 mm, methylcellulose):** 3-mirror (**59° angle**, 67°, 73°), no indentation; ALT/SLT • **4-Mirror (Zeiss/Posner/Sussman; 9.0 mm, radius 7.85 mm, four 64° mirrors, tear film):** clinic & **Forbes indentation**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-19-3",
+        "label": "Dark-Room & Wedge",
+        "front": "State the dark-room static gonioscopy protocol, corneal wedge trick, over-the-hill viewing, and ISGEO occludable angle cutoff.",
+        "back": "**Protocol:** **dark room**, short (**1–2 mm**) narrow low beam kept **off pupil** (avoids miotic false opening), zero pressure (no Descemet folds) • **Corneal wedge:** 15–30° oblique beam converges epithelial + endothelial lines at **Schwalbe's line** • Inspect **inferior angle first**; look **toward mirror** over convex iris • **ISGEO PACS:** PTM unseen **≥180°**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-19-4",
+        "label": "Shaffer vs. Spaeth",
+        "front": "Compare Shaffer (0–4), Scheie (0–IV), and the 4-component Spaeth gonioscopic grading systems.",
+        "back": "**Shaffer / Scheie:** **Gr 4** (35–45°, CBB; Scheie 0), **Gr 3** (25–35°, SS; I), **Gr 2** (20°, TM; II — closure possible), **Gr 1** (10°, Schwalbe; III — probable), **Gr 0** (0°, closed; IV) • **Spaeth (4 items):** **1. Insertion** A (ant. Schwalbe), B (behind Schwalbe), C (SS), D (deep CBB), E (very deep) • **2. Angle (0–45°)** • **3. Contour** (r/b/q/p) • **4. TM pigment (0–4+)**.",
+        "cite": "4"
+      }
     ]
   },
   "basic-clinical_science-11": {
@@ -2152,6 +2422,36 @@
         ],
         "answer": 3,
         "explanation": "A cyclodialysis cleft detaches the ciliary body from the scleral spur, exposing bare white sclera and creating direct aqueous drainage into the suprachoroidal space, resulting in profound hypotony.",
+        "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-20-1",
+        "label": "Normal Angle & Vessels",
+        "front": "Describe normal gonioscopic quadrant asymmetry, CBB width variations, normal TM pigmentation, and normal angle vessels.",
+        "back": "**S–T–S–C** anterior-to-posterior; **inferior quadrant** is widest/most pigmented, **superior** is narrowest • **CBB width:** wider in myopes/aphakes, narrower in hyperopes • **TM pigment:** 0 in infants → 1–2+ in adults • **Normal vessels:** radial iris or circumferential CBB loops (major arterial circle); **rarely cross anterior to scleral spur onto TM**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-20-2",
+        "label": "Iris Processes vs. PAS",
+        "front": "Differentiate normal iris processes from PAS and match 4 PAS morphologies to their characteristic underlying diseases.",
+        "back": "**Iris processes (~30% normal):** fine, lacy, concave, end at SS/PTM, open on indentation • **PAS:** broad/conical opaque curtains bridging recess, **stay tethered on indentation** • **Etiologies:** broad superior → **PAC/PACG**; high **anterior to Schwalbe's line** → **ICE / PPMD**; tented inferior → **granulomatous uveitis (sarcoid) / post-ALT**; zipper closure → **NVG**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-20-3",
+        "label": "Schlemm Blood & Pigment",
+        "front": "Explain the mechanism and causes of blood in Schlemm's canal, and contrast PDS vs. PXF angle pigmentation.",
+        "back": "**Blood in Schlemm's canal (red band behind PTM):** occurs when **Pv > IOP** — most often **excessive goniolens rim pressure**, **ocular hypotony**, or **↑ Pv** (**CCF, dural AVF, Sturge–Weber, SVC syndrome, thyroid orbitopathy**) • **Pigment:** **PDS** = dense homogeneous 360° (*mascara line*) + concave iris; **PXF** = patchy uneven + dandruff flakes; both show **Sampaolesi line**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-20-4",
+        "label": "Traumatic Angle Lesions",
+        "front": "Contrast angle recession versus cyclodialysis cleft on anatomy, gonioscopy, IOP effect, and key fellow-eye/trauma pearls.",
+        "back": "**Angle recession:** tear between **longitudinal & circular ciliary muscle** → irregularly **widened CBB** & prominent SS → **elevated IOP** (early or decades later; highest risk **>180°**) • **Cyclodialysis cleft:** **ciliary body disinsertion from scleral spur** → deep bright **white cleft** → suprachoroidal **hypotony** • Always **compare CBB width with fellow eye**; check for **iridodialysis** & **trabecular dialysis**.",
         "cite": "4"
       }
     ]

@@ -232,6 +232,36 @@
         "explanation": "The Rotterdam Study established that first-degree relatives (siblings and offspring) of POAG patients have a 9.2-fold increased lifetime risk of developing POAG (22% vs. 2.3% in controls).",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-31-1",
+        "label": "Global Burden & Blindness",
+        "front": "What are Tham et al.'s global glaucoma prevalence and case projections (2013 to 2040), and why does PACG cause ~50% of glaucoma blindness?",
+        "back": "Global prevalence (40–80 yrs): **3.54%** (**POAG 3.05%**, **PACG 0.50%**) • Cases rise from **64.3M (2013)** → **76.0M (2020)** → **111.8M (2040)** • Although POAG accounts for ~74% of cases, **PACG confers a 2–3× higher risk of severe bilateral blindness** per affected individual, causing nearly half of global glaucoma blindness.",
+        "cite": "1"
+      },
+      {
+        "id": "card-31-2",
+        "label": "Indian Population Surveys",
+        "front": "Summarize India's glaucoma burden and key prevalence findings from APEDS, Chennai Glaucoma Study (CGS), ACES, and VES.",
+        "back": "India carries **~11.2–12 million** cases with **>90% POAG** and **>85% PACG undiagnosed** • **POAG:** 1.62% (rural CGS) and 1.7% (ACES) to 2.56–3.51% (urban APEDS/CGS) • **PACG:** 0.88% (CGS), 1.08% (APEDS); **70–80% chronic and asymptomatic** • **PXS:** 3.8–6.0% (≥40 yrs) • **PCG:** **1 in 3,300** live births in Southern India.",
+        "cite": "3"
+      },
+      {
+        "id": "card-31-3",
+        "label": "Exfoliation Epidemiology",
+        "front": "How do the global distribution, laterality, and glaucoma conversion risk of Pseudoexfoliation Syndrome (PXS) behave over time?",
+        "back": "PXS is the **commonest identifiable cause of secondary OAG (~25% of all OAG)**, reaching **10–25% (>60 yrs) in Scandinavia/Greece** (rare in Inuit) and linked to **LOXL1** (15q24) • Clinically unilateral in **40–50%**, with **15–40% converting to bilateral in 5–10 yrs** • Confers a **6–10× glaucoma risk** (**25–50% lifetime OHT/PXG**; ~15% at 10 yrs, ~44% at 15 yrs).",
+        "cite": "5"
+      },
+      {
+        "id": "card-31-4",
+        "label": "PACG Risk & ZAP Trial",
+        "front": "Which ethnic and biometric factors drive PACG, and what was the key 6-year outcome of the Zhongshan Angle Closure Prevention (ZAP) Trial?",
+        "back": "**>75–80% of PACG resides in Asia**; highest prevalence in **Inuit (2.5–5.0%)** • Risk factors: **female sex (2–4×)**, age, family history (3.5–6×), hyperopia, **AL <22–23 mm**, **ACD <2.5 mm**, high lens vault • **ZAP Trial:** 6-yr PACS progression was **7.97 vs. 4.19 per 1,000 eye-years** (controls vs. LPI; 47% RRR, **NNT = 44**), showing slow community PACS progression.",
+        "cite": "2"
+      }
     ]
   },
   "standard-2": {
@@ -479,6 +509,36 @@
         "explanation": "TBK1 directly phosphorylates optineurin during selective autophagy/mitophagy; both OPTN E50K mutations and TBK1 gene duplications disrupt autophagic clearance in RGCs, producing autosomal dominant normal-tension glaucoma.",
         "cite": "4"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-32-1",
+        "label": "PCG Genetic Loci",
+        "front": "Compare *CYP1B1*, *LTBP2*, and *TEK/ANGPT1* in Primary Congenital Glaucoma by inheritance, founder prevalence, and developmental mechanism.",
+        "back": "**CYP1B1 (GLC3A, 2p21, AR):** P450 enzyme catalyzing **retinoic acid synthesis** for neural crest angle cleavage; causes **40–45% Indian PCG (R368H)**, 70–85% Saudi (G61E), ~100% Slovakian Roma (E387K) • **LTBP2 (GLC3D, 14q24.3, AR):** ECM protein; PCG with **megalocornea, microspherophakia & ectopia lentis** • **TEK (9p21) / ANGPT1 (8q23, AD):** TIE2 signaling essential for **Schlemm's canal vasculogenesis**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-32-2",
+        "label": "Axenfeld-Rieger Genetics",
+        "front": "How do *PITX2* and *FOXC1* (*FKHL7*) mutations differ in locus, dosage sensitivity, and systemic phenotype in Axenfeld–Rieger Syndrome (ARS)?",
+        "back": "Both are **AD** neural crest transcription factors carrying **~50% glaucoma risk** with posterior embryotoxon and corectopia • **PITX2 (4q25):** Classic systemic Rieger anomalies — **dental hypoplasia (microdontia/oligodontia)** and **redundant periumbilical skin** • **FOXC1 / FKHL7 (6p25):** Sensitive to **both deletions AND duplications**; mostly **isolated ocular ARS** (earlier/more aggressive glaucoma), cardiac defects, hearing loss, and Dandy–Walker malformation.",
+        "cite": "3"
+      },
+      {
+        "id": "card-32-3",
+        "label": "Lowe & Nail-Patella",
+        "front": "Contrast the gene, inheritance, protein function, and pathognomonic ocular/systemic hallmarks of Lowe Syndrome versus Nail–Patella Syndrome.",
+        "back": "**Lowe Syndrome:** *OCRL1* (**Xq25–q26, XLR**; **PIP₂ 5-phosphatase**); **100% congenital cataracts**, **50–60% infantile glaucoma**, hypotonia, **renal Fanconi syndrome**; female carriers show **punctate cortical snowflake lens opacities** • **Nail–Patella:** *LMX1B* (**9q33.3, AD**; LIM-homeodomain TF); **33–40% OAG/OHT**, **Lester's iris sign**, nail/patellar dysplasia, **posterior iliac horns**, and nephropathy.",
+        "cite": "3"
+      },
+      {
+        "id": "card-32-4",
+        "label": "MYOC & POAG GWAS Loci",
+        "front": "State the classic *MYOC* genotype–phenotype correlations and classify key complex POAG GWAS loci by optic nerve versus IOP/outflow pathways.",
+        "back": "**MYOC (GLC1A, 1q24, AD; 10–33% JOAG, 3–4% POAG):** **Q368X** causes later adult POAG (~50–60 yrs); **P370L & Y437H** cause severe JOAG (IOP >40); null alleles do NOT cause glaucoma • **ONH/RGC GWAS:** *CDKN2B-AS1* (9p21.3, strongest POAG/NTG locus), *SIX1/SIX6*, *ATOH7*, *TXNRD2* • **IOP/Outflow:** *TMCO1*, *GAS7*, *CAV1/CAV2*, *ABCA1*; *APBB2* (African ancestry); top-decile PRS gives **10–15× POAG risk**.",
+        "cite": "4"
+      }
     ]
   },
   "standard-3": {
@@ -702,6 +762,36 @@
         ],
         "answer": 0,
         "explanation": "Because JOAG develops after globe collagen matures (~4–35 years), it lacks corneal enlargement/buphthalmos or Haab striae, instead presenting silently with very high IOP (often AD MYOC-linked), an open mature angle, and irreversible optic nerve cupping.",
+        "cite": "1"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-33-1",
+        "label": "CGRN Diagnostic Criteria",
+        "front": "List the CGRN (2013) diagnostic criteria for childhood glaucoma and the horizontal corneal diameter cutoffs defining infantile megalocornea.",
+        "back": "Requires **≥2 CGRN criteria:** (1) **IOP >21 mmHg**, (2) progressive cupping, rim thinning, or **CDR asymmetry ≥0.2**, (3) corneal enlargement, **Haab striae**, or edema, (4) progressive **myopia/axial growth**, or (5) reproducible glaucomatous VF defect • **Abnormal horizontal corneal diameter:** **≥11 mm** (newborn; normal 9.5–10.5 mm), **>12 mm** (<1 yr), **>13 mm** (any age), or **>1 mm inter-eye asymmetry**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-33-2",
+        "label": "PCG Signs & Gonioscopy",
+        "front": "Describe the classic symptom triad, Hoskins gonioscopic hallmarks, and unique optic disc behavior of Primary Infantile Glaucoma (PCG).",
+        "back": "**Symptom triad:** **epiphora**, **photophobia**, and **blepharospasm** (plus corneal haze/buphthalmos in <3 yrs elastic globes) • **Koeppe gonioscopy:** isolated **trabeculodysgenesis** with **flat or concave ('wrap-around') iris insertion**, glistening compressed trabecular beams (*Barkan's membrane*), obscured scleral spur, and looping vessels (**Loch Ness monster sign**) • **Optic disc:** concentric cupping (**CDR >0.3 abnormal in infants**) that is **partially REVERSIBLE** post-surgery.",
+        "cite": "2"
+      },
+      {
+        "id": "card-33-3",
+        "label": "Infantile Cornea Differentials",
+        "front": "Expand the STUMPED mnemonic for infantile corneal clouding and explain how to exclude CNLDO and X-linked simple megalocornea.",
+        "back": "**STUMPED:** **S**clerocornea • **T**ears in Descemet (obstetric forceps — **vertical/oblique** vs. horizontal/concentric Haab striae) • **U**lcer/HSV • **M**etabolic (MPS, cystinosis) • **P**eters anomaly • **E**ndothelial dystrophy (CHED) • **D**ermoid • **CNLDO** causes mucopurulent discharge with normal cornea/IOP; **X-linked simple megalocornea** exhibits a clear cornea, normal IOP, and normal CDR.",
+        "cite": "3"
+      },
+      {
+        "id": "card-33-4",
+        "label": "Pediatric Safety & Surgery",
+        "front": "State the critical pediatric antiglaucoma medication contraindication and contrast first-line management of PCG versus JOAG.",
+        "back": "**Safety rule:** **Brimonidine (α2-agonist) is strictly contraindicated in children <2 years** (avoided up to age 6) due to CNS depression, apnea, bradycardia, and hypotension • **PCG:** **Primary angle surgery** (goniotomy if clear cornea; trabeculotomy or **combined trabeculotomy–trabeculectomy + MMC** in hazy advanced Indian PCG) + amblyopia therapy • **JOAG:** Medical therapy → early **trabeculectomy + MMC** (IOP 30–50+ mmHg, poor monotherapy response).",
         "cite": "1"
       }
     ]
@@ -931,6 +1021,36 @@
         ],
         "answer": 0,
         "explanation": "Schwartz–Matsuo syndrome is a secondary open-angle glaucoma associated with rhegmatogenous retinal detachment (often an oral dialysis) in which shed photoreceptor outer segments migrate into the anterior chamber and mechanically block the trabecular meshwork.",
+        "cite": "2"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-34-1",
+        "label": "Goldmann SOAG Levels",
+        "front": "Classify Secondary Open-Angle Glaucomas (SOAG) by anatomical level in the Goldmann equation and name classic etiologies at each level.",
+        "back": "**IOP = (F − U)/C + Pv** • **1. Pre-trabecular (↓C):** membrane over open TM — early NVG, early ICE, PPCD, epithelial/fibrous downgrowth • **2. Trabecular (↓C, commonest):** clogging (PXM, pigment, lens protein/cortex, leukocytes, ghost/sickled RBCs, OVD, silicone oil) or TM alteration (steroids, angle recession, alkali, radiation) • **3. Post-trabecular (↑Pv):** elevated EVP (CCF, dural AVF, Sturge–Weber, TAO, Radius–Maumenee).",
+        "cite": "1"
+      },
+      {
+        "id": "card-34-2",
+        "label": "Hemorrhagic & Lens SOAGs",
+        "front": "Differentiate the four erythrocyte-related SOAGs and the three lens-induced open-angle glaucomas by timing and obstructing material.",
+        "back": "**Erythrocyte SOAGs:** **Hyphema** (fresh RBCs/fibrin; catastrophic in **sickle cell trait/disease** — treat aggressively if IOP >24 mmHg, avoid CAIs/hyperosmotics), **Ghost-cell** (rigid khaki erythroclasts **1–3 wks** post-VH via disrupted hyaloid), **Hemolytic** (Hb-laden macrophages), **Hemosiderotic** (iron toxicity) • **Lens SOAGs:** **Phacolytic** (intact hypermature capsule), **Lens-particle** (ruptured capsule cortex), **Phacoantigenic** (granulomatous reaction).",
+        "cite": "2"
+      },
+      {
+        "id": "card-34-3",
+        "label": "Steroid Routes & Risk Factors",
+        "front": "Rank corticosteroid routes by ocular hypertension risk and recall the key patient risk factors for steroid-induced SOAG.",
+        "back": "**Route risk:** **Intravitreal implants/injections** (fluocinolone 0.59 mg **~70%**, triamcinolone **30–50%**, Ozurdex **15–30%**) & sub-Tenon depots > potent **topical** (dexamethasone/prednisolone > fluorometholone/loteprednol) > systemic/inhaled/periorbital (onset **2–6 wks**) • **Patient risks:** **POAG / family history** (~90% respond vs. ~30–35% general; ~5% high responders >15 mmHg), **high myopia**, **age <10 yrs**, **Type 1 DM**, and connective tissue disease.",
+        "cite": "4"
+      },
+      {
+        "id": "card-34-4",
+        "label": "Trauma & EVP Clinical Traps",
+        "front": "What circumferential extent of angle recession predicts late glaucoma, what fellow-eye clue exists, and what must be ruled out in Radius–Maumenee syndrome?",
+        "back": "**Angle recession >180° (especially >240°)** confers a **6–10% lifetime glaucoma risk** (peaking 1–10+ yrs later); **~50% of uninjured fellow eyes** exhibit POAG or steroid-responder traits • **Post-trabecular EVP rule:** Every **1 mmHg rise in Pv raises IOP ~1 mmHg**; **Radius–Maumenee syndrome** (idiopathic elevated EVP + blood in Schlemm's canal) is diagnosed ONLY after **neuroimaging excludes intracranial AV fistulas**.",
         "cite": "2"
       }
     ]
@@ -1277,6 +1397,36 @@
         "explanation": "Glaucomatocyclitic crisis (Posner–Schlossman syndrome) classically presents with recurrent unilateral markedly elevated IOP disproportionate to minimal symptoms/inflammation, few fine discrete central KPs, and an open synechiae-free angle, and is strongly linked to aqueous CMV infection.",
         "cite": "3"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-35-1",
+        "label": "PXG vs Pigmentary Glaucoma",
+        "front": "Contrast the pathophysiology, iris transillumination pattern, and gonioscopic pigmentation of Exfoliative Glaucoma (PXG) versus Pigmentary Glaucoma (PG).",
+        "back": "**PXG (>60 yrs, LOXL1):** Fibrillar PXM + pigment clog JCT; **3-zone bull's-eye anterior lens target**, **peripupillary moth-eaten TIDs** (ruff loss), wavy **Sampaolesi line**, phacodonesis, wide IOP swings • **PG (20–40 yrs, myopic males):** **Reverse pupillary block** (Campbell/Karickhoff) → **concave posterior iris** chafes anterior zonules → **Krukenberg spindle**, **mid-peripheral radial spoke-like TIDs**, dense **homogeneous 360° TM pigment**, Scheie/Zentmayer line, exercise spikes.",
+        "cite": "1"
+      },
+      {
+        "id": "card-35-2",
+        "label": "Phacolytic vs Lens-Particle",
+        "front": "How do Phacolytic Glaucoma and Lens-Particle Glaucoma differ in lens capsule status, slit-lamp findings, and definitive management?",
+        "back": "**Phacolytic:** **Intact capsule** of a hypermature/Morgagnian cataract leaks soluble proteins → macrophages clog open TM; heavy flare with **iridescent polychromatic floating particles** (pseudohypopyon) **without KPs** → urgent **cataract extraction** after IOP control • **Lens-Particle:** **Disrupted capsule** (post-surgery/trauma/YAG) releases **fluffy white cortical fragments** into AC/inferior recess with marked inflammation → steroids + suppressants, or **surgical washout**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-35-3",
+        "label": "NVG Stages & ICE Variants",
+        "front": "Outline the three clinicopathologic stages of Neovascular Glaucoma (NVG) and the three overlapping clinical variants of ICE Syndrome.",
+        "back": "**NVG (CRVO '90-day', PDR, OIS):** (1) Rubeosis (NVI/NVA crossing **scleral spur**), normal IOP → (2) **Open-angle** (clear fibrovascular sheet over TM) → (3) **Synechial ACG** (zippers **360° PAS** + ectropion uveae) • **ICE (unilateral 20–50 yr females, beaten-bronze cornea, high PAS ant. to SL):** **Chandler (~50%)** — corneal edema; **Progressive Iris Atrophy** — corectopia, **stretch & melt holes**; **Cogan–Reese** — pedunculated pigmented **iris nodules**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-35-4",
+        "label": "Bedside Recognition Traps",
+        "front": "Recall the signature diagnostic tests or pathophysiologic hallmarks of epithelial downgrowth, angle recession, steroid glaucoma, and plateau iris.",
+        "back": "**Epithelial downgrowth:** Scalloped retrocorneal sheet; diagnostic **argon laser photocoagulation of iris turns chalky white** • **Angle recession:** Tear between **longitudinal & circular ciliary fibers** → widened CBB vs. fellow eye (**pilocarpine paradoxically raises IOP**) • **Steroid TM changes:** GAG/ECM buildup, **cross-linked actin networks (CLANs)**, ↓ phagocytosis, ↑ *MYOC* • **Plateau iris:** Deep central AC, flat iris, **double-hump sign** despite patent LPI.",
+        "cite": "2"
+      }
     ]
   },
   "standard-6": {
@@ -1547,6 +1697,36 @@
         "explanation": "Posner–Schlossman syndrome (glaucomatocyclitic crisis) classically presents in young adults with unilateral markedly elevated IOP (40–60 mmHg), open angle, minimal external inflammation, and disproportionately mild AC reaction with fine stellate KPs.",
         "cite": "3"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-36-1",
+        "label": "Miotics Contraindication Rule",
+        "front": "Name the four complex secondary glaucomas where pilocarpine/miotics are strictly contraindicated or harmful, and state why.",
+        "back": "**1. Aqueous misdirection:** Worsens anterior ciliary rotation and ciliolenticular block • **2. Uveitic & Neovascular glaucoma:** Aggravates blood–aqueous barrier breakdown, pain, and synechiae • **3. Angle recession glaucoma:** **Paradoxically elevates IOP** by abolishing residual uveoscleral outflow • **4. Lens subluxation / phacomorphic forward shift:** Relaxes zonules and shifts the lens–iris diaphragm further anteriorly.",
+        "cite": "4"
+      },
+      {
+        "id": "card-36-2",
+        "label": "NVG & ICE Surgical Strategy",
+        "front": "State the mandatory treatment sequence in Neovascular Glaucoma (NVG) and explain why GDDs outperform trabeculectomy in NVG and ICE syndrome.",
+        "back": "**NVG dual imperative:** (1) Eradicate angiogenic drive FIRST via urgent **intravitreal anti-VEGF** (regresses NVI/NVA in **48–72 hrs**) + definitive **PRP**; (2) Control IOP/pain with aqueous suppressants, **atropine 1%**, and steroids (avoid pilocarpine/PGAs acutely); (3) **GDD** (lower failure in synechial angles) or TSCPC if poor vision • **ICE syndrome:** LPI/LTP ineffective; trabeculectomy fails late from endothelial membrane over ostium → **GDD (sulcus/pars plana tube)** + DMEK/DSAEK.",
+        "cite": "2"
+      },
+      {
+        "id": "card-36-3",
+        "label": "PDS & PXG Procedural Pearls",
+        "front": "What key laser and cataract surgical precautions are required when managing Pigmentary Glaucoma (PDS) and Pseudoexfoliation Glaucoma (PXG)?",
+        "back": "**Pigmentary Glaucoma (PDS):** During **SLT**, strictly **lower laser energy and treat 180° initially** to prevent catastrophic post-laser IOP spikes in heavily pigmented TM; avoid pilocarpine in young myopes (accommodative spasm, RD risk) • **PXG:** Anticipate poor dilation and **zonular fragility/phacodonesis** during phacoemulsification — prepare **capsular tension rings (CTRs)** and iris hooks; MMC trabeculectomy achieves durable low IOP.",
+        "cite": "2"
+      },
+      {
+        "id": "card-36-4",
+        "label": "Post-Op Secondary Entities",
+        "front": "Summarize recognition and targeted management of four postoperative secondary glaucomas: retained OVD, ghost-cell, silicone oil, and UGH syndrome.",
+        "back": "**Retained OVD:** Commonest early post-phaco spike (**peaks 4–8 hrs**); aqueous suppressants + controlled paracentesis if IOP >35–40 mmHg • **Ghost-cell:** Rigid khaki RBCs **≥2 wks** post-VH via disrupted hyaloid → meds or AC washout + PPV • **Silicone oil:** Prevent early pupillary block via **inferior Ando PI**; late emulsified droplets form superior **inverted pseudohypopyon** • **UGH syndrome:** Sulcus/AC-IOL haptic chafing → **IOL repositioning or exchange**.",
+        "cite": "2"
+      }
     ]
   },
   "standard-7": {
@@ -1742,6 +1922,36 @@
         "explanation": "The Baltimore Eye Survey found that eyes with DOPP < 30 mmHg carried a 6-fold higher prevalence of POAG compared with eyes having DOPP > 50 mmHg, highlighting vascular perfusion vulnerability.",
         "cite": "3"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-37-1",
+        "label": "Circadian IOP Physiology",
+        "front": "Compare normal versus glaucomatous 24-hour IOP fluctuation and explain why habitual-position IOP peaks nocturnally despite reduced sleep aqueous flow.",
+        "back": "**24-hr IOP fluctuation:** Normal **3–6 mmHg** (<5 mmHg) vs. untreated POAG/PXG/PG **8–15+ mmHg** • Although aqueous production drops **~45–50% during sleep**, sleep-lab studies (Liu et al.) prove **true IOP peaks nocturnally/supine (2:00–6:00 AM)** due to **supine elevation of episcleral venous pressure (EVP)**, choroidal vascular engorgement, and increased nocturnal outflow resistance • **Up to two-thirds** of true 24-hr peaks occur outside clinic hours.",
+        "cite": "1"
+      },
+      {
+        "id": "card-37-2",
+        "label": "OPP Formulas & Risk Cutoffs",
+        "front": "Write the formulas for MAP, seated MOPP, DOPP, and SOPP, and recall the Barbados Eye Study and nocturnal dipping risk thresholds.",
+        "back": "**MAP = DBP + 1/3(SBP − DBP)** • **Seated MOPP = (2/3 × MAP) − IOP** (2/3 corrects brachial-to-ophthalmic hydrostatic drop) • **DOPP = DBP − IOP** • **SOPP = SBP − IOP** • **Barbados Eye Study (9-yr):** **MOPP ≤40 mmHg** and **DOPP ≤53 mmHg** increased incident OAG **2–3×** (EMGT: SOPP <125 mmHg) • **Extreme nocturnal BP dippers (>20% sleep drop)** suffer severe nocturnal OPP collapse and accelerated NTG/POAG progression.",
+        "cite": "3"
+      },
+      {
+        "id": "card-37-3",
+        "label": "Water-Drinking & Phasing Tools",
+        "front": "How is the Water-Drinking Test (WDT) performed and interpreted, and what tools detect hidden out-of-office IOP or perfusion instability?",
+        "back": "**Water-Drinking Test (WDT):** Ingest **800–1000 mL** water within **5 minutes** and measure IOP every **15 min for 45–60 min**; stresses trabecular outflow reserve, and **WDT peak strongly correlates with true 24-hr diurnal peak IOP** • **Other tools:** Office phasing (q2h 8 AM–6 PM), **iCare HOME** rebound self-tonometry, **Triggerfish CLS** (24-hr mV corneoscleral rhythm), and **24-hr Ambulatory Blood Pressure Monitoring (ABPM)** to detect nocturnal over-dipping.",
+        "cite": "2"
+      },
+      {
+        "id": "card-37-4",
+        "label": "24-Hr Drug & Lifestyle Strategy",
+        "front": "Compare 24-hour IOP flattening and OPP effects across PGAs, topical CAIs, ROCK inhibitors, trabeculectomy, and chronotherapy/postural measures.",
+        "back": "**PGAs:** Flat **24-hr lowering** + raises MOPP (1st-line) • **Topical CAIs:** Retain strong **nocturnal IOP efficacy** + enhance ONH blood flow (ideal in NTG) • **Netarsudil:** Lowers **EVP**, blunting supine nocturnal surge • **Trabeculectomy:** Achieves **greatest 24-hr IOP flattening** and MOPP gain • **Chronotherapy & posture:** Shift evening BP meds to **morning** in over-dippers; **30° head-of-bed wedge** lowers supine IOP **~2–3 mmHg**; treat OSA and avoid inverted yoga/tight ties.",
+        "cite": "4"
+      }
     ]
   },
   "standard-8": {
@@ -1926,6 +2136,36 @@
         "answer": 0,
         "explanation": "Histomorphometric studies demonstrate that the superior and inferior poles of the lamina cribrosa contain larger pores and thinner connective tissue septa than the nasal and temporal quadrants, rendering arcuate axons biomechanically most vulnerable.",
         "cite": "1"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-38-1",
+        "label": "ONH Anatomy & Spaeth DDLS",
+        "front": "State the dimensions and vascular watershed of the optic nerve head, and explain how the Spaeth DDLS solves the disc-size pitfall in grading CDR.",
+        "back": "**ONH size:** ~**1.5 mm horizontal × 1.75 mm vertical** • **Blood supply:** Superficial RNFL by CRA capillaries; **prelaminar & laminar zones by short posterior ciliary arteries (circle of Zinn–Haller)** • **Disc-size pitfall:** Macrodiscs (>2.0 mm) have physiologic CDR 0.7–0.8, whereas microdiscs (<1.5 mm) can have advanced glaucoma at CDR 0.5 • **Spaeth DDLS** grades the **narrowest rim-to-disc ratio adjusted for vertical disc size** across 10 stages.",
+        "cite": "2"
+      },
+      {
+        "id": "card-38-2",
+        "label": "Classic Glaucomatous Signs",
+        "front": "Define Drance hemorrhage, acquired optic disc pit, baring of circumlinear vessels, and gamma-zone versus beta-zone PPA.",
+        "back": "**Drance hemorrhage:** Superficial RNFL splinter heme crossing disc margin (commonest inferotemporally; clears **6–12 wks**; predicts progression in OHTS/EMGT/CNTGS) • **Acquired disc pit:** Focal full-thickness laminar excavation tied to **NTG** and paracentral scotomas • **Baring of circumlinear vessel:** Gap between receding rim and rim-hugging vessel • **Gamma-zone PPA:** **Lacks Bruch's membrane** (axial myopia) vs. glaucomatous **beta-zone PPA** (intact Bruch's membrane, no RPE).",
+        "cite": "2"
+      },
+      {
+        "id": "card-38-3",
+        "label": "Greenfield Neuroimaging Rule",
+        "front": "List Greenfield et al.'s four validated clinical predictors mandating contrast MRI neuroimaging in a patient referred for suspected normal-tension glaucoma.",
+        "back": "Order **MRI brain & orbits with gadolinium** when ANY of Greenfield's 4 red flags exist: **(1) Age <50 years**, **(2) Visual acuity <20/40**, **(3) Vertically aligned visual field defects** (respecting the vertical meridian), or **(4) Neuroretinal rim pallor exceeding cupping** — alongside rapid unilateral loss, early red–green dyschromatopsia, or disproportionate RAPD.",
+        "cite": "4"
+      },
+      {
+        "id": "card-38-4",
+        "label": "Atypical Cupping Exceptions",
+        "front": "Which two non-glaucomatous optic neuropathies classically cause BOTH deep cupping AND rim pallor, and how does tilted disc syndrome differ from chiasmal compression?",
+        "back": "Glaucoma shows **cupping > pallor** (pink residual rim) whereas non-glaucomatous neuropathies show **pallor > cupping** — EXCEPT **arteritic AION (giant cell arteritis)** and **methanol toxicity** (plus compressive lesions), which can produce **both deep cupping and rim pallor** • **Tilted disc syndrome** (inferonasal staphyloma) causes superotemporal VF defects that **cross the vertical midline** and **improve with added minus sphere**.",
+        "cite": "3"
       }
     ]
   },
@@ -2144,6 +2384,36 @@
         "explanation": "Lens vault (LV) measures how far the anterior pole of the crystalline lens protrudes anterior to the horizontal scleral-spur-to-scleral-spur line (ACW); increased LV strongly predicts primary angle closure.",
         "cite": "4"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-39-1",
+        "label": "UBM Physics & Clinical Niche",
+        "front": "State the frequency, resolution, penetration depth, posture, and unique diagnostic niche of Ultrasound Biomicroscopy (UBM) in glaucoma.",
+        "back": "**Frequency:** **35–50 MHz** (typically 50 MHz) • **Resolution & depth:** **~25 µm axial**, ~50 µm lateral, **4–5 mm penetration** • **Technique:** Supine contact immersion (eyecup or ClearScan) in standardized dark & light • **Unique gold standard:** Penetrates **opaque pigmented iris epithelium and sclera**, making UBM the **ONLY tool imaging the ciliary body, ciliary sulcus, zonules, and supraciliary space** (plateau iris, cysts, malignant glaucoma, topiramate effusions, cyclodialysis).",
+        "cite": "1"
+      },
+      {
+        "id": "card-39-2",
+        "label": "AS-OCT Platforms & Limits",
+        "front": "Compare 1310 nm Swept-Source/Time-Domain AS-OCT versus 840 nm Spectral-Domain AS-OCT and Pentacam Scheimpflug imaging.",
+        "back": "**1310 nm SS-OCT (CASIA2/ANTERION):** **50,000 A-scans/s**, **~10 µm axial resolution**, 16 mm angle-to-angle width, rapid **360° 3D ITC maps** (TD Visante: 2,000/s, ~18 µm) • **840 nm SD-OCT:** Ultra-high **3–5 µm resolution** resolving **Schwalbe's line, TM & Schlemm's canal**, but narrower scan/scleral scatter • **AS-OCT limit:** Seated non-contact dark-room imaging, but **blocked by iris pigment epithelium** • **Pentacam (475 nm):** TIR prevents direct scleral spur viewing.",
+        "cite": "3"
+      },
+      {
+        "id": "card-39-3",
+        "label": "Quantitative Angle Cutoffs",
+        "front": "Define AOD500/750 and TISA500/750 on AS-OCT and recall the high-risk angle-closure cutoffs for AOD500, AOD750, and Lens Vault (LV).",
+        "back": "Anchored to the **Scleral Spur (SS)** • **AOD500 / AOD750:** Line perpendicular to TM/endothelium **500 µm (or 750 µm) anterior to SS** to anterior iris; **AOD750** has highest sensitivity for gonioscopic closure (**cutoffs: AOD500 <~0.19 mm; AOD750 <~0.24 mm**) • **TISA500/750:** Trapezoidal filtration area excluding non-filtering recess posterior to SS • **High-risk Lens Vault (LV):** **>600–700 µm** (independent PAC predictor).",
+        "cite": "4"
+      },
+      {
+        "id": "card-39-4",
+        "label": "UBM Posterior Chamber Metrics",
+        "front": "Define Pavlin's three UBM-exclusive posterior chamber parameters (TCPD, ICP, ILCD) and state how they behave in plateau iris versus pupillary block.",
+        "back": "**TCPD (Trabecular–Ciliary Process Distance):** From 500 µm anterior to SS through iris to ciliary process — **shortened in plateau iris** • **ICP (Iris–Ciliary Process Distance):** Distance between posterior iris and ciliary process — **approaches zero in plateau iris** (absent ciliary sulcus) • **ILCD (Iris–Lens Contact Distance):** Extent of iris–anterior lens contact — **increased in pupillary block** and **decreases after LPI**.",
+        "cite": "2"
+      }
     ]
   },
   "standard-10": {
@@ -2357,6 +2627,36 @@
         "answer": 1,
         "explanation": "Even after complete RGC axonal loss, residual glial tissue and retinal blood vessels prevent cpRNFL thickness on OCT from dropping below an asymptotic floor (~45–55 µm); macular GCIPL and central 10-2 visual fields remain more sensitive for monitoring advanced progression.",
         "cite": "1"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-40-1",
+        "label": "OCT Generations & Optics",
+        "front": "Compare Time-Domain, Spectral-Domain, and Swept-Source OCT by optical mechanism, wavelength, scan speed, and axial resolution.",
+        "back": "All apply **low-coherence (Michelson) interferometry** • **TD-OCT:** Oscillating reference mirror, ~840 nm, **~400 A-scans/s**, **~10 µm** resolution • **SD-OCT (Cirrus/Spectralis):** Stationary mirror + spectrometer + **inverse Fourier transform**, **~840 nm**, **27,000–100,000 A-scans/s**, **3–5 µm** axial resolution (EDI-OCT images deep lamina cribrosa/choroid) • **SS-OCT:** Tunable **~1050 nm** laser, **100,000–200,000+ A-scans/s**, wide-field disc+macula cubes & deeper penetration.",
+        "cite": "1"
+      },
+      {
+        "id": "card-40-2",
+        "label": "cpRNFL, BMO-MRW & GCIPL",
+        "front": "Define circumpapillary RNFL, BMO-MRW, and macular GCIPL/GCC on OCT, and explain why macular GCIPL excels in high myopia and advanced glaucoma.",
+        "back": "**cpRNFL:** Measured on a **3.4–3.46 mm circle** (normal **~90–105 µm**, aging −0.2 to −0.5 µm/yr; **TSNIT double-hump**); inferotemporal/superotemporal thinning is most sensitive early • **BMO-MRW:** Shortest distance from **Bruch's membrane opening to ILM** over 360° (eliminates tilted/myopic disc-margin ambiguity) • **Macular GCIPL/GCC:** Captures **~50% of RGCs**, avoids myopic PPA/tilt artifacts, and **tracks progression after cpRNFL hits its ~45–55 µm floor**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-40-3",
+        "label": "HRT Optical & Analysis Tools",
+        "front": "Describe the optical principle of the Heidelberg Retina Tomograph (HRT) and distinguish MRA, GPS, Cup Shape Measure (CSM), and TCA.",
+        "back": "**Principle:** **670 nm** confocal scanning laser ophthalmoscopy with pinhole rejecting scatter across **32–64 Z-sections** (axial resolution **~300 µm**, surface topography only) • **MRA:** Compares disc-size-adjusted rim area (manual Elschnig contour line; WNL / Borderline 95–99.9% / ONL >99.9%) • **GPS:** Automated **contour-independent** 3D model • **CSM:** Normally negative; shifts toward 0/positive with glaucomatous sloping • **TCA:** Event-based 4×4 superpixel height depression.",
+        "cite": "3"
+      },
+      {
+        "id": "card-40-4",
+        "label": "GDx Birefringence, ECC & NFI",
+        "front": "What physical property does GDx measure, how does GDx ECC improve on VCC, and what are the diagnostic Nerve Fiber Indicator (NFI) cutoffs?",
+        "back": "**Principle:** **780–785 nm** polarimetry measures **phase retardation** from **form birefringence of parallel RGC axonal microtubules** (~0.67 nm/µm RNFL; detects early microtubule loss) • **ECC vs. VCC:** ECC adds a known bias retarder (later subtracted) to boost SNR and suppress **atypical birefringence patterns (ABPs)** in myopes/light fundi • **NFI (0–100 SVM):** **<30 normal**, **31–50 borderline**, **>50 likely glaucoma** (confounded by LASIK/scars/maculopathy).",
+        "cite": "4"
       }
     ]
   }

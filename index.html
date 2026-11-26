@@ -1251,6 +1251,213 @@
       margin-top: 0.25rem;
     }
 
+    /* Revision Mode Switcher & Flashcards */
+    .rev-mode-bar {
+      display: inline-flex;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 4px;
+      gap: 4px;
+      align-self: flex-start;
+      box-shadow: var(--shadow);
+    }
+
+    .rev-mode-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.86rem;
+      font-weight: 700;
+      padding: 0.45rem 0.95rem;
+      border-radius: 7px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      transition: all 0.14s ease;
+    }
+
+    .rev-mode-btn:hover { color: var(--text); background: var(--surface-muted); }
+    .rev-mode-btn.active { background: var(--primary); color: #ffffff; }
+
+    .rev-mode-pill {
+      font-size: 0.72rem;
+      padding: 0.08rem 0.42rem;
+      border-radius: 999px;
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .rev-mode-btn.active .rev-mode-pill {
+      background: rgba(255, 255, 255, 0.22);
+      color: #ffffff;
+    }
+
+    .fc-stage {
+      border: 1.5px solid #cbd5e1;
+      border-radius: 14px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      padding: 1.5rem 1.45rem;
+      min-height: 235px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.1rem;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+
+    .fc-stage.is-clickable { cursor: pointer; }
+    .fc-stage.is-clickable:hover { border-color: var(--primary); box-shadow: 0 6px 18px rgba(3, 105, 161, 0.08); }
+    .fc-stage.is-revealed { border-color: #7dd3fc; background: #ffffff; }
+
+    .fc-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .fc-pill-group { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+
+    .fc-concept-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.18rem 0.55rem;
+      border-radius: 5px;
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .fc-status-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+    }
+
+    .fc-status-pill.is-review { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+    .fc-status-pill.is-mastered { background: var(--success-bg); color: var(--success-text); border: 1px solid var(--success-border); }
+
+    .fc-front {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.48;
+      padding: 0.35rem 0;
+    }
+
+    .fc-tap-prompt {
+      border-top: 1px dashed #cbd5e1;
+      padding-top: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      color: var(--text-muted);
+      font-size: 0.84rem;
+    }
+
+    .fc-back-panel {
+      border-top: 1.5px solid var(--primary-light);
+      padding-top: 1.05rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      animation: fadeReveal 0.16s ease-out;
+    }
+
+    @keyframes fadeReveal { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+    .fc-back-kicker {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+    }
+
+    .fc-back-text {
+      font-size: 0.96rem;
+      line-height: 1.65;
+      color: #0f172a;
+      background: #f0f9ff;
+      border-left: 3.5px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      padding: 0.9rem 1rem;
+    }
+
+    .fc-rate-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-top: 0.25rem;
+    }
+
+    .btn-rate-again {
+      background: #fffbeb;
+      color: #92400e;
+      border: 1.5px solid #f59e0b;
+      border-radius: 9px;
+      padding: 0.68rem 1rem;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.14s ease;
+    }
+
+    .btn-rate-again:hover { background: #fef3c7; }
+
+    .btn-rate-good {
+      background: #16a34a;
+      color: #ffffff;
+      border: 1.5px solid #15803d;
+      border-radius: 9px;
+      padding: 0.68rem 1rem;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.14s ease;
+    }
+
+    .btn-rate-good:hover { background: #15803d; }
+
+    .fc-q-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .fc-q-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      padding: 0.72rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: var(--bg);
+    }
+
+    .fc-q-info { min-width: 0; flex: 1; }
+    .fc-q-title { font-size: 0.89rem; font-weight: 700; color: var(--text); }
+    .fc-q-sub { font-size: 0.76rem; color: var(--text-muted); margin-top: 0.1rem; }
+
+    .q-footer-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      align-items: center;
+    }
+
     /* Source Drawer & Lightbox */
     .drawer-backdrop {
       position: fixed;
@@ -1469,12 +1676,16 @@
       const READ_KEY = "glaucoq_read_v1";
       const LEGACY_STUDIED_KEY = "glaucoq_studied_v1";
       const MISSED_MCQ_KEY = "glaucoq_missed_mcq_v1";
+      const CARD_REVIEW_KEY = "glaucoq_card_review_v1";
+      const CARD_MASTERED_KEY = "glaucoq_card_mastered_v1";
 
       let allQuestions = [];
       let allTags = [];
       let answersMap = {};
       let readSet = new Set();
       let missedMcqSet = new Set();
+      let cardReviewSet = new Set();
+      let cardMasteredSet = new Set();
 
       // View & Filter State
       let currentView = "home"; // "home" | "study" | "revision"
@@ -1488,9 +1699,11 @@
       let currentCiteId = null;
       const searchCache = {};
 
-      // Revision Quiz State
+      // Revision State (Cards + MCQs)
+      let revMode = "cards"; // "cards" | "mcqs"
       let revTagFilter = "All";
       let quizState = null; // { items: [], idx: 0, score: 0, answered: false, chosen: -1, results: [] }
+      let cardDeck = null;  // { title: "", items: [], idx: 0, revealed: false, gotIt: 0, reviewAgain: [], returnToQid: null }
 
       // Load local progress (one-time migration from legacy studied key)
       try {
@@ -1508,6 +1721,10 @@
         localStorage.removeItem(LEGACY_STUDIED_KEY);
         const savedMissed = JSON.parse(localStorage.getItem(MISSED_MCQ_KEY) || "[]");
         if (Array.isArray(savedMissed)) missedMcqSet = new Set(savedMissed);
+        const savedCardRev = JSON.parse(localStorage.getItem(CARD_REVIEW_KEY) || "[]");
+        if (Array.isArray(savedCardRev)) cardReviewSet = new Set(savedCardRev);
+        const savedCardMast = JSON.parse(localStorage.getItem(CARD_MASTERED_KEY) || "[]");
+        if (Array.isArray(savedCardMast)) cardMasteredSet = new Set(savedCardMast);
       } catch (_) {}
 
       function saveRead() {
@@ -1516,6 +1733,13 @@
 
       function saveMissed() {
         try { localStorage.setItem(MISSED_MCQ_KEY, JSON.stringify(Array.from(missedMcqSet))); } catch (_) {}
+      }
+
+      function saveCardProgress() {
+        try {
+          localStorage.setItem(CARD_REVIEW_KEY, JSON.stringify(Array.from(cardReviewSet)));
+          localStorage.setItem(CARD_MASTERED_KEY, JSON.stringify(Array.from(cardMasteredSet)));
+        } catch (_) {}
       }
 
       // Safe rich-text renderer (zero innerHTML)
@@ -1641,6 +1865,25 @@
         return pool;
       }
 
+      function getUnlockedCards(tagFilter, singleQuestionId) {
+        const pool = [];
+        allQuestions.forEach(function (q) {
+          if (!readSet.has(q.id)) return;
+          if (singleQuestionId && q.id !== singleQuestionId) return;
+          const ans = answersMap[q.id];
+          if (!ans || !Array.isArray(ans.cards)) return;
+          if (tagFilter && tagFilter !== "All" && (q.tags || []).indexOf(tagFilter) === -1) return;
+          ans.cards.forEach(function (c) {
+            pool.push({
+              card: c,
+              question: q,
+              answerObj: ans
+            });
+          });
+        });
+        return pool;
+      }
+
       function buildSearchHaystack(item) {
         const ans = answersMap[item.id];
         const parts = [item.question, item.level, item.category, (item.tags || []).join(" ")];
@@ -1676,8 +1919,8 @@
         const answered = getAnsweredQuestions();
         const readAnsweredCount = answered.filter(function (q) { return readSet.has(q.id); }).length;
         progressPill.textContent = readAnsweredCount + " / " + answered.length + " Read";
-        const unlockedCount = getUnlockedMcqs("All").length;
-        revBadge.textContent = String(unlockedCount);
+        const unlockedTotal = getUnlockedCards("All").length + getUnlockedMcqs("All").length;
+        revBadge.textContent = String(unlockedTotal);
       }
 
       // Sidebar & Modals
@@ -1805,6 +2048,22 @@
             updatePager();
           }
         } else if (viewName === "revision") {
+          const opts = options || {};
+          if (opts.mode === "cards" || opts.mode === "mcqs") {
+            revMode = opts.mode;
+          }
+          if (opts.deckForQuestionId) {
+            revMode = "cards";
+            quizState = null;
+            const qPool = getUnlockedCards("All", opts.deckForQuestionId);
+            if (qPool.length > 0) {
+              const targetItem = allQuestions.find(function (q) { return q.id === opts.deckForQuestionId; });
+              startCardDeck(qPool, qPool.length, "Q" + (targetItem ? targetItem.globalIndex : "") + " Revision Cards", opts.deckForQuestionId);
+              history.replaceState(null, "", "#revision");
+              window.scrollTo({ top: 0, behavior: "instant" });
+              return;
+            }
+          }
           history.replaceState(null, "", "#revision");
           renderRevision();
           window.scrollTo({ top: 0, behavior: "instant" });
@@ -1818,6 +2077,7 @@
         const readAnswered = answered.filter(function (q) { return readSet.has(q.id); });
         const nextUnread = getNextUnreadQuestion(answered);
         const allReadDone = answered.length > 0 && readAnswered.length === answered.length;
+        const unlockedCards = getUnlockedCards("All");
         const unlockedMcqs = getUnlockedMcqs("All");
         const pct = answered.length ? Math.round((readAnswered.length / answered.length) * 100) : 0;
 
@@ -1843,8 +2103,8 @@
         const desc = document.createElement("p");
         desc.className = "hero-desc";
         desc.textContent = allReadDone
-          ? "You have marked all " + answered.length + " live 10-mark answers as read. Reinforce retention with " + unlockedMcqs.length + " textbook-grounded Revision MCQs."
-          : "Concise 10-mark full-sentence exam answers with inline diagrams and clickable textbook references. Mark each question as Read to unlock its Revision MCQs.";
+          ? "You have marked all " + answered.length + " live 10-mark answers as read. Reinforce exam recall with " + unlockedCards.length + " Revision Cards and " + unlockedMcqs.length + " MCQs."
+          : "Concise 10-mark full-sentence exam answers with inline diagrams and clickable textbook references. Mark each question as Read to unlock its Revision Cards & MCQs.";
         heroLeft.appendChild(desc);
 
         const actions = document.createElement("div");
@@ -1854,8 +2114,8 @@
         primaryBtn.type = "button";
         primaryBtn.className = "btn-hero";
         if (allReadDone) {
-          primaryBtn.textContent = "Start Revision MCQs (" + unlockedMcqs.length + ") →";
-          primaryBtn.addEventListener("click", function () { switchView("revision"); });
+          primaryBtn.textContent = "Start Revision Cards (" + unlockedCards.length + ") →";
+          primaryBtn.addEventListener("click", function () { cardDeck = null; quizState = null; switchView("revision", { mode: "cards" }); });
         } else {
           primaryBtn.textContent = nextUnread
             ? (readAnswered.length === 0 ? "Start Studying Q" + nextUnread.globalIndex + " →" : "Continue: Q" + nextUnread.globalIndex + " (Next Unread) →")
@@ -1872,8 +2132,8 @@
         const revBtn = document.createElement("button");
         revBtn.type = "button";
         revBtn.className = "btn-hero-ghost";
-        revBtn.textContent = "Revision MCQs (" + unlockedMcqs.length + " unlocked)";
-        revBtn.addEventListener("click", function () { switchView("revision"); });
+        revBtn.textContent = "Revision Cards (" + unlockedCards.length + " unlocked)";
+        revBtn.addEventListener("click", function () { cardDeck = null; quizState = null; switchView("revision", { mode: "cards" }); });
         actions.appendChild(revBtn);
 
         heroLeft.appendChild(actions);
@@ -1900,8 +2160,8 @@
 
         const s2 = document.createElement("div");
         s2.className = "stat-row";
-        const s2L = document.createElement("span"); s2L.textContent = "Syllabus Live";
-        const s2V = document.createElement("span"); s2V.style.fontWeight = "700"; s2V.textContent = answered.length + " of " + allQuestions.length + " Qs";
+        const s2L = document.createElement("span"); s2L.textContent = "Revision Cards Unlocked";
+        const s2V = document.createElement("span"); s2V.style.fontWeight = "700"; s2V.textContent = unlockedCards.length + " Cards";
         s2.appendChild(s2L); s2.appendChild(s2V);
         stats.appendChild(s2);
 
@@ -1911,6 +2171,13 @@
         const s3V = document.createElement("span"); s3V.style.fontWeight = "700"; s3V.textContent = unlockedMcqs.length + " MCQs";
         s3.appendChild(s3L); s3.appendChild(s3V);
         stats.appendChild(s3);
+
+        const s4 = document.createElement("div");
+        s4.className = "stat-row";
+        const s4L = document.createElement("span"); s4L.textContent = "Syllabus Live";
+        const s4V = document.createElement("span"); s4V.style.fontWeight = "700"; s4V.textContent = answered.length + " of " + allQuestions.length + " Qs";
+        s4.appendChild(s4L); s4.appendChild(s4V);
+        stats.appendChild(s4);
 
         hero.appendChild(stats);
         viewHome.appendChild(hero);
@@ -2381,12 +2648,28 @@
         const footerCta = document.createElement("div");
         footerCta.className = "q-footer-cta";
         const isReadNow = readSet.has(item.id);
+        const cardCount = (ans.cards || []).length;
+        const mcqCount = (ans.mcqs || []).length;
         const hint = document.createElement("div");
         hint.className = "q-footer-hint";
         hint.textContent = isReadNow
-          ? "This question is marked Read — its " + ((ans.mcqs || []).length) + " MCQs are unlocked in Revision."
-          : "Finished studying? Mark as Read to unlock its " + ((ans.mcqs || []).length) + " Revision MCQs.";
+          ? "Marked Read — " + cardCount + " Revision Cards & " + mcqCount + " MCQs unlocked in Revision."
+          : "Finished studying? Mark as Read to unlock " + cardCount + " Revision Cards & " + mcqCount + " MCQs.";
         footerCta.appendChild(hint);
+
+        const footerBtns = document.createElement("div");
+        footerBtns.className = "q-footer-actions";
+
+        if (isReadNow && cardCount > 0) {
+          const drillBtn = document.createElement("button");
+          drillBtn.type = "button";
+          drillBtn.className = "btn-outline";
+          drillBtn.textContent = "Practice Q" + item.globalIndex + "'s " + cardCount + " Cards";
+          drillBtn.addEventListener("click", function () {
+            switchView("revision", { mode: "cards", deckForQuestionId: item.id });
+          });
+          footerBtns.appendChild(drillBtn);
+        }
 
         const nextBtn = document.createElement("button");
         nextBtn.type = "button";
@@ -2409,7 +2692,8 @@
             updatePager();
           }
         });
-        footerCta.appendChild(nextBtn);
+        footerBtns.appendChild(nextBtn);
+        footerCta.appendChild(footerBtns);
         questionCard.appendChild(footerCta);
 
         // References Footer
@@ -2460,20 +2744,98 @@
         renderRevision();
       }
 
+      function prioritizeCards(pool) {
+        const needsRev = [];
+        const unmastered = [];
+        const mastered = [];
+        pool.forEach(function (entry) {
+          const cid = entry.card.id;
+          if (cardReviewSet.has(cid)) needsRev.push(entry);
+          else if (cardMasteredSet.has(cid)) mastered.push(entry);
+          else unmastered.push(entry);
+        });
+        return shuffleArray(needsRev).concat(shuffleArray(unmastered)).concat(shuffleArray(mastered));
+      }
+
+      function startCardDeck(pool, limit, title, returnToQid) {
+        const ordered = returnToQid ? pool.slice() : prioritizeCards(pool);
+        const items = limit && limit < ordered.length ? ordered.slice(0, limit) : ordered;
+        cardDeck = {
+          title: title || "Revision Cards",
+          items: items,
+          idx: 0,
+          revealed: false,
+          gotIt: 0,
+          reviewAgain: [],
+          returnToQid: returnToQid || null
+        };
+        renderRevision();
+      }
+
+      function rateActiveCard(gotIt) {
+        if (!cardDeck || !cardDeck.revealed || cardDeck.idx >= cardDeck.items.length) return;
+        const entry = cardDeck.items[cardDeck.idx];
+        const cid = entry.card.id;
+        if (gotIt) {
+          cardDeck.gotIt += 1;
+          cardMasteredSet.add(cid);
+          cardReviewSet.delete(cid);
+        } else {
+          cardDeck.reviewAgain.push(entry);
+          cardReviewSet.add(cid);
+          cardMasteredSet.delete(cid);
+        }
+        saveCardProgress();
+        cardDeck.idx += 1;
+        cardDeck.revealed = false;
+        renderRevision();
+      }
+
+      function renderRevModeBar(cardCount, mcqCount) {
+        const bar = document.createElement("div");
+        bar.className = "rev-mode-bar";
+        bar.setAttribute("role", "tablist");
+        bar.setAttribute("aria-label", "Revision mode");
+
+        [
+          { key: "cards", label: "Revision Cards", count: cardCount },
+          { key: "mcqs", label: "MCQ Quiz", count: mcqCount }
+        ].forEach(function (m) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "rev-mode-btn" + (revMode === m.key ? " active" : "");
+          btn.setAttribute("role", "tab");
+          btn.setAttribute("aria-selected", revMode === m.key ? "true" : "false");
+          const lbl = document.createElement("span"); lbl.textContent = m.label; btn.appendChild(lbl);
+          const pill = document.createElement("span"); pill.className = "rev-mode-pill"; pill.textContent = String(m.count); btn.appendChild(pill);
+          btn.addEventListener("click", function () {
+            if (revMode === m.key) return;
+            revMode = m.key;
+            cardDeck = null;
+            quizState = null;
+            renderRevision();
+          });
+          bar.appendChild(btn);
+        });
+
+        viewRevision.appendChild(bar);
+      }
+
       function renderRevision() {
         viewRevision.replaceChildren();
-        const allUnlocked = getUnlockedMcqs("All");
+        const allUnlockedCards = getUnlockedCards("All");
+        const allUnlockedMcqs = getUnlockedMcqs("All");
 
         // Empty State: No Read Questions yet
-        if (allUnlocked.length === 0) {
+        if (allUnlockedCards.length === 0 && allUnlockedMcqs.length === 0) {
           const card = document.createElement("div");
           card.className = "rev-card rev-empty";
           const icon = document.createElement("div"); icon.className = "rev-empty-icon"; icon.textContent = "✓"; card.appendChild(icon);
-          const h2 = document.createElement("h2"); h2.textContent = "Revision MCQs Unlock as You Read"; card.appendChild(h2);
+          const h2 = document.createElement("h2"); h2.textContent = "Revision Cards & MCQs Unlock as You Read"; card.appendChild(h2);
           const p = document.createElement("p");
-          p.style.maxWidth = "460px";
+          p.style.maxWidth = "480px";
           p.style.color = "var(--text-muted)";
-          p.textContent = "Mark at least 1 question as Read in the Study tab. Every read question unlocks 3 FAICO-style MCQs grounded in standard ophthalmology textbooks.";
+          p.textContent = "Mark at least 1 question as Read in the Study tab. Every read question automatically unlocks 4 high-yield Revision Cards and 3 FAICO-style MCQs grounded in standard ophthalmology textbooks.";
           card.appendChild(p);
           const btn = document.createElement("button");
           btn.type = "button";
@@ -2485,7 +2847,20 @@
           return;
         }
 
-        // Active Quiz Session
+        // Mode Switcher Bar
+        renderRevModeBar(allUnlockedCards.length, allUnlockedMcqs.length);
+
+        if (revMode === "cards") {
+          if (cardDeck) {
+            if (cardDeck.idx >= cardDeck.items.length) renderCardSummary();
+            else renderCardStudy();
+          } else {
+            renderCardLauncher(allUnlockedCards);
+          }
+          return;
+        }
+
+        // Active MCQ Quiz Session
         if (quizState) {
           if (quizState.idx >= quizState.items.length) {
             renderQuizSummary();
@@ -2495,12 +2870,13 @@
           return;
         }
 
-        // Revision Launcher Dashboard
+        // MCQ Revision Launcher Dashboard
+        const allUnlocked = allUnlockedMcqs;
         const card = document.createElement("div");
         card.className = "rev-card";
 
         const h2 = document.createElement("h2");
-        h2.textContent = "MCQ Revision — From Questions You've Read";
+        h2.textContent = "MCQ Quiz — From Questions You've Read";
         h2.style.marginBottom = "0.35rem";
         card.appendChild(h2);
 
@@ -2593,6 +2969,498 @@
 
         card.appendChild(btnRow);
         viewRevision.appendChild(card);
+      }
+
+      function renderCardLauncher(allUnlockedCards) {
+        const card = document.createElement("div");
+        card.className = "rev-card";
+
+        const h2 = document.createElement("h2");
+        h2.textContent = "Revision Cards — Active Recall From Read Questions";
+        h2.style.marginBottom = "0.35rem";
+        card.appendChild(h2);
+
+        const sub = document.createElement("p");
+        sub.style.color = "var(--text-muted)";
+        sub.style.fontSize = "0.92rem";
+        sub.textContent = "Every question you mark as Read unlocks 4 high-yield active-recall cards covering key classifications, numbers, clinical signs, and trial pearls. Cards flagged for review automatically come up first.";
+        card.appendChild(sub);
+
+        const readQs = getAnsweredQuestions().filter(function (q) { return readSet.has(q.id); });
+        const reviewPool = allUnlockedCards.filter(function (e) { return cardReviewSet.has(e.card.id); });
+        const masteredPool = allUnlockedCards.filter(function (e) { return cardMasteredSet.has(e.card.id); });
+
+        const statGrid = document.createElement("div");
+        statGrid.className = "rev-setup-grid";
+        [
+          { label: "Questions Read", val: String(readQs.length) },
+          { label: "Cards Unlocked", val: String(allUnlockedCards.length) },
+          { label: "Needs Review", val: String(reviewPool.length) },
+          { label: "Mastered", val: String(masteredPool.length) }
+        ].forEach(function (st) {
+          const t = document.createElement("div"); t.className = "rev-stat-tile";
+          const l = document.createElement("div"); l.className = "rev-stat-label"; l.textContent = st.label;
+          const v = document.createElement("div"); v.className = "rev-stat-num"; v.textContent = st.val;
+          t.appendChild(l); t.appendChild(v);
+          statGrid.appendChild(t);
+        });
+        card.appendChild(statGrid);
+
+        // Topic tag filter dropdown
+        const unlockedTags = allTags.filter(function (t) { return getUnlockedCards(t).length > 0; });
+        const controls = document.createElement("div");
+        controls.className = "rev-controls";
+
+        const sel = document.createElement("select");
+        sel.className = "tag-select";
+        sel.style.maxWidth = "280px";
+        sel.setAttribute("aria-label", "Filter revision cards by topic tag");
+
+        const optAll = document.createElement("option");
+        optAll.value = "All";
+        optAll.textContent = "All Read Topics (" + allUnlockedCards.length + " Cards)";
+        sel.appendChild(optAll);
+
+        unlockedTags.forEach(function (t) {
+          const cnt = getUnlockedCards(t).length;
+          const opt = document.createElement("option");
+          opt.value = t;
+          opt.textContent = t + " (" + cnt + " Cards)";
+          sel.appendChild(opt);
+        });
+        if (revTagFilter !== "All" && unlockedTags.indexOf(revTagFilter) === -1) revTagFilter = "All";
+        sel.value = revTagFilter;
+        sel.addEventListener("change", function () {
+          revTagFilter = sel.value;
+          renderRevision();
+        });
+        controls.appendChild(sel);
+        card.appendChild(controls);
+
+        const filteredPool = getUnlockedCards(revTagFilter);
+        const filteredReview = filteredPool.filter(function (e) { return cardReviewSet.has(e.card.id); });
+        const filteredUnmastered = filteredPool.filter(function (e) { return !cardMasteredSet.has(e.card.id); });
+
+        const btnRow = document.createElement("div");
+        btnRow.style.display = "flex";
+        btnRow.style.flexWrap = "wrap";
+        btnRow.style.gap = "0.65rem";
+
+        const startBtn = document.createElement("button");
+        startBtn.type = "button";
+        startBtn.className = "btn-primary";
+        startBtn.textContent = "Start Revision Deck (" + filteredPool.length + " Cards) →";
+        startBtn.addEventListener("click", function () {
+          startCardDeck(filteredPool, filteredPool.length, revTagFilter === "All" ? "All Read Revision Cards" : revTagFilter + " Cards");
+        });
+        btnRow.appendChild(startBtn);
+
+        if (filteredPool.length > 10) {
+          const quick10 = document.createElement("button");
+          quick10.type = "button";
+          quick10.className = "btn-outline";
+          quick10.textContent = "Quick 10-Card Drill";
+          quick10.addEventListener("click", function () {
+            startCardDeck(filteredPool, 10, "Quick 10-Card Drill");
+          });
+          btnRow.appendChild(quick10);
+        }
+
+        if (filteredReview.length > 0) {
+          const revOnly = document.createElement("button");
+          revOnly.type = "button";
+          revOnly.className = "btn-outline";
+          revOnly.textContent = "Needs Review Only (" + filteredReview.length + ")";
+          revOnly.addEventListener("click", function () {
+            startCardDeck(filteredReview, filteredReview.length, "Needs Review Deck");
+          });
+          btnRow.appendChild(revOnly);
+        }
+
+        if (filteredUnmastered.length > 0 && filteredUnmastered.length < filteredPool.length) {
+          const unmBtn = document.createElement("button");
+          unmBtn.type = "button";
+          unmBtn.className = "btn-outline";
+          unmBtn.textContent = "Unmastered Only (" + filteredUnmastered.length + ")";
+          unmBtn.addEventListener("click", function () {
+            startCardDeck(filteredUnmastered, filteredUnmastered.length, "Unmastered Cards");
+          });
+          btnRow.appendChild(unmBtn);
+        }
+
+        card.appendChild(btnRow);
+        viewRevision.appendChild(card);
+
+        // Per-Question Unlocked Cards Deck List
+        const matchingReadQs = readQs.filter(function (q) {
+          const ans = answersMap[q.id];
+          if (!ans || !Array.isArray(ans.cards) || !ans.cards.length) return false;
+          if (revTagFilter !== "All" && (q.tags || []).indexOf(revTagFilter) === -1) return false;
+          return true;
+        });
+
+        if (matchingReadQs.length > 0) {
+          const qCard = document.createElement("div");
+          qCard.className = "rev-card";
+
+          const qh = document.createElement("h3");
+          qh.style.fontSize = "1rem";
+          qh.style.marginBottom = "0.75rem";
+          qh.textContent = "Unlocked Cards by Read Question (" + matchingReadQs.length + ")";
+          qCard.appendChild(qh);
+
+          const list = document.createElement("div");
+          list.className = "fc-q-list";
+
+          matchingReadQs.forEach(function (q) {
+            const ans = answersMap[q.id];
+            const qCards = ans.cards || [];
+            const mCnt = qCards.filter(function (c) { return cardMasteredSet.has(c.id); }).length;
+            const rCnt = qCards.filter(function (c) { return cardReviewSet.has(c.id); }).length;
+
+            const row = document.createElement("div");
+            row.className = "fc-q-row";
+
+            const info = document.createElement("div");
+            info.className = "fc-q-info";
+            const t = document.createElement("div");
+            t.className = "fc-q-title";
+            t.textContent = "Q" + q.globalIndex + " · " + (ans.shortTitle || q.question);
+            const s = document.createElement("div");
+            s.className = "fc-q-sub";
+            s.textContent = qCards.length + " cards · " + mCnt + " mastered" + (rCnt > 0 ? " · " + rCnt + " needs review" : "");
+            info.appendChild(t); info.appendChild(s);
+            row.appendChild(info);
+
+            const drillBtn = document.createElement("button");
+            drillBtn.type = "button";
+            drillBtn.className = "btn-outline";
+            drillBtn.style.fontSize = "0.8rem";
+            drillBtn.style.padding = "0.38rem 0.78rem";
+            drillBtn.textContent = "Drill " + qCards.length + " Cards →";
+            drillBtn.addEventListener("click", function () {
+              const qPool = getUnlockedCards("All", q.id);
+              startCardDeck(qPool, qPool.length, "Q" + q.globalIndex + " Revision Cards", q.id);
+            });
+            row.appendChild(drillBtn);
+            list.appendChild(row);
+          });
+
+          qCard.appendChild(list);
+          viewRevision.appendChild(qCard);
+        }
+      }
+
+      function renderCardStudy() {
+        const entry = cardDeck.items[cardDeck.idx];
+        const c = entry.card;
+        const q = entry.question;
+        const ans = entry.answerObj;
+
+        const card = document.createElement("div");
+        card.className = "rev-card";
+
+        const top = document.createElement("div");
+        top.className = "mcq-top";
+        const left = document.createElement("span");
+        left.textContent = "Card " + (cardDeck.idx + 1) + " of " + cardDeck.items.length + " · From Q" + q.globalIndex;
+        const right = document.createElement("span");
+        right.textContent = "Got It: " + cardDeck.gotIt + " · Review: " + cardDeck.reviewAgain.length;
+        top.appendChild(left); top.appendChild(right);
+        card.appendChild(top);
+
+        const bar = document.createElement("div"); bar.className = "mcq-bar";
+        const fill = document.createElement("div"); fill.className = "mcq-bar-fill";
+        fill.style.width = Math.round(((cardDeck.idx + (cardDeck.revealed ? 0.5 : 0)) / cardDeck.items.length) * 100) + "%";
+        bar.appendChild(fill);
+        card.appendChild(bar);
+
+        // Flashcard Stage
+        const stage = document.createElement("div");
+        stage.className = "fc-stage " + (cardDeck.revealed ? "is-revealed" : "is-clickable");
+
+        const metaRow = document.createElement("div");
+        metaRow.className = "fc-meta-row";
+
+        const pillGroup = document.createElement("div");
+        pillGroup.className = "fc-pill-group";
+        const conceptPill = document.createElement("span");
+        conceptPill.className = "fc-concept-pill";
+        conceptPill.textContent = c.label || "Key Concept";
+        pillGroup.appendChild(conceptPill);
+
+        if (q.tags && q.tags.length) {
+          const tagSpan = document.createElement("span");
+          tagSpan.className = "tag tag-cat";
+          tagSpan.textContent = q.tags[0];
+          pillGroup.appendChild(tagSpan);
+        }
+        metaRow.appendChild(pillGroup);
+
+        if (cardReviewSet.has(c.id)) {
+          const st = document.createElement("span");
+          st.className = "fc-status-pill is-review";
+          st.textContent = "Flagged for Review";
+          metaRow.appendChild(st);
+        } else if (cardMasteredSet.has(c.id)) {
+          const st = document.createElement("span");
+          st.className = "fc-status-pill is-mastered";
+          st.textContent = "✓ Mastered";
+          metaRow.appendChild(st);
+        }
+        stage.appendChild(metaRow);
+
+        const frontEl = document.createElement("div");
+        frontEl.className = "fc-front";
+        appendRichText(frontEl, c.front);
+        stage.appendChild(frontEl);
+
+        if (!cardDeck.revealed) {
+          const tapPrompt = document.createElement("div");
+          tapPrompt.className = "fc-tap-prompt";
+          const tip = document.createElement("span");
+          tip.textContent = "Recall the key points in your head, then reveal.";
+          const revBtn = document.createElement("button");
+          revBtn.type = "button";
+          revBtn.className = "btn-primary";
+          revBtn.textContent = "Show Answer";
+          revBtn.addEventListener("click", function (ev) {
+            ev.stopPropagation();
+            cardDeck.revealed = true;
+            renderRevision();
+          });
+          tapPrompt.appendChild(tip);
+          tapPrompt.appendChild(revBtn);
+          stage.appendChild(tapPrompt);
+
+          stage.addEventListener("click", function () {
+            cardDeck.revealed = true;
+            renderRevision();
+          });
+        } else {
+          const backPanel = document.createElement("div");
+          backPanel.className = "fc-back-panel";
+
+          const kicker = document.createElement("div");
+          kicker.className = "fc-back-kicker";
+          kicker.textContent = "Model Exam Recall";
+          backPanel.appendChild(kicker);
+
+          const backBox = document.createElement("div");
+          backBox.className = "fc-back-text";
+          appendRichText(backBox, c.back + " ");
+          if (c.cite && ans.sources && ans.sources[c.cite]) {
+            const cBtn = document.createElement("button");
+            cBtn.type = "button";
+            cBtn.className = "cite-btn";
+            cBtn.textContent = c.cite;
+            cBtn.addEventListener("click", function (ev) {
+              ev.stopPropagation();
+              openCitation(c.cite, ans.sources);
+            });
+            backBox.appendChild(cBtn);
+          }
+          backPanel.appendChild(backBox);
+
+          const rateRow = document.createElement("div");
+          rateRow.className = "fc-rate-row";
+
+          const againBtn = document.createElement("button");
+          againBtn.type = "button";
+          againBtn.className = "btn-rate-again";
+          againBtn.textContent = "↻ Needs Review";
+          againBtn.addEventListener("click", function () { rateActiveCard(false); });
+          rateRow.appendChild(againBtn);
+
+          const goodBtn = document.createElement("button");
+          goodBtn.type = "button";
+          goodBtn.className = "btn-rate-good";
+          goodBtn.textContent = "✓ Got It";
+          goodBtn.addEventListener("click", function () { rateActiveCard(true); });
+          rateRow.appendChild(goodBtn);
+
+          backPanel.appendChild(rateRow);
+          stage.appendChild(backPanel);
+        }
+
+        card.appendChild(stage);
+
+        const bottomRow = document.createElement("div");
+        bottomRow.className = "mcq-feedback-actions";
+        bottomRow.style.marginTop = "0.95rem";
+
+        const fullBtn = document.createElement("button");
+        fullBtn.type = "button";
+        fullBtn.className = "btn-outline";
+        fullBtn.style.fontSize = "0.8rem";
+        fullBtn.style.padding = "0.38rem 0.75rem";
+        fullBtn.textContent = "Review Full Answer (Q" + q.globalIndex + ")";
+        fullBtn.addEventListener("click", function () {
+          cardDeck = null;
+          switchView("study", { tag: "All", level: "All", answeredOnly: true, questionId: q.id });
+        });
+        bottomRow.appendChild(fullBtn);
+
+        const exitBtn = document.createElement("button");
+        exitBtn.type = "button";
+        exitBtn.className = "btn-outline";
+        exitBtn.style.fontSize = "0.8rem";
+        exitBtn.style.padding = "0.38rem 0.75rem";
+        exitBtn.textContent = "End Deck";
+        exitBtn.addEventListener("click", function () { cardDeck = null; renderRevision(); });
+        bottomRow.appendChild(exitBtn);
+
+        card.appendChild(bottomRow);
+        viewRevision.appendChild(card);
+      }
+
+      function renderCardSummary() {
+        const total = cardDeck.items.length;
+        const pct = total ? Math.round((cardDeck.gotIt / total) * 100) : 0;
+        const flagged = cardDeck.reviewAgain;
+
+        const card = document.createElement("div");
+        card.className = "rev-card";
+        card.style.textAlign = "center";
+
+        const h2 = document.createElement("h2");
+        h2.textContent = "Revision Deck Complete";
+        card.appendChild(h2);
+
+        const big = document.createElement("div");
+        big.style.fontSize = "2.1rem";
+        big.style.fontWeight = "700";
+        big.style.color = flagged.length === 0 ? "#166534" : "var(--primary)";
+        big.style.margin = "0.65rem 0 0.25rem";
+        big.textContent = cardDeck.gotIt + " / " + total + " Mastered (" + pct + "%)";
+        card.appendChild(big);
+
+        const note = document.createElement("p");
+        note.style.color = "var(--text-muted)";
+        note.style.marginBottom = "1.25rem";
+        note.textContent = flagged.length === 0
+          ? "Every card in this deck is locked in! Try the MCQ Quiz next to test exam application."
+          : flagged.length + " card" + (flagged.length > 1 ? "s" : "") + " flagged for review — review them below or run a quick repeat drill.";
+        card.appendChild(note);
+
+        const btns = document.createElement("div");
+        btns.style.display = "flex";
+        btns.style.flexWrap = "wrap";
+        btns.style.justifyContent = "center";
+        btns.style.gap = "0.65rem";
+
+        if (flagged.length > 0) {
+          const retryBtn = document.createElement("button");
+          retryBtn.type = "button";
+          retryBtn.className = "btn-primary";
+          retryBtn.textContent = "Repeat Flagged (" + flagged.length + ") →";
+          retryBtn.addEventListener("click", function () {
+            startCardDeck(flagged, flagged.length, "Flagged Cards Drill", cardDeck.returnToQid);
+          });
+          btns.appendChild(retryBtn);
+        }
+
+        const mcqBtn = document.createElement("button");
+        mcqBtn.type = "button";
+        mcqBtn.className = flagged.length > 0 ? "btn-outline" : "btn-primary";
+        mcqBtn.textContent = "Switch to MCQ Quiz →";
+        mcqBtn.addEventListener("click", function () {
+          cardDeck = null;
+          quizState = null;
+          revMode = "mcqs";
+          renderRevision();
+        });
+        btns.appendChild(mcqBtn);
+
+        if (cardDeck.returnToQid) {
+          const retId = cardDeck.returnToQid;
+          const backQBtn = document.createElement("button");
+          backQBtn.type = "button";
+          backQBtn.className = "btn-outline";
+          backQBtn.textContent = "← Back to Question";
+          backQBtn.addEventListener("click", function () {
+            cardDeck = null;
+            switchView("study", { tag: "All", level: "All", answeredOnly: true, questionId: retId });
+          });
+          btns.appendChild(backQBtn);
+        }
+
+        const allBtn = document.createElement("button");
+        allBtn.type = "button";
+        allBtn.className = "btn-outline";
+        allBtn.textContent = "All Revision Cards";
+        allBtn.addEventListener("click", function () { cardDeck = null; renderRevision(); });
+        btns.appendChild(allBtn);
+
+        card.appendChild(btns);
+        viewRevision.appendChild(card);
+
+        if (flagged.length > 0) {
+          const reviewCard = document.createElement("div");
+          reviewCard.className = "rev-card";
+
+          const rh = document.createElement("h3");
+          rh.style.fontSize = "1.02rem";
+          rh.style.marginBottom = "0.85rem";
+          rh.textContent = "Cards Flagged for Review (" + flagged.length + ")";
+          reviewCard.appendChild(rh);
+
+          const list = document.createElement("div");
+          list.style.display = "flex";
+          list.style.flexDirection = "column";
+          list.style.gap = "0.85rem";
+
+          flagged.forEach(function (entry) {
+            const c = entry.card;
+            const q = entry.question;
+            const ans = entry.answerObj;
+
+            const box = document.createElement("div");
+            box.className = "mcq-feedback";
+            box.style.marginTop = "0";
+            box.style.background = "#fffbeb";
+            box.style.borderColor = "#fde68a";
+
+            const fEl = document.createElement("div");
+            fEl.style.fontWeight = "700";
+            fEl.style.fontSize = "0.94rem";
+            fEl.style.color = "var(--text)";
+            fEl.textContent = "Q" + q.globalIndex + " · " + c.front;
+            box.appendChild(fEl);
+
+            const bEl = document.createElement("p");
+            bEl.style.fontSize = "0.89rem";
+            bEl.style.color = "var(--text)";
+            appendRichText(bEl, c.back + " ");
+            if (c.cite && ans.sources && ans.sources[c.cite]) {
+              const cBtn = document.createElement("button");
+              cBtn.type = "button";
+              cBtn.className = "cite-btn";
+              cBtn.textContent = c.cite;
+              cBtn.addEventListener("click", function () { openCitation(c.cite, ans.sources); });
+              bEl.appendChild(cBtn);
+            }
+            box.appendChild(bEl);
+
+            const row = document.createElement("div");
+            const jBtn = document.createElement("button");
+            jBtn.type = "button";
+            jBtn.className = "btn-outline";
+            jBtn.style.fontSize = "0.8rem";
+            jBtn.style.padding = "0.35rem 0.7rem";
+            jBtn.textContent = "Review Full Answer (Q" + q.globalIndex + ") →";
+            jBtn.addEventListener("click", function () {
+              cardDeck = null;
+              switchView("study", { tag: "All", level: "All", answeredOnly: true, questionId: q.id });
+            });
+            row.appendChild(jBtn);
+            box.appendChild(row);
+            list.appendChild(box);
+          });
+
+          reviewCard.appendChild(list);
+          viewRevision.appendChild(reviewCard);
+        }
       }
 
       function renderQuizQuestion() {
@@ -2874,7 +3742,7 @@
       brandBtn.addEventListener("click", function () { switchView("home"); });
       tabHome.addEventListener("click", function () { switchView("home"); });
       tabStudy.addEventListener("click", function () { switchView("study"); });
-      tabRevision.addEventListener("click", function () { quizState = null; switchView("revision"); });
+      tabRevision.addEventListener("click", function () { cardDeck = null; quizState = null; switchView("revision"); });
 
       document.addEventListener("click", function (e) {
         const citeTarget = e.target.closest("[data-cite]");
@@ -2940,8 +3808,21 @@
           else if (sidebar.classList.contains("open")) closeSidebar();
           return;
         }
-        if (currentView !== "study" || document.activeElement === searchInput) return;
         if (lightboxBackdrop.classList.contains("open") || drawerBackdrop.classList.contains("open")) return;
+        if (currentView === "revision" && revMode === "cards" && cardDeck && cardDeck.idx < cardDeck.items.length) {
+          if ((e.key === " " || e.key === "Enter") && !cardDeck.revealed && document.activeElement.tagName !== "BUTTON") {
+            e.preventDefault();
+            cardDeck.revealed = true;
+            renderRevision();
+            return;
+          }
+          if (cardDeck.revealed) {
+            if (e.key === "1" || e.key === "ArrowLeft") { e.preventDefault(); rateActiveCard(false); }
+            else if (e.key === "2" || e.key === "ArrowRight") { e.preventDefault(); rateActiveCard(true); }
+          }
+          return;
+        }
+        if (currentView !== "study" || document.activeElement === searchInput) return;
         if (e.key === "ArrowLeft") prevQBtn.click();
         else if (e.key === "ArrowRight") nextQBtn.click();
       });

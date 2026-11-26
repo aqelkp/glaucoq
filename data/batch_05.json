@@ -236,6 +236,36 @@
         "explanation": "Because conventional K1 mfERG derives from outer-to-middle retinal cone/bipolar cells, it remains largely intact in pure glaucoma (helping exclude outer-retinal mimics), whereas inner-retinal RGC metrics—K2, ONHC nasotemporal asymmetry, PhNR, and PERG N95—are selectively diminished.",
         "cite": "5"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-41-1",
+        "label": "OCT Quality & Green Disease",
+        "front": "State minimum acceptable OCT signal strength thresholds (Cirrus, Spectralis, RTVue), normative color codes, and what causes false-negative 'Green Disease'.",
+        "back": "**Signal cutoffs:** **Cirrus ≥6/10** • **Spectralis Q ≥15–20 dB** • **RTVue SSI ≥45** (plus DOB, 3.46 mm centration, B-scan segmentation) • **Normative colors:** White >95%, **Green 5–95%**, **Yellow 1–5%** (borderline), **Red <1%** (ONL) • **'Green Disease' (false negative):** Normal global/quadrant green average masking focal wedge thinning, thick baseline RNFL, **epiretinal membrane (ERM)**, or optic disc edema.",
+        "cite": "1"
+      },
+      {
+        "id": "card-41-2",
+        "label": "Macular GCIPL Raphe Rule",
+        "front": "What single topographic signature on a macular GCIPL scan differentiates glaucomatous damage from chiasmal or post-chiasmal neuro-ophthalmic lesions?",
+        "back": "Glaucomatous macular GCIPL thinning (typically inferotemporal or superotemporal) **strictly respects the HORIZONTAL temporal raphe**, whereas chiasmal (bitemporal) or post-chiasmal (homonymous) neurological lesions strictly respect the **VERTICAL meridian**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-41-3",
+        "label": "HRT & GDx Interpretation Cutoffs",
+        "front": "Recall the mandatory quality control thresholds and scoring cutoffs for interpreting HRT-3 (MPHSD, GPS) and GDx (Quality Score, TSS, NFI) scans.",
+        "back": "**HRT-3:** **MPHSD <30 µm** (ideally <20 µm; >40 µm unreliable) • **GPS (0–1.0):** **0–0.28 normal**, **0.28–0.64 borderline**, **>0.64 ONL** (low specificity in large discs) • **GDx:** **Quality Score ≥8/10** • **Typical Scan Score (TSS) ≥80** (<80 invalidates VCC via ARP → use ECC) • **NFI (1–100):** **0–30 normal**, **31–50 borderline**, **>50 abnormal**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-41-4",
+        "label": "OCTA Glaucoma Biomarkers",
+        "front": "Name the three key OCT Angiography (OCTA) vascular slabs/biomarkers in glaucoma and explain OCTA's unique advantage in advanced disease.",
+        "back": "**Principle:** Dye-free erythrocyte decorrelation (**SSADA / OMAG**) • **1. Radial Peripapillary Capillaries (RPC):** Wedge dropout colocalizes with RNFL/VF loss • **2. Macular Superficial Vascular Complex (SVC):** Parallels GCIPL thinning (early NTG) • **3. Deep Choroidal Microvasculature Dropout (MvD) in β-PPA:** Predicts **NTG, disc hemorrhage, paracentral scotomas & faster progression** • **Advanced edge:** **Lower measurement floor** than OCT RNFL (watch projection/motion artifacts).",
+        "cite": "4"
+      }
     ]
   },
   "standard-12": {
@@ -464,6 +494,36 @@
         ],
         "answer": 1,
         "explanation": "FDT uses low spatial frequency (0.25–0.5 cycles/deg) gratings undergoing rapid counterphase flicker (18–25 Hz) to evoke the frequency-doubling illusion mediated by sparse magnocellular (M-cell) ganglion cells.",
+        "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-42-1",
+        "label": "Perimetry Physics & Decibels",
+        "front": "State the decibel sensitivity formula, standard background and 0 dB luminances for HFA vs. Octopus, and normal hill-of-vision boundaries.",
+        "back": "**dB = 10 × log₁₀(L_max / ΔL_threshold)** (higher dB = dimmer stimulus = higher sensitivity; 10 dB = 10-fold luminance) • **Background:** **31.5 asb (10 cd/m²)** • **0 dB max:** **10,000 asb (HFA)** vs. **4,000 asb (Octopus)** • **Goldmann sizes:** **III (4 mm², 0.43°)** routine; **V (64 mm², 1.72°)** expands dynamic range in severe loss • **Bounds:** 60° sup/nasal, 70–75° inf, 90–100° temp; blind spot **15° temporal, 1.5–2° inferior**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-42-2",
+        "label": "Anderson-Patella & Reliability",
+        "front": "Recite the Anderson–Patella criteria for minimal glaucomatous field abnormality and the SITA reliability cutoffs, including why False Positives are worst.",
+        "back": "**Anderson–Patella (confirmed on ≥2 reliable tests — ANY 1):** (1) **≥3 non-edge PD points** in one hemifield at **p <5%**, with **≥1 at p <1%**, (2) **PSD p <5%**, or (3) **GHT Outside Normal Limits** • **Reliability:** **FL <20%** (gaze tracker superior), **FP <15%** (most corrupting — causes **'white scotomas'**, abnormally high foveal sensitivity, and **masks true defects**), **FN <33%** (genuinely rises in advanced defects).",
+        "cite": "1"
+      },
+      {
+        "id": "card-42-3",
+        "label": "Static & Kinetic Algorithms",
+        "front": "Contrast Full Threshold, FASTPAC, SITA Standard, Octopus Dynamic, Octopus TOP, and Semi-Automated Kinetic Perimetry (SKP).",
+        "back": "**Full Threshold:** 4–2 dB double-crossing (12–18 min; fatigue) • **FASTPAC:** 3 dB single-crossing (7–10 min; misses focal depth) • **SITA Standard:** Bayesian priors + spatial correlations (**5–7 min**, clinical gold standard) • **Octopus Dynamic:** Adaptive **2–10 dB** steps • **Octopus TOP:** Single presentation + neighbor interpolation (**2–3 min**, blurs sharp borders) • **SKP:** Motorized **2–5°/s** vectors with **reaction-time correction** and **isopter area (deg²)**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-42-4",
+        "label": "10-2 Triggers, SWAP & Artifacts",
+        "front": "When is 10-2 SAP mandatory, how do SWAP and microperimetry work, and what causes the classic 'cloverleaf' perimetric artifact?",
+        "back": "**Order 10-2 (68 pts, 2° grid):** Depressed point inside central 10° on 24-2, macular GCIPL loss with normal 24-2, or split fixation • **SWAP:** **440 nm blue Size V** on **100 cd/m² yellow** targeting **koniocellular** RGCs (confounded by nuclear cataract) • **Microperimetry (MAIA/MP-3):** 25 Hz fundus-tracked macular thresholds + BCEA fixation • **Cloverleaf artifact:** Fatigue/inattention after 4 primary seed points (obtain **2 baselines** for learning effect).",
         "cite": "4"
       }
     ]
@@ -696,6 +756,36 @@
         "explanation": "Cataract reduces SD-OCT signal strength—which artifactually lowers measured RNFL thickness—and depresses global SAP MD while leaving Pattern Deviation and VFI largely unchanged; true glaucomatous progression is not indicated.",
         "cite": "5"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-43-1",
+        "label": "Event vs Trend & Chauhan Rule",
+        "front": "Contrast Event-Based versus Trend-Based progression analysis, state physiological aging slopes, and cite Chauhan et al.'s testing frequency rule.",
+        "back": "**Event-based:** Categorical (*'Has change exceeded baseline noise?'*); sensitive to abrupt focal change; requires confirmation • **Trend-based:** Linear regression slope (*'How fast?'* in dB/yr, %/yr, µm/yr) to project against **life expectancy** • **Normal aging:** **−0.5 µm/yr** OCT RNFL; **−0.06 dB/yr** SAP MD • **Chauhan Rule:** Obtain **6 visual fields in the first 2 years** (2 baselines + q4mo) to detect rapid **−2 dB/yr** progression with **80% power**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-43-2",
+        "label": "Perimetric Progression Criteria",
+        "front": "Compare progression criteria across HFA GPA (EMGT), VFI trend, Pointwise Linear Regression (PLR), and AGIS/CIGTS scoring systems.",
+        "back": "**HFA GPA Event (PD-based, unavailable below MD −20 dB):** Open △ (1 test p<0.05), half-filled ◺ (2 consecutive), solid ▲ (3 consecutive); **≥3 points** on 2 consecutive = *Possible*, 3 consecutive = *Likely Progression* • **VFI Trend:** Needs **≥5 tests over ≥2–3 yrs** (%/yr + 3–5 yr projection) • **PLR:** Local slope **<−1.0 dB/yr** (or **−0.5 dB/yr** centrally, p <0.01) • **AGIS / CIGTS:** Sustained rise **≥4 pts (AGIS)** or **≥3 pts (CIGTS)** on 3 consecutive fields.",
+        "cite": "4"
+      },
+      {
+        "id": "card-43-3",
+        "label": "OCT GPA & HRT TCA Thresholds",
+        "front": "What exact superpixel criteria define 'Possible' and 'Likely' loss on SD-OCT GPA and confirmed progression on HRT Topographic Change Analysis (TCA)?",
+        "back": "**SD-OCT GPA (2 baselines):** Contiguous cluster of **≥20 thinned superpixels** (exceeding ~4–5 µm avg RNFL or ~7–8 µm sector noise) → **yellow ('Possible Loss')** on 1st visit, **red ('Likely Loss')** on **2 consecutive exams**; true glaucomatous RNFL slope typically exceeds **−1.0 to −1.5 µm/yr** • **HRT TCA (4×4 superpixel ANOVA):** Contiguous **≥20 red superpixels** inside disc margin (≥50–100 µm depth drop) confirmed on **2–3 consecutive exams**.",
+        "cite": "5"
+      },
+      {
+        "id": "card-43-4",
+        "label": "Stage Discordance & Rate Tiers",
+        "front": "Why do structure and function show stage-dependent discordance across glaucoma severity, and how are SAP progression speeds stratified?",
+        "back": "**Structure–Function dynamic range:** **OCT cpRNFL** is most sensitive in **preperimetric and early glaucoma**, but hits its **~45–55 µm glial floor** in advanced disease — where **24-2 / 10-2 SAP** and **macular GCIPL** must guide management • **SAP rate tiers:** **Slow (<−0.5 dB/yr)**, **Moderate (−0.5 to −1.5 dB/yr)**, and **Fast/catastrophic (>−1.5 to −2.0 dB/yr)** — always confirm change and check structure–function concordance before escalating therapy.",
+        "cite": "2"
+      }
     ]
   },
   "standard-14": {
@@ -893,6 +983,36 @@
         ],
         "answer": 0,
         "explanation": "ICE syndrome (Chandler, essential iris atrophy, Cogan–Reese) is characteristically unilateral in middle-aged women and produces proliferating endothelial membranes that form high, broad-based PAS extending anterior to Schwalbe's line.",
+        "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-44-1",
+        "label": "TIR Optics & Goniolenses",
+        "front": "Why is gonioscopy optically necessary, and how do Direct, Goldmann, and Four-Mirror (Zeiss/Posner/Sussman) goniolenses differ?",
+        "back": "Angle rays exceed the **~46° critical angle** at the cornea–air interface causing **total internal reflection (TIR)**; goniolenses (*n* ≈1.49–1.52) abolish the tear–air interface • **Direct (Koeppe/Swan–Jacob):** Erect supine view (EUA, goniotomy, MIGS) • **Goldmann (indirect):** **12–15 mm**, steep, requires viscous gel, **NO indentation** (suction falsely widens) • **4-Mirror (Zeiss/Posner/Sussman):** **9 mm**, flat (**7.7–7.85 mm**), tear-film coupled, enables **dynamic indentation**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-44-2",
+        "label": "Spaeth & ISGEO Grading",
+        "front": "Decode the Spaeth gonioscopic notation **(B)D20s** and state the ISGEO occludable angle cutoff plus standardized dark-room technique rules.",
+        "back": "**Spaeth:** Insertion (**A** ant. to SL, **B** behind SL/TM, **C** SS, **D** CBB, **E** ext. deep), width (**0°–40°+**), contour (**r** flat, **s** convex, **q** concave, **p** plateau) • **(B)D20s** = appositional closure to TM opening on indentation to CBB, 20°, convex iris • **ISGEO occludable:** Posterior TM unseen in **≥180° (≥2 quadrants)** in primary gaze without indentation • **Technique:** Dark room, **1–2 mm beam OFF pupil**, find SL via **corneal wedge**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-44-3",
+        "label": "PAS vs Iris Processes & Plateau",
+        "front": "How do you distinguish Peripheral Anterior Synechiae (PAS) from benign iris processes, and Plateau Iris Configuration from Plateau Iris Syndrome?",
+        "back": "**PAS vs. Iris processes:** PAS are **broad-based, opaque, irregular adhesions** that **fail to open on indentation** (initially densest superiorly in PAC); normal **iris processes** are fine, lacy, fenestrated uveal strands following angle concavity without blocking outflow • **Plateau iris configuration** opens once pupillary block is relieved by LPI; **plateau iris syndrome** has **persistent appositional closure or IOP spikes on dilation despite a patent LPI** (requires ALPI or pilocarpine).",
+        "cite": "3"
+      },
+      {
+        "id": "card-44-4",
+        "label": "Secondary Angle Signatures",
+        "front": "Contrast the gonioscopic signatures of Angle Recession vs. Cyclodialysis Cleft, PXF vs. PDS pigmentation, and Fuchs Heterochromic Iridocyclitis.",
+        "back": "**Angle recession vs. Cyclodialysis:** Recession = tear between longitudinal/circular ciliary fibers → **widened dark CBB + ↑ IOP** (risk ≥180°); Cyclodialysis = ciliary disinsertion from SS → **stark white bare scleral cleft + ↓ IOP** • **PXF vs. PDS:** PXF = **patchy uneven TM pigment** (heaviest inferiorly) + Sampaolesi line; PDS = **3+ to 4+ uniform velvety 360° TM band** + concave (*q*) iris • **Fuchs uveitis:** Fragile **Amsler angle vessels** bleeding on paracentesis **without PAS**.",
         "cite": "4"
       }
     ]
@@ -1116,6 +1236,36 @@
         "answer": 1,
         "explanation": "When progression occurs despite seemingly controlled office IOP—especially in NTG patients taking evening antihypertensives—clinicians must rule out poor adherence, missed nocturnal/diurnal IOP spikes, and nocturnal systemic hypotension impairing ocular perfusion pressure (OPP = MAP − IOP) alongside lowering target IOP.",
         "cite": "2"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-45-1",
+        "label": "Stage-Stratified Target IOP",
+        "front": "Give the standard stage-stratified Target IOP percentage reductions and absolute upper ceilings from high-risk OHT through advanced glaucoma and NTG.",
+        "back": "**High-risk OHT:** **≥20% drop** (≤21–24 mmHg; OHTS 22.5% halved 5-yr conversion 9.5%→4.4%) • **Early (MD >−6 dB):** **20–30% drop** (≤18 mmHg; EMGT −10% risk/mmHg) • **Moderate (MD −6 to −12 dB):** **30–40% drop** (≤14–16 mmHg) • **Advanced (MD <−12 dB / fixation threat):** **≥40–50% drop** (**≤10–12 mmHg**) • **NTG:** **≥30% drop** (often 10–12 mmHg; CNTGS cut 5-yr progression 35%→12%).",
+        "cite": "3"
+      },
+      {
+        "id": "card-45-2",
+        "label": "Determinants & Formulas",
+        "front": "List the six determinants of initial Target IOP and state both the CIGTS and Jampel quantitative Target IOP formulas.",
+        "back": "**6 Determinants:** (1) Baseline ONH/VF severity, (2) untreated baseline IOP, (3) progression rate, (4) age & **life expectancy**, (5) risk factors (thin CCT, PXF, disc heme, myopia, fellow-eye blindness, low OPP), (6) treatment burden/safety • **CIGTS Formula:** **Baseline IOP × [1 − (Baseline IOP + VF Score)/100]** (VF score 0–20) • **Jampel Formula:** **Baseline IOP × (1 − Baseline IOP/100) − Z** (*Z* = 0 OHT, 1 early, 2 moderate, 3 advanced).",
+        "cite": "4"
+      },
+      {
+        "id": "card-45-3",
+        "label": "Troubleshooting Progression",
+        "front": "When confirmed progression occurs despite achieved office Target IOP, what four causes must you investigate and by how much should you lower the target?",
+        "back": "**Investigate 4 causes:** (1) **Poor adherence / 'white-coat compliance'** (check refills/side effects), (2) **Missed diurnal/nocturnal IOP peaks** (diurnal phasing, WDT, supine tonometry), (3) **Vascular/perfusion instability** (**nocturnal hypotension** from evening BP drugs lowering OPP, OSA, vasospasm), (4) **Non-glaucomatous masquerader** (compressive/ischemic lesion) • Once true glaucomatous progression is confirmed, **reset Target IOP downward by an additional 15–25%**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-45-4",
+        "label": "Application Rules & Limits",
+        "front": "State the clinical rules for baseline IOP acquisition, switching vs. adding monotherapy, and the key limitations of the Target IOP paradigm.",
+        "back": "**Application:** Obtain **2–3 untreated baseline IOPs** on separate days; avoid rigid mathematical CCT correction formulas (treat thin CCT as independent risk factor); if monotherapy lowers IOP **<15–20%, SWITCH agents rather than adding**; first-line **SLT (LiGHT: 74.2% drop-free at 3 yrs)** or PGA • **Limitations:** Empirical hypothesis validated only retrospectively; sitting office GAT misses 24-hr peaks; overly aggressive targets risk **hypotony maculopathy** and blebitis.",
+        "cite": "1"
       }
     ]
   },
@@ -1341,6 +1491,36 @@
         "explanation": "Topiramate causes idiosyncratic bilateral ciliochoroidal effusion with anterior rotation of the ciliary body (non-pupillary-block angle closure). Management requires stopping topiramate, cycloplegics, aqueous suppressants, and steroids; pilocarpine is contraindicated and laser PI is ineffective.",
         "cite": "5"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-46-1",
+        "label": "NTG Medical Strategy & LoGTS",
+        "front": "Compare the roles of PGAs, Brimonidine (LoGTS), Topical CAIs, and Beta-Blockers in the medical management of Normal-Tension Glaucoma (NTG).",
+        "back": "**CNTGS target:** **≥30% IOP drop** (5-yr progression 35%→12%) • **PGAs (1st-line):** Flat 24-hr/nocturnal lowering without BP drop • **Brimonidine 0.2% (LoGTS):** **9.1% progression vs. 39.2% with timolol 0.5%** at identical IOP (~14.2 mmHg) — neuroprotection or avoiding nocturnal hypoperfusion • **Topical CAIs:** Sustain nocturnal suppression + enhance ONH perfusion • **Avoid evening β-blockers:** Minimal nighttime aqueous flow + risk of **nocturnal BP dipping** lowering OPP.",
+        "cite": "3"
+      },
+      {
+        "id": "card-46-2",
+        "label": "Advanced POAG & MTMT Rules",
+        "front": "How do you optimize rapid IOP control and preoperative conjunctival health in Advanced POAG, and what are the roles of ROCK inhibitors and oral CAIs?",
+        "back": "**Rapid control:** Start directly with a **fixed-dose combination (FDC)** when baseline IOP is very high or fixation is threatened; a 3rd–4th bottle adds **<10–15%** while multiplying BAK toxicity → transition promptly to surgery • **ROCK inhibitors (Netarsudil/Ripasudil):** Relax JCT TM + **lower EVP**, effective even at low baseline IOP • **Oral acetazolamide:** Short surgical bridge only • **Pre-op prep:** **PF drops** + short topical steroid course reduce bleb fibrosis.",
+        "cite": "5"
+      },
+      {
+        "id": "card-46-3",
+        "label": "Secondary OAG Drug Rules",
+        "front": "Summarize preferred first-line therapy versus key contraindications across Uveitic, Open-Angle NVG, Steroid-Induced, and Elevated-EVP glaucomas.",
+        "back": "**Uveitic:** **Aqueous suppressants** + steroids/cycloplegics; **strictly avoid miotics** (BAB breakdown/synechiae); cautious PGAs (CME/HSV risk) • **Open-angle NVG:** Urgent **anti-VEGF + PRP** + aqueous suppressants + **atropine 1%** + steroids; avoid miotics • **Steroid-induced:** Taper/switch to **loteprednol/NSAID/IMT** + aqueous suppressants/PGAs/**ROCK inhibitors** • **Elevated EVP (Sturge–Weber/CCF):** Aqueous suppressants + **PGAs** (uveoscleral bypass) + **ROCK inhibitors (↓ EVP)**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-46-4",
+        "label": "Secondary Angle-Closure Drugs",
+        "front": "Contrast medical therapy for Secondary Pupillary Block, Posterior-Pushing (Aqueous Misdirection / Topiramate), and Anterior-Pulling (ICE / Synechial NVG) angle closure.",
+        "back": "**Secondary Pupillary Block (seclusio/phacomorphic):** Aqueous suppressants + **hyperosmotics** (IV mannitol 1–2 g/kg, glycerol 1–1.5 g/kg) → LPI or lensectomy; **avoid pilocarpine in phacomorphic/spherophakia/subluxation** (forward lens shift) • **Posterior-Pushing (Malignant/Topiramate):** Stop drug + **cycloplegics (atropine/cyclopentolate)** + suppressants/hyperosmotics/steroids; **NO miotics; LPI fails in topiramate** • **Anterior-Pulling (ICE/NVG):** Suppressants to GDD.",
+        "cite": "4"
+      }
     ]
   },
   "standard-17": {
@@ -1532,6 +1712,36 @@
         "answer": 0,
         "explanation": "Tsai et al. classified barriers into situational/environmental (49%), medication regimen (32%), patient-related (16%), and provider-related (3%) factors, showing routine disruptions are the leading cause of missed doses.",
         "cite": "2"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-47-1",
+        "label": "Adherence vs Persistence",
+        "front": "Define Compliance, Adherence, and Persistence in glaucoma pharmacotherapy, and cite real-world non-adherence and 1-year persistence rates.",
+        "back": "**Compliance:** Passive following of instructions • **Adherence:** Active, collaborative accuracy of **dose, timing, interval & technique** • **Persistence:** Duration of continuous therapy until permanent discontinuation • **Real-world rates (GAPS / Travatan Dosing Aid):** **30–50%** of patients are clinically non-adherent (<75–80% doses), and **<50% remain persistent** on initial monotherapy at **12 months** (pharmacy **MPR <80%** flags poor adherence).",
+        "cite": "1"
+      },
+      {
+        "id": "card-47-2",
+        "label": "Instillation & Washout Pitfalls",
+        "front": "State Tsai's four adherence barrier categories with percentages, and explain video-documented instillation errors and the physiology of inter-drop washout.",
+        "back": "**Tsai 4 domains:** **Situational/environmental (~49%)**, **medication regimen (~32%)**, **patient-related (~16%)**, **provider-related (~3%)** • **Technique errors (Stone et al.):** **30–50%** miss the eye, instill multiple drops, or touch the bottle tip • **Washout physiology:** Cul-de-sac holds only **7–10 µL** (commercial drop = **25–50 µL**; tear turnover ~16%/min) → immediate 2nd drop flushes **>50%** of the 1st; wait **≥5 minutes** and use **FDCs**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-47-3",
+        "label": "BAK Toxicity & Systemic Uptake",
+        "front": "How does chronic Benzalkonium Chloride (BAK) exposure impair adherence and trabeculectomy survival, and how much of a topical drop drains systemically?",
+        "back": "**BAK (present in ~70% of bottles):** Disrupts tear lipids, depletes goblet cells, provokes dry eye/hyperemia (driving non-adherence), and triggers **subconjunctival inflammation & fibroblast proliferation that reduces trabeculectomy success** → switch to **PF** or soft-preserved (SofZia/Purite/Polyquad) drops • **Systemic uptake:** Up to **80%** drains via the nasolacrimal duct to nasal mucosa (**bypassing hepatic first-pass metabolism**); **2–3 min NLO cuts systemic uptake 60–67%**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-47-4",
+        "label": "Overcoming Medical Pitfalls",
+        "front": "What empathetic detection methods, behavioral tools, and drop-free alternatives effectively overcome glaucoma medication non-adherence?",
+        "back": "**Detection:** Non-judgmental normalizing questions (*'How many doses did you miss last week?'*), **MPR (<80%)**, observed instillation • **Behavioral:** Once-daily PGAs, **FDCs**, habit-stacking (by toothbrush), alarms, caregiver help • **Drop-free options:** **LiGHT Trial** showed first-line **SLT keeps 74.2% drop-free at target IOP at 3 yrs** with fewer surgeries; **intracameral implants** (bimatoprost/travoprost SR) and MIGS/early surgery bypass daily drops.",
+        "cite": "5"
       }
     ]
   },
@@ -1757,6 +1967,36 @@
         "explanation": "On indentation gonioscopy in plateau iris, the peripheral iris drapes over anteriorly positioned ciliary processes while the central iris sits over the lens, producing the characteristic double-hump (sine-wave) configuration.",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-48-1",
+        "label": "ISGEO & Ritch 4-Level System",
+        "front": "Define the three ISGEO stages of primary angle-closure disease (PACS, PAC, PACG) and list Ritch's four anatomical levels of angle-closure force.",
+        "back": "**ISGEO (all require ≥180° / ≥2 quadrants ITC on static gonioscopy):** **PACS** = normal IOP, no PAS, no GON • **PAC** = elevated IOP and/or PAS (or prior acute stigmata), NO GON • **PACG** = PAC + confirmed **GON** • **Ritch's 4 Levels:** **1. Iris** (relative pupillary block, ~75–90%) • **2. Ciliary body** (plateau iris) • **3. Lens** (phacomorphic/ectopia lentis) • **4. Retrolenticular** (aqueous misdirection, choroidal effusion, SCH).",
+        "cite": "1"
+      },
+      {
+        "id": "card-48-2",
+        "label": "AACC & Biometric Risk Factors",
+        "front": "Recall the biometric cutoffs predisposing to angle closure and contrast Acute Angle-Closure Crisis (AACC), Intermittent, and Chronic PACG.",
+        "back": "**Biometry:** **AL <22 mm**, **ACD <2.5 mm**, high lens vault, small cornea, hyperopia, age, female, Asian • **AACC:** Abrupt pain, nausea/vomiting, **rainbow haloes** (corneal edema), **IOP 40–80 mmHg**, **mid-dilated (4–6 mm) vertically oval fixed pupil**, 360° closure (prior attacks leave **Vogt's triad**: Glaukomflecken, sectoral iris atrophy, pigment dusting) • **Intermittent:** Dim-light haloes relieved by sleep miosis • **Chronic PACG:** Silent POAG mimic needing dark-room gonioscopy.",
+        "cite": "2"
+      },
+      {
+        "id": "card-48-3",
+        "label": "Aqueous Misdirection Hallmarks",
+        "front": "Explain the pathophysiology and six clinical hallmarks of Aqueous Misdirection (Malignant Glaucoma), including the critical IOP trap with a functioning bleb.",
+        "back": "**Mechanism (0.6–4% post-PACG surgery, short/nanophthalmic eyes):** **Anterior ciliary rotation** against lens/anterior hyaloid (**ciliolenticular/ciliovitreal block**) + Quigley choroidal expansion diverts aqueous **posteriorly into vitreous** • **6 Hallmarks:** (1) **Uniformly flat central & peripheral AC**, (2) high OR **normal IOP (16–22 mmHg) with a bleb**, (3) **patent PI**, (4) **myopic shift (−1.5 to −4 D)**, (5) **normal B-scan**, (6) **miotics WORSEN, cycloplegics IMPROVE**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-48-4",
+        "label": "Stepwise Malignant Glaucoma Rx",
+        "front": "Outline the three-step management ladder for Aqueous Misdirection (medical response rate, laser option, and definitive surgery) and how B-scan excludes SCH.",
+        "back": "**1. Medical (~50% respond in 5 days):** **Atropine 1% QID + phenylephrine 2.5%**, maximal aqueous suppressants, **IV mannitol (1–2 g/kg)**; **NO miotics**; maintain chronic atropine • **2. Laser:** **Nd:YAG posterior capsulotomy + anterior hyaloidotomy** (pseudophakes/aphakes) or TSCPC • **3. Surgery:** **PPV + irido-zonulo-hyaloido-vitrectomy (IZHV)** (+ phaco if phakic) creating a **unicameral eye** • **vs. SCH:** Excruciating pain, rock-hard IOP, **dense heterogeneous B-scan domes**.",
+        "cite": "3"
+      }
     ]
   },
   "standard-19": {
@@ -1936,6 +2176,36 @@
         ],
         "answer": 1,
         "explanation": "Myotonic dystrophy classically causes bilateral ocular hypotony (due to ciliary body atrophy and altered uveoscleral outflow) alongside Christmas-tree cataracts, ptosis, and distal myotonia.",
+        "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-49-1",
+        "label": "Statistical vs Clinical Hypotony",
+        "front": "Distinguish Statistical Hypotony from Clinical Hypotony and explain the Starling-force vicious cycle linking ciliochoroidal effusion to worsening hypotony.",
+        "back": "**Statistical hypotony:** **IOP ≤6.5 mmHg** (>3 SD below mean ~15.5 mmHg); rigid older eyes may keep 20/20 acuity • **Clinical hypotony:** IOP low enough (usually **≤5–6 mmHg**, up to 8–9 mmHg) to cause **structural/functional damage** (maculopathy, corneal folds, effusion, vision loss) • **Vicious cycle:** IOP falls below choriocapillaris hydrostatic pressure → suprachoroidal transudation (**ciliochoroidal effusion**) → ciliary body detachment → **further ↓ aqueous secretion**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-49-2",
+        "label": "Hypotony Maculopathy Features",
+        "front": "Describe the pathophysiology, refractive shift, OCT/FA imaging signatures, and five major risk factors for Hypotony Maculopathy (Dellaporta/Gass).",
+        "back": "**Pathophysiology:** Collapse of compliant sclera buckles choroid/RPE into **stellate foveal** and horizontal **chorioretinal folds** → metamorphopsia + **hyperopic shift** (0.5–1.5 mm axial shortening) • **Imaging:** OCT shows undulating RPE/choroidal folds; **FA shows alternating hyperfluorescent crests & hypofluorescent troughs WITHOUT leakage** • **5 Risk factors:** **Young age (<60)**, **myopia** (low scleral rigidity), **male sex**, **primary MMC trabeculectomy**, high pre-op IOP.",
+        "cite": "3"
+      },
+      {
+        "id": "card-49-3",
+        "label": "Anterior & Posterior Signs",
+        "front": "Summarize the Spaeth grades of shallow AC, corneal/lens signs of hypotony, and how serous choroidal effusion differs from suprachoroidal hemorrhage.",
+        "back": "**Spaeth AC grading:** **Grade I** = peripheral iridocorneal touch • **Grade II** = touch to pupil margin • **Grade III** = **lenticulocorneal/IOL touch** (emergency) • **Anterior:** Descemet folds, **with-the-rule astigmatism**, flare/PAS, rapid anterior subcapsular cataract • **Serous effusion:** Smooth **orange-brown lobulated domes** bound by **4 vortex veins**, **transilluminates**, **echo-lucent B-scan** (opposing touch = **kissing choroidals**); disc swelling from axoplasmic stasis.",
+        "cite": "2"
+      },
+      {
+        "id": "card-49-4",
+        "label": "Etiologies by AC Depth & Trauma",
+        "front": "Classify hypotony etiologies by anterior chamber depth (shallow vs. normal/deep), and name three diagnoses you MUST exclude in post-traumatic hypotony.",
+        "back": "**Shallow AC:** External leak (Seidel+ early dehiscence / late **1–3%/yr avascular MMC bleb leak**), overfiltering trab/non-valved GDD, **cyclodialysis cleft** • **Normal/Deep AC:** Ciliary shutdown (**uveitis**, cyclitic membrane, cyclodestruction, OIS, **cidofovir**), **RRD**, systemic/osmotic (**DKA, dehydration, uremia, myotonic dystrophy**), **pseudohypotony** (thin/post-LASIK cornea) • **Post-trauma MUST exclude:** **(1) occult scleral rupture, (2) cyclodialysis cleft, (3) RRD**.",
         "cite": "4"
       }
     ]
@@ -2141,6 +2411,36 @@
         "answer": 3,
         "explanation": "Temporarily reducing aqueous humor flow through a small early conjunctival wound leak decreases mechanical shear across the defect, allowing conjunctival epithelium to migrate and seal the leak under a large-diameter bandage contact lens.",
         "cite": "2"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-50-1",
+        "label": "Hypotony Diagnostic Triage",
+        "front": "Use Seidel testing, bleb morphology, AC depth, and imaging (UBM/B-scan) to separate bleb leak, overfiltration, cyclodialysis cleft, and ciliary shutdown.",
+        "back": "**Seidel (2% fluorescein, cobalt blue):** Watch immediately for **frank rivulet** AND **15–30 s for delayed oozing/sweating** over thin MMC blebs • **Seidel+ + shallow AC:** Bleb/wound leak • **Seidel− + exuberant bleb + shallow AC:** Overfiltration • **Seidel− + no bleb + shallow AC:** **Cyclodialysis cleft** (gonioscopy/360° **UBM** shows cleft posterior to SS) • **Seidel− + normal/deep AC:** Ciliary shutdown/uveitis/cyclitic membrane (**UBM**), **RRD** (Shafer's sign, B-scan), or OIS.",
+        "cite": "2"
+      },
+      {
+        "id": "card-50-2",
+        "label": "First-Aid & Opposite Steroid Rule",
+        "front": "What are the universal stabilization steps in ocular hypotony, and how does corticosteroid strategy flip between uveitic hypotony versus early bleb leak?",
+        "back": "**Universal first-aid:** (1) **Stop ALL aqueous suppressants** (check fellow-eye β-blocker crossover!), (2) Fox shield + avoid Valsalva, (3) **Atropine 1% BID–TID** (tightens zonules, deepens AC, stabilizes BAB), (4) topical antibiotics if Seidel+ • **Opposite steroid rules:** **Intensify steroids** (prednisolone q1–2h ± oral prednisone 1 mg/kg) for **uveitis, ciliary shutdown, or serous effusion**; **TAPER steroids** in **early bleb leak or overfiltration** to promote fibroblastic healing.",
+        "cite": "1"
+      },
+      {
+        "id": "card-50-3",
+        "label": "Bleb Leak & Overfiltration Rx",
+        "front": "Contrast the management of Early vs. Late Avascular MMC Bleb Leaks and Trabeculectomy vs. Non-Valved GDD Overfiltration.",
+        "back": "**Early bleb leak:** **16–20 mm BCL**, antibiotics, steroid taper, brief aqueous suppressants, glue, or resuturing (10-0 nylon/9-0 Vicryl) • **Late avascular MMC leak:** Rarely seals conservatively → **bleb excision + conjunctival advancement** (or autograft/patch) • **Trab overfiltration:** Simmons shell, **Palmberg compression sutures**, autologous blood, intracameral **Healon GV** → **flap resuturing** • **Non-valved GDD:** **7-0 Vicryl re-ligation** or **Prolene ripcord**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-50-4",
+        "label": "Cyclodialysis & Drainage Rules",
+        "front": "State the 3-step cyclodialysis cleft ladder, the three strict triggers for urgent choroidal drainage, and the repair window for hypotony maculopathy.",
+        "back": "**Cyclodialysis ladder:** (1) **Atropine 1% × 6 wks** (low steroids) → (2) **Argon laser / diode / cryo** (<1.5–2 clock hrs) → (3) **Direct cyclopexy** (>2 clock hrs/refractory; expect **40–60 mmHg rebound spike at 24–72 hrs**) • **3 Urgent posterior sclerotomy (3.5–4 mm post-limbus) triggers:** (1) **Spaeth Grade III lenticulocorneal touch**, (2) **kissing choroidals >48–72 hrs**, (3) non-resolving effusion with macular/corneal decline • **Maculopathy window:** Fix within **2–6 months**.",
+        "cite": "3"
       }
     ]
   }

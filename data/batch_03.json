@@ -195,6 +195,36 @@
         "explanation": "Excessive nocturnal BP dipping (often worsened by evening antihypertensive dosing) combines with supine nocturnal IOP peaks to drop diastolic ocular perfusion pressure (DOPP = DBP − IOP), causing recurrent ONH ischemia–reperfusion injury.",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-21-1",
+        "label": "Ancestry & NTG Genes",
+        "front": "Contrast ethnic distributions and monogenic/polygenic susceptibility genes between high-tension POAG and NTG.",
+        "back": "**High-tension POAG:** **3–5×** in African/Afro-Caribbean (Baltimore/Barbados); intermediate-high in Hispanics (LALES); *MYOC* (**GLC1A**) • **NTG:** **70–90% of POAG in East Asians** (Tajimi/Namil); female progression risk (**HR 1.85**, CNTGS); *OPTN* (**GLC1E**) & *TBK1* **duplication** • **GWAS:** *CDKN2B-AS1* (9p21), *SIX1/SIX6*, *CAV1/2*, *TXNRD2*; family Hx **4–9×**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-21-2",
+        "label": "OPP & Flammer Syndrome",
+        "front": "Write the MOPP/DOPP/SOPP formulas and explain Flammer syndrome and nocturnal hypotension in glaucomatous progression.",
+        "back": "**MOPP = (2/3 MAP) − IOP** • **DOPP = DBP − IOP** (risk **<50–55 mmHg**) • **SOPP = SBP − IOP** (EMGT risk **<125 mmHg**) • **Flammer syndrome:** primary vascular dysregulation (**migraine**, **Raynaud**, low BP, ↓ thirst, ↑ **ET-1**/NO imbalance) → faulty ONH autoregulation & ischemia–reperfusion • **Nocturnal BP dip >10–20%** (Thessaloniki: overtreated DBP <90).",
+        "cite": "4"
+      },
+      {
+        "id": "card-21-3",
+        "label": "Trial Non-IOP Predictors",
+        "front": "Summarize the key non-IOP hazard ratios and ocular biomechanical predictors across OHTS, EMGT, and CNTGS.",
+        "back": "**OHTS:** thin CCT (**HR 1.71 per 40 µm** — signals weak sclera/lamina), older age, larger VCDR, higher PSD • **CNTGS:** **disc hemorrhage (HR 2.72)**, **migraine (HR 2.58)**, **female sex (HR 1.85)** • **EMGT:** thin CCT, low SOPP, older age, exfoliation, disc hemorrhages • **Low CH** & **myopia (2–3×)** independently accelerate RNFL/VF loss.",
+        "cite": "3"
+      },
+      {
+        "id": "card-21-4",
+        "label": "TLPG & Clinical Actions",
+        "front": "Write the TLPD/TLPG equations and state 3 clinical actions for non-IOP risk factors in progressing NTG.",
+        "back": "**TLPD = IOP − CSFP** • **TLPG = (IOP − CSFP) / Lamina Thickness** (low lumbar CSFP in NTG/POAG drives posterior bowing & BDNF block) • **3 actions:** (1) **MRI** if pallor > cupping, age <50, unilateral, or vertical VF; (2) **24-hr ABPM** to shift bedtime antihypertensives to morning + screen **OSA/anemia**; (3) **avoid bedtime topical β-blockers** (worsen nocturnal hypotension).",
+        "cite": "2"
+      }
     ]
   },
   "basic-clinical_science-13": {
@@ -405,6 +435,36 @@
         "explanation": "Topiramate causes idiosyncratic bilateral ciliochoroidal effusion with forward rotation of the lens–iris diaphragm (Level IV non-pupillary-block mechanism). LPI is ineffective and pilocarpine worsens anterior shift; stopping topiramate with cycloplegics, aqueous suppressants, and steroids resolves the attack.",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-22-1",
+        "label": "ISGEO & Presentations",
+        "front": "Define PACS, PAC, and PACG by ISGEO criteria and contrast acute, subacute, and chronic angle-closure presentations.",
+        "back": "Occludable = **PTM unseen ≥180°** on static dark-room gonio • **PACS:** ITC only (normal IOP, no PAS, normal ONH/VF) • **PAC:** ITC + **↑ IOP and/or PAS** (or Glaukomflecken/spiral atrophy), no GON • **PACG:** PAC + **GON & VF loss** • Most blinding PACG in India/Asia is silent **chronic 'creeping'** closure mimicking POAG; subacute = evening halos relieved by sleep miosis.",
+        "cite": "1"
+      },
+      {
+        "id": "card-22-2",
+        "label": "Ritch 4 Levels",
+        "front": "List Ritch's 4 anatomical levels of angle closure and contrast Relative Pupillary Block with Plateau Iris Configuration vs. Syndrome.",
+        "back": "**I. Iris (pupillary block, 75–90%):** peaks at **3–5 mm** mid-dilation; shallow central+peripheral AC, *iris bombé*, open sulcus → cured by **LPI** • **II. Ciliary body (plateau iris, ~30% Asian PACG):** deep central AC, flat iris, **absent sulcus on UBM**, **double-hump** on indentation; **syndrome** = closure persists **despite patent LPI** → pilocarpine/**ALPI** • **III. Lens** • **IV. Retrolenticular**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-22-3",
+        "label": "Secondary & Malignant ACG",
+        "front": "Contrast Anterior Pulling vs. Posterior Pushing secondary angle closure and outline Aqueous Misdirection (malignant glaucoma).",
+        "back": "**Anterior pulling (no pupillary block):** **NVG**, **ICE**, PPCD, epithelial downgrowth, uveitic PAS • **Posterior pushing:** *seclusio pupillae*, AC-IOL/silicone oil (inferior Ando PI), phacomorphic/microspherophakia (miotics worsen lens-block!), **topiramate** effusion • **Aqueous misdirection:** post-op hyperope, **uniformly flat central+peripheral AC**, high IOP, **patent LPI** → **atropine 1%** (NO miotics!), YAG hyaloidotomy, or **IZHV**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-22-4",
+        "label": "ZAP & EAGLE Trials",
+        "front": "State the headline results and clinical management shifts from the ZAP (2019) and EAGLE (2016) angle-closure trials.",
+        "back": "**ZAP (PACS):** prophylactic LPI halved progression (4.19 vs. 7.97 per 1,000 eye-yrs), but 6-yr conversion was low (~0.8%/yr; **NNT ~44**) → favors **selective** rather than universal LPI • **EAGLE (age ≥50, PAC with IOP ≥30 or PACG, no cataract):** **clear-lens extraction** beat LPI + meds in QoL, IOP control, fewer drops, and cost-effectiveness.",
+        "cite": "4"
+      }
     ]
   },
   "basic-clinical_science-14": {
@@ -593,6 +653,36 @@
         "explanation": "In PISK (Interface Fluid Syndrome), steroid-induced high IOP forces aqueous into the LASIK flap interface, cushioning the central cornea and producing falsely low central GAT readings while mimicking DLK; corticosteroids must be stopped immediately and IOP aggressively lowered.",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-23-1",
+        "label": "Normal CCT & Modalities",
+        "front": "State normal adult CCT values, ethnic/diurnal/PGA variations, and compare the 4 corneal pachymetry modalities.",
+        "back": "Mean **535–555 µm** (SD ~35 µm); thinner in **African (~520–530)** & **South Asian (~515–530)**; thicker in OHT (**573 µm** OHTS) • ↑ 10–20 µm on waking; ↓ 3–5 µm/decade; ↓ 5–15 µm on PGAs • **USP (20–50 MHz, 1640 m/s):** gold standard • **AS-OCT:** reads **5–15 µm thinner** than USP • **Scheimpflug:** full map • **Orbscan:** needs 0.92 factor.",
+        "cite": "1"
+      },
+      {
+        "id": "card-23-2",
+        "label": "GAT Errors & Nomograms",
+        "front": "How do thick, thin, edematous, and post-LASIK corneas distort GAT, and why do AAO/WGA discourage linear CCT correction formulas?",
+        "back": "**W + S = (Pt × A) + B** (cancels at **3.06 mm, ~520 µm**) • **Thick (>570 µm):** B > S → **overestimates** IOP • **Thin (<520 µm), post-LASIK (1.5–4+ mmHg low), or edematous (low Young's modulus):** B < S → **underestimates** IOP • **Avoid linear formulas:** **Young's modulus** shifts GAT up to 15–17 mmHg; classify qualitatively as **thin (<520), average (520–570), thick (>570 µm)**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-23-3",
+        "label": "ORA, Corvis & DCT",
+        "front": "Define the 4 ORA biomechanical outputs (CH, CRF, IOPg, IOPcc) and contrast Corvis ST and Pascal DCT.",
+        "back": "**ORA:** **CH = P1 − P2** (normal **10–11 mmHg**, viscoelastic damping; each **−1 mmHg CH** accelerates VFI loss ~**0.25%/yr**); **CRF = P1 − 0.7·P2** (overall rigidity, tracks CCT); **IOPg = (P1+P2)/2**; **IOPcc** (minimizes CCT/LASIK error) • **Corvis ST:** 4,330 fps Scheimpflug → **SP-A1 & bIOP** • **Pascal DCT:** concave 10.5 mm tip neutralizes bending force + OPA.",
+        "cite": "4"
+      },
+      {
+        "id": "card-23-4",
+        "label": "OHTS CCT Risk Rules",
+        "front": "Quantify OHTS baseline CCT findings and state the clinical management rules for thin versus thick corneas.",
+        "back": "**OHTS (mean CCT 573 µm):** **thin CCT** was the strongest single baseline predictor of OHT-to-POAG conversion — **HR 1.71 per 40 µm thinner**; **CCT ≤555 µm carried 3× greater risk** than >588 µm • **Clinical rules:** never dismiss true cupping just because CCT is thick; set lower target IOP & monitor closely when **CCT <520 µm** or **CH <9 mmHg**.",
+        "cite": "3"
+      }
     ]
   },
   "basic-clinical_science-15": {
@@ -775,6 +865,36 @@
         "answer": 2,
         "explanation": "In glaucoma, the remaining neuroretinal rim retains its normal pink color even as cupping deepens; pallor of the remaining neuroretinal rim exceeding cupping is a classic red flag for non-glaucomatous optic neuropathy (compressive, ischemic, toxic, or hereditary).",
         "cite": "3"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-24-1",
+        "label": "Biomicroscopy Lenses",
+        "front": "Write the true vertical disc diameter formula and list the image orientation and slit-height correction factors for key lenses.",
+        "back": "**True Vertical Disc Diameter = Slit-Beam Height × Lens Correction Factor** • **Volk +60D:** real inverted, 1.15×, **×0.88** (highest detail, dilated) • **Volk +78D:** real inverted, 0.93×, **×1.11** (routine balance) • **Volk +90D:** real inverted, 0.76×, **×1.33** (small/undilated pupil) • **Goldmann contact:** erect virtual, 0.93×, **×1.26** • **Area Centralis:** inverted, 1.06×, **×0.94**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-24-2",
+        "label": "5-R Checklist & DDLS",
+        "front": "Outline Fingeret's '5 R's' biomicroscopy checklist and explain why Spaeth's DDLS outperforms simple cup-to-disc ratio.",
+        "back": "**5 R's:** **1. Ring** (Elschnig's ring — exclude PPA; small **<1.5**, average **1.5–2.0**, large **>2.0 mm**), **2. Rim** (vessel-kinking contour, ISNT), **3. RNFL** (red-free), **4. Region of PPA** (α vs. β), **5. Retinal/disc hemorrhages** • **DDLS (stages 1–10):** combines **narrowest rim-to-disc ratio with disc size**, preventing errors in small discs (0.5 = glaucoma) or megalopapilla (0.7 = normal).",
+        "cite": "4"
+      },
+      {
+        "id": "card-24-3",
+        "label": "Red-Free RNFL & Rim",
+        "front": "Describe healthy vs. glaucomatous RNFL appearance under red-free light and the key biomicroscopic contour signs of rim loss.",
+        "back": "**Red-free (540–570 nm):** healthy RNFL shows bright silvery striations obscuring medium vessel walls ('double-hump' at poles) • **Wedge/slit defect:** dark arcuate stripe **> arteriole width** touching disc margin (precedes SAP by years) • **Diffuse loss:** dull sheen, crisp exposed vessels • **Contour signs:** trace **vessel kinking** (not pallor!), ISNT (~80% normal), bayoneting, circumlinear baring, laminar dots.",
+        "cite": "3"
+      },
+      {
+        "id": "card-24-4",
+        "label": "Physiologic vs. Mimics",
+        "front": "Differentiate physiological cupping from glaucomatous and tilted myopic discs, and state the structure–function cross-check rule.",
+        "back": "**Physiological cup:** symmetric (**VCDR diff <0.2**), round/horizontally oval, intact ISNT & RNFL, no notch/Drance heme • **Myopic/tilted disc:** oblique insertion, myopic conus, shallow cup → trace vessel deflections + OCT/VF • **Cross-check pearl:** an **inferotemporal rim notch & RNFL wedge (7 o'clock OD)** MUST match a **superior nasal step/arcuate scotoma**.",
+        "cite": "1"
       }
     ]
   },
@@ -971,6 +1091,36 @@
         "answer": 1,
         "explanation": "In advanced glaucoma, central tunnel vision (papillomacular bundle) and a peripheral temporal crescent (nasal radiating fibers) persist longest; ultimately central fixation is lost leaving the far-temporal island as the final visual remnant.",
         "cite": "2"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-25-1",
+        "label": "Retinotopic Basis",
+        "front": "State the 3 retinotopic RNFL principles explaining why glaucomatous defects respect the horizontal meridian and spare fixation late.",
+        "back": "**1. Polar vulnerability:** larger superior/inferior laminar pores damage arcuate bundles earliest • **2. Horizontal temporal raphe:** superior/inferior temporal axons never cross midline → defects **respect the nasal horizontal meridian** (NOT vertical!) • **3. Resilient bundles:** papillomacular (central **5°–10° tunnel**) and nasal radiating (**final temporal island**) survive longest.",
+        "cite": "1"
+      },
+      {
+        "id": "card-25-2",
+        "label": "Early & Moderate Defects",
+        "front": "Describe the classic early and moderate glaucomatous VF defects, noting the 1 defect that does NOT respect the horizontal meridian.",
+        "back": "**Early:** **paracentral scotomas** (10°–20° Bjerrum zone, superonasal; steeper/closer to fixation in NTG), **Rönne's nasal step** (>5 dB midline step, 20–40%), **Seidel scotoma** (comma off blind spot; isolated blind-spot baring is nonspecific), **temporal wedge** (<5%, nasal fibers — **ignores horizontal meridian**) • **Moderate:** **Bjerrum arcuate**, **altitudinal**, **double arcuate (ring)**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-25-3",
+        "label": "HPA Severity Staging",
+        "front": "State the Hodapp–Parrish–Anderson (HPA) Mean Deviation, Pattern Deviation, and central 5° criteria for Early, Moderate, and Severe glaucoma.",
+        "back": "**Early:** **MD > −6 dB**; <25% pts p<5% (<14 on 24-2 / <18 on 30-2), <10 p<1%; no central 5° pt <15 dB • **Moderate:** **MD −6 to −12 dB**; <50% p<5% (<27 / <37), <20 p<1%; no 0 dB in central 5°, <15 dB in ≤1 hemifield • **Severe:** **MD < −12 dB** OR ≥50% p<5% / ≥20 p<1% OR **any 0 dB in central 5°** OR <15 dB in **both** central 5° hemifields.",
+        "cite": "3"
+      },
+      {
+        "id": "card-25-4",
+        "label": "10-2 & MRI Flags",
+        "front": "Why does 24-2 miss early macular damage, when should 10-2 perimetry be ordered, and which VF patterns demand urgent MRI?",
+        "back": "**24-2 gap:** 6° spacing puts only **4 test points inside central 8°**, missing early **macular vulnerability zone** arcuate defects (notably in **NTG** and high myopia) • **Order 10-2 (2° spacing):** depressed central 24-2 points, macular OCT GCIPL thinning, or tunnel vision (fixation-split check) • **Urgent MRI:** **vertical-meridian** hemianopia, cecocentral scotoma, unexplained rapid loss.",
+        "cite": "4"
       }
     ]
   },
@@ -1233,6 +1383,36 @@
         "explanation": "Topical beta-blockers undergo systemic absorption via the nasal mucosa and exert a contralateral crossover effect that lowers IOP in the untreated fellow eye by approximately 1–2 mm Hg, which can underestimate true drug efficacy during a monocular trial.",
         "cite": "1"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-26-1",
+        "label": "Stage-Based Target IOP",
+        "front": "State the evidence-based initial target IOP percentage drops and upper limits for High-Risk OHT, Mild/Moderate/Severe POAG, and NTG.",
+        "back": "**High-risk OHT:** **≥20% ↓** (≤22–24 mmHg; OHTS) • **Mild POAG:** **20–25% ↓** (16–18 mmHg; EMGT) • **Moderate POAG:** **≥30% ↓** (14–16 mmHg) • **Severe POAG:** **≥35–40% ↓** (**10–12 mmHg**; AGIS-7) • **NTG:** **≥30% ↓** (**10–12 mmHg**; CNTGS) • **Dynamic rule:** lower target further on confirmed OCT/VF progression after verifying adherence & nocturnal peaks.",
+        "cite": "1"
+      },
+      {
+        "id": "card-26-2",
+        "label": "Stepwise Therapy & MTMT",
+        "front": "Outline the stepwise medical therapy algorithm from monotherapy/SLT through switching, adding, and maximal tolerated medical therapy (MTMT).",
+        "back": "**1. Monotherapy** (QHS **PGA**, 25–35% drop, flat 24-hr curve) or **primary SLT** (LiGHT) • **2. Reassess 4–6 wks** (peak/trough) • **3. Non-responder (<15% ↓):** **switch** monotherapy rather than adding • **4. Partial responder (>15% ↓):** add **complementary class** (prefer fixed combinations) • **5. MTMT:** **3–4 classes in 2–3 bottles**; escalate to laser/surgery if uncontrolled.",
+        "cite": "4"
+      },
+      {
+        "id": "card-26-3",
+        "label": "Washout & Nocturnal Rule",
+        "front": "List the recommended washout periods for all 5 topical glaucoma drug classes and explain nocturnal efficacy differences.",
+        "back": "**Washout periods:** **PGAs 4–6 wks** (ECM remodeling) • **β-blockers 4 wks** • **α2-agonists 2–4 wks** • **Topical CAIs 1 wk (5–7 days)** • **Miotics 3 days** • **Nocturnal rule:** sleep drops aqueous inflow ~50%, so **β-blockers lose nighttime efficacy**, whereas **PGAs & CAIs preserve 24-hr nocturnal control**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-26-4",
+        "label": "Drop Kinetics & BAK",
+        "front": "State tear-film volume limits, drop spacing, punctal occlusion benefit, and why benzalkonium chloride (BAK) threatens filtration surgery.",
+        "back": "Cul-de-sac holds **7–10 µL** vs. dropper **30–50 µL** → **<5%** corneal penetration • **Space drops ≥5 min** apart • **Punctal occlusion + lid closure 2–3 min:** ↑ ocular absorption & cuts **systemic toxicity by 60–70%** • **BAK toxicity:** disrupts tear lipid layer, kills goblet cells, drives subconjunctival fibrosis → **trabeculectomy bleb failure** (use PF/polyquad/purite/sofZia).",
+        "cite": "2"
+      }
     ]
   },
   "basic-clinical_science-18": {
@@ -1471,6 +1651,36 @@
         "explanation": "Brimonidine is lipophilic and readily crosses the immature blood–brain barrier in young children, activating central alpha-2 receptors to produce profound somnolence, hypothermia, bradycardia, hypotension, and potentially fatal apnea.",
         "cite": "1"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-27-1",
+        "label": "PGAs & Latanoprostene",
+        "front": "State the mechanism, dosing caveat, relative contraindications, and signature side effects of PGAs and latanoprostene bunod.",
+        "back": "**Mechanism:** **FP-receptor** → **MMP-1/-3/-9** ciliary ECM remodeling → **↑ uveoscleral outflow** (**25–35% ↓**, QHS; BID *lowers* efficacy via desensitization); **latanoprostene bunod** adds **NO/cGMP** TM relaxation • **Relative CIs:** active uveitis, **HSV keratitis**, high CME risk/PCR, pregnancy (Cat C) • **Effects:** hyperemia (highest bimatoprost), permanent iris darkening, hypertrichosis, **PAP** (fat atrophy/deep sulcus/ptosis), CME.",
+        "cite": "1"
+      },
+      {
+        "id": "card-27-2",
+        "label": "Beta-Blockers & Alpha-2",
+        "front": "Compare β-blockers and α2-agonists on mechanism, efficacy, dosing timing, contraindications, and signature adverse effects.",
+        "back": "**β-blockers (timolol, betaxolol β1-selective; 20–25% ↓, QAM):** ciliary β2/cAMP block; minimal night effect • **CIs:** asthma, COPD, bradycardia, 2nd/3rd° AV block, decompensated CHF • **Effects:** bronchospasm, hypotension, masked diabetic hypoglycemia, ↓ HDL (spared by carteolol ISA) • **Brimonidine (20–25% ↓):** ↓ inflow + chronic ↑ uveoscleral; **Cat B pregnancy** (stop near delivery); **CI <2 yrs** & MAOIs; **10–25% follicular allergy**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-27-3",
+        "label": "Carbonic Anhydrase Inhibitors",
+        "front": "Compare topical vs. systemic CAIs by mechanism, IOP drop, contraindications, and classic local/systemic adverse effects.",
+        "back": "**CA-II inhibition** blocks HCO₃⁻/Na⁺/water inflow (**keeps nocturnal effect**): topical **dorzolamide/brinzolamide (15–20% ↓)** vs. oral **acetazolamide (30–40% ↓)** / **methazolamide** (hepatic, less acidosis/stones) • **CIs:** severe sulfa SJS, CrCl <30, cirrhosis (encephalopathy), **sickle cell** (acidosis triggers sickling), low corneal ECD • **Effects:** stinging/dysgeusia; paresthesias, **hyperchloremic acidosis**, hypokalemia, **calcium phosphate stones**, rare aplastic anemia.",
+        "cite": "2"
+      },
+      {
+        "id": "card-27-4",
+        "label": "ROCK, Miotics & Osmotics",
+        "front": "Summarize the signature adverse effects and contraindications of ROCK inhibitors, pilocarpine, and hyperosmotic agents.",
+        "back": "**ROCK (netarsudil ~20% ↓):** ↑ TM + ↓ Pv + NET block; **hyperemia (~50%)**, reversible **cornea verticillata (~20%)**, conjunctival hemorrhages, rare **reticular epithelial edema** • **Pilocarpine (M3, 20–25% ↓; works once IOP <40 in AACC):** **CI in uveitic, NVG, malignant & topiramate ACG**; brow ache, RD risk, SLUDGE • **Osmotics (30–50% acute):** **CI** CHF/renal failure; **glycerol CI in DM** (ketoacidosis); elderly **subdural hematoma**.",
+        "cite": "2"
+      }
     ]
   },
   "basic-clinical_science-19": {
@@ -1701,6 +1911,36 @@
         "explanation": "Topiramate induces idiosyncratic ciliochoroidal effusion with forward rotation of the lens–iris diaphragm (non–pupillary-block ACG). Pilocarpine is strictly contraindicated because it accentuates anterior lens–iris displacement and worsens angle closure; stopping topiramate plus cycloplegics, aqueous suppressants, and steroids is indicated.",
         "cite": "4"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-28-1",
+        "label": "First-Pass & Timolol",
+        "front": "Why do eye drops cause potent systemic interactions, and what are the 4 major systemic drug interactions of topical timolol?",
+        "back": "~**80%** of a drop drains via nasolacrimal duct → nasal mucosa absorption **bypasses hepatic first-pass** (1 drop timolol 0.5% OU ≈ **0.5 mg** oral dose) • **4 Timolol pairs:** **1. Oral β-blockers** (blunt ocular drop + ↑ bradycardia/bronchospasm) • **2. Verapamil/diltiazem/digoxin/amiodarone** (SA/AV block, CHF) • **3. CYP2D6 inhibitors (fluoxetine/paroxetine/quinidine)** → syncope • **4. Insulin/sulfonylureas** (masks tremor/palpitations; **sweating stays intact**).",
+        "cite": "1"
+      },
+      {
+        "id": "card-28-2",
+        "label": "Brimonidine & Cholinergics",
+        "front": "List the high-yield systemic drug interactions of α2-agonists (brimonidine/apraclonidine) and echothiophate/pilocarpine.",
+        "back": "**Brimonidine/Apraclonidine:** **MAOIs** (phenelzine/linezolid — **strictly CI**, hypertensive crisis) • **TCAs/mirtazapine** (block α2 hypotensive effect + ↑ CNS sedation) • **CNS depressants** (additive respiratory depression) • **Echothiophate + Succinylcholine:** depletes **pseudocholinesterase** → **prolonged apnea** (stop **4–6 wks** pre-op!) • Systemic anticholinergics antagonize pilocarpine.",
+        "cite": "2"
+      },
+      {
+        "id": "card-28-3",
+        "label": "Acetazolamide Interactions",
+        "front": "List the 5 major systemic drug interactions of oral acetazolamide and their exact physiological mechanisms.",
+        "back": "**1. High-dose aspirin:** acidosis ↑ unionized CNS salicylate entry + ↓ renal secretion → **salicylate neurotoxicity/coma** • **2. Thiazides/furosemide/steroids + Digoxin:** synergistic **hypokalemia** → digitalis arrhythmias • **3. Topiramate/zonisamide:** additive acidosis & calcium phosphate stones • **4. Lithium:** alkaline urine ↑ clearance → relapse • **5. Quinidine/amphetamines/TCAs:** alkaline urine ↑ reabsorption → toxicity (also ↓ methotrexate clearance).",
+        "cite": "2"
+      },
+      {
+        "id": "card-28-4",
+        "label": "Drug-Induced Glaucoma",
+        "front": "Classify systemic drugs that precipitate open-angle, pupillary-block angle-closure, and ciliochoroidal-effusion angle-closure glaucoma.",
+        "back": "**OAG:** **corticosteroids** (oral/inhaled/topical/intravitreal; ~30–40% normals, up to **90% POAG**) • **Pupillary-block ACG:** **anticholinergics** (nebulized **ipratropium**, TCAs, H1-blockers, oxybutynin), sympathomimetics (pseudoephedrine/salbutamol), SSRIs/SNRIs • **Bilateral non-pupillary-block ACG + −4 to −8 D myopic shift:** **topiramate/sulfonamides** (ciliochoroidal effusion) → stop drug + **cycloplegics + steroids** (**NO pilocarpine!**).",
+        "cite": "4"
+      }
     ]
   },
   "basic-clinical_science-20": {
@@ -1907,6 +2147,36 @@
         ],
         "answer": 3,
         "explanation": "A Bland–Altman plot graphs the difference between the two instruments against their mean, directly revealing systematic bias, proportional error across IOP levels, and 95% limits of agreement—whereas Pearson correlation measures linear association rather than agreement.",
+        "cite": "4"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-29-1",
+        "label": "Biases & Paired Eyes",
+        "front": "Define ITT vs. per-protocol analysis, regression to the mean, Hawthorne effect, and inter-eye correlation in ophthalmic trials.",
+        "back": "**ITT:** analyzes as randomized (preserves randomization; CNTGS needed cataract adjustment to expose biological efficacy) • **Regression to the mean:** extreme baseline IOP drifts toward mean on retest (explains **EGPS placebo IOP drop**) • **Hawthorne effect:** improved adherence under observation • **Inter-eye correlation:** eyes aren't independent → analyze **1 study eye** or use **GEE / mixed models**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-29-2",
+        "label": "Statistical Test Matrix",
+        "front": "Match parametric vs. non-parametric statistical tests to data types and define Type I/II errors, power, and 95% CI significance.",
+        "back": "**Normal (mean ± SD) vs. Skewed (median/IQR):** 2 indep. (*t*-test vs. **Mann–Whitney U**) • 2 paired (paired *t* vs. **Wilcoxon**) • ≥3 groups (ANOVA vs. **Kruskal–Wallis**) • 2×2 categorical (**χ² vs. Fisher's exact**) • Correlation (**Pearson r vs. Spearman ρ**) • **α (Type I):** false positive (Bonferroni adjusts multiplicity); **β (Type II):** false negative (**Power = 1−β ≥80%**) • **95% CI:** significant if excludes **0** (diffs) or **1.0** (ratios).",
+        "cite": "2"
+      },
+      {
+        "id": "card-29-3",
+        "label": "Screening & ROC Curves",
+        "front": "Write the sensitivity, specificity, PPV, NPV, and LR+ formulas, explain the mass-screening PPV paradox, and define AUROC.",
+        "back": "**Sens = TP/(TP+FN)** (SnOUT), **Spec = TN/(TN+FP)** (SpIN) — **prevalence-independent** • **PPV = TP/(TP+FP)**, **NPV = TN/(TN+FN)** — **prevalence-dependent** • **Screening paradox:** at **2% POAG prevalence**, 90% Sens / 90% Spec yields **PPV only 15.5%** (>84% false positives!) • **ROC/AUC:** Sens vs. (1−Spec); **0.50 = chance, 1.00 = perfect**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-29-4",
+        "label": "Survival, Trend & Kappa",
+        "front": "Contrast ARR/NNT, survival models, event- vs. trend-based VF progression, and the 3 agreement metrics (Kappa, ICC, Bland–Altman).",
+        "back": "**ARR = CER − EER**; **NNT = 1/ARR** (OHTS: 9.5%−4.4% = 5.1% → **NNT ≈ 20**) • **Survival:** **Kaplan–Meier** + **log-rank** (right-censoring) & **Cox** multivariable **HR** • **VF progression:** **Event-based (GPA)** = binary ≥3 pts × 3 tests vs. **Trend-based** = linear regression MD/VFI rate • **Agreement:** **Cohen's κ** (categorical), **ICC** (continuous repeatability), **Bland–Altman** (bias & 95% LoA).",
         "cite": "4"
       }
     ]
@@ -2185,6 +2455,36 @@
         ],
         "answer": 0,
         "explanation": "The Chennai Glaucoma Study documented a striking urban–rural gradient in POAG (3.51% urban vs. 1.62% rural) with similar PACG prevalence (~0.88% vs. 0.87%) and an alarming >94% undiagnosed rate (94.1% urban, 98.5% rural).",
+        "cite": "6"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-30-1",
+        "label": "OHT & Early Trials",
+        "front": "Summarize the headline quantitative outcomes of OHTS, EGPS, EMGT, and LiGHT across OHT and newly diagnosed POAG.",
+        "back": "**OHTS (1,636):** ≥20% ↓ cut 5-yr POAG **9.5%→4.4%** (**NNT ~20**; **CCT HR 1.71/40 µm**) • **EGPS (1,077):** dorzolamide **13.4% vs. 14.1%** placebo (NS; validated OHTS 5 risks) • **EMGT (255):** 25% ↓ cut 6-yr prog **62%→45%** (**−10% risk/mmHg**; PXF fastest) • **LiGHT (718):** primary SLT kept **74.2% (3-yr)/69.8% (6-yr)** drop-free with less VF loss (**19.6% vs. 26.8%**) & fewer trabs (**13 vs. 32**).",
+        "cite": "1"
+      },
+      {
+        "id": "card-30-2",
+        "label": "CIGTS, CNTGS & AGIS",
+        "front": "State the headline results and critical subgroup interactions of CIGTS, CNTGS, and AGIS.",
+        "back": "**CIGTS (607):** meds (~35% ↓) vs. initial trab (~48% ↓) had **equal overall VF**, but **trab beat meds if MD ≤ −10 dB** & fared **worse in diabetics** (more cataract) • **CNTGS (145):** ≥30% ↓ cut cataract-adjusted NTG prog **35%→12%**; **50–65% stable untreated**; risks: female, migraine, disc heme • **AGIS (591):** **IOP <18 all visits (mean 12.3)** = zero VF loss; **ATT** better in Black, **TAT** in White patients.",
+        "cite": "3"
+      },
+      {
+        "id": "card-30-3",
+        "label": "Laser & Surgical Trials",
+        "front": "Compare the long-term success/failure rates and key complication trade-offs across GLT/GLTFS, FFSS, TVT, and AVB.",
+        "back": "**GLT/GLTFS (271):** ALT beat timolol by **1.2 mmHg** at 7 yrs (44% vs. 30% monotherapy at 2 yrs) • **FFSS (213):** post-op **5-FU** doubled 5-yr success (**48% vs. 21%**) but ↑ **late bleb leaks (9% vs. 2%)** • **TVT (212):** 5-yr failure **29.8% BGI-350 vs. 46.9% trab+MMC**; re-ops **9% vs. 29%** • **AVB (238):** 5-yr failure **40% BGI vs. 53% AGV**; BGI lower IOP (**13.6 vs. 16.6**) but **4% vs. 0% hypotony failure**.",
+        "cite": "4"
+      },
+      {
+        "id": "card-30-4",
+        "label": "Indian Population Studies",
+        "front": "Contrast prevalence findings and regional practice takeaways across VES, ACES, APEDS, and the Chennai Glaucoma Study (CGS).",
+        "back": "**VES (Vellore, n=972, 30–60 yr):** POAG **0.41%**, PACG **4.32%** (pre-ISGEO), occludable **10.3%** • **ACES (rural TN, n=5,150 ≥40 yr):** glaucoma 2.6% (**POAG 1.7%, PACG 0.5%**), **93% undiagnosed** • **APEDS (≥40 yr):** urban **POAG 2.56% / PACG 1.08%** (rural ~1.62%) • **CGS (ISGEO ≥40 yr):** rural **POAG 1.62%/PACG 0.87%** vs. urban **POAG 3.51%/PACG 0.88%** (PACS 6.3–7.2%; **94–98.5% undiagnosed**).",
         "cite": "6"
       }
     ]

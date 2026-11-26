@@ -214,6 +214,36 @@
         "explanation": "While ciliary stromal capillaries are fenestrated, apical tight junctions (zonulae occludentes) between adjacent inner non-pigmented ciliary epithelial (NPE) cells form the blood–aqueous barrier.",
         "cite": "4"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-1-1",
+        "label": "AC Dimensions & Depth",
+        "front": "What are the normal adult anterior chamber dimensions (depth, diameter, volume), and which conditions deepen vs. shallow it?",
+        "back": "**Central depth:** ~**3.0 mm** (3.0–3.15 mm; range 2.5–4.4 mm) • **Horizontal diameter:** **11.3–12.4 mm** • **Volume:** **200–250 µL** (~220 µL; decreases ~0.11 µL/yr with age) • **Deeper AC:** myopia, aphakia, pseudophakia (PCIOL) • **Shallower AC:** hypermetropia, intumescent cataract, primary angle closure.",
+        "cite": "1"
+      },
+      {
+        "id": "card-1-2",
+        "label": "Gonioscopy Landmarks",
+        "front": "Name the 4 gonioscopic angle landmarks anterior-to-posterior (mnemonic), Schwalbe's line correlations, and the scleral spur's function.",
+        "back": "**S–T–S–C:** **Schwalbe's line** (Descemet's end; **corneal wedge** apex; **Sampaolesi line** in PXF/PDS; **posterior embryotoxon** in ~15% normal & Axenfeld–Rieger/Alagille) • **Trabecular meshwork** • **Scleral spur** (white line; **Brücke's longitudinal muscle** pulls it posteriorly to open TM) • **Ciliary body band** (uveoscleral entry).",
+        "cite": "2"
+      },
+      {
+        "id": "card-1-3",
+        "label": "TM Layers & Aging",
+        "front": "List the 3 histological TM layers inside-to-outside with pore sizes, collector channel count, and age-related TM changes.",
+        "back": "Gonioscopy: **ATM** (non-functional) vs. **PTM** (overlies Schlemm's canal; main filtration) • **Histology:** **Uveal** (2–3 layers, **25–75 µm**) → **Corneoscleral** (**5–50 µm**) → **Juxtacanalicular/JCT** (2–5 layers, **2–20 µm**; peak resistance) → Schlemm's canal → **25–35 collector channels** • **Aging:** ↑ pigment, endothelial loss, thick BM, GAG/debris buildup.",
+        "cite": "3"
+      },
+      {
+        "id": "card-1-4",
+        "label": "Ciliary Body Anatomy",
+        "front": "State the ciliary body's nasal/temporal lengths, pars plicata vs. pars plana measurements, muscle layers, and blood–aqueous barrier.",
+        "back": "Length **4.6–5.2 mm nasally**, **5.6–6.3 mm temporally** • **Pars plicata:** **1.5–2.0 mm** (~25%), **70–80 processes** (aqueous + zonules) • **Pars plana:** **3.5–4.5 mm** (~75%), safe surgical entry **3.0–4.0 mm** post-limbus • **Muscles (CN III):** longitudinal (Brücke's), radial, circular (Müller's) • **Barrier:** apical tight junctions of inner **NPE**.",
+        "cite": "4"
+      }
     ]
   },
   "basic-basic_science-2": {
@@ -384,6 +414,36 @@
         "explanation": "Meyer's loop carries inferior retinal fibers (superior visual field) through the temporal lobe; a right temporal lesion causes a contralateral (left) superior homonymous quadrantanopia ('pie in the sky').",
         "cite": "3"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-2-1",
+        "label": "RNFL Topography",
+        "front": "How many RGC axons form the RNFL, what are their 3 trajectories, and how does this shape early glaucomatous scotomas?",
+        "back": "~**1.2 million** (1.2–1.5M) unmyelinated RGC axons beneath ILM, thickest at superior/inferior disc poles • **3 trajectories:** **Papillomacular** (straight to temporal disc), **Superior/Inferior arcuate** (arch around macula, respect **temporal horizontal raphe**), **Nasal radiating** (direct to nasal disc) • Polar laminar vulnerability yields horizontal-meridian defects.",
+        "cite": "1"
+      },
+      {
+        "id": "card-2-2",
+        "label": "ONH Zones & Supply",
+        "front": "List the 4 anterior-to-posterior zones of the optic nerve head with their exact arterial supply and retrolaminar transition.",
+        "back": "ONH diameter ~**1.5 mm** • **1. Surface RNFL:** unmyelinated; **CRA capillaries** • **2. Prelaminar:** astroglial columns; **peripapillary choroidal vessels** • **3. Lamina cribrosa:** **Circle of Zinn–Haller (SPCAs)**; **primary site of glaucomatous injury** & axoplasmic block • **4. Retrolaminar:** oligodendrocyte myelin doubles diameter to ~**3 mm** + meninges.",
+        "cite": "2"
+      },
+      {
+        "id": "card-2-3",
+        "label": "Visual Pathway Localizing",
+        "front": "State the 4 optic nerve segment lengths, chiasmal decussation ratio, optic tract deficit, Baum's loop deficit, and V1 macular sparing.",
+        "back": "**Optic nerve (~50 mm):** **intraocular 1 mm, intraorbital 25 mm, intracanalicular 9 mm, intracranial 16 mm** • **Chiasm:** **~53% nasal fibers cross** → bitemporal hemianopia • **Optic tract:** **incongruous** homonymous hemianopia • **Baum's loop (parietal):** contralateral inferior quadrantanopia (*'pie on the floor'*) • **V1 (area 17):** dual PCA/MCA supply → **macular sparing**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-2-4",
+        "label": "ISNT & Elschnig Ring",
+        "front": "Define the ISNT rule for neuroretinal rim assessment and the anatomical role of the Border Tissue of Elschnig.",
+        "back": "**ISNT rule:** normal neuroretinal rim thickness typically obeys **Inferior ≥ Superior ≥ Nasal ≥ Temporal** (though anatomic exceptions occur); preferential polar loss in glaucoma breaks this order • **Border Tissue of Elschnig:** collagenous cuff separating the **choroid and Bruch's membrane** from optic nerve tissue at the disc margin.",
+        "cite": "4"
+      }
     ]
   },
   "basic-basic_science-3": {
@@ -530,6 +590,36 @@
         ],
         "answer": 2,
         "explanation": "Prostaglandin analogs remodel ciliary muscle extracellular matrix via matrix metalloproteinases (MMPs) to increase pressure-independent uveoscleral outflow (U). Pilocarpine actually decreases uveoscleral outflow while increasing conventional trabecular facility (C).",
+        "cite": "3"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-3-1",
+        "label": "Aqueous Rate & Profile",
+        "front": "What is the normal rate of aqueous humor formation, its sleep circadian change, and its key biochemical differences from plasma?",
+        "back": "Secreted by **non-pigmented ciliary epithelium (NPE)** at **2.0–2.5 µL/min** (turnover ~**1% of AC volume/min**) • **Circadian rhythm:** drops **45–50% during sleep** (↓ sympathetic tone) • **Vs. plasma:** **<1% protein**, **15–20× higher ascorbate**, higher lactate, slightly lower glucose.",
+        "cite": "1"
+      },
+      {
+        "id": "card-3-2",
+        "label": "Inflow Mechanisms",
+        "front": "Compare the 3 mechanisms of aqueous humor formation and name the key enzymes and water channels driving active secretion.",
+        "back": "**1. Active secretion (~80–90%):** energy-dependent across **NPE** via **Na⁺/K⁺-ATPase** + **carbonic anhydrase (CA-II & CA-IV)** generating an osmotic HCO₃⁻/Na⁺ gradient; water follows via **aquaporins (AQP1, AQP4)** • **2. Ultrafiltration (~10–20%):** Starling pressure flow across fenestrated capillaries • **3. Passive diffusion:** lipid-soluble solutes down gradients.",
+        "cite": "1"
+      },
+      {
+        "id": "card-3-3",
+        "label": "Conventional vs. Uveoscleral",
+        "front": "Contrast conventional (trabecular) and unconventional (uveoscleral) aqueous outflow pathways, proportions, pressure dependence, and aging.",
+        "back": "**Conventional (~85–90%):** **pressure-dependent**; TM → **JCT** + Schlemm's canal inner wall (giant vacuoles/pores) → collector channels → episcleral veins (**C = 0.22–0.28 µL/min/mmHg**) • **Uveoscleral (~10–15%):** largely **pressure-independent**; ciliary body face → ciliary muscle bundles → **suprachoroidal space** → sclera/vortex veins (higher in youth, declines with age).",
+        "cite": "2"
+      },
+      {
+        "id": "card-3-4",
+        "label": "Goldmann Equation & Drugs",
+        "front": "Write the modified Goldmann equation and map antiglaucoma drugs and elevated-Pv disorders onto each variable.",
+        "back": "**Po = (F − U) / C + Pv** (Pv ≈ **8–12 mmHg**) • **↓ F:** β-blockers, CAIs, α2-agonists • **↑ C:** pilocarpine (ciliary pull on scleral spur) & **ROCK inhibitors** (netarsudil/ripasudil, which also **↓ Pv**) • **↑ U:** PGAs (MMP remodeling) • **↑ Pv (mmHg-for-mmHg IOP rise):** Sturge–Weber, carotid–cavernous fistula, thyroid eye disease.",
         "cite": "3"
       }
     ]
@@ -688,6 +778,36 @@
         "explanation": "Parvocellular (midget / P-cells) make up ~70–80% of RGCs, project to LGN layers 3–6, and subserve fine spatial acuity and red–green color vision.",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-4-1",
+        "label": "10 Retinal Layers",
+        "front": "List the 10 microscopic retinal layers inner-to-outer, noting the cells in the INL, nature of the ELM, and retinal thickness extremes.",
+        "back": "**1. ILM** (Müller footplates) → **2. RNFL** → **3. GCL** → **4. IPL** → **5. INL** (bipolar, horizontal, amacrine, Müller nuclei) → **6. OPL** (Henle's layer in macula) → **7. ONL** → **8. ELM** (Müller–photoreceptor *zonulae adherentes*, not true membrane) → **9. Photoreceptors** (~90–120M rods; ~4.6–6M cones) → **10. RPE** • Thickness: **0.1 mm** ora, **0.23 mm** foveola, **0.56 mm** peripapillary.",
+        "cite": "1"
+      },
+      {
+        "id": "card-4-2",
+        "label": "Dual Supply & BRBs",
+        "front": "Describe the dual blood supply of the retina and the anatomical sites of the inner and outer blood–retinal barriers.",
+        "back": "**Inner retina (ILM through inner INL, incl. RNFL & GCL):** nourished by **central retinal artery (CRA)**; **inner blood–retinal barrier** = tight junctions of retinal capillary endothelium • **Outer retina (outer INL to photoreceptors):** nourished by **choriocapillaris**; **outer blood–retinal barrier** = apical tight junctions of **RPE** monolayer (also phagocytoses outer segments).",
+        "cite": "1"
+      },
+      {
+        "id": "card-4-3",
+        "label": "RGC Subtypes & Macula",
+        "front": "State the macular distribution of RGCs and compare the 3 functional RGC subtypes (proportions, LGN projections, visual roles).",
+        "back": "**>50% of RGCs** lie in the macula (within **4.5 mm** of fovea; GCL **6–8 layers thick**, absent at foveola) • **Parvocellular/Midget (~70–80%):** LGN 3–6; acuity & red–green color • **Magnocellular/Parasol (~10%):** LGN 1–2; motion & low-contrast/temporal • **Koniocellular/Bistratified (~8–10%):** interlaminar LGN; **blue–yellow** (targeted by SWAP).",
+        "cite": "2"
+      },
+      {
+        "id": "card-4-4",
+        "label": "RNFL Stratification & GCC",
+        "front": "How are peripheral versus central RGC axons depth-stratified within the RNFL, and why is macular OCT GCC useful in early glaucoma?",
+        "back": "**Depth stratification:** **peripheral RGC axons** run **deeper** (near GCL) and enter the **peripheral** ONH, while **central/macular axons** run **superficially** (near ILM) and enter the **central** neuroretinal rim • **Macular GCC (SD-OCT):** quantifies **RNFL + GCL + IPL** where >50% of RGCs sit, detecting loss before SAP visual field defects appear.",
+        "cite": "2"
+      }
     ]
   },
   "basic-basic_science-5": {
@@ -827,6 +947,36 @@
         "explanation": "The medial and lateral long posterior ciliary arteries (LPCAs) and long ciliary nerves run anteriorly in the suprachoroidal space along the 3 and 9 o'clock meridians; damaging them risks anterior segment ischemia and neurotrophic keratitis.",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-5-1",
+        "label": "ONH 4-Zone Vasculature",
+        "front": "Specify the arterial supply of all 4 ONH zones (plus intraorbital nerve) and the primary venous drainage of the ONH.",
+        "back": "From **ophthalmic artery**: **1. Surface RNFL:** **CRA** arterioles (+ **cilioretinal artery** temporally in **15–30%**) • **2. Prelaminar:** peripapillary choroid & direct SPCAs • **3. Lamina cribrosa:** **Circle of Zinn–Haller** (SPCAs) • **4. Retrolaminar:** dual **pial plexus** (centripetal) + axial **CRA** (centrifugal) • **Venous return:** almost entirely **CRV** → SOV → cavernous sinus.",
+        "cite": "1"
+      },
+      {
+        "id": "card-5-2",
+        "label": "ONH Watershed Zone",
+        "front": "Where is the optic nerve head arterial watershed zone located, and why is it clinically critical in glaucoma?",
+        "back": "The boundary between **medial and lateral short posterior ciliary artery (SPCA)** territories forms an end-arterial **watershed zone** often traversing the optic disc • **Nocturnal hypotension, vasospasm, or elevated IOP** lowers ocular perfusion pressure (**OPP = MAP − IOP**), predisposing this zone to ischemic glaucomatous damage and **AION**.",
+        "cite": "1"
+      },
+      {
+        "id": "card-5-3",
+        "label": "Ciliary Body Vasculature",
+        "front": "Which exact vessels form the Major Arterial Circle of the Iris, where does it lie anatomically, and how does the ciliary body drain?",
+        "back": "**2 Long Posterior Ciliary Arteries (LPCAs)** along **3 & 9 o'clock** + **7 Anterior Ciliary Arteries (ACAs)** from recti (**2 each SR, IR, MR; 1 LR**) • Anastomose inside **anterior ciliary body stroma** (not iris!) → **Major Arterial Circle of the Iris** feeding **fenestrated** process capillaries • **Venous (>90%):** posteriorly to **vortex veins**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-5-4",
+        "label": "TSCPC Surgical Rule",
+        "front": "Which clock-hour meridians must be spared during transscleral cyclophotocoagulation (TSCPC), and what two complications result if injured?",
+        "back": "Strictly spare the **3 and 9 o'clock horizontal meridians** during TSCPC or cyclocryotherapy • The medial and lateral **long posterior ciliary arteries (LPCAs)** and **long ciliary nerves** travel in the suprachoroidal space here • Thermal injury risks **anterior segment ischemia** and **neurotrophic keratopathy**.",
+        "cite": "2"
+      }
     ]
   },
   "basic-basic_science-6": {
@@ -934,6 +1084,36 @@
         ],
         "answer": 0,
         "explanation": "Excess extracellular glutamate overactivates postsynaptic NMDA receptors on RGCs, causing massive Ca2+ influx that triggers mitochondrial permeability transition (mPTP), cytochrome c release, and apoptosis.",
+        "cite": "2"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-6-1",
+        "label": "Apoptosis vs. Necrosis",
+        "front": "How do the cellular and inflammatory hallmarks of glaucomatous RGC apoptosis differ from necrosis?",
+        "back": "**Apoptosis:** energy-dependent programmed suicide featuring **cell shrinkage, chromatin condensation, nuclear fragmentation, and silent phagocytosis** of apoptotic bodies by retinal microglia/astrocytes **without acute tissue inflammation** • **Necrosis:** cell swelling, membrane rupture, and acute inflammatory cascade.",
+        "cite": "1"
+      },
+      {
+        "id": "card-6-2",
+        "label": "Upstream RGC Triggers",
+        "front": "Contrast the mechanical (neurotrophin) and vascular/oxidative upstream pathways initiating RGC apoptosis at the ONH.",
+        "back": "**Mechanical:** elevated IOP/TLPG bows **lamina cribrosa** posteriorly → blocks retrograde & anterograde axoplasmic transport → **BDNF deprivation** shuts off **TrkB** pro-survival signaling (**PI3K/Akt & Ras/MAPK**) • **Vascular/Ischemic:** reduced OPP causes ischemia–reperfusion → **ROS** & **iNOS-derived NO** damaging axonal mitochondria.",
+        "cite": "1"
+      },
+      {
+        "id": "card-6-3",
+        "label": "Intrinsic vs. Extrinsic",
+        "front": "Trace the molecular steps of the intrinsic (mitochondrial) and extrinsic (death-receptor) RGC apoptotic cascades to final execution.",
+        "back": "**Intrinsic:** glutamate/**NMDA Ca²⁺ overload** (Müller **GLAST** dysfunction), ROS & BDNF loss tip **Bax/Bad/Bid > Bcl-2/Bcl-xL** → MOMP/mPTP → **cytochrome c** + **Apaf-1** + ATP → **apoptosome** → **caspase-9** • **Extrinsic:** glial **TNF-α / FasL** → TNFR1/Fas → **caspase-8** (cleaves Bid) • Both activate executioner **caspase-3 & -7** (DNA fragmentation).",
+        "cite": "2"
+      },
+      {
+        "id": "card-6-4",
+        "label": "Neuroprotection Targets",
+        "front": "Distinguish proven clinical therapy from investigational downstream neuroprotective strategies targeting glaucomatous RGC apoptosis.",
+        "back": "**Only clinically proven intervention:** **IOP lowering** (halts upstream laminar strain & neurotrophin block) • **Investigational nodes:** **brimonidine** (upregulates **Bcl-2/BDNF**), **memantine** (NMDA antagonist; failed Phase III primary endpoints), **nicotinamide (vitamin B3)** (mitochondrial NAD⁺ support), and gene-delivered **BDNF/TrkB**.",
         "cite": "2"
       }
     ]
@@ -1056,6 +1236,36 @@
         "answer": 1,
         "explanation": "Because the optic nerve head lies nasal and slightly superior to the fovea, the projected physiologic blind spot lies ~15° temporal and 1.5° inferior to fixation.",
         "cite": "1"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-7-1",
+        "label": "Traquair's Hill & Extent",
+        "front": "State the foveal peak sensitivity, normal monocular visual field boundaries, and dimensions/location of the physiologic blind spot.",
+        "back": "**Foveal peak:** ~**35–40 dB** (maximal cone density) • **Monocular boundaries:** **60° superior**, **60° nasal**, **75° inferior**, **100° temporal** • **Physiologic blind spot:** bottomless pit at **15° temporal, 1.5° inferior** to fixation, measuring ~**5.5° wide × 7.5° tall** (corresponds to ONH).",
+        "cite": "1"
+      },
+      {
+        "id": "card-7-2",
+        "label": "Threshold, Weber & dB",
+        "front": "Define differential light threshold, Weber's law, standard bowl luminance, and the apostilb-to-decibel relationship in SAP.",
+        "back": "**Differential light threshold:** dimmest stimulus (ΔL) seen **50%** of the time on background (L) • **Weber's law:** ΔL/L stays constant at photopic **31.5 asb (10 cd/m²)** bowl luminance • **Inverted log dB scale:** **0 dB = 10,000 asb** (max brightness); each **+10 dB = 10× (1 log-unit) dimmer** → higher dB = greater sensitivity.",
+        "cite": "1"
+      },
+      {
+        "id": "card-7-3",
+        "label": "Ricco & Bloch Laws",
+        "front": "State Ricco's law (spatial) and Bloch's law (temporal) and explain the physiological rationale for a 200 ms SAP stimulus.",
+        "back": "**Ricco's law (spatial summation):** within a critical area, **I × A = constant** • **Bloch's law (temporal summation):** within critical duration (~**100 ms**), **I × t = constant** • **200 ms stimulus:** longer than Bloch's ~100 ms (eliminates duration artifacts) yet shorter than **saccadic latency (~250 ms)** so patients cannot refixate.",
+        "cite": "2"
+      },
+      {
+        "id": "card-7-4",
+        "label": "VF Confounders & Gap",
+        "front": "Quantify key physiological/optical confounders of SAP sensitivity and the percentage of RGC loss preceding detectable SAP defects.",
+        "back": "**Age:** declines ~**0.5–0.8 dB/decade** • **Pupil <2.5–3.0 mm:** diffuse depression • **Refractive defocus:** **+1.0 D** drops central sensitivity ~**1.2–1.5 dB** • **Cataract:** depresses Total > Pattern Deviation • **Learning effect** vs. **fatigue (cloverleaf)** • **Structure–function gap:** **25–40% RGC loss** may precede repeatable SAP defects.",
+        "cite": "2"
       }
     ]
   },
@@ -1197,6 +1407,36 @@
         "explanation": "The 10-2 pattern tests 68 densely spaced points (2° grid) across the central 10° macular field, revealing macular vulnerability and split-fixation defects that the coarser 6° 24-2 grid can miss.",
         "cite": "2"
       }
+    ],
+    "cards": [
+      {
+        "id": "card-8-1",
+        "label": "Kinetic vs. Static",
+        "front": "Contrast kinetic versus static perimetry principles and list key clinical indications where manual Goldmann kinetic testing remains valuable.",
+        "back": "**Kinetic (horizontal slicing):** fixed target moved **2–4°/sec** from non-seeing to seeing to plot **isopters** • **Static (vertical slicing):** stationary grid stimulus varies luminance to measure point threshold (dB) • **Goldmann manual (30 cm bowl, 31.5 asb):** ideal for **end-stage fields**, peripheral >30° neuro fields, and patients unable to perform SAP.",
+        "cite": "1"
+      },
+      {
+        "id": "card-8-2",
+        "label": "Goldmann Notation",
+        "front": "Decode all 3 symbols of Goldmann stimulus notation (e.g., III4e), including area progression and decibel step sizes.",
+        "back": "**Roman numeral (0–V = area, ×4 each step):** I = 0.25, II = 1, **III = 4 mm² (0.43°; SAP standard)**, IV = 16, V = 64 mm² • **Arabic numeral (1–4 = coarse luminance):** **0.5 log (5 dB)** steps (**4 = 1,000 asb**) • **Letter (a–e = fine luminance):** **0.1 log (1 dB)** steps (**e = 100%** filter transmission).",
+        "cite": "1"
+      },
+      {
+        "id": "card-8-3",
+        "label": "SAP Patterns & SITA",
+        "front": "Compare standard Humphrey SAP test grids (24-2, 30-2, 10-2, 24-2C) and Full Threshold vs. SITA algorithms.",
+        "back": "**Grids:** **24-2** (54 pts, 6° grid, 30° nasally — standard), **30-2** (76 pts), **10-2** (68 pts, 2° grid — macular/advanced), **24-2C** (+10 central pts) • **Algorithms:** **Full Threshold** (4–2 dB bracketing, 12–15 min) vs. **SITA Standard** (Bayesian priors, **5–7 min**, equal accuracy) vs. **SITA Fast/Faster** (**2–4 min**).",
+        "cite": "2"
+      },
+      {
+        "id": "card-8-4",
+        "label": "Reliability & Indices",
+        "front": "State acceptable SAP reliability limits, global indices (MD, PSD, VFI, GHT), and the 3 Anderson–Patella minimal criteria.",
+        "back": "**Reliability:** Fixation losses **<20%** (Heijl–Krakau), False positives **<15%** ('white scotomas'), False negatives **<33%** • **Indices:** **MD** (diffuse), **PSD** (focal), **VFI** (0–100%), **GHT** (5 mirrored arcuate pairs) • **Anderson–Patella (any 1):** ≥3 contiguous non-edge PD points P<5% (≥1 P<1%) in 1 hemifield, PSD P<5%, or GHT Outside Normal Limits.",
+        "cite": "2"
+      }
     ]
   },
   "basic-basic_science-9": {
@@ -1317,6 +1557,36 @@
         "answer": 0,
         "explanation": "Schiøtz tonometry displaces 15–20 µL of aqueous; eyes with low scleral rigidity yield easily to the weighted plunger, causing a falsely low IOP reading.",
         "cite": "1"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-9-1",
+        "label": "Tonometry Mechanics",
+        "front": "Compare applanation (Goldmann) vs. indentation (Schiøtz) tonometry on displaced volume, force conversion, and rigidity error.",
+        "back": "Normal IOP **15.5 ± 2.6 mmHg** (10–21) • **Goldmann (Imbert–Fick P = F/A):** at **3.06 mm** (**7.35 mm²**), corneal rigidity (**S**) cancels tear capillary pull (**B**), **1 g = 10 mmHg**, displaces only **~0.5 µL** (avoids rigidity artifact) • **Schiøtz:** displaces **15–20 µL** → **falsely low** in high myopia/post-vitrectomy • **iCare** (rebound) & **PASCAL DCT** (minimal CCT error).",
+        "cite": "1"
+      },
+      {
+        "id": "card-9-2",
+        "label": "Tonography & Facility",
+        "front": "How is tonography performed, what is Grant's formula, and what values of outflow facility (C) distinguish normal from POAG?",
+        "back": "A weighted electronic Schiøtz tonometer rests on the cornea for **4 minutes**, acutely raising IOP to drive aqueous out through the TM • **Grant's formula:** **C = ΔV / [t × (Pt − Po)]** • **Normal C:** **0.22–0.28 µL/min/mmHg** • **Impaired trabecular outflow (POAG):** **<0.13–0.18 µL/min/mmHg**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-9-3",
+        "label": "Diurnal Curve & Peaks",
+        "front": "Compare normal vs. glaucomatous 24-hour IOP fluctuation, state when true peaks occur, and explain why clinic visits miss them.",
+        "back": "**Normal 24-hr fluctuation:** **3–5 mmHg** vs. **Glaucoma:** **>6–10 mmHg** • **True peak:** **nocturnal/early morning (04:00–06:00)**, amplified by **supine posture increasing episcleral venous pressure** — routinely missed during 09:00–17:00 office hours • Office phasing (q2–3h) or the **water-drinking test** helps expose peaks.",
+        "cite": "3"
+      },
+      {
+        "id": "card-9-4",
+        "label": "Peak/Trough & Phasing",
+        "front": "Distinguish peak vs. trough drug efficacy and list the 3 clinical indications for performing diurnal IOP phasing.",
+        "back": "**Peak:** maximal IOP drop (e.g., 2 hr post-timolol/brimonidine) • **Trough:** residual control just before next dose (PGAs beat β-blockers overnight) • **3 phasing uses:** (1) distinguish true **NTG** from high-tension POAG with missed morning spikes, (2) work up **VF progression despite controlled clinic IOP**, (3) verify **24-hr trough control**.",
+        "cite": "3"
       }
     ]
   },
@@ -1471,6 +1741,36 @@
         ],
         "answer": 1,
         "explanation": "OHTS demonstrated that medical IOP reduction of ≥20% more than halved the 5-year cumulative probability of developing POAG from 9.5% in the observation group to 4.4% in the treated group.",
+        "cite": "3"
+      }
+    ],
+    "cards": [
+      {
+        "id": "card-10-1",
+        "label": "POAG vs. NTG Features",
+        "front": "Contrast high-tension POAG and Normal-Tension Glaucoma (NTG) across IOP, optic disc signs, visual fields, and systemic associations.",
+        "back": "Both: chronic, bilateral asymmetric GON, open angles (Shaffer 3–4), no secondary cause • **High-tension POAG:** untreated IOP **>21 mmHg** • **NTG:** diurnal IOP **≤21 mmHg**, more **splinter (Drance) disc hemorrhages**, **deeper/steeper paracentral scotomas** closer to fixation, thinner CCT, and **vascular links** (migraine, Raynaud, nocturnal hypotension, OSA).",
+        "cite": "1"
+      },
+      {
+        "id": "card-10-2",
+        "label": "ISGEO & Acute Crisis",
+        "front": "Differentiate PACS, PAC, and PACG by ISGEO criteria and list the hallmark exam findings of Acute Angle-Closure Crisis (AACC).",
+        "back": "**PACS:** **≥180° ITC** (PTM hidden), normal IOP, no PAS, normal ONH/VF • **PAC:** ITC + **↑ IOP, PAS, iris whorling/atrophy, TM pigment smudging, or Glaukomflecken**, normal ONH • **PACG:** PAC + **GON & VF loss** • **AACC:** IOP **40–70 mmHg**, severe pain/nausea, halos, corneal edema, shallow AC, **mid-dilated vertically oval fixed pupil**.",
+        "cite": "2"
+      },
+      {
+        "id": "card-10-3",
+        "label": "Suspect vs. OHT",
+        "front": "How do the diagnostic criteria for a general Glaucoma Suspect differ from those for Ocular Hypertension (OHT)?",
+        "back": "**Glaucoma Suspect:** open angles + **≥1** concerning sign without confirmed glaucoma — IOP >21 mmHg, suspicious ONH/RNFL (large cup, **C:D asymmetry ≥0.2**, rim thinning, disc hemorrhage), or borderline VF • **OHT (subset):** IOP **>21 mmHg** on ≥2 occasions with **open angles, completely normal ONH/RNFL, and normal visual fields**.",
+        "cite": "3"
+      },
+      {
+        "id": "card-10-4",
+        "label": "OHTS Risk Predictors",
+        "front": "State the 5-year OHTS conversion benefit of IOP lowering and name all 5 baseline risk factors predicting OHT-to-POAG conversion.",
+        "back": "**OHTS:** **≥20% IOP reduction** cut 5-year POAG conversion from **9.5%** (untreated) to **4.4%** (treated) • **5 baseline predictors:** **1. Thinner CCT**, **2. Higher baseline IOP**, **3. Older age**, **4. Larger vertical C:D ratio**, **5. Higher PSD** on perimetry.",
         "cite": "3"
       }
     ]
