@@ -1,8 +1,9 @@
 {
-  "version": "batch-02",
+  "version": "batch-04",
   "batches": [
     "./data/batch_01.json",
     "./data/batch_02.json",
-    "./data/batch_03.json"
+    "./data/batch_03.json",
+    "./data/batch_04.json"
   ]
 }
