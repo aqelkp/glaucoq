@@ -1,4 +1,4 @@
-const CACHE_NAME = "glaucoq-v11";
+const CACHE_NAME = "glaucoq-v12";
 const PRECACHE_ASSETS = [
   "./",
   "./index.html",
@@ -13,6 +13,7 @@ const PRECACHE_ASSETS = [
   "./data/batch_06.json",
   "./data/batch_08.json",
   "./data/batch_07.json",
+  "./data/batch_09.json",
   "./icons/icon.svg",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
