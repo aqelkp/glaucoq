@@ -1,4 +1,4 @@
-const CACHE_NAME = "glaucoq-v12";
+const CACHE_NAME = "glaucoq-v13";
 const PRECACHE_ASSETS = [
   "./",
   "./index.html",

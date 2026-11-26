@@ -920,7 +920,7 @@
       border: 1px solid var(--border);
       border-radius: 8px;
       background: #ffffff;
-      padding: 0.85rem;
+      padding: 0.65rem 0.85rem 0.85rem;
       max-width: 580px;
       cursor: zoom-in;
       transition: border-color 0.15s ease, box-shadow 0.15s ease;
@@ -931,16 +931,19 @@
       box-shadow: 0 4px 12px rgba(3, 105, 161, 0.08);
     }
 
+    .figure-zoom-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 0.35rem;
+    }
+
     .figure-zoom-hint {
-      position: absolute;
-      top: 0.55rem;
-      right: 0.55rem;
-      background: rgba(255, 255, 255, 0.92);
-      border: 1px solid var(--border);
+      background: var(--primary-light);
+      border: 1px solid #bae6fd;
       color: var(--primary);
-      font-size: 0.7rem;
+      font-size: 0.69rem;
       font-weight: 700;
-      padding: 0.18rem 0.5rem;
+      padding: 0.14rem 0.5rem;
       border-radius: 999px;
       pointer-events: none;
     }
@@ -2359,8 +2362,10 @@
               const fig = document.createElement("figure"); fig.className = "inline-figure";
               const svgNode = parseSafeSvg(blk.svg);
               if (svgNode) {
+                const zRow = document.createElement("div"); zRow.className = "figure-zoom-row";
+                const hint = document.createElement("span"); hint.className = "figure-zoom-hint"; hint.textContent = "Tap to zoom"; zRow.appendChild(hint);
+                fig.appendChild(zRow);
                 fig.appendChild(svgNode);
-                const hint = document.createElement("span"); hint.className = "figure-zoom-hint"; hint.textContent = "Tap to zoom"; fig.appendChild(hint);
                 const cap = document.createElement("figcaption"); cap.className = "figure-caption"; appendRichText(cap, blk.caption || ""); fig.appendChild(cap);
                 fig.addEventListener("click", function () { openLightbox(svgNode, cap.textContent.trim()); });
                 secEl.appendChild(fig);
@@ -3007,17 +3012,22 @@
           renderLevelFilters();
           renderTagDropdown();
 
-          const hash = window.location.hash ? window.location.hash.slice(1) : "";
-          if (hash === "revision") {
-            switchView("revision");
-          } else if (hash === "study") {
-            switchView("study");
-          } else if (hash && allQuestions.some(function (q) { return q.id === hash; })) {
-            const found = allQuestions.find(function (q) { return q.id === hash; });
-            switchView("study", { questionId: found.id, answeredOnly: Boolean(answersMap[found.id]) });
-          } else {
-            switchView("home");
+          function routeFromHash() {
+            const hash = window.location.hash ? window.location.hash.slice(1) : "";
+            if (hash === "revision") {
+              switchView("revision");
+            } else if (hash === "study") {
+              switchView("study");
+            } else if (hash && allQuestions.some(function (q) { return q.id === hash; })) {
+              const found = allQuestions.find(function (q) { return q.id === hash; });
+              switchView("study", { questionId: found.id, answeredOnly: Boolean(answersMap[found.id]) });
+            } else {
+              switchView("home");
+            }
           }
+
+          window.addEventListener("hashchange", routeFromHash);
+          routeFromHash();
         } catch (_) {
           viewHome.replaceChildren();
           const box = document.createElement("div");
