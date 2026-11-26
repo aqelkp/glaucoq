@@ -2948,8 +2948,18 @@
 
       // PWA Service Worker & Install Prompt
       if ("serviceWorker" in navigator) {
+        const hadController = Boolean(navigator.serviceWorker.controller);
+        let swReloading = false;
+        navigator.serviceWorker.addEventListener("controllerchange", function () {
+          if (hadController && !swReloading) {
+            swReloading = true;
+            window.location.reload();
+          }
+        });
         window.addEventListener("load", function () {
-          navigator.serviceWorker.register("./sw.js").catch(function () {});
+          navigator.serviceWorker.register("./sw.js", { updateViaCache: "none" })
+            .then(function (reg) { reg.update().catch(function () {}); })
+            .catch(function () {});
         });
       }
 
@@ -2973,8 +2983,8 @@
       async function bootstrap() {
         try {
           const [currRes, manifestRes] = await Promise.all([
-            fetch("./glaucoma_cognitive_skills.json"),
-            fetch("./data/manifest.json")
+            fetch("./glaucoma_cognitive_skills.json", { cache: "no-cache" }),
+            fetch("./data/manifest.json", { cache: "no-cache" })
           ]);
           const curriculum = await currRes.json();
           const manifest = await manifestRes.json();
